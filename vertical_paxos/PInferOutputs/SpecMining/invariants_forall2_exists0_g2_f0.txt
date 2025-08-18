@@ -1,0 +1,38 @@
+∀e0: eDecided ∀e1: eDecided :: (indexof(e0) < indexof(e1)) ∧ (e0.payload.round > e1.payload.round) -> 
+e0.payload.value == e1.payload.value
+e0.payload.value ∈ { 63, 94 }
+
+∀e0: eDecided ∀e1: eDecided :: (indexof(e0) > indexof(e1)) ∧ (e0.payload.round < e1.payload.round) -> 
+e0.payload.value == e1.payload.value
+e0.payload.value ∈ { 63, 94 }
+
+∀e0: eDecided ∀e1: eDecided :: (e0.payload.value == e1.payload.value) ∧ (e0.payload.round < e1.payload.round) -> 
+indexof(e0) != indexof(e1)
+
+∀e0: eDecided ∀e1: eDecided :: (indexof(e0) < indexof(e1)) ∧ (e0.payload.round < e1.payload.round) -> 
+e0.payload.value >= 0
+e0.payload.value == e1.payload.value
+
+∀e0: eDecided ∀e1: eDecided :: (indexof(e0) > indexof(e1)) ∧ (e0.payload.round > e1.payload.round) -> 
+e0.payload.value >= 0
+e0.payload.value == e1.payload.value
+
+∀e0: eDecided ∀e1: eDecided :: (e0.payload.value == e1.payload.value) ∧ (e0.payload.round > e1.payload.round) -> 
+indexof(e0) != indexof(e1)
+
+∀e0: eDecided ∀e1: eDecided :: (indexof(e0) < indexof(e1)) ∧ (e0.payload.round == e1.payload.round) -> 
+e0.payload.value >= 0
+e0.payload.value == e1.payload.value
+
+∀e0: eDecided ∀e1: eDecided :: (indexof(e0) < indexof(e1)) ∧ (e0.payload.value == e1.payload.value) -> 
+e1.payload.round >= 0
+e0.payload.round >= 0
+
+∀e0: eDecided ∀e1: eDecided :: (indexof(e0) > indexof(e1)) ∧ (e0.payload.round == e1.payload.round) -> 
+e0.payload.value >= 0
+e0.payload.value == e1.payload.value
+
+∀e0: eDecided ∀e1: eDecided :: (indexof(e0) > indexof(e1)) ∧ (e0.payload.value == e1.payload.value) -> 
+e1.payload.round >= 0
+e0.payload.round >= 0
+

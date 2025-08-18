@@ -1,0 +1,7 @@
+∀e0:eOwns ::  ∃e1:eTransfer :: (e0.payload.key != e1.payload.key)
+indexof(e1) >= 1
+_num_e_exists_ ∈ { 2, 3 }
+e0.payload.value >= 0
+e1.payload.value >= 0
+indexof(e0) >= 2
+

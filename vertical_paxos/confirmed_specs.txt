@@ -1,0 +1,2 @@
+∀e0: eDecided ∀e1: eP2A :: (e0.payload.round < e1.payload.round) -> (e0.payload.value == e1.payload.value)
+∀e0: eDecided ∀e1: eDecided :: (e0.payload.value == e1.payload.value)

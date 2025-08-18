@@ -1,0 +1,85 @@
+# P Model Analysis: Paxos Consensus Protocol
+
+## 1. Events Definition
+
+| Event | Payload Type | Description |
+|-------|--------------|-------------|
+| `ePrepareReq` | `tPrepareReq` | Prepare request from proposer to acceptor |
+| `ePrepareRsp` | `tPrepareRsp` | Prepare response from acceptor to proposer |
+| `eAcceptReq` | `tAcceptReq` | Accept request from proposer to acceptor |
+| `eAcceptRsp` | `tAcceptRsp` | Accept response from acceptor to proposer |
+| `eLearn` | `(ballot: tBallot, v: tValue)` | Learning notification from proposer to learners |
+
+**Payload Types:**
+- `tPrepareReq`: `(proposer: Proposer, ballot_n: tBallot, v: tValue)`
+- `tPrepareRsp`: `(acceptor: Acceptor, promised: tBallot, v_accepted: tValue, n_accepted: tBallot)`
+- `tAcceptReq`: `(proposer: Proposer, ballot_n: tBallot, v: tValue)`
+- `tAcceptRsp`: `(acceptor: Acceptor, accepted: tBallot)`
+
+## 2. Event Flows
+
+### Phase 1 - Prepare Phase:
+1. **Proposer → Acceptors**: `ePrepareReq` (broadcast to all acceptors in jury)
+2. **Acceptors → Proposer**: `ePrepareRsp` (responses with promises and any previously accepted values)
+
+### Phase 2 - Accept Phase:
+3. **Proposer → Acceptors**: `eAcceptReq` (broadcast proposed value after majority prepare ACKs)
+4. **Acceptors → Proposer**: `eAcceptRsp` (acceptance confirmations)
+
+### Phase 3 - Learning Phase:
+5. **Proposer → Learners**: `eLearn` (broadcast decided value after majority accepts)
+
+## 3. System Roles
+
+### **Proposer**
+- **Role**: Leader election and value proposal coordination
+- **Responsibilities**: 
+  - Initiate consensus rounds with ballot numbers
+  - Collect majority promises from acceptors
+  - Propose values (own or highest previously accepted)
+  - Coordinate teaching phase to learners
+- **State Flow**: Init → Prepare → Accept → Teach
+
+### **Acceptor** 
+- **Role**: Promise keeper and value acceptor
+- **Responsibilities**:
+  - Promise not to accept lower ballot numbers
+  - Return any previously accepted values during prepare
+  - Accept values from prepared proposers
+  - Maintain ballot ordering constraints
+- **State Flow**: Init → Accept (persistent state)
+
+### **Learner**
+- **Role**: Value recipient and consistency enforcer  
+- **Responsibilities**:
+  - Learn decided values from proposers
+  - Maintain consistency (assert same value if already learned)
+- **State Flow**: Init → Learn (persistent state)
+
+## 4. Protocol Workflow
+
+### **High-Level Paxos Consensus Flow:**
+
+1. **Initialization**: Proposer receives configuration with jury (acceptors), school (learners), and value to propose
+
+2. **Phase 1 - Prepare**: 
+   - Proposer broadcasts prepare requests with ballot number to all acceptors
+   - Acceptors promise to reject lower ballot numbers and return any previously accepted values
+   - Proposer waits for majority of prepare acknowledgments
+   - If higher-numbered proposal exists, proposer adopts that value
+
+3. **Phase 2 - Accept**:
+   - Proposer broadcasts accept requests with chosen value to all acceptors
+   - Acceptors accept if ballot number ≥ promised number
+   - Proposer waits for majority of accept acknowledgments
+
+4. **Phase 3 - Teach**:
+   - Proposer broadcasts learned value to all learners
+   - Learners store the value and enforce consistency
+
+### **Key Safety Properties**:
+- **Ballot Ordering**: Acceptors only respond to higher or equal ballot numbers
+- **Value Consistency**: Once a value is learned, all learners must learn the same value
+- **Majority Consensus**: Decisions require majority acceptance from the jury
+
+This implementation follows the classic Paxos algorithm with explicit teaching phase, ensuring distributed consensus among multiple proposers, acceptors, and learners.

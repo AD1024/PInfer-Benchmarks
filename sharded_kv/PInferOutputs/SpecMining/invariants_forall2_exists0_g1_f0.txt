@@ -1,0 +1,42 @@
+∀e0: eOwns ∀e1: eOwns :: (e0.payload.value == e1.payload.value) -> 
+indexof(e1) >= 2
+e0.payload.key >= 0
+e0.payload.key == e1.payload.key
+indexof(e0) >= 2
+e0.payload.node == e1.payload.node
+
+∀e0: eOwns ∀e1: eOwns :: (e0.payload.key == e1.payload.key) -> 
+indexof(e1) >= 2
+e0.payload.value >= 0
+e0.payload.value == e1.payload.value
+indexof(e0) >= 2
+e0.payload.node == e1.payload.node
+
+∀e0: eOwns ∀e1: eOwns :: (e0.payload.node == e1.payload.node) -> 
+e1.payload.key >= 0
+indexof(e1) >= 2
+e0.payload.key >= 0
+e0.payload.value >= 0
+e1.payload.value >= 0
+indexof(e0) >= 2
+
+∀e0: eOwns ∀e1: eOwns :: (indexof(e0) < indexof(e1)) -> 
+e1.payload.key >= 0
+e0.payload.key >= 0
+e0.payload.value >= 0
+e1.payload.value >= 0
+
+∀e0: eOwns ∀e1: eOwns :: (indexof(e0) > indexof(e1)) -> 
+e1.payload.key >= 0
+e0.payload.key >= 0
+e0.payload.value >= 0
+e1.payload.value >= 0
+
+∀e0: eOwns ∀e1: eOwns :: (e0.payload.key != e1.payload.key) -> 
+indexof(e1) >= 2
+indexof(e0) != indexof(e1)
+e0.payload.value >= 0
+e0.payload.value != e1.payload.value
+e1.payload.value >= 0
+indexof(e0) >= 2
+

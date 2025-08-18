@@ -1,0 +1,1 @@
+∀e0: eDecide ∀e1: eDecide :: (indexof(e0) == indexof(e1)) ∧ (e0.payload.value == e1.payload.value) ∧ (e0.payload.node == e1.payload.node)

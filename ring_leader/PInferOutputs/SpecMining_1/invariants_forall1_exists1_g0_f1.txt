@@ -1,0 +1,23 @@
+∀e0:eBecomeLeader ::  ∃e1:eNominate :: (e0.payload.ballot == e1.payload.nxt)
+_num_e_exists_ >= 1
+indexof(e1) >= 0
+e1.payload.ballot >= 0
+e1.payload.ballot <= e0.payload.ballot
+indexof(e0) >= 1
+e0.payload.ballot >= size(e1.payload.ballot)-1
+
+∀e0:eBecomeLeader ::  ∃e1:eNominate :: (e0.payload.ballot == e1.payload.ballot)
+_num_e_exists_ >= 1
+indexof(e1) >= 0
+e1.payload.nxt >= 0
+e1.payload.nxt <= e0.payload.ballot
+indexof(e0) >= 1
+
+∀e0:eBecomeLeader ::  ∃e1:eNominate :: (indexof(e0) > indexof(e1))
+_num_e_exists_ >= 1
+e1.payload.ballot >= 0
+e1.payload.nxt >= 0
+e1.payload.ballot <= e0.payload.ballot
+e1.payload.nxt <= e0.payload.ballot
+e0.payload.ballot == e1.payload.nxt
+

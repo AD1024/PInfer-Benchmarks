@@ -1,0 +1,1 @@
+∀e0: eLearn ∀e1: eLearn :: (e0.payload.v == e1.payload.v)

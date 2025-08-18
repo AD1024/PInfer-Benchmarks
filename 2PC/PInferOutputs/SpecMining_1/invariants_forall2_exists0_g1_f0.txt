@@ -1,0 +1,12 @@
+∀e0: eCommitTrans ∀e1: ePrepareFailure :: (indexof(e0) > indexof(e1)) -> 
+e0.payload != e1.payload.transId
+
+∀e0: eCommitTrans ∀e1: ePrepareFailure :: (e0.payload < e1.payload.transId) -> 
+indexof(e0) != indexof(e1)
+
+∀e0: eCommitTrans ∀e1: ePrepareFailure :: (indexof(e0) < indexof(e1)) -> 
+e0.payload != e1.payload.transId
+
+∀e0: eCommitTrans ∀e1: ePrepareFailure :: (e0.payload > e1.payload.transId) -> 
+indexof(e0) != indexof(e1)
+

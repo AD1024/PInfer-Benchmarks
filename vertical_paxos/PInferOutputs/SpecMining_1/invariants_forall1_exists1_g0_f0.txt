@@ -1,0 +1,18 @@
+∀e0:eDecided ::  ∃e1:eP2B :: 
+quorum <= size(e1.payload.value)-1
+indexof(e0) > indexof(e1)[quorum-1]
+e0.payload.value == e1.payload.value[quorum]
+indexof(e1)[quorum] > indexof(e1)[quorum-1]
+quorum <= size(e1.payload.round)-1
+e1.payload.round >= 0
+e1.payload.value >= 0
+e0.payload.round >= e1.payload.round[quorum-1]
+indexof(e1) > quorum
+e0.payload.round >= 0
+indexof(e0) != indexof(e1)[quorum]
+e1.payload.round[quorum] >= e1.payload.round[quorum-1]
+e0.payload.value == e1.payload.value[quorum-1]
+quorum <= size(indexof(e1))-1
+e0.payload.round == e1.payload.round
+indexof(e1) >= size(indexof(e1))-1
+

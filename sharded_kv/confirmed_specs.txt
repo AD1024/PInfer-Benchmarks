@@ -1,0 +1,1 @@
+∀e0: eOwns ∀e1: eOwns :: (e0.payload.key == e1.payload.key) -> (e0.payload.value == e1.payload.value) ∧ (e0.payload.node == e1.payload.node)

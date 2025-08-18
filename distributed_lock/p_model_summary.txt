@@ -1,0 +1,70 @@
+# P Model Analysis Summary
+
+## 1. Events Definition
+
+### Core Protocol Events
+- **`eGrant`**: `(node: Node, epoch: tEpoch)` - Node requests lock ownership for a specific epoch
+- **`eTransfer`**: `(round: tRound, node: Node, epoch: tEpoch)` - Transfer lock ownership between nodes
+
+### Helper/Monitoring Events
+- **`eHasLock`**: `(round: tRound, node: Node, epoch: tEpoch)` - Announces when a node acquires the lock
+- **`eTransfered`**: `tTransfer` - Indicates completion of lock transfer
+- **`eNodeState`**: `(round: tRound, node: Node, hasLock: bool, epoch: tEpoch)` - Reports current node state
+- **`eSynchronize`**: No payload - Triggers synchronization between nodes
+- **`eConfig`**: `(peers: set[Node])` - Initializes peer configuration
+
+## 2. Event Flows
+
+### Lock Request Flow
+1. Node without lock sends `eGrant` to all peers with future epoch
+2. Lock holder receives `eGrant` and evaluates epoch comparison
+3. If granted epoch > current epoch, lock holder sends `eTransfer` and releases lock
+
+### Lock Transfer Flow
+1. `eTransfer` sent from current lock holder to requesting node
+2. Recipient validates epoch and acquires lock
+3. New lock holder announces `eHasLock` and `eNodeState`
+4. Synchronization triggered via `eSynchronize` to all peers
+
+### Synchronization Flow
+- Nodes periodically announce their state via `eNodeState`
+- `eSynchronize` events coordinate round-based state sharing
+- Round numbers (`syncRound`) track synchronization progress
+
+## 3. System Roles
+
+### Node Machine
+- **Primary Role**: Distributed lock participant
+- **Responsibilities**:
+  - Maintain lock state (`hasLock`, `epoch`, `syncRound`)
+  - Request lock ownership through grant requests
+  - Transfer lock ownership when appropriate
+  - Participate in distributed synchronization
+  - Track peer relationships
+
+### Safety Specification Monitor
+- **Primary Role**: Correctness verification
+- **Responsibilities**:
+  - Monitor `eHasLock` events
+  - Ensure mutual exclusion: only one node can hold lock per epoch
+  - Maintain epoch-to-node mapping for safety verification
+
+## 4. Protocol Workflow
+
+### High-Level Protocol Description
+This implements a **distributed mutual exclusion protocol** using epoch-based lock ownership with the following workflow:
+
+1. **Initialization**: Nodes start with initial lock state and peer configuration
+2. **Lock Request Phase**: Nodes without locks request ownership by sending `eGrant` with future epochs
+3. **Lock Transfer Decision**: Current lock holders compare epochs and transfer if requester's epoch is higher
+4. **Lock Acquisition**: New lock holder updates state, announces ownership, and synchronizes with peers
+5. **Continuous Synchronization**: Nodes maintain consistent view through periodic state announcements
+
+### Key Protocol Properties
+- **Epoch-based Ordering**: Higher epochs take precedence in lock ownership decisions
+- **Mutual Exclusion**: Safety specification ensures only one node holds lock per epoch
+- **Round-based Synchronization**: Maintains distributed consistency through synchronized rounds
+- **Peer-to-Peer Communication**: Direct messaging between all node pairs for coordination
+
+### Safety Guarantee
+The protocol ensures mutual exclusion through epoch uniqueness - the Safety specification monitors that each epoch maps to exactly one node, preventing multiple simultaneous lock holders.

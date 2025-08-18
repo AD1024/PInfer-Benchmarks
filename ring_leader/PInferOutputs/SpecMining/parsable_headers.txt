@@ -1,0 +1,210 @@
+e0:eNominate e1:eNominate
+
+0
+0
+True
+e0:eNominate e1:eNominate
+
+0
+0
+True
+e0:eNominate e1:eNominate
+
+0
+0
+True
+e0:eNominate e1:eNominate
+
+0
+0
+True
+e0:eNominate e1:eNominate
+
+0
+0
+True
+e0:eNominate e1:eNominate
+
+0
+0
+True
+e0:eNominate
+
+0
+0
+False
+e0:eNominate
+
+0
+0
+False
+e0:eNominate
+
+0
+0
+False
+e0:eBecomeLeader
+
+0
+0
+False
+e0:eBecomeLeader
+
+0
+0
+False
+e0:eBecomeLeader
+
+0
+0
+False
+e0:eBecomeLeader e1:eNominate
+
+0
+0
+False
+e0:eBecomeLeader e1:eNominate
+
+0
+0
+False
+e0:eBecomeLeader e1:eNominate
+
+0
+0
+False
+e0:eBecomeLeader e1:eNominate
+
+0
+0
+False
+e0:eBecomeLeader e1:eNominate
+
+0
+0
+False
+e0:eBecomeLeader e1:eNominate
+
+0
+0
+False
+e0:eBecomeLeader e1:eNominate
+
+1
+0
+False
+e0:eBecomeLeader e1:eNominate
+
+1
+0
+False
+e0:eBecomeLeader e1:eNominate
+
+1
+0
+False
+e0:eBecomeLeader e1:eNominate
+
+1
+0
+False
+e0:eBecomeLeader e1:eNominate
+
+1
+0
+False
+e0:eBecomeLeader e1:eNominate
+
+1
+0
+False
+e0:eBecomeLeader e1:eNominate
+
+1
+0
+False
+e0:eBecomeLeader e1:eNominate
+
+1
+0
+False
+e0:eBecomeLeader e1:eNominate
+
+1
+0
+False
+e0:eBecomeLeader e1:eNominate
+
+1
+0
+False
+e0:eBecomeLeader e1:eNominate
+
+1
+0
+False
+e0:eBecomeLeader e1:eNominate
+
+1
+0
+False
+e0:eBecomeLeader e1:eNominate
+
+1
+0
+False
+e0:eBecomeLeader e1:eNominate
+
+1
+0
+False
+e0:eBecomeLeader e1:eNominate
+
+1
+0
+False
+e0:eBecomeLeader e1:eNominate
+
+1
+0
+False
+e0:eBecomeLeader e1:eNominate
+
+1
+0
+False
+e0:eBecomeLeader e1:eNominate
+
+1
+0
+False
+e0:eBecomeLeader e1:eBecomeLeader
+
+0
+0
+False
+e0:eBecomeLeader e1:eBecomeLeader
+
+0
+0
+False
+e0:eBecomeLeader e1:eBecomeLeader
+
+0
+0
+False
+e0:eBecomeLeader e1:eBecomeLeader
+
+0
+0
+False
+e0:eBecomeLeader e1:eBecomeLeader
+
+0
+0
+False
+e0:eBecomeLeader e1:eBecomeLeader
+
+0
+0
+False

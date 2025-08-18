@@ -1,0 +1,251 @@
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.voter == e1.payload.voter)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.voter == e1.payload.voter)
+EOT
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.voter == e1.payload.voter)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.voter == e1.payload.voter)
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.voter == e1.payload.voter)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.voter == e1.payload.voter)
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.voter == e1.payload.voter)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.voter == e1.payload.voter)
+EOT
+EOT
+EOT
+EOT
+EOT
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.voter == e1.payload.voter)
+EOT
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.voter == e1.payload.voter)
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.node == e1.payload.voter)
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.node == e1.payload.voter)
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+(indexof(e0) > indexof(e1))
+(indexof(e0) < indexof(e1))
+EOT
+(indexof(e0) > indexof(e1))
+(indexof(e0) < indexof(e1))
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.node == e1.payload.node)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.value == e1.payload.value)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.value == e1.payload.value)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.node == e1.payload.node)
+EOT
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.node == e1.payload.node)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.value == e1.payload.value)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.value == e1.payload.value)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.node == e1.payload.node)
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.node == e1.payload.voter)
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.node == e1.payload.voter)
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+(indexof(e0) < indexof(e1))
+(indexof(e0) > indexof(e1))
+EOT
+(indexof(e0) < indexof(e1))
+(indexof(e0) > indexof(e1))
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.node == e1.payload.node)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.node == e1.payload.node)
+EOT
+EOT
+EOT
+EOT
+(indexof(e0) < indexof(e1))
+EOT
+(indexof(e0) < indexof(e1))
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.node == e1.payload.node)
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT

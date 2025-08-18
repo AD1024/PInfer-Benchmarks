@@ -1,0 +1,1 @@
+∀e0: Sent :: e0.payload.toInternal -> ∃e1: SendFromInternal :: (indexof(e0) > indexof(e1)) ∧ (e0.payload.src == e1.payload.dst)

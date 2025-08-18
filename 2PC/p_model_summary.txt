@@ -1,0 +1,88 @@
+# P Model Analysis: Two-Phase Commit Protocol
+
+## 1. Events Definition
+
+### Client-Coordinator Communication
+- **eWriteTransReq**: `tWriteTransReq` - Write transaction request from client
+- **eWriteTransSuccess**: `TransactionId` - Successful write transaction response
+- **eWriteTransFailure**: `TransactionId` - Failed write transaction response  
+- **eWriteTransTimeout**: `TransactionId` - Timed-out write transaction response
+- **eReadTransReq**: `tReadTransReq` - Read transaction request from client
+- **eReadTransSuccess**: `(transId, key, val)` - Successful read response
+- **eReadTransFailure**: `Key` - Failed read response
+
+### Coordinator-Participant Communication
+- **ePrepareReq**: `tPrepareReq` - Prepare request for transaction (Phase 1)
+- **ePrepareSuccess**: `(participant, transId)` - Positive prepare response
+- **ePrepareFailure**: `(participant, transId)` - Negative prepare response
+- **eCommitTrans**: `TransactionId` - Commit transaction command (Phase 2)
+- **eAbortTrans**: `TransactionId` - Abort transaction command (Phase 2)
+
+### System Events
+- **eInformCoordinator**: `Coordinator` - Coordinator registration
+- **eTimeOut**: No payload - Timer expiration event
+- **eShutDown**: No payload - System shutdown event
+
+## 2. Event Flows
+
+### Write Transaction Flow
+1. **Client → Coordinator**: `eWriteTransReq` with transaction details
+2. **Coordinator → All Participants**: `ePrepareReq` (Phase 1 - Prepare)
+3. **Participants → Coordinator**: `ePrepareSuccess` or `ePrepareFailure`
+4. **Coordinator Decision**:
+   - If all success: `eCommitTrans` to all participants → `eWriteTransSuccess` to client
+   - If any failure/timeout: `eAbortTrans` to all participants → `eWriteTransFailure`/`eWriteTransTimeout` to client
+
+### Read Transaction Flow
+1. **Client → Coordinator**: `eReadTransReq` with key
+2. **Coordinator → Random Participant**: `eReadTransReq` (forwarded)
+3. **Participant → Client**: `eReadTransSuccess` or `eReadTransFailure`
+
+## 3. System Roles
+
+### Coordinator
+- **Primary Responsibilities**:
+  - Orchestrates two-phase commit protocol
+  - Manages transaction sequencing and uniqueness
+  - Handles timeout management for transactions
+  - Routes read requests to participants
+  - Makes commit/abort decisions based on participant votes
+
+### Participant  
+- **Primary Responsibilities**:
+  - Maintains local key-value store
+  - Manages pending transactions awaiting commit/abort
+  - Votes on transaction preparation (accept/reject based on key conflicts)
+  - Executes commit/abort operations locally
+  - Services read requests from coordinator
+
+### Timer
+- **Primary Responsibilities**:
+  - Provides timeout mechanism for transaction coordination
+  - Ensures system doesn't wait indefinitely for participant responses
+
+## 4. Protocol Workflow
+
+### Two-Phase Commit Process
+1. **Phase 1 (Prepare Phase)**:
+   - Coordinator receives write transaction from client
+   - Coordinator validates transaction ID uniqueness
+   - Coordinator broadcasts prepare requests to all participants
+   - Participants check for key conflicts and vote (success/failure)
+   - Coordinator collects all votes with timeout protection
+
+2. **Phase 2 (Commit/Abort Phase)**:
+   - **If unanimous success**: Coordinator broadcasts commit → Participants update local stores
+   - **If any failure or timeout**: Coordinator broadcasts abort → Participants discard pending transaction
+
+### Key Protocol Properties
+- **ACID Compliance**: Ensures atomicity through two-phase protocol
+- **Conflict Resolution**: Participants reject transactions with lower IDs for existing keys
+- **Timeout Handling**: Prevents indefinite blocking through timer mechanism
+- **Sequential Processing**: Coordinator processes write transactions one at a time
+- **Concurrent Reads**: Read operations can be processed during write transaction phases
+
+### Data Consistency
+- Each participant maintains separate pending and committed transaction stores
+- Transaction IDs must be unique and are used for conflict resolution
+- Higher transaction IDs take precedence over lower ones for the same key

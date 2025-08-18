@@ -1,0 +1,3480 @@
+e0:eAbortTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eAbortTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eAbortTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eCommitTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eCommitTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eCommitTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareReq
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareReq
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareReq
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareSuccess e1:ePrepareReq
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareSuccess e1:ePrepareReq
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareSuccess e1:ePrepareReq
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareSuccess e1:ePrepareReq
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareSuccess e1:ePrepareReq
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareSuccess e1:ePrepareReq
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareSuccess e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareSuccess e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareSuccess e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareSuccess e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareSuccess e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareSuccess e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareSuccess e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareSuccess e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareSuccess e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareSuccess e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareSuccess e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareSuccess e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareSuccess e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareSuccess e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareSuccess e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareSuccess e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareSuccess e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareSuccess e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareSuccess e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareSuccess e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareSuccess e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareSuccess e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareSuccess e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareSuccess e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareFailure e1:ePrepareReq
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareFailure e1:ePrepareReq
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareFailure e1:ePrepareReq
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareFailure e1:ePrepareReq
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareFailure e1:ePrepareReq
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareFailure e1:ePrepareReq
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareFailure e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareFailure e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareFailure e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareFailure e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareFailure e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareFailure e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareFailure e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareFailure e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareFailure e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareFailure e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareFailure e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareFailure e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareFailure e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareFailure e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareFailure e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareFailure e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareFailure e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareFailure e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareFailure e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareFailure e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareFailure e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareFailure e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareFailure e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareFailure e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransTimeout e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransTimeout e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransTimeout e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransTimeout e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransTimeout e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransTimeout e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareReq e1:ePrepareReq
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareReq e1:ePrepareReq
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareReq e1:ePrepareReq
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareReq e1:ePrepareReq
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareReq e1:ePrepareReq
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareReq e1:ePrepareReq
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransTimeout e1:ePrepareReq
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransTimeout e1:ePrepareReq
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransTimeout e1:ePrepareReq
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransTimeout e1:ePrepareReq
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransTimeout e1:ePrepareReq
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransTimeout e1:ePrepareReq
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransTimeout e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareReq
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransTimeout e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransTimeout e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransTimeout e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransTimeout e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransTimeout e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransTimeout e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareReq e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareReq e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareReq e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareReq e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareReq e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareReq e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareReq e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareReq e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareReq e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareReq e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareReq e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareReq e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareReq e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareReq e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareReq e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareReq e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareReq e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareReq e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareReq e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareReq e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareReq e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareReq e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareReq e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareReq e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransTimeout e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransTimeout e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransTimeout e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransTimeout e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransTimeout e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransTimeout e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareReq e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareReq e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareReq e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareReq e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareReq e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareReq e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:ePrepareReq e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareReq e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareReq e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareReq e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareReq e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareReq e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareReq e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareReq e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareReq e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareReq e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareReq e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareReq e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareReq e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareReq e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareReq e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareReq e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareReq e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:ePrepareReq e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransSuccess e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransSuccess e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransSuccess e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransSuccess e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransSuccess e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransSuccess e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransSuccess e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransFailure e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransFailure e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransFailure e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransFailure e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransFailure e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransFailure e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransFailure e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eWriteTransFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransFailure e1:eWriteTransFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransFailure e1:eWriteTransFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransFailure e1:eWriteTransFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransFailure e1:eWriteTransFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransFailure e1:eWriteTransFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eAbortTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eAbortTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eAbortTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eAbortTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eAbortTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eAbortTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eAbortTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:eAbortTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eAbortTrans e1:eAbortTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eAbortTrans e1:eAbortTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eAbortTrans e1:eAbortTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eAbortTrans e1:eAbortTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eAbortTrans e1:eAbortTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eCommitTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eCommitTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eCommitTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eCommitTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eCommitTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eCommitTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eCommitTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eCommitTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eCommitTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eCommitTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eCommitTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eCommitTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eCommitTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eCommitTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eCommitTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eCommitTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eCommitTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eCommitTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eCommitTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eCommitTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eCommitTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eCommitTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eCommitTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eCommitTrans e1:ePrepareSuccess
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eCommitTrans e1:eCommitTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eCommitTrans e1:eCommitTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eCommitTrans e1:eCommitTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eCommitTrans e1:eCommitTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eCommitTrans e1:eCommitTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eCommitTrans e1:eCommitTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eAbortTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransSuccess e1:eAbortTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransSuccess e1:eAbortTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransSuccess e1:eAbortTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransSuccess e1:eAbortTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransSuccess e1:eAbortTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransSuccess e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eCommitTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransSuccess e1:eCommitTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransSuccess e1:eCommitTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransSuccess e1:eCommitTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransSuccess e1:eCommitTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransSuccess e1:eCommitTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransSuccess e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransFailure e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransFailure e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransFailure e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransFailure e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransFailure e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransFailure e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eWriteTransTimeout
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eAbortTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransFailure e1:eAbortTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransFailure e1:eAbortTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransFailure e1:eAbortTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransFailure e1:eAbortTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransFailure e1:eAbortTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransFailure e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eCommitTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransFailure e1:eCommitTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransFailure e1:eCommitTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransFailure e1:eCommitTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransFailure e1:eCommitTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransFailure e1:eCommitTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransFailure e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:eAbortTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransTimeout e1:eAbortTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransTimeout e1:eAbortTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransTimeout e1:eAbortTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransTimeout e1:eAbortTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransTimeout e1:eAbortTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransTimeout e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:eAbortTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:eCommitTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransTimeout e1:eCommitTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransTimeout e1:eCommitTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransTimeout e1:eCommitTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransTimeout e1:eCommitTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransTimeout e1:eCommitTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransTimeout e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransTimeout e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:eCommitTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eAbortTrans e1:eCommitTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eAbortTrans e1:eCommitTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eAbortTrans e1:eCommitTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eAbortTrans e1:eCommitTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eAbortTrans e1:eCommitTrans
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eAbortTrans e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:eCommitTrans
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransSuccess e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransFailure e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransFailure e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransFailure e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransFailure e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransFailure e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eWriteTransFailure e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eWriteTransFailure e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eAbortTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eAbortTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eAbortTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eAbortTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eAbortTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eAbortTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eAbortTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eCommitTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eCommitTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eCommitTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eCommitTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eCommitTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eCommitTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+0
+0
+False
+e0:eCommitTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eCommitTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eCommitTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eCommitTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eCommitTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eCommitTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eCommitTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eCommitTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eCommitTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eCommitTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eCommitTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eCommitTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eCommitTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eCommitTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eCommitTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eCommitTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eCommitTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False
+e0:eCommitTrans e1:ePrepareFailure
+eMonitor_AtomicityInitialize
+1
+0
+False

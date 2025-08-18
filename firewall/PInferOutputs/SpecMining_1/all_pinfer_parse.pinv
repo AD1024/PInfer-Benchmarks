@@ -1,0 +1,1383 @@
+
+
+indexof(e0) >= 0
+4 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+indexof(e0) >= 1
+3 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+e0.payload.node < e1.payload.src ∧ indexof(e1) >= 0 ∧ indexof(e0) != indexof(e1) ∧ indexof(e0) >= 1
+3 0
+EOT
+(indexof(e0) < indexof(e1))
+
+indexof(e0) >= 1
+(e0.payload.node == e1.payload.dst)
+
+indexof(e1) >= 0 ∧ indexof(e0) >= 1
+(indexof(e0) > indexof(e1))
+
+indexof(e1) >= 0 ∧ indexof(e0) >= 1
+28 0
+EOT
+(indexof(e0) < indexof(e1))
+
+e0.payload.node < e1.payload.src
+(e0.payload.node == e1.payload.dst)
+
+e0.payload.node < e1.payload.src ∧ indexof(e1) >= 0 ∧ indexof(e0) != indexof(e1) ∧ indexof(e0) >= 1
+(indexof(e0) > indexof(e1))
+
+e0.payload.node < e1.payload.src
+8 0
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.node == e1.payload.dst)
+
+indexof(e0) >= 1
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.node == e1.payload.dst)
+
+indexof(e1) >= 0 ∧ indexof(e0) >= 1
+35 0
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.node == e1.payload.dst)
+
+e0.payload.node < e1.payload.src
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.node == e1.payload.dst)
+
+e0.payload.node < e1.payload.src
+5 0
+EOT
+0 0
+EOT
+
+
+indexof(e1) >= 0 ∧ _num_e_exists_ ∈ { 1, 3, 4 } ∧ indexof(e0) >= 1 ∧ e0.payload.node == e1.payload.dst
+3 0
+EOT
+
+(indexof(e0) > indexof(e1))
+_num_e_exists_ >= 1 ∧ indexof(e1) >= 0 ∧ indexof(e0) >= 1
+
+(e0.payload.node == e1.payload.dst)
+_num_e_exists_ >= 1 ∧ indexof(e1) >= 0 ∧ indexof(e0) >= 1
+28 2
+EOT
+
+(e0.payload.node == e1.payload.dst)
+_num_e_exists_ >= 1 ∧ indexof(e1) >= 0 ∧ indexof(e0) >= 1
+
+(indexof(e0) > indexof(e1))
+_num_e_exists_ >= 1 ∧ e0.payload.node == e1.payload.dst
+8 2
+EOT
+
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.node == e1.payload.dst)
+_num_e_exists_ >= 1 ∧ indexof(e1) >= 0 ∧ indexof(e0) >= 1
+35 4
+EOT
+
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.node == e1.payload.dst)
+_num_e_exists_ >= 1
+5 4
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+indexof(e1) >= 1 ∧ indexof(e0) >= 1
+2 0
+EOT
+(indexof(e0) < indexof(e1))
+
+indexof(e0) >= 1
+(indexof(e0) > indexof(e1))
+
+indexof(e1) >= 1
+(e0.payload.node == e1.payload.node)
+
+indexof(e1) >= 1 ∧ indexof(e0) >= 1
+18 0
+EOT
+(e0.payload.node == e1.payload.node)
+
+indexof(e1) >= 1 ∧ indexof(e0) >= 1
+3 2
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.node == e1.payload.node)
+
+indexof(e0) >= 1
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.node == e1.payload.node)
+
+indexof(e1) >= 1
+12 0
+EOT
+0 0
+EOT
+
+
+indexof(e0) >= 2
+5 0
+EOT
+!(e0.payload.toInternal)
+
+indexof(e0) >= 2
+8 1
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+indexof(e1) >= 0 ∧ indexof(e0) != indexof(e1) ∧ indexof(e0) >= 2
+5 0
+EOT
+(indexof(e0) < indexof(e1))
+
+indexof(e0) >= 2
+(e0.payload.dst == e1.payload.src)
+
+indexof(e1) >= 0 ∧ e0.payload.toInternal == true
+(e0.payload.src == e1.payload.src)
+
+indexof(e1) >= 0 ∧ e0.payload.toInternal == false ∧ indexof(e0) >= 2
+(e0.payload.src == e1.payload.dst)
+
+indexof(e1) >= 0 ∧ e0.payload.toInternal == true
+e0.payload.toInternal
+
+indexof(e1) >= 0
+(e0.payload.dst == e1.payload.dst)
+
+indexof(e1) >= 0 ∧ e0.payload.toInternal == false ∧ indexof(e0) >= 2
+(indexof(e0) > indexof(e1))
+
+indexof(e1) >= 0 ∧ indexof(e0) >= 2
+!(e0.payload.toInternal)
+
+indexof(e1) >= 0
+62 0
+EOT
+(e0.payload.dst == e1.payload.src)
+
+indexof(e1) >= 0 ∧ indexof(e0) != indexof(e1) ∧ e0.payload.dst > e1.payload.dst ∧ e0.payload.src < e1.payload.src
+(indexof(e0) < indexof(e1))
+
+e0.payload.src != e1.payload.src
+(e0.payload.src == e1.payload.src)
+
+e0.payload.dst == e1.payload.dst ∧ indexof(e0) > indexof(e1) ∧ e0.payload.dst < e1.payload.src ∧ indexof(e1) >= 0 ∧ e0.payload.src > e1.payload.dst ∧ indexof(e0) >= 2
+(e0.payload.src == e1.payload.dst)
+
+indexof(e1) >= 0 ∧ indexof(e0) != indexof(e1) ∧ e0.payload.dst > e1.payload.dst ∧ e0.payload.src < e1.payload.src
+e0.payload.toInternal
+
+indexof(e1) >= 0 ∧ indexof(e0) != indexof(e1) ∧ e0.payload.dst > e1.payload.dst ∧ e0.payload.src < e1.payload.src
+(e0.payload.dst == e1.payload.dst)
+
+e0.payload.dst < e1.payload.src ∧ indexof(e1) >= 0 ∧ indexof(e0) != indexof(e1) ∧ e0.payload.src > e1.payload.dst ∧ indexof(e0) >= 2
+!(e0.payload.toInternal)
+
+e0.payload.dst < e1.payload.src ∧ indexof(e1) >= 0 ∧ indexof(e0) != indexof(e1) ∧ e0.payload.src > e1.payload.dst ∧ indexof(e0) >= 2
+34 1
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.dst == e1.payload.src)
+
+e0.payload.toInternal == true
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.src == e1.payload.dst)
+
+e0.payload.toInternal == true
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.dst == e1.payload.dst)
+
+indexof(e1) >= 0 ∧ e0.payload.toInternal == false ∧ indexof(e0) >= 2
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.dst == e1.payload.dst)
+
+e0.payload.toInternal == false ∧ indexof(e0) >= 2
+(indexof(e0) < indexof(e1)) ∧ !(e0.payload.toInternal)
+
+indexof(e0) >= 2
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.dst == e1.payload.src)
+
+indexof(e1) >= 0 ∧ e0.payload.toInternal == true
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.src == e1.payload.src)
+
+indexof(e1) >= 0 ∧ e0.payload.toInternal == false ∧ indexof(e0) >= 2
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.src == e1.payload.dst)
+
+indexof(e1) >= 0 ∧ e0.payload.toInternal == true
+(indexof(e0) > indexof(e1)) ∧ e0.payload.toInternal
+
+indexof(e1) >= 0
+(e0.payload.src == e1.payload.dst) ∧ (e0.payload.dst == e1.payload.src)
+
+indexof(e1) >= 0 ∧ e0.payload.toInternal == true
+(e0.payload.src == e1.payload.src) ∧ (e0.payload.dst == e1.payload.dst)
+
+indexof(e1) >= 0 ∧ e0.payload.toInternal == false ∧ indexof(e0) >= 2
+(e0.payload.src == e1.payload.dst) ∧ e0.payload.toInternal
+
+indexof(e1) >= 0
+(e0.payload.src == e1.payload.src) ∧ !(e0.payload.toInternal)
+
+indexof(e1) >= 0 ∧ indexof(e0) >= 2
+(indexof(e0) > indexof(e1)) ∧ !(e0.payload.toInternal)
+
+indexof(e1) >= 0 ∧ indexof(e0) >= 2
+(e0.payload.dst == e1.payload.src) ∧ e0.payload.toInternal
+
+indexof(e1) >= 0
+(e0.payload.dst == e1.payload.dst) ∧ !(e0.payload.toInternal)
+
+indexof(e1) >= 0 ∧ indexof(e0) >= 2
+222 1
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.dst == e1.payload.src)
+
+e0.payload.dst > e1.payload.dst ∧ e0.payload.src < e1.payload.src
+(indexof(e0) < indexof(e1)) ∧ e0.payload.toInternal
+
+e0.payload.dst > e1.payload.dst ∧ e0.payload.src < e1.payload.src
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.src == e1.payload.dst)
+
+e0.payload.dst > e1.payload.dst ∧ e0.payload.src < e1.payload.src
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.dst == e1.payload.dst)
+
+e0.payload.src != e1.payload.src ∧ e0.payload.dst < e1.payload.src ∧ e0.payload.src > e1.payload.dst
+(e0.payload.src == e1.payload.src) ∧ (e0.payload.dst == e1.payload.dst)
+
+indexof(e0) > indexof(e1) ∧ e0.payload.dst < e1.payload.src ∧ indexof(e1) >= 0 ∧ e0.payload.src > e1.payload.dst ∧ indexof(e0) >= 2
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.dst == e1.payload.src)
+
+e0.payload.dst > e1.payload.dst ∧ e0.payload.src < e1.payload.src
+(e0.payload.src == e1.payload.dst) ∧ (e0.payload.dst == e1.payload.src)
+
+indexof(e1) >= 0 ∧ indexof(e0) != indexof(e1) ∧ e0.payload.dst > e1.payload.dst ∧ e0.payload.src < e1.payload.src
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.src == e1.payload.dst)
+
+e0.payload.dst > e1.payload.dst ∧ e0.payload.src < e1.payload.src
+(e0.payload.src == e1.payload.src) ∧ !(e0.payload.toInternal)
+
+e0.payload.dst == e1.payload.dst ∧ indexof(e0) > indexof(e1) ∧ e0.payload.dst < e1.payload.src ∧ indexof(e1) >= 0 ∧ e0.payload.src > e1.payload.dst ∧ indexof(e0) >= 2
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.src == e1.payload.src)
+
+e0.payload.dst == e1.payload.dst ∧ e0.payload.dst < e1.payload.src ∧ e0.payload.src > e1.payload.dst
+(indexof(e0) < indexof(e1)) ∧ !(e0.payload.toInternal)
+
+e0.payload.src != e1.payload.src ∧ e0.payload.dst < e1.payload.src ∧ e0.payload.src > e1.payload.dst
+(e0.payload.dst == e1.payload.src) ∧ e0.payload.toInternal
+
+indexof(e1) >= 0 ∧ indexof(e0) != indexof(e1) ∧ e0.payload.dst > e1.payload.dst ∧ e0.payload.src < e1.payload.src
+(e0.payload.src == e1.payload.dst) ∧ e0.payload.toInternal
+
+indexof(e1) >= 0 ∧ indexof(e0) != indexof(e1) ∧ e0.payload.dst > e1.payload.dst ∧ e0.payload.src < e1.payload.src
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.dst == e1.payload.dst)
+
+e0.payload.dst < e1.payload.src ∧ e0.payload.src > e1.payload.dst
+(indexof(e0) > indexof(e1)) ∧ e0.payload.toInternal
+
+e0.payload.dst > e1.payload.dst ∧ e0.payload.src < e1.payload.src
+(indexof(e0) > indexof(e1)) ∧ !(e0.payload.toInternal)
+
+e0.payload.dst < e1.payload.src ∧ e0.payload.src > e1.payload.dst
+(e0.payload.dst == e1.payload.dst) ∧ !(e0.payload.toInternal)
+
+e0.payload.dst < e1.payload.src ∧ indexof(e1) >= 0 ∧ indexof(e0) != indexof(e1) ∧ e0.payload.src > e1.payload.dst ∧ indexof(e0) >= 2
+90 0
+EOT
+0 0
+EOT
+
+
+indexof(e1) >= 0 ∧ _num_e_exists_ ∈ { 1, 3, 4 } ∧ indexof(e0) >= 2
+5 0
+EOT
+
+(indexof(e0) > indexof(e1))
+_num_e_exists_ >= 1 ∧ indexof(e1) >= 0 ∧ indexof(e0) >= 2
+54 5
+EOT
+
+(indexof(e0) > indexof(e1))
+_num_e_exists_ >= 1
+24 5
+EOT
+126 14
+EOT
+42 14
+EOT
+e0.payload.toInternal
+
+indexof(e1) >= 0 ∧ _num_e_exists_ ∈ { 1, 3, 4 }
+!(e0.payload.toInternal)
+
+indexof(e1) >= 0 ∧ _num_e_exists_ ∈ { 1, 3, 4 }
+8 0
+EOT
+e0.payload.toInternal
+
+e0.payload.dst == e1.payload.src ∧ indexof(e1) >= 0 ∧ _num_e_exists_ ∈ { 1, 3, 4 } ∧ e0.payload.src == e1.payload.dst
+!(e0.payload.toInternal)
+
+e0.payload.dst == e1.payload.dst ∧ indexof(e1) >= 0 ∧ _num_e_exists_ ∈ { 1, 3, 4 } ∧ indexof(e0) >= 2 ∧ e0.payload.src == e1.payload.src
+10 0
+EOT
+e0.payload.toInternal
+(e0.payload.src == e1.payload.dst)
+_num_e_exists_ >= 1 ∧ indexof(e1) >= 0
+e0.payload.toInternal
+(e0.payload.dst == e1.payload.src)
+indexof(e1) >= 0 ∧ _num_e_exists_ == 1 ∧ indexof(e1) >= size(indexof(e1))-1
+e0.payload.toInternal
+(indexof(e0) > indexof(e1))
+_num_e_exists_ >= 1 ∧ indexof(e1) >= 0
+!(e0.payload.toInternal)
+(e0.payload.src == e1.payload.src)
+indexof(e1) >= 0 ∧ indexof(e0) >= 2 ∧ _num_e_exists_ == 1 ∧ indexof(e1) >= size(indexof(e1))-1
+!(e0.payload.toInternal)
+(e0.payload.dst == e1.payload.dst)
+_num_e_exists_ >= 1 ∧ indexof(e1) >= 0 ∧ indexof(e0) >= 2
+!(e0.payload.toInternal)
+(indexof(e0) > indexof(e1))
+_num_e_exists_ >= 1 ∧ indexof(e1) >= 0 ∧ indexof(e0) >= 2
+96 6
+EOT
+e0.payload.toInternal
+(indexof(e0) > indexof(e1))
+_num_e_exists_ >= 1 ∧ e0.payload.src == e1.payload.dst
+e0.payload.toInternal
+(e0.payload.src == e1.payload.dst)
+_num_e_exists_ >= 1 ∧ indexof(e1) >= 0
+e0.payload.toInternal
+(e0.payload.dst == e1.payload.src)
+indexof(e1) >= 0 ∧ _num_e_exists_ == 1 ∧ indexof(e1) >= size(indexof(e1))-1
+!(e0.payload.toInternal)
+(e0.payload.src == e1.payload.src)
+e0.payload.dst == e1.payload.dst ∧ indexof(e1) >= 0 ∧ indexof(e0) >= 2 ∧ _num_e_exists_ == 1 ∧ indexof(e1) < indexof(e0) ∧ indexof(e1) >= size(indexof(e1))-1
+!(e0.payload.toInternal)
+(e0.payload.dst == e1.payload.dst)
+_num_e_exists_ >= 1 ∧ indexof(e1) >= 0 ∧ indexof(e0) >= 2 ∧ e0.payload.src == e1.payload.src
+!(e0.payload.toInternal)
+(indexof(e0) > indexof(e1))
+e0.payload.dst == e1.payload.dst ∧ _num_e_exists_ >= 1 ∧ e0.payload.src == e1.payload.src
+48 6
+EOT
+e0.payload.toInternal
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.src == e1.payload.dst)
+_num_e_exists_ >= 1 ∧ indexof(e1) >= 0
+!(e0.payload.toInternal)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.dst == e1.payload.dst)
+_num_e_exists_ >= 1 ∧ indexof(e1) >= 0 ∧ indexof(e0) >= 2
+!(e0.payload.toInternal)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.src == e1.payload.src)
+indexof(e1) >= 0 ∧ indexof(e0) >= 2 ∧ _num_e_exists_ == 1 ∧ indexof(e1) >= size(indexof(e1))-1
+!(e0.payload.toInternal)
+(e0.payload.src == e1.payload.src) ∧ (e0.payload.dst == e1.payload.dst)
+indexof(e1) >= 0 ∧ indexof(e0) >= 2 ∧ _num_e_exists_ == 1 ∧ indexof(e1) >= size(indexof(e1))-1
+224 24
+EOT
+e0.payload.toInternal
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.src == e1.payload.dst)
+_num_e_exists_ >= 1
+!(e0.payload.toInternal)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.src == e1.payload.src)
+e0.payload.dst == e1.payload.dst ∧ _num_e_exists_ == 1
+!(e0.payload.toInternal)
+(e0.payload.src == e1.payload.src) ∧ (e0.payload.dst == e1.payload.dst)
+indexof(e1) >= 0 ∧ indexof(e0) >= 2 ∧ _num_e_exists_ == 1 ∧ indexof(e1) < indexof(e0) ∧ indexof(e1) >= size(indexof(e1))-1
+!(e0.payload.toInternal)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.dst == e1.payload.dst)
+_num_e_exists_ >= 1 ∧ e0.payload.src == e1.payload.src
+84 24
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+indexof(e1) >= 2 ∧ indexof(e0) >= 2
+5 0
+EOT
+(e0.payload.dst == e1.payload.src)
+
+indexof(e1) >= 2 ∧ indexof(e0) >= 2
+(e0.payload.src == e1.payload.dst)
+
+indexof(e1) >= 2 ∧ indexof(e0) >= 2
+(e0.payload.src == e1.payload.src)
+
+indexof(e1) >= 2 ∧ indexof(e0) >= 2
+(indexof(e0) < indexof(e1))
+
+indexof(e0) >= 2
+(e0.payload.dst == e1.payload.dst)
+
+indexof(e1) >= 2 ∧ indexof(e0) >= 2
+(indexof(e0) > indexof(e1))
+
+indexof(e1) >= 2
+e1.payload.toInternal
+
+indexof(e0) >= 2
+e0.payload.toInternal
+
+indexof(e1) >= 2
+!(e1.payload.toInternal)
+
+indexof(e0) >= 2
+!(e0.payload.toInternal)
+
+indexof(e1) >= 2
+80 0
+EOT
+(e0.payload.src == e1.payload.dst)
+
+indexof(e1) >= 2 ∧ e0.payload.src != e1.payload.src ∧ indexof(e0) != indexof(e1) ∧ e0.payload.dst != e1.payload.dst ∧ indexof(e0) >= 2
+(e0.payload.src == e1.payload.src)
+
+e0.payload.dst == e1.payload.dst ∧ indexof(e0) == indexof(e1) ∧ e0.payload.dst != e1.payload.src ∧ indexof(e0) >= 2 ∧ e0.payload.src != e1.payload.dst
+(e0.payload.dst == e1.payload.src)
+
+indexof(e1) >= 2 ∧ e0.payload.src != e1.payload.src ∧ indexof(e0) != indexof(e1) ∧ e0.payload.dst != e1.payload.dst ∧ indexof(e0) >= 2
+(e0.payload.dst == e1.payload.dst)
+
+indexof(e1) >= 2 ∧ e0.payload.dst != e1.payload.src ∧ indexof(e0) >= 2 ∧ e0.payload.src != e1.payload.dst
+(indexof(e0) < indexof(e1))
+
+e0.payload.src != e1.payload.src
+e1.payload.toInternal
+
+indexof(e0) >= 2
+(indexof(e0) > indexof(e1))
+
+e0.payload.src != e1.payload.src
+e0.payload.toInternal
+
+indexof(e1) >= 2
+!(e0.payload.toInternal)
+
+indexof(e1) >= 2 ∧ indexof(e0) >= 2
+!(e1.payload.toInternal)
+
+indexof(e1) >= 2 ∧ indexof(e0) >= 2
+44 0
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.src == e1.payload.dst)
+
+indexof(e0) >= 2
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.dst == e1.payload.src)
+
+indexof(e0) >= 2
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.dst == e1.payload.dst)
+
+indexof(e0) >= 2
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.dst == e1.payload.src)
+
+indexof(e1) >= 2
+(indexof(e0) < indexof(e1)) ∧ !(e1.payload.toInternal)
+
+indexof(e0) >= 2
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.dst == e1.payload.dst)
+
+indexof(e1) >= 2
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.src == e1.payload.dst)
+
+indexof(e1) >= 2
+(indexof(e0) < indexof(e1)) ∧ e1.payload.toInternal
+
+indexof(e0) >= 2
+(e0.payload.src == e1.payload.src) ∧ e0.payload.toInternal
+
+e1.payload.toInternal == true
+(indexof(e0) > indexof(e1)) ∧ !(e0.payload.toInternal)
+
+indexof(e1) >= 2
+(indexof(e0) > indexof(e1)) ∧ e0.payload.toInternal
+
+indexof(e1) >= 2
+(indexof(e0) < indexof(e1)) ∧ !(e0.payload.toInternal)
+
+indexof(e0) >= 2
+(e0.payload.src == e1.payload.src) ∧ e1.payload.toInternal
+
+e0.payload.toInternal == true
+(indexof(e0) > indexof(e1)) ∧ !(e1.payload.toInternal)
+
+indexof(e1) >= 2
+(e0.payload.src == e1.payload.src) ∧ (e0.payload.dst == e1.payload.dst)
+
+indexof(e1) >= 2 ∧ indexof(e0) >= 2
+(e0.payload.src == e1.payload.src) ∧ !(e1.payload.toInternal)
+
+indexof(e1) >= 2 ∧ e0.payload.toInternal == false ∧ indexof(e0) >= 2
+(e0.payload.src == e1.payload.src) ∧ !(e0.payload.toInternal)
+
+indexof(e1) >= 2 ∧ indexof(e0) >= 2 ∧ e1.payload.toInternal == false
+(e0.payload.src == e1.payload.dst) ∧ (e0.payload.dst == e1.payload.src)
+
+indexof(e1) >= 2 ∧ indexof(e0) >= 2
+(e0.payload.src == e1.payload.dst) ∧ e0.payload.toInternal
+
+indexof(e1) >= 2 ∧ e1.payload.toInternal == false
+(e0.payload.src == e1.payload.dst) ∧ e1.payload.toInternal
+
+e0.payload.toInternal == false ∧ indexof(e0) >= 2
+(e0.payload.src == e1.payload.dst) ∧ !(e1.payload.toInternal)
+
+indexof(e1) >= 2 ∧ e0.payload.toInternal == true
+(e0.payload.dst == e1.payload.src) ∧ e1.payload.toInternal
+
+e0.payload.toInternal == false ∧ indexof(e0) >= 2
+(e0.payload.dst == e1.payload.src) ∧ e0.payload.toInternal
+
+indexof(e1) >= 2 ∧ e1.payload.toInternal == false
+(e0.payload.src == e1.payload.dst) ∧ !(e0.payload.toInternal)
+
+indexof(e0) >= 2 ∧ e1.payload.toInternal == true
+(e0.payload.dst == e1.payload.src) ∧ !(e1.payload.toInternal)
+
+indexof(e1) >= 2 ∧ e0.payload.toInternal == true
+(e0.payload.dst == e1.payload.src) ∧ !(e0.payload.toInternal)
+
+indexof(e0) >= 2 ∧ e1.payload.toInternal == true
+(e0.payload.dst == e1.payload.dst) ∧ e0.payload.toInternal
+
+e1.payload.toInternal == true
+(e0.payload.dst == e1.payload.dst) ∧ e1.payload.toInternal
+
+e0.payload.toInternal == true
+e0.payload.toInternal ∧ !(e1.payload.toInternal)
+
+indexof(e1) >= 2
+(e0.payload.dst == e1.payload.dst) ∧ !(e1.payload.toInternal)
+
+indexof(e1) >= 2 ∧ e0.payload.toInternal == false ∧ indexof(e0) >= 2
+(e0.payload.dst == e1.payload.dst) ∧ !(e0.payload.toInternal)
+
+indexof(e1) >= 2 ∧ indexof(e0) >= 2 ∧ e1.payload.toInternal == false
+e1.payload.toInternal ∧ !(e0.payload.toInternal)
+
+indexof(e0) >= 2
+!(e0.payload.toInternal) ∧ !(e1.payload.toInternal)
+
+indexof(e1) >= 2 ∧ indexof(e0) >= 2
+388 3
+EOT
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.dst == e1.payload.src)
+
+e0.payload.src != e1.payload.src ∧ e0.payload.dst != e1.payload.dst
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.dst == e1.payload.src)
+
+e0.payload.src != e1.payload.src ∧ e0.payload.dst != e1.payload.dst
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.dst == e1.payload.dst)
+
+e0.payload.src != e1.payload.src ∧ e0.payload.dst != e1.payload.src ∧ e0.payload.src != e1.payload.dst
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.src == e1.payload.dst)
+
+e0.payload.src != e1.payload.src ∧ e0.payload.dst != e1.payload.dst
+(indexof(e0) < indexof(e1)) ∧ e0.payload.toInternal
+
+e0.payload.src != e1.payload.src
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.dst == e1.payload.dst)
+
+e0.payload.src != e1.payload.src ∧ e0.payload.dst != e1.payload.src ∧ e0.payload.src != e1.payload.dst
+(e0.payload.src == e1.payload.dst) ∧ e1.payload.toInternal
+
+e0.payload.dst < e1.payload.dst ∧ indexof(e0) != indexof(e1) ∧ indexof(e0) >= 2 ∧ e0.payload.src > e1.payload.src
+(e0.payload.src == e1.payload.dst) ∧ (e0.payload.dst == e1.payload.src)
+
+indexof(e1) >= 2 ∧ e0.payload.src != e1.payload.src ∧ indexof(e0) != indexof(e1) ∧ e0.payload.dst != e1.payload.dst ∧ indexof(e0) >= 2
+(e0.payload.src == e1.payload.dst) ∧ e0.payload.toInternal
+
+indexof(e1) >= 2 ∧ indexof(e0) != indexof(e1) ∧ e0.payload.dst > e1.payload.dst ∧ e0.payload.src < e1.payload.src
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.src == e1.payload.dst)
+
+e0.payload.src != e1.payload.src ∧ e0.payload.dst != e1.payload.dst
+(indexof(e0) > indexof(e1)) ∧ !(e0.payload.toInternal)
+
+e0.payload.src != e1.payload.src
+(indexof(e0) > indexof(e1)) ∧ e1.payload.toInternal
+
+e0.payload.src != e1.payload.src
+(e0.payload.src == e1.payload.src) ∧ !(e1.payload.toInternal)
+
+e0.payload.dst == e1.payload.dst ∧ e0.payload.dst < e1.payload.src ∧ indexof(e0) == indexof(e1) ∧ e0.payload.src > e1.payload.dst ∧ indexof(e0) >= 2
+(indexof(e0) < indexof(e1)) ∧ !(e0.payload.toInternal)
+
+e0.payload.src != e1.payload.src
+(indexof(e0) < indexof(e1)) ∧ !(e1.payload.toInternal)
+
+e0.payload.src != e1.payload.src
+(e0.payload.src == e1.payload.src) ∧ e0.payload.toInternal
+
+e0.payload.dst == e1.payload.dst ∧ indexof(e0) == indexof(e1) ∧ e0.payload.dst > e1.payload.src ∧ e0.payload.src < e1.payload.dst
+(e0.payload.src == e1.payload.dst) ∧ !(e0.payload.toInternal)
+
+e0.payload.dst < e1.payload.dst ∧ indexof(e0) != indexof(e1) ∧ indexof(e0) >= 2 ∧ e0.payload.src > e1.payload.src
+(e0.payload.src == e1.payload.src) ∧ !(e0.payload.toInternal)
+
+e0.payload.dst == e1.payload.dst ∧ e0.payload.dst < e1.payload.src ∧ indexof(e0) == indexof(e1) ∧ e0.payload.src > e1.payload.dst ∧ indexof(e0) >= 2
+(e0.payload.src == e1.payload.src) ∧ (e0.payload.dst == e1.payload.dst)
+
+indexof(e0) == indexof(e1) ∧ e0.payload.dst != e1.payload.src ∧ indexof(e0) >= 2 ∧ e0.payload.src != e1.payload.dst
+(indexof(e0) > indexof(e1)) ∧ !(e1.payload.toInternal)
+
+e0.payload.src != e1.payload.src
+(e0.payload.src == e1.payload.src) ∧ e1.payload.toInternal
+
+e0.payload.dst == e1.payload.dst ∧ indexof(e0) == indexof(e1) ∧ e0.payload.dst > e1.payload.src ∧ e0.payload.src < e1.payload.dst
+(e0.payload.dst == e1.payload.src) ∧ !(e1.payload.toInternal)
+
+indexof(e1) >= 2 ∧ indexof(e0) != indexof(e1) ∧ e0.payload.dst > e1.payload.dst ∧ e0.payload.src < e1.payload.src
+(e0.payload.dst == e1.payload.src) ∧ !(e0.payload.toInternal)
+
+e0.payload.dst < e1.payload.dst ∧ indexof(e0) != indexof(e1) ∧ indexof(e0) >= 2 ∧ e0.payload.src > e1.payload.src
+(e0.payload.dst == e1.payload.src) ∧ e0.payload.toInternal
+
+indexof(e1) >= 2 ∧ indexof(e0) != indexof(e1) ∧ e0.payload.dst > e1.payload.dst ∧ e0.payload.src < e1.payload.src
+(e0.payload.dst == e1.payload.dst) ∧ e0.payload.toInternal
+
+e0.payload.dst > e1.payload.src ∧ e0.payload.src < e1.payload.dst
+(e0.payload.src == e1.payload.dst) ∧ !(e1.payload.toInternal)
+
+indexof(e1) >= 2 ∧ indexof(e0) != indexof(e1) ∧ e0.payload.dst > e1.payload.dst ∧ e0.payload.src < e1.payload.src
+(e0.payload.dst == e1.payload.src) ∧ e1.payload.toInternal
+
+e0.payload.dst < e1.payload.dst ∧ indexof(e0) != indexof(e1) ∧ indexof(e0) >= 2 ∧ e0.payload.src > e1.payload.src
+(indexof(e0) < indexof(e1)) ∧ e1.payload.toInternal
+
+e0.payload.src != e1.payload.src
+(e0.payload.dst == e1.payload.dst) ∧ e1.payload.toInternal
+
+e0.payload.dst > e1.payload.src ∧ e0.payload.src < e1.payload.dst
+(indexof(e0) > indexof(e1)) ∧ e0.payload.toInternal
+
+e0.payload.src != e1.payload.src
+e0.payload.toInternal ∧ e1.payload.toInternal
+
+e0.payload.dst > e1.payload.src ∧ e0.payload.src < e1.payload.dst
+e0.payload.toInternal ∧ !(e1.payload.toInternal)
+
+indexof(e1) >= 2 ∧ indexof(e0) != indexof(e1) ∧ e0.payload.dst > e1.payload.dst ∧ e0.payload.src < e1.payload.src
+(e0.payload.dst == e1.payload.dst) ∧ !(e0.payload.toInternal)
+
+indexof(e1) >= 2 ∧ e0.payload.dst < e1.payload.src ∧ e0.payload.src > e1.payload.dst ∧ indexof(e0) >= 2
+(e0.payload.dst == e1.payload.dst) ∧ !(e1.payload.toInternal)
+
+indexof(e1) >= 2 ∧ e0.payload.dst < e1.payload.src ∧ e0.payload.src > e1.payload.dst ∧ indexof(e0) >= 2
+e1.payload.toInternal ∧ !(e0.payload.toInternal)
+
+e0.payload.dst < e1.payload.dst ∧ indexof(e0) != indexof(e1) ∧ indexof(e0) >= 2 ∧ e0.payload.src > e1.payload.src
+!(e0.payload.toInternal) ∧ !(e1.payload.toInternal)
+
+indexof(e1) >= 2 ∧ e0.payload.dst < e1.payload.src ∧ e0.payload.src > e1.payload.dst ∧ indexof(e0) >= 2
+158 0
+EOT
+0 0
+EOT
+
+
+indexof(e1) >= 2 ∧ indexof(e0) != indexof(e1) ∧ indexof(e0) >= 1
+3 0
+EOT
+(e0.payload.node == e1.payload.src)
+
+e1.payload.toInternal == true ∧ indexof(e0) >= 1
+(indexof(e0) > indexof(e1))
+
+indexof(e1) >= 2
+(e0.payload.node == e1.payload.dst)
+
+indexof(e1) >= 2 ∧ e1.payload.toInternal == false ∧ indexof(e0) >= 1
+e1.payload.toInternal
+
+indexof(e0) >= 1
+(indexof(e0) < indexof(e1))
+
+indexof(e1) >= 2 ∧ indexof(e0) >= 1
+!(e1.payload.toInternal)
+
+indexof(e0) >= 1
+38 0
+EOT
+(e0.payload.node == e1.payload.src)
+
+e0.payload.node < e1.payload.dst ∧ indexof(e0) != indexof(e1) ∧ indexof(e0) >= 1
+(e0.payload.node == e1.payload.dst)
+
+indexof(e1) >= 2 ∧ e0.payload.node < e1.payload.src ∧ indexof(e0) != indexof(e1) ∧ indexof(e0) >= 1
+e1.payload.toInternal
+
+e0.payload.node < e1.payload.dst ∧ indexof(e0) != indexof(e1) ∧ indexof(e0) >= 1
+!(e1.payload.toInternal)
+
+indexof(e1) >= 2 ∧ e0.payload.node < e1.payload.src ∧ indexof(e0) != indexof(e1) ∧ indexof(e0) >= 1
+14 2
+EOT
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.node == e1.payload.src)
+
+e1.payload.toInternal == true
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.node == e1.payload.src)
+
+e1.payload.toInternal == true ∧ indexof(e0) >= 1
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.node == e1.payload.dst)
+
+indexof(e1) >= 2 ∧ e1.payload.toInternal == false
+(e0.payload.node == e1.payload.src) ∧ e1.payload.toInternal
+
+indexof(e0) >= 1
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.node == e1.payload.dst)
+
+indexof(e1) >= 2 ∧ e1.payload.toInternal == false ∧ indexof(e0) >= 1
+(indexof(e0) > indexof(e1)) ∧ !(e1.payload.toInternal)
+
+indexof(e1) >= 2
+(indexof(e0) < indexof(e1)) ∧ e1.payload.toInternal
+
+indexof(e0) >= 1
+(indexof(e0) < indexof(e1)) ∧ !(e1.payload.toInternal)
+
+indexof(e1) >= 2 ∧ indexof(e0) >= 1
+(e0.payload.node == e1.payload.dst) ∧ !(e1.payload.toInternal)
+
+indexof(e1) >= 2 ∧ indexof(e0) >= 1
+96 1
+EOT
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.node == e1.payload.src)
+
+e0.payload.node < e1.payload.dst
+(indexof(e0) > indexof(e1)) ∧ e1.payload.toInternal
+
+e0.payload.node < e1.payload.dst
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.node == e1.payload.dst)
+
+e0.payload.node < e1.payload.src
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.node == e1.payload.src)
+
+e0.payload.node < e1.payload.dst
+(e0.payload.node == e1.payload.src) ∧ e1.payload.toInternal
+
+e0.payload.node < e1.payload.dst ∧ indexof(e0) != indexof(e1) ∧ indexof(e0) >= 1
+(indexof(e0) > indexof(e1)) ∧ !(e1.payload.toInternal)
+
+e0.payload.node < e1.payload.src
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.node == e1.payload.dst)
+
+e0.payload.node < e1.payload.src
+(indexof(e0) < indexof(e1)) ∧ e1.payload.toInternal
+
+e0.payload.node < e1.payload.dst
+(e0.payload.node == e1.payload.dst) ∧ !(e1.payload.toInternal)
+
+indexof(e1) >= 2 ∧ e0.payload.node < e1.payload.src ∧ indexof(e0) != indexof(e1) ∧ indexof(e0) >= 1
+(indexof(e0) < indexof(e1)) ∧ !(e1.payload.toInternal)
+
+e0.payload.node < e1.payload.src
+21 0
+EOT
+0 0
+EOT
+
+
+indexof(e1) >= 2 ∧ _num_e_exists_ >= 1 ∧ indexof(e0) >= 1 ∧ e0.payload.node == e1.payload.dst
+3 0
+EOT
+
+!(e1.payload.toInternal)
+_num_e_exists_ ∈ { 1, 3, 4 } ∧ indexof(e0) >= 1
+
+(indexof(e0) < indexof(e1))
+indexof(e1) >= 2 ∧ _num_e_exists_ >= 1 ∧ indexof(e0) >= 1
+
+(e0.payload.node == e1.payload.dst)
+indexof(e1) >= 2 ∧ _num_e_exists_ >= 1 ∧ e1.payload.toInternal == false ∧ indexof(e0) >= 1
+38 3
+EOT
+
+(e0.payload.node == e1.payload.dst)
+indexof(e1) >= 2 ∧ _num_e_exists_ >= 1 ∧ indexof(e0) >= 1
+
+!(e1.payload.toInternal)
+indexof(e1) >= 2 ∧ _num_e_exists_ ∈ { 1, 3, 4 } ∧ indexof(e0) >= 1 ∧ e0.payload.node == e1.payload.dst
+
+(indexof(e0) < indexof(e1))
+_num_e_exists_ >= 1 ∧ e0.payload.node == e1.payload.dst
+14 3
+EOT
+
+(indexof(e0) < indexof(e1)) ∧ !(e1.payload.toInternal)
+indexof(e1) >= 2 ∧ _num_e_exists_ >= 1 ∧ indexof(e0) >= 1
+
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.node == e1.payload.dst)
+indexof(e1) >= 2 ∧ _num_e_exists_ >= 1 ∧ e1.payload.toInternal == false ∧ indexof(e0) >= 1
+
+(e0.payload.node == e1.payload.dst) ∧ !(e1.payload.toInternal)
+indexof(e1) >= 2 ∧ _num_e_exists_ >= 1 ∧ indexof(e0) >= 1
+96 10
+EOT
+
+(e0.payload.node == e1.payload.dst) ∧ !(e1.payload.toInternal)
+indexof(e1) >= 2 ∧ _num_e_exists_ >= 1 ∧ indexof(e0) >= 1
+
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.node == e1.payload.dst)
+_num_e_exists_ >= 1
+
+(indexof(e0) < indexof(e1)) ∧ !(e1.payload.toInternal)
+_num_e_exists_ >= 1 ∧ e0.payload.node == e1.payload.dst
+21 10
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+indexof(e0) >= 1
+4 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+indexof(e1) >= 1 ∧ indexof(e0) != indexof(e1) ∧ indexof(e0) >= 2
+5 0
+EOT
+(e0.payload.src == e1.payload.src)
+
+indexof(e1) >= 2 ∧ e0.payload.toInternal == true
+(e0.payload.src == e1.payload.dst)
+
+indexof(e1) >= 1 ∧ e0.payload.toInternal == false ∧ indexof(e0) >= 2
+(e0.payload.dst == e1.payload.src)
+
+indexof(e1) >= 1 ∧ e0.payload.toInternal == false ∧ indexof(e0) >= 2
+(e0.payload.dst == e1.payload.dst)
+
+indexof(e1) >= 1 ∧ e0.payload.toInternal == true
+(indexof(e0) < indexof(e1))
+
+indexof(e0) >= 2
+(indexof(e0) > indexof(e1))
+
+indexof(e1) >= 1
+e0.payload.toInternal
+
+indexof(e1) >= 1
+!(e0.payload.toInternal)
+
+indexof(e1) >= 1
+62 0
+EOT
+(e0.payload.src == e1.payload.src)
+
+e0.payload.dst == e1.payload.dst ∧ indexof(e0) > indexof(e1) ∧ indexof(e1) >= 2 ∧ e0.payload.dst > e1.payload.src ∧ e0.payload.src < e1.payload.dst
+(e0.payload.dst == e1.payload.dst)
+
+indexof(e1) >= 1 ∧ indexof(e0) != indexof(e1) ∧ e0.payload.dst > e1.payload.src ∧ e0.payload.src < e1.payload.dst
+(e0.payload.dst == e1.payload.src)
+
+indexof(e1) >= 1 ∧ e0.payload.dst < e1.payload.dst ∧ indexof(e0) != indexof(e1) ∧ indexof(e0) >= 2 ∧ e0.payload.src > e1.payload.src
+(e0.payload.src == e1.payload.dst)
+
+indexof(e1) >= 1 ∧ e0.payload.dst < e1.payload.dst ∧ indexof(e0) != indexof(e1) ∧ indexof(e0) >= 2 ∧ e0.payload.src > e1.payload.src
+e0.payload.toInternal
+
+indexof(e1) >= 1 ∧ indexof(e0) != indexof(e1) ∧ e0.payload.dst > e1.payload.src ∧ e0.payload.src < e1.payload.dst
+(indexof(e0) < indexof(e1))
+
+e0.payload.src != e1.payload.src
+!(e0.payload.toInternal)
+
+indexof(e1) >= 1 ∧ e0.payload.dst < e1.payload.dst ∧ indexof(e0) != indexof(e1) ∧ indexof(e0) >= 2 ∧ e0.payload.src > e1.payload.src
+34 1
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.dst == e1.payload.dst)
+
+e0.payload.toInternal == true
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.dst == e1.payload.src)
+
+e0.payload.toInternal == false ∧ indexof(e0) >= 2
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.src == e1.payload.dst)
+
+indexof(e1) >= 1 ∧ e0.payload.toInternal == false
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.src == e1.payload.src)
+
+indexof(e1) >= 2 ∧ e0.payload.toInternal == true
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.src == e1.payload.dst)
+
+e0.payload.toInternal == false ∧ indexof(e0) >= 2
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.dst == e1.payload.src)
+
+indexof(e1) >= 1 ∧ e0.payload.toInternal == false
+(indexof(e0) < indexof(e1)) ∧ !(e0.payload.toInternal)
+
+indexof(e0) >= 2
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.dst == e1.payload.dst)
+
+indexof(e1) >= 1 ∧ e0.payload.toInternal == true
+(indexof(e0) > indexof(e1)) ∧ !(e0.payload.toInternal)
+
+indexof(e1) >= 1
+(indexof(e0) > indexof(e1)) ∧ e0.payload.toInternal
+
+indexof(e1) >= 1
+(e0.payload.src == e1.payload.dst) ∧ (e0.payload.dst == e1.payload.src)
+
+indexof(e1) >= 1 ∧ e0.payload.toInternal == false ∧ indexof(e0) >= 2
+(e0.payload.src == e1.payload.src) ∧ (e0.payload.dst == e1.payload.dst)
+
+indexof(e1) >= 2 ∧ e0.payload.toInternal == true
+(e0.payload.src == e1.payload.src) ∧ e0.payload.toInternal
+
+indexof(e1) >= 2
+(e0.payload.src == e1.payload.dst) ∧ !(e0.payload.toInternal)
+
+indexof(e1) >= 1 ∧ indexof(e0) >= 2
+(e0.payload.dst == e1.payload.src) ∧ !(e0.payload.toInternal)
+
+indexof(e1) >= 1 ∧ indexof(e0) >= 2
+(e0.payload.dst == e1.payload.dst) ∧ e0.payload.toInternal
+
+indexof(e1) >= 1
+222 1
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.dst == e1.payload.dst)
+
+e0.payload.src != e1.payload.src ∧ e0.payload.dst > e1.payload.src ∧ e0.payload.src < e1.payload.dst
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.dst == e1.payload.src)
+
+e0.payload.dst < e1.payload.dst ∧ e0.payload.src > e1.payload.src
+(e0.payload.src == e1.payload.src) ∧ (e0.payload.dst == e1.payload.dst)
+
+indexof(e0) > indexof(e1) ∧ indexof(e1) >= 2 ∧ e0.payload.dst > e1.payload.src ∧ e0.payload.src < e1.payload.dst
+(indexof(e0) < indexof(e1)) ∧ e0.payload.toInternal
+
+e0.payload.src != e1.payload.src ∧ e0.payload.dst > e1.payload.src ∧ e0.payload.src < e1.payload.dst
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.src == e1.payload.dst)
+
+e0.payload.dst < e1.payload.dst ∧ e0.payload.src > e1.payload.src
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.dst == e1.payload.src)
+
+e0.payload.dst < e1.payload.dst ∧ e0.payload.src > e1.payload.src
+(e0.payload.src == e1.payload.dst) ∧ (e0.payload.dst == e1.payload.src)
+
+indexof(e1) >= 1 ∧ e0.payload.dst < e1.payload.dst ∧ indexof(e0) != indexof(e1) ∧ indexof(e0) >= 2 ∧ e0.payload.src > e1.payload.src
+(indexof(e0) > indexof(e1)) ∧ !(e0.payload.toInternal)
+
+e0.payload.dst < e1.payload.dst ∧ e0.payload.src > e1.payload.src
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.src == e1.payload.src)
+
+e0.payload.dst == e1.payload.dst ∧ e0.payload.dst > e1.payload.src ∧ e0.payload.src < e1.payload.dst
+(e0.payload.src == e1.payload.dst) ∧ !(e0.payload.toInternal)
+
+indexof(e1) >= 1 ∧ e0.payload.dst < e1.payload.dst ∧ indexof(e0) != indexof(e1) ∧ indexof(e0) >= 2 ∧ e0.payload.src > e1.payload.src
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.src == e1.payload.dst)
+
+e0.payload.dst < e1.payload.dst ∧ e0.payload.src > e1.payload.src
+(e0.payload.src == e1.payload.src) ∧ e0.payload.toInternal
+
+e0.payload.dst == e1.payload.dst ∧ indexof(e0) > indexof(e1) ∧ indexof(e1) >= 2 ∧ e0.payload.dst > e1.payload.src ∧ e0.payload.src < e1.payload.dst
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.dst == e1.payload.dst)
+
+e0.payload.dst > e1.payload.src ∧ e0.payload.src < e1.payload.dst
+(e0.payload.dst == e1.payload.dst) ∧ e0.payload.toInternal
+
+indexof(e1) >= 1 ∧ indexof(e0) != indexof(e1) ∧ e0.payload.dst > e1.payload.src ∧ e0.payload.src < e1.payload.dst
+(e0.payload.dst == e1.payload.src) ∧ !(e0.payload.toInternal)
+
+indexof(e1) >= 1 ∧ e0.payload.dst < e1.payload.dst ∧ indexof(e0) != indexof(e1) ∧ indexof(e0) >= 2 ∧ e0.payload.src > e1.payload.src
+(indexof(e0) > indexof(e1)) ∧ e0.payload.toInternal
+
+e0.payload.dst > e1.payload.src ∧ e0.payload.src < e1.payload.dst
+(indexof(e0) < indexof(e1)) ∧ !(e0.payload.toInternal)
+
+e0.payload.dst < e1.payload.dst ∧ e0.payload.src > e1.payload.src
+90 0
+EOT
+0 0
+EOT
+
+
+indexof(e1) >= 1 ∧ _num_e_exists_ ∈ { 1, 3, 5 } ∧ indexof(e0) >= 2
+5 0
+EOT
+54 6
+EOT
+24 6
+EOT
+126 14
+EOT
+42 14
+EOT
+e0.payload.toInternal
+
+indexof(e1) >= 1 ∧ _num_e_exists_ ∈ { 1, 3, 5 }
+!(e0.payload.toInternal)
+
+indexof(e1) >= 1 ∧ _num_e_exists_ ∈ { 1, 3, 5 }
+8 0
+EOT
+e0.payload.toInternal
+
+e0.payload.dst == e1.payload.dst ∧ indexof(e1) >= 1 ∧ _num_e_exists_ ∈ { 1, 3, 5 } ∧ e0.payload.src == e1.payload.src
+!(e0.payload.toInternal)
+
+indexof(e1) >= 1 ∧ e0.payload.dst == e1.payload.src ∧ _num_e_exists_ ∈ { 1, 3, 5 } ∧ indexof(e0) >= 2
+10 0
+EOT
+e0.payload.toInternal
+(e0.payload.src == e1.payload.src)
+indexof(e1) >= 2 ∧ _num_e_exists_ == 1
+e0.payload.toInternal
+(indexof(e0) > indexof(e1))
+indexof(e1) >= 1 ∧ _num_e_exists_ >= 1
+e0.payload.toInternal
+(e0.payload.dst == e1.payload.dst)
+indexof(e1) >= 1 ∧ _num_e_exists_ >= 1
+!(e0.payload.toInternal)
+(e0.payload.dst == e1.payload.src)
+indexof(e1) >= 1 ∧ indexof(e0) >= 2 ∧ _num_e_exists_ == 1
+96 8
+EOT
+e0.payload.toInternal
+(e0.payload.src == e1.payload.src)
+e0.payload.dst == e1.payload.dst ∧ indexof(e1) >= 2 ∧ _num_e_exists_ == 1 ∧ indexof(e1) < indexof(e0)
+e0.payload.toInternal
+(e0.payload.dst == e1.payload.dst)
+indexof(e1) >= 1 ∧ _num_e_exists_ >= 1 ∧ e0.payload.src == e1.payload.src
+e0.payload.toInternal
+(indexof(e0) > indexof(e1))
+e0.payload.dst == e1.payload.dst ∧ _num_e_exists_ >= 1 ∧ e0.payload.src == e1.payload.src
+!(e0.payload.toInternal)
+(e0.payload.dst == e1.payload.src)
+indexof(e1) >= 1 ∧ indexof(e0) >= 2 ∧ _num_e_exists_ == 1
+48 8
+EOT
+e0.payload.toInternal
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.src == e1.payload.src)
+indexof(e1) >= 2 ∧ _num_e_exists_ == 1
+e0.payload.toInternal
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.dst == e1.payload.dst)
+indexof(e1) >= 1 ∧ _num_e_exists_ >= 1
+e0.payload.toInternal
+(e0.payload.src == e1.payload.src) ∧ (e0.payload.dst == e1.payload.dst)
+indexof(e1) >= 2 ∧ _num_e_exists_ == 1
+224 25
+EOT
+e0.payload.toInternal
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.src == e1.payload.src)
+e0.payload.dst == e1.payload.dst ∧ _num_e_exists_ == 1
+e0.payload.toInternal
+(e0.payload.src == e1.payload.src) ∧ (e0.payload.dst == e1.payload.dst)
+indexof(e1) >= 2 ∧ _num_e_exists_ == 1 ∧ indexof(e1) < indexof(e0)
+e0.payload.toInternal
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.dst == e1.payload.dst)
+_num_e_exists_ >= 1 ∧ e0.payload.src == e1.payload.src
+84 25
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+e0.payload.dst < e1.payload.src ∧ indexof(e1) >= 0 ∧ e0.payload.src > e1.payload.dst ∧ indexof(e0) >= 0
+5 0
+EOT
+(indexof(e0) > indexof(e1))
+
+indexof(e1) >= 0 ∧ indexof(e0) >= 1
+(indexof(e0) < indexof(e1))
+
+indexof(e1) >= 1 ∧ indexof(e0) >= 0
+(e0.payload.src == e1.payload.src)
+
+indexof(e1) >= 0 ∧ indexof(e0) >= 0
+(e0.payload.dst == e1.payload.dst)
+
+indexof(e1) >= 0 ∧ indexof(e0) >= 0
+48 0
+EOT
+(e0.payload.src == e1.payload.src)
+
+e0.payload.dst == e1.payload.dst ∧ e0.payload.dst < e1.payload.src ∧ indexof(e0) == indexof(e1) ∧ e0.payload.src > e1.payload.dst ∧ indexof(e0) >= 0
+(indexof(e0) < indexof(e1))
+
+e0.payload.src != e1.payload.src ∧ e0.payload.dst < e1.payload.src ∧ e0.payload.src > e1.payload.dst
+(indexof(e0) > indexof(e1))
+
+e0.payload.src != e1.payload.src ∧ e0.payload.dst < e1.payload.src ∧ e0.payload.src > e1.payload.dst
+(e0.payload.dst == e1.payload.dst)
+
+e0.payload.dst < e1.payload.src ∧ indexof(e1) >= 0 ∧ e0.payload.src > e1.payload.dst ∧ indexof(e0) >= 0
+24 0
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.dst == e1.payload.dst)
+
+indexof(e1) >= 1 ∧ indexof(e0) >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.dst == e1.payload.dst)
+
+indexof(e1) >= 0 ∧ indexof(e0) >= 1
+(e0.payload.src == e1.payload.src) ∧ (e0.payload.dst == e1.payload.dst)
+
+indexof(e1) >= 0 ∧ indexof(e0) >= 0
+112 0
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.dst == e1.payload.dst)
+
+e0.payload.src != e1.payload.src ∧ e0.payload.dst < e1.payload.src ∧ e0.payload.src > e1.payload.dst
+(e0.payload.src == e1.payload.src) ∧ (e0.payload.dst == e1.payload.dst)
+
+e0.payload.dst < e1.payload.src ∧ indexof(e0) == indexof(e1) ∧ e0.payload.src > e1.payload.dst ∧ indexof(e0) >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.dst == e1.payload.dst)
+
+e0.payload.src != e1.payload.src ∧ e0.payload.dst < e1.payload.src ∧ e0.payload.src > e1.payload.dst
+42 0
+EOT
+3 1
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+1 1
+EOT
+14 2
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+1 1
+EOT
+14 2
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+indexof(e1) >= 1 ∧ e0.payload.dst > e1.payload.src ∧ indexof(e0) >= 1 ∧ e0.payload.src < e1.payload.dst
+5 0
+EOT
+(indexof(e0) < indexof(e1))
+
+indexof(e0) >= 1
+(e0.payload.src == e1.payload.src)
+
+indexof(e1) >= 1 ∧ indexof(e0) >= 1
+(indexof(e0) > indexof(e1))
+
+indexof(e1) >= 1
+(e0.payload.dst == e1.payload.dst)
+
+indexof(e1) >= 1 ∧ indexof(e0) >= 1
+48 0
+EOT
+(e0.payload.src == e1.payload.src)
+
+e0.payload.dst == e1.payload.dst ∧ indexof(e0) == indexof(e1) ∧ e0.payload.dst > e1.payload.src ∧ indexof(e0) >= 1 ∧ e0.payload.src < e1.payload.dst
+(indexof(e0) < indexof(e1))
+
+e0.payload.src != e1.payload.src ∧ e0.payload.dst > e1.payload.src ∧ e0.payload.src < e1.payload.dst
+(indexof(e0) > indexof(e1))
+
+e0.payload.src != e1.payload.src ∧ e0.payload.dst > e1.payload.src ∧ e0.payload.src < e1.payload.dst
+(e0.payload.dst == e1.payload.dst)
+
+indexof(e1) >= 1 ∧ e0.payload.dst > e1.payload.src ∧ indexof(e0) >= 1 ∧ e0.payload.src < e1.payload.dst
+24 0
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.dst == e1.payload.dst)
+
+indexof(e0) >= 1
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.dst == e1.payload.dst)
+
+indexof(e1) >= 1
+(e0.payload.src == e1.payload.src) ∧ (e0.payload.dst == e1.payload.dst)
+
+indexof(e1) >= 1 ∧ indexof(e0) >= 1
+112 0
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.dst == e1.payload.dst)
+
+e0.payload.src != e1.payload.src ∧ e0.payload.dst > e1.payload.src ∧ e0.payload.src < e1.payload.dst
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.dst == e1.payload.dst)
+
+e0.payload.src != e1.payload.src ∧ e0.payload.dst > e1.payload.src ∧ e0.payload.src < e1.payload.dst
+(e0.payload.src == e1.payload.src) ∧ (e0.payload.dst == e1.payload.dst)
+
+indexof(e0) == indexof(e1) ∧ e0.payload.dst > e1.payload.src ∧ indexof(e0) >= 1 ∧ e0.payload.src < e1.payload.dst
+42 0
+EOT
+4 1
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+1 1
+EOT
+16 2
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+1 1
+EOT
+16 2
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT

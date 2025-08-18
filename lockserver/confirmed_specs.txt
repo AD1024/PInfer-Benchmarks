@@ -1,0 +1,1 @@
+∀e0: eHoldsLock ∀e1: eHoldsLock :: (e0.payload.epoch == e1.payload.epoch) -> (indexof(e0) == indexof(e1)) ∧ (e0.payload.node == e1.payload.node)

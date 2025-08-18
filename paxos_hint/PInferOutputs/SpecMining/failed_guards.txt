@@ -1,0 +1,297 @@
+EOT
+EOT
+EOT
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.ballot == e1.payload.ballot_n)
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.ballot == e1.payload.ballot_n)
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+(e0.payload.acceptor == e1.payload.proposer)
+EOT
+(e0.payload.acceptor == e1.payload.proposer)
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.n_accepted == e1.payload.ballot_n)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.acceptor == e1.payload.proposer)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.acceptor == e1.payload.proposer)
+(e0.payload.acceptor == e1.payload.proposer) ∧ (e0.payload.n_accepted == e1.payload.ballot_n)
+(e0.payload.acceptor == e1.payload.proposer) ∧ (e0.payload.promised < e1.payload.ballot_n)
+(e0.payload.acceptor == e1.payload.proposer) ∧ (e0.payload.n_accepted < e1.payload.ballot_n)
+(e0.payload.acceptor == e1.payload.proposer) ∧ (e0.payload.promised == e1.payload.ballot_n)
+(e0.payload.acceptor == e1.payload.proposer) ∧ (e0.payload.promised > e1.payload.ballot_n)
+(e0.payload.acceptor == e1.payload.proposer) ∧ (e0.payload.n_accepted > e1.payload.ballot_n)
+(e0.payload.acceptor == e1.payload.proposer) ∧ (e0.payload.v_accepted == e1.payload.v)
+(e0.payload.promised == e1.payload.ballot_n) ∧ (e0.payload.n_accepted == e1.payload.ballot_n)
+(e0.payload.promised == e1.payload.ballot_n) ∧ (e0.payload.n_accepted > e1.payload.ballot_n)
+(e0.payload.n_accepted == e1.payload.ballot_n) ∧ (e0.payload.promised < e1.payload.ballot_n)
+(e0.payload.promised < e1.payload.ballot_n) ∧ (e0.payload.n_accepted > e1.payload.ballot_n)
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.acceptor == e1.payload.proposer)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.n_accepted == e1.payload.ballot_n)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.acceptor == e1.payload.proposer)
+(e0.payload.promised == e1.payload.ballot_n) ∧ (e0.payload.n_accepted > e1.payload.ballot_n)
+(e0.payload.acceptor == e1.payload.proposer) ∧ (e0.payload.n_accepted < e1.payload.ballot_n)
+(e0.payload.acceptor == e1.payload.proposer) ∧ (e0.payload.n_accepted > e1.payload.ballot_n)
+(e0.payload.acceptor == e1.payload.proposer) ∧ (e0.payload.promised < e1.payload.ballot_n)
+(e0.payload.acceptor == e1.payload.proposer) ∧ (e0.payload.n_accepted == e1.payload.ballot_n)
+(e0.payload.acceptor == e1.payload.proposer) ∧ (e0.payload.promised == e1.payload.ballot_n)
+(e0.payload.acceptor == e1.payload.proposer) ∧ (e0.payload.promised > e1.payload.ballot_n)
+(e0.payload.acceptor == e1.payload.proposer) ∧ (e0.payload.v_accepted == e1.payload.v)
+(e0.payload.promised == e1.payload.ballot_n) ∧ (e0.payload.n_accepted == e1.payload.ballot_n)
+(e0.payload.n_accepted == e1.payload.ballot_n) ∧ (e0.payload.promised < e1.payload.ballot_n)
+(e0.payload.promised < e1.payload.ballot_n) ∧ (e0.payload.n_accepted > e1.payload.ballot_n)
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.n_accepted > e1.payload.promised)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.promised < e1.payload.n_accepted)
+(e0.payload.promised == e1.payload.promised) ∧ (e0.payload.promised == e1.payload.n_accepted)
+(e0.payload.promised == e1.payload.promised) ∧ (e0.payload.n_accepted == e1.payload.promised)
+(e0.payload.promised == e1.payload.promised) ∧ (e0.payload.promised < e1.payload.n_accepted)
+(e0.payload.promised == e1.payload.promised) ∧ (e0.payload.n_accepted > e1.payload.promised)
+(e0.payload.promised == e1.payload.n_accepted) ∧ (e0.payload.n_accepted == e1.payload.promised)
+(e0.payload.promised == e1.payload.n_accepted) ∧ (e0.payload.n_accepted == e1.payload.n_accepted)
+(e0.payload.promised == e1.payload.n_accepted) ∧ (e0.payload.promised > e1.payload.promised)
+(e0.payload.promised == e1.payload.n_accepted) ∧ (e0.payload.n_accepted > e1.payload.promised)
+(e0.payload.promised == e1.payload.n_accepted) ∧ (e0.payload.n_accepted > e1.payload.n_accepted)
+(e0.payload.n_accepted == e1.payload.promised) ∧ (e0.payload.n_accepted == e1.payload.n_accepted)
+(e0.payload.n_accepted == e1.payload.promised) ∧ (e0.payload.promised < e1.payload.promised)
+(e0.payload.n_accepted == e1.payload.promised) ∧ (e0.payload.promised < e1.payload.n_accepted)
+(e0.payload.n_accepted == e1.payload.promised) ∧ (e0.payload.n_accepted < e1.payload.n_accepted)
+(e0.payload.n_accepted == e1.payload.n_accepted) ∧ (e0.payload.promised < e1.payload.n_accepted)
+(e0.payload.n_accepted == e1.payload.n_accepted) ∧ (e0.payload.n_accepted > e1.payload.promised)
+(e0.payload.promised < e1.payload.promised) ∧ (e0.payload.n_accepted > e1.payload.promised)
+(e0.payload.promised < e1.payload.n_accepted) ∧ (e0.payload.promised > e1.payload.promised)
+(e0.payload.promised < e1.payload.n_accepted) ∧ (e0.payload.n_accepted > e1.payload.promised)
+(e0.payload.promised < e1.payload.n_accepted) ∧ (e0.payload.n_accepted > e1.payload.n_accepted)
+(e0.payload.promised < e1.payload.n_accepted) ∧ (e0.payload.v_accepted == e1.payload.v_accepted)
+(e0.payload.n_accepted < e1.payload.n_accepted) ∧ (e0.payload.n_accepted > e1.payload.promised)
+(e0.payload.n_accepted > e1.payload.promised) ∧ (e0.payload.v_accepted == e1.payload.v_accepted)
+EOT
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.promised < e1.payload.n_accepted)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.n_accepted > e1.payload.promised)
+(e0.payload.promised == e1.payload.promised) ∧ (e0.payload.n_accepted == e1.payload.promised)
+(e0.payload.promised == e1.payload.promised) ∧ (e0.payload.promised == e1.payload.n_accepted)
+(e0.payload.promised == e1.payload.promised) ∧ (e0.payload.promised < e1.payload.n_accepted)
+(e0.payload.promised == e1.payload.promised) ∧ (e0.payload.n_accepted > e1.payload.promised)
+(e0.payload.promised == e1.payload.n_accepted) ∧ (e0.payload.n_accepted == e1.payload.promised)
+(e0.payload.promised == e1.payload.n_accepted) ∧ (e0.payload.n_accepted == e1.payload.n_accepted)
+(e0.payload.promised == e1.payload.n_accepted) ∧ (e0.payload.promised > e1.payload.promised)
+(e0.payload.promised == e1.payload.n_accepted) ∧ (e0.payload.n_accepted > e1.payload.promised)
+(e0.payload.n_accepted == e1.payload.promised) ∧ (e0.payload.promised < e1.payload.promised)
+(e0.payload.n_accepted == e1.payload.promised) ∧ (e0.payload.n_accepted < e1.payload.n_accepted)
+(e0.payload.n_accepted == e1.payload.promised) ∧ (e0.payload.n_accepted == e1.payload.n_accepted)
+(e0.payload.promised == e1.payload.n_accepted) ∧ (e0.payload.n_accepted > e1.payload.n_accepted)
+(e0.payload.n_accepted == e1.payload.promised) ∧ (e0.payload.promised < e1.payload.n_accepted)
+(e0.payload.n_accepted == e1.payload.n_accepted) ∧ (e0.payload.promised < e1.payload.n_accepted)
+(e0.payload.n_accepted == e1.payload.n_accepted) ∧ (e0.payload.n_accepted > e1.payload.promised)
+(e0.payload.promised < e1.payload.promised) ∧ (e0.payload.n_accepted > e1.payload.promised)
+(e0.payload.promised < e1.payload.n_accepted) ∧ (e0.payload.promised > e1.payload.promised)
+(e0.payload.promised < e1.payload.n_accepted) ∧ (e0.payload.v_accepted == e1.payload.v_accepted)
+(e0.payload.promised < e1.payload.n_accepted) ∧ (e0.payload.n_accepted > e1.payload.n_accepted)
+(e0.payload.promised < e1.payload.n_accepted) ∧ (e0.payload.n_accepted > e1.payload.promised)
+(e0.payload.n_accepted < e1.payload.n_accepted) ∧ (e0.payload.n_accepted > e1.payload.promised)
+(e0.payload.n_accepted > e1.payload.promised) ∧ (e0.payload.v_accepted == e1.payload.v_accepted)
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+(e0.payload.acceptor == e1.payload.proposer)
+EOT
+(e0.payload.acceptor == e1.payload.proposer)
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.acceptor == e1.payload.proposer)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.acceptor == e1.payload.proposer)
+(e0.payload.acceptor == e1.payload.proposer) ∧ (e0.payload.accepted == e1.payload.ballot_n)
+(e0.payload.acceptor == e1.payload.proposer) ∧ (e0.payload.accepted < e1.payload.ballot_n)
+(e0.payload.acceptor == e1.payload.proposer) ∧ (e0.payload.accepted > e1.payload.ballot_n)
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.acceptor == e1.payload.proposer)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.acceptor == e1.payload.proposer)
+(e0.payload.acceptor == e1.payload.proposer) ∧ (e0.payload.accepted < e1.payload.ballot_n)
+(e0.payload.acceptor == e1.payload.proposer) ∧ (e0.payload.accepted > e1.payload.ballot_n)
+(e0.payload.acceptor == e1.payload.proposer) ∧ (e0.payload.accepted == e1.payload.ballot_n)
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+(e0.payload.proposer == e1.payload.proposer) ∧ (e0.payload.ballot_n < e1.payload.ballot_n)
+(e0.payload.proposer == e1.payload.proposer) ∧ (e0.payload.ballot_n > e1.payload.ballot_n)
+EOT
+(e0.payload.proposer == e1.payload.proposer) ∧ (e0.payload.ballot_n > e1.payload.ballot_n)
+(e0.payload.proposer == e1.payload.proposer) ∧ (e0.payload.ballot_n < e1.payload.ballot_n)
+EOT
+EOT
+EOT
+(e0.payload.proposer == e1.payload.acceptor)
+EOT
+(e0.payload.proposer == e1.payload.acceptor)
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.proposer == e1.payload.acceptor)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.proposer == e1.payload.acceptor)
+(e0.payload.proposer == e1.payload.acceptor) ∧ (e0.payload.ballot_n == e1.payload.n_accepted)
+(e0.payload.proposer == e1.payload.acceptor) ∧ (e0.payload.ballot_n < e1.payload.promised)
+(e0.payload.proposer == e1.payload.acceptor) ∧ (e0.payload.ballot_n < e1.payload.n_accepted)
+(e0.payload.proposer == e1.payload.acceptor) ∧ (e0.payload.ballot_n == e1.payload.promised)
+(e0.payload.proposer == e1.payload.acceptor) ∧ (e0.payload.ballot_n > e1.payload.promised)
+(e0.payload.proposer == e1.payload.acceptor) ∧ (e0.payload.ballot_n > e1.payload.n_accepted)
+(e0.payload.proposer == e1.payload.acceptor) ∧ (e0.payload.v == e1.payload.v_accepted)
+(e0.payload.ballot_n == e1.payload.promised) ∧ (e0.payload.ballot_n == e1.payload.n_accepted)
+(e0.payload.ballot_n == e1.payload.promised) ∧ (e0.payload.ballot_n < e1.payload.n_accepted)
+(e0.payload.ballot_n == e1.payload.n_accepted) ∧ (e0.payload.ballot_n > e1.payload.promised)
+(e0.payload.ballot_n < e1.payload.n_accepted) ∧ (e0.payload.ballot_n > e1.payload.promised)
+EOT
+(e0.payload.ballot_n == e1.payload.promised) ∧ (e0.payload.ballot_n == e1.payload.n_accepted)
+(e0.payload.proposer == e1.payload.acceptor) ∧ (e0.payload.ballot_n < e1.payload.n_accepted)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.proposer == e1.payload.acceptor)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.proposer == e1.payload.acceptor)
+(e0.payload.proposer == e1.payload.acceptor) ∧ (e0.payload.ballot_n == e1.payload.n_accepted)
+(e0.payload.proposer == e1.payload.acceptor) ∧ (e0.payload.ballot_n > e1.payload.promised)
+(e0.payload.ballot_n == e1.payload.promised) ∧ (e0.payload.ballot_n < e1.payload.n_accepted)
+(e0.payload.proposer == e1.payload.acceptor) ∧ (e0.payload.v == e1.payload.v_accepted)
+(e0.payload.proposer == e1.payload.acceptor) ∧ (e0.payload.ballot_n < e1.payload.promised)
+(e0.payload.proposer == e1.payload.acceptor) ∧ (e0.payload.ballot_n > e1.payload.n_accepted)
+(e0.payload.proposer == e1.payload.acceptor) ∧ (e0.payload.ballot_n == e1.payload.promised)
+(e0.payload.ballot_n < e1.payload.n_accepted) ∧ (e0.payload.ballot_n > e1.payload.promised)
+(e0.payload.ballot_n == e1.payload.n_accepted) ∧ (e0.payload.ballot_n > e1.payload.promised)
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+(e0.payload.proposer == e1.payload.proposer) ∧ (e0.payload.ballot_n < e1.payload.ballot_n)
+(e0.payload.proposer == e1.payload.proposer) ∧ (e0.payload.ballot_n > e1.payload.ballot_n)
+EOT
+(e0.payload.proposer == e1.payload.proposer) ∧ (e0.payload.ballot_n < e1.payload.ballot_n)
+(e0.payload.proposer == e1.payload.proposer) ∧ (e0.payload.ballot_n > e1.payload.ballot_n)
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.ballot == e1.payload.ballot)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.ballot == e1.payload.ballot)
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.ballot == e1.payload.ballot)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.ballot == e1.payload.ballot)
+EOT

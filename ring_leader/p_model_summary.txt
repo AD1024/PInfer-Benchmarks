@@ -1,0 +1,72 @@
+# P Model Analysis Summary
+
+## 1. Events Definition
+
+| Event | Payload Type | Description |
+|-------|--------------|-------------|
+| `eNominate` | `(ballot: tBallot, nxt: tBallot)` | Nomination message containing current ballot and next ballot |
+| `eBecomeLeader` | `(ballot: tBallot)` | Leadership announcement with winning ballot |
+| `eConfig` | `(nxt: machine, nxtBallot: tBallot)` | Configuration message specifying next node and ballot |
+| `eStart` | No payload | Start signal (declared but not used) |
+
+**Type Definitions:**
+- `tBallot = int`: Ballot number for leader election
+
+## 2. Event Flows
+
+### Primary Flow Pattern:
+1. **Configuration Phase**: Nodes receive `eConfig` to establish ring topology
+2. **Nomination Phase**: Nodes exchange `eNominate` messages in a ring
+3. **Leader Election**: Node announces leadership via `eBecomeLeader`
+
+### Message Passing Pattern:
+- **Ring Propagation**: `eNominate` messages circulate through the ring via `nxt` pointers
+- **Ballot Comparison**: Nodes compare ballots and forward the highest one
+- **Leadership Announcement**: Winner broadcasts `eBecomeLeader` to all observers
+
+## 3. System Roles
+
+### **Node Machine**
+- **Role**: Participant in ring-based leader election
+- **Responsibilities**:
+  - Maintain ballot number and ring topology (`nxt` pointer)
+  - Participate in nomination process by sending/receiving `eNominate`
+  - Compare ballot numbers and propagate higher values
+  - Announce leadership when own ballot wins the election
+
+### **Safety Monitor**
+- **Role**: Specification enforcement
+- **Responsibilities**:
+  - Observe all `eBecomeLeader` events
+  - Ensure safety property: only one leader per election
+  - Track the winning ballot and assert consistency
+
+## 4. Protocol Workflow
+
+### **High-Level Algorithm**: Ring-Based Leader Election
+
+1. **Initialization**: 
+   - Each node starts with a unique ballot number
+   - Nodes are configured into a ring topology via `eConfig`
+
+2. **Nomination Round**:
+   - Nodes non-deterministically initiate nominations by sending `eNominate` to next node
+   - Each `eNominate` carries current ballot and next ballot information
+
+3. **Ballot Propagation**:
+   - When receiving `eNominate`:
+     - If ballot equals own ballot → announce leadership (`eBecomeLeader`)
+     - If ballot < own ballot → forward own higher ballot
+     - If ballot > own ballot → forward the higher received ballot
+
+4. **Leader Selection**:
+   - The node with the highest ballot eventually receives its own nomination
+   - This triggers `eBecomeLeader` announcement
+   - Safety monitor ensures only one leader is elected per round
+
+### **Key Properties**:
+- **Safety**: At most one leader per election (enforced by Safety spec)
+- **Liveness**: Relies on ring connectivity and message delivery
+- **Determinism**: Highest ballot number wins the election
+
+This implements a classic ring-based leader election algorithm where the highest ballot number determines the leader through ring message propagation.

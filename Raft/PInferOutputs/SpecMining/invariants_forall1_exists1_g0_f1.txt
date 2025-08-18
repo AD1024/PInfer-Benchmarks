@@ -1,0 +1,27 @@
+∀e0:eBecomeLeader ::  ∃e1:eRequestVoteReply :: (e0.payload.term == e1.payload.term)
+indexof(e1) >= 1
+indexof(e0) >= size(indexof(e1))-1
+indexof(e0) >= 2
+
+∀e0:eBecomeLeader ::  ∃e1:eRequestVoteReply :: (indexof(e0) > indexof(e1))
+e0.payload.term == e1.payload.term
+e1.payload.term >= 1
+_num_e_exists_ >= 1
+e0.payload.term >= 1
+e0.payload.term >= e1.payload.term[e0.payload.term-1]
+
+∀e0:eBecomeLeader ::  ∃e1:eRequestVoteReply :: e1.payload.voteGranted
+size(e1.payload.term)-1 >= e1.payload.term[quorumSize-1]
+indexof(e1) >= 1
+e1.payload.term >= e1.payload.term[quorumSize-1]
+e0.payload.term >= 1
+e1.payload.term[quorumSize-1] == 1
+_num_e_exists_ >= 2
+e0.payload.term == e1.payload.term
+indexof(e1)[quorumSize-1] ∈ { 2, 3, 4 }
+e1.payload.term >= 1
+_num_e_exists_ >= quorumSize
+indexof(e0) != indexof(e1)[quorumSize-1]
+indexof(e0) >= 2
+e0.payload.term >= e1.payload.term[quorumSize-1]
+

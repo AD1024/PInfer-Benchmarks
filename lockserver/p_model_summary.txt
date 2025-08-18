@@ -1,0 +1,69 @@
+# P Model Analysis Summary
+
+## 1. Events Definition
+
+| Event | Payload Type | Description |
+|-------|--------------|-------------|
+| `eLock` | `(node: Node)` | Request to acquire a lock from a specific node |
+| `eUnlock` | `(node: Node, epoch: LockId)` | Request to release a lock with epoch identifier |
+| `eGrant` | `(node: Node, epoch: LockId)` | Lock granted to a node with specific epoch |
+| `eHoldsLock` | `(node: Node, epoch: LockId)` | Announcement that a node holds a lock |
+| `eServerState` | `(holdsLock: bool, epoch: LockId)` | Server state information broadcast |
+| `eNotifySelf` | No payload | Internal self-notification event |
+
+**Type Definitions:**
+- `LockId = int`: Identifier for lock epochs
+
+## 2. Event Flows
+
+### Primary Lock Acquisition Flow:
+1. **Node → LockServer**: `eLock` (lock request)
+2. **LockServer → Node**: `eGrant` (if lock available)
+3. **Node**: `eHoldsLock` announcement (confirms lock acquisition)
+4. **Node → Self**: `eNotifySelf` (triggers unlock process)
+5. **Node → LockServer**: `eUnlock` (release lock)
+
+### State Broadcasting:
+- **LockServer**: `eServerState` announcements on lock/unlock operations
+
+## 3. System Roles
+
+### **LockServer**
+- **Responsibilities**: 
+  - Manages distributed lock availability
+  - Grants locks to requesting nodes
+  - Processes unlock requests with epoch validation
+  - Maintains global lock state and epoch counter
+- **State**: `WaitForLock` (single state handling all operations)
+
+### **Node** 
+- **Responsibilities**:
+  - Requests locks from the server
+  - Manages local lock state and epoch
+  - Automatically releases locks after acquisition
+  - Validates grant epochs before accepting
+- **State**: `Init` (handles entire lifecycle)
+
+### **Specification Monitors**
+- **UniqueGrant**: Ensures each epoch is granted to only one node
+- **NoGrantForHeldLock**: Prevents granting locks to nodes that already hold them
+- **UniqueUnlock**: Ensures each epoch is unlocked by only one node
+
+## 4. Protocol Workflow
+
+### **High-Level Protocol**:
+This implements a **distributed mutual exclusion protocol** with epoch-based versioning:
+
+1. **Initialization**: Nodes start by immediately requesting locks from the server
+2. **Lock Granting**: Server grants locks only when available, using epoch identifiers
+3. **Automatic Release**: Nodes automatically release locks after a brief hold period
+4. **Epoch Management**: Server increments epochs on successful unlock operations
+5. **Safety Guarantees**: Multiple monitors ensure mutual exclusion properties
+
+### **Key Protocol Properties**:
+- **Mutual Exclusion**: Only one node can hold the lock per epoch
+- **Epoch-based Ordering**: Lock releases must match the granted epoch
+- **Automatic Lifecycle**: Nodes acquire and release locks automatically
+- **State Consistency**: Server broadcasts state changes for observability
+
+This is a basic but complete distributed locking system with built-in safety monitors to verify correctness properties.

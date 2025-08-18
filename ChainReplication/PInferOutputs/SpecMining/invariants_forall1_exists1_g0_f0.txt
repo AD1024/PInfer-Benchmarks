@@ -1,0 +1,7 @@
+∀e0:eWriteRequest ::  ∃e1:eReadFail :: 
+_num_e_exists_ >= 1
+indexof(e1) >= 0
+e1.payload.k ∈ { 0, 1, 2 }
+e0.payload.k ∈ { 0, 1, 2 }
+indexof(e0) >= 0
+

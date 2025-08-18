@@ -1,0 +1,120 @@
+e0:eNotifyLog e1:eNotifyLog
+
+0
+0
+True
+e0:eNotifyLog e1:eNotifyLog
+
+0
+0
+True
+e0:eNotifyLog e1:eNotifyLog
+
+0
+0
+True
+e0:eNotifyLog e1:eNotifyLog
+
+0
+0
+True
+e0:eNotifyLog e1:eNotifyLog
+
+0
+0
+True
+e0:eNotifyLog e1:eNotifyLog
+
+0
+0
+True
+e0:eNotifyLog e1:eNotifyLog
+
+0
+1
+True
+e0:eNotifyLog e1:eNotifyLog
+
+0
+1
+True
+e0:eNotifyLog e1:eNotifyLog
+
+0
+1
+True
+e0:eNotifyLog e1:eNotifyLog
+
+0
+1
+True
+e0:eNotifyLog e1:eNotifyLog
+
+0
+1
+True
+e0:eNotifyLog e1:eNotifyLog
+
+0
+1
+True
+e0:eBecomeLeader e1:eBecomeLeader
+
+0
+0
+True
+e0:eBecomeLeader e1:eBecomeLeader
+
+0
+0
+True
+e0:eBecomeLeader e1:eBecomeLeader
+
+0
+0
+True
+e0:eBecomeLeader e1:eBecomeLeader
+
+0
+0
+True
+e0:eBecomeLeader e1:eBecomeLeader
+
+0
+0
+True
+e0:eBecomeLeader e1:eBecomeLeader
+
+0
+0
+True
+e0:eBecomeLeader e1:eBecomeLeader
+
+0
+1
+True
+e0:eBecomeLeader e1:eBecomeLeader
+
+0
+1
+True
+e0:eBecomeLeader e1:eBecomeLeader
+
+0
+1
+True
+e0:eBecomeLeader e1:eBecomeLeader
+
+0
+1
+True
+e0:eBecomeLeader e1:eBecomeLeader
+
+0
+1
+True
+e0:eBecomeLeader e1:eBecomeLeader
+
+0
+1
+True

@@ -1,0 +1,13 @@
+∀e0: eWriteRequest ∀e1: eReadFail :: (indexof(e0) < indexof(e1)) -> 
+e1.payload.k ∈ { 0, 1, 2 }
+e0.payload.k ∈ { 0, 1, 2 }
+
+∀e0: eWriteRequest ∀e1: eReadFail :: (e0.payload.k == e1.payload.k) -> 
+indexof(e1) >= 0
+indexof(e0) != indexof(e1)
+indexof(e0) >= 0
+
+∀e0: eWriteRequest ∀e1: eReadFail :: (indexof(e0) > indexof(e1)) -> 
+e1.payload.k ∈ { 0, 1, 2 }
+e0.payload.k ∈ { 0, 1, 2 }
+

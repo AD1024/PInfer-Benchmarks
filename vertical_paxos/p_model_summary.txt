@@ -1,0 +1,78 @@
+# P Model Analysis Summary
+
+## 1. Events Definition
+
+### Core Paxos Events
+- **eConfig**: `tConfig` - Configuration message containing view, round, completed round, acceptors, and learners
+- **eP1A**: `tP1A` - Phase 1A (Prepare) message from proposer to acceptors
+- **eP1B**: `tP1B` - Phase 1B (Promise) response from acceptors to proposers
+- **eP2A**: `tP2A` - Phase 2A (Accept) message from proposer to acceptors
+- **eP2B**: `tP2B` - Phase 2B (Accepted) response from acceptors to proposers
+- **eDecided**: `tDecided` - Decision announcement to learners
+- **ePromised**: `tPromised` - Promise announcement for completed rounds
+
+### Orchestration Events
+- **eRoundCompleteOnDecide**: `tRoundComplete` - Round completion notification after decision
+- **eRoundCompleteOnPropose**: `tRoundComplete` - Round completion notification after proposal
+- **eReconfig**: No payload - Reconfiguration trigger
+- **ePaxosConfig**: `tPaxosConfig` - Paxos configuration with quorum size
+
+## 2. Event Flows
+
+### Primary Paxos Flow
+1. **Configuration Phase**: Orchestrator → Proposer (`eConfig`)
+2. **Phase 1A**: Proposer → Acceptors (`eP1A` - Prepare requests)
+3. **Phase 1B**: Acceptors → Proposer (`eP1B` - Promise responses)
+4. **Phase 2A**: Proposer → Acceptors (`eP2A` - Accept requests)
+5. **Phase 2B**: Acceptors → Proposer (`eP2B` - Accepted responses)
+6. **Decision**: Proposer → Learners (`eDecided`)
+7. **Completion**: Proposer → Orchestrator (`eRoundCompleteOnDecide`)
+
+### Promise Flow
+- Proposer announces `ePromised` events for each completed round during acceptance phase
+
+## 3. System Roles
+
+### **Proposer**
+- Initiates consensus rounds
+- Manages the two-phase Paxos protocol
+- Tracks promises and votes from acceptors
+- Announces decisions to learners
+- Handles value selection (chooses value if none proposed)
+
+### **Acceptor** 
+- Participates in both phases of Paxos
+- Maintains voting history (`voted`) and maximum rounds seen (`maxr`)
+- Responds to prepare requests with promises
+- Accepts proposals that meet round constraints
+
+### **Learner**
+- Receives and stores decided values
+- Enforces safety property (only one value can be decided)
+- Passive role - only responds to decisions
+
+### **Orchestrator**
+- Manages system configuration and lifecycle
+- Creates and configures all other machines
+- Tracks round progression and completion
+- Triggers new rounds and reconfigurations
+
+## 4. Protocol Workflow
+
+### **Vertical Paxos Protocol**
+This implements a variant of Paxos that handles multiple rounds with a vertical structure:
+
+1. **Initialization**: Orchestrator creates acceptors, learners, and proposers with initial configuration
+2. **Round Management**: Orchestrator assigns rounds to proposers and tracks completion
+3. **Multi-Round Consensus**: Each proposer may handle multiple incomplete rounds (from `completed` to `round`)
+4. **Promise Tracking**: Proposers collect promises for all incomplete rounds before proceeding
+5. **Quorum-Based Decision**: Requires majority quorum for both promises and acceptances
+6. **Safety Enforcement**: Learners and specification monitor ensure only one value is decided per round
+7. **Reconfiguration**: System supports dynamic reconfiguration through `eReconfig`
+
+### **Key Safety Properties**
+- **OneValueDecided**: Specification monitor ensures consistency - only one value can be decided
+- **Round Progression**: Completed rounds advance monotonically
+- **Quorum Safety**: All decisions require majority acceptance
+
+The model represents a sophisticated consensus protocol with support for multiple concurrent rounds and dynamic reconfiguration, maintaining Paxos safety guarantees throughout.

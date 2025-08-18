@@ -1,0 +1,18 @@
+∀e0:eHoldsLock ::  ∃e1:eGrant :: (indexof(e0) > indexof(e1)) ∧ (e0.payload.node == e1.payload.node)
+e1.payload.epoch ∈ { [0], [1], [2] }
+e1.payload.epoch == e0.payload.epoch
+e0.payload.epoch ∈ { 0, 1, 2 }
+e0.payload.epoch >= size(e1.payload.epoch)-1
+e1.payload.epoch >= size(e1.payload.epoch)-1
+e1.payload.epoch ∈ { 0, 1, 2 }
+_num_e_exists_ == 1
+
+∀e0:eHoldsLock ::  ∃e1:eGrant :: (e0.payload.node == e1.payload.node) ∧ (e0.payload.epoch == e1.payload.epoch)
+indexof(e1) >= 2
+_num_e_exists_ == 1
+indexof(e1) < indexof(e0)
+
+∀e0:eHoldsLock ::  ∃e1:eGrant :: (indexof(e0) > indexof(e1)) ∧ (e0.payload.epoch == e1.payload.epoch)
+_num_e_exists_ == 1
+e0.payload.node == e1.payload.node
+

@@ -1,0 +1,153 @@
+∀e0: eBecomeLeader ∀e1: eBecomeLeader :: (e0.payload.log == e1.payload.log) -> 
+e0.payload.term == e1.payload.term
+indexof(e0) == indexof(e1)
+e0.payload.term >= 1
+e0.payload.leader == e1.payload.leader
+size(e0.payload.log) == size(e1.payload.log)
+e0.payload.commitIndex == e1.payload.commitIndex
+indexof(e0) >= 1
+size(e0.payload.log) >= 0
+e0.payload.commitIndex >= -1
+
+∀e0: eBecomeLeader ∀e1: eBecomeLeader :: (logContains(e0.payload, e1.payload) == NO) -> 
+indexof(e1) >= 1
+size(e1.payload.log) >= 0
+e0.payload.term >= 2
+size(e0.payload.log)-1 >= size(e1.payload.log)
+e1.payload.commitIndex >= -1
+size(e0.payload.log) > size(e1.payload.log)
+indexof(e0) > indexof(e1)
+e0.payload.commitIndex >= 1
+e1.payload.term >= 1
+size(e0.payload.log) >= 2
+e0.payload.term > e1.payload.term
+indexof(e0) >= 2
+e0.payload.commitIndex > e1.payload.commitIndex
+
+∀e0: eBecomeLeader ∀e1: eBecomeLeader :: (e0.payload.term == e1.payload.term) -> 
+indexof(e0) == indexof(e1)
+e0.payload.leader == e1.payload.leader
+size(e0.payload.log) == size(e1.payload.log)
+e0.payload.commitIndex == e1.payload.commitIndex
+indexof(e0) >= 1
+size(e0.payload.log) >= 0
+e0.payload.log == e1.payload.log
+e0.payload.commitIndex >= -1
+
+∀e0: eBecomeLeader ∀e1: eBecomeLeader :: (size(e0.payload.log) < size(e1.payload.log)) -> 
+e0.payload.term != e1.payload.term
+indexof(e1) >= 2
+indexof(e0) != indexof(e1)
+e1.payload.term >= 2
+e0.payload.term >= 1
+size(e0.payload.log) <= size(e1.payload.log)-1
+indexof(e0) >= 1
+size(e1.payload.log) >= 1
+e1.payload.commitIndex >= -1
+e0.payload.commitIndex >= -1
+
+∀e0: eBecomeLeader ∀e1: eBecomeLeader :: (e0.payload.commitIndex > e1.payload.commitIndex) -> 
+indexof(e1) >= 1
+e0.payload.term != e1.payload.term
+e1.payload.term >= 1
+size(e1.payload.log) >= 0
+indexof(e0) != indexof(e1)
+e0.payload.term >= 2
+indexof(e0) >= 2
+size(e0.payload.log) >= 1
+
+∀e0: eBecomeLeader ∀e1: eBecomeLeader :: (e0.payload.commitIndex < e1.payload.commitIndex) -> 
+e0.payload.term != e1.payload.term
+indexof(e1) >= 2
+indexof(e0) != indexof(e1)
+e1.payload.term >= 2
+e0.payload.term >= 1
+indexof(e0) >= 1
+size(e0.payload.log) >= 0
+size(e1.payload.log) >= 1
+
+∀e0: eBecomeLeader ∀e1: eBecomeLeader :: (size(e0.payload.log) > size(e1.payload.log)) -> 
+indexof(e1) >= 1
+e0.payload.term != e1.payload.term
+e1.payload.term >= 1
+indexof(e0) != indexof(e1)
+e0.payload.term >= 2
+indexof(e0) >= 2
+size(e0.payload.log)-1 >= size(e1.payload.log)
+size(e0.payload.log) >= 1
+e1.payload.commitIndex >= -1
+e0.payload.commitIndex >= -1
+
+∀e0: eBecomeLeader ∀e1: eBecomeLeader :: (e0.payload.leader == e1.payload.leader) -> 
+indexof(e1) >= 1
+e1.payload.term >= 1
+size(e1.payload.log) >= 0
+e0.payload.term >= 1
+indexof(e0) >= 1
+size(e0.payload.log) >= 0
+e1.payload.commitIndex >= -1
+e0.payload.commitIndex >= -1
+
+∀e0: eBecomeLeader ∀e1: eBecomeLeader :: (e0.payload.term < e1.payload.term) -> 
+indexof(e1) >= 2
+size(e1.payload.log) >= 0
+indexof(e0) != indexof(e1)
+indexof(e0) >= 1
+size(e0.payload.log) >= 0
+e1.payload.commitIndex >= -1
+e0.payload.commitIndex >= -1
+
+∀e0: eBecomeLeader ∀e1: eBecomeLeader :: (indexof(e0) < indexof(e1)) -> 
+e0.payload.term != e1.payload.term
+size(e1.payload.log) >= 0
+e1.payload.term >= 2
+e0.payload.term >= 1
+size(e0.payload.log) >= 0
+e1.payload.commitIndex >= -1
+e0.payload.commitIndex >= -1
+
+∀e0: eBecomeLeader ∀e1: eBecomeLeader :: (e0.payload.term > e1.payload.term) -> 
+indexof(e1) >= 1
+size(e1.payload.log) >= 0
+indexof(e0) != indexof(e1)
+indexof(e0) >= 2
+size(e0.payload.log) >= 0
+e1.payload.commitIndex >= -1
+e0.payload.commitIndex >= -1
+
+∀e0: eBecomeLeader ∀e1: eBecomeLeader :: (indexof(e0) > indexof(e1)) -> 
+e0.payload.term != e1.payload.term
+e1.payload.term >= 1
+size(e1.payload.log) >= 0
+e0.payload.term >= 2
+size(e0.payload.log) >= 0
+e1.payload.commitIndex >= -1
+e0.payload.commitIndex >= -1
+
+∀e0: eBecomeLeader ∀e1: eBecomeLeader :: (size(e0.payload.log) == size(e1.payload.log)) -> 
+indexof(e1) >= 1
+e1.payload.term >= 1
+e0.payload.term >= 1
+size(e0.payload.log) == size(e1.payload.log)
+indexof(e0) >= 1
+e1.payload.commitIndex >= -1
+e0.payload.commitIndex >= -1
+
+∀e0: eBecomeLeader ∀e1: eBecomeLeader :: (e0.payload.commitIndex == e1.payload.commitIndex) -> 
+indexof(e1) >= 1
+e1.payload.term >= 1
+size(e1.payload.log) >= 0
+e0.payload.term >= 1
+indexof(e0) >= 1
+size(e0.payload.log) >= 0
+
+∀e0: eBecomeLeader ∀e1: eBecomeLeader :: (logContains(e0.payload, e1.payload) == YES) -> 
+indexof(e1) >= 1
+e1.payload.term >= 1
+size(e1.payload.log) >= 0
+e0.payload.term >= 1
+indexof(e0) >= 1
+size(e0.payload.log) >= 0
+e1.payload.commitIndex >= -1
+e0.payload.commitIndex >= -1
+

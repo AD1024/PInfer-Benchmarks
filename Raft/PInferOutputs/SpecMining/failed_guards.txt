@@ -1,0 +1,140 @@
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+(e0.payload.logIndex == e1.payload.logIndex) ∧ (e0.payload.term < e1.payload.term)
+(e0.payload.logIndex == e1.payload.logIndex) ∧ (e0.payload.term > e1.payload.term)
+(e0.payload.logIndex < e1.payload.logIndex) ∧ (e0.payload.term > e1.payload.term)
+(e0.payload.logIndex > e1.payload.logIndex) ∧ (e0.payload.term < e1.payload.term)
+EOT
+(e0.payload.logIndex == e1.payload.logIndex) ∧ (e0.payload.term < e1.payload.term)
+(e0.payload.logIndex == e1.payload.logIndex) ∧ (e0.payload.term > e1.payload.term)
+(e0.payload.logIndex < e1.payload.logIndex) ∧ (e0.payload.term > e1.payload.term)
+(e0.payload.logIndex > e1.payload.logIndex) ∧ (e0.payload.term < e1.payload.term)
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.log == e1.payload.log)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.term == e1.payload.term)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.log == e1.payload.log)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.term == e1.payload.term)
+(e0.payload.log == e1.payload.log) ∧ (e0.payload.term < e1.payload.term)
+(e0.payload.log == e1.payload.log) ∧ (e0.payload.term > e1.payload.term)
+(e0.payload.log == e1.payload.log) ∧ (e0.payload.commitIndex < e1.payload.commitIndex)
+(e0.payload.log == e1.payload.log) ∧ (e0.payload.commitIndex > e1.payload.commitIndex)
+(e0.payload.term == e1.payload.term) ∧ (e0.payload.commitIndex > e1.payload.commitIndex)
+(e0.payload.term == e1.payload.term) ∧ (e0.payload.commitIndex < e1.payload.commitIndex)
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.term == e1.payload.term)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.term == e1.payload.term)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.log == e1.payload.log)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.log == e1.payload.log)
+(e0.payload.term == e1.payload.term) ∧ (e0.payload.commitIndex < e1.payload.commitIndex)
+(e0.payload.log == e1.payload.log) ∧ (e0.payload.term > e1.payload.term)
+(e0.payload.log == e1.payload.log) ∧ (e0.payload.commitIndex > e1.payload.commitIndex)
+(e0.payload.log == e1.payload.log) ∧ (e0.payload.term < e1.payload.term)
+(e0.payload.log == e1.payload.log) ∧ (e0.payload.commitIndex < e1.payload.commitIndex)
+(e0.payload.term == e1.payload.term) ∧ (e0.payload.commitIndex > e1.payload.commitIndex)
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.log == e1.payload.log)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.term == e1.payload.term)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.log == e1.payload.log)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.term == e1.payload.term)
+(size(e0.payload.log) < size(e1.payload.log)) ∧ (e0.payload.log == e1.payload.log)
+(size(e0.payload.log) < size(e1.payload.log)) ∧ (e0.payload.term == e1.payload.term)
+(size(e0.payload.log) > size(e1.payload.log)) ∧ (e0.payload.log == e1.payload.log)
+(size(e0.payload.log) > size(e1.payload.log)) ∧ (e0.payload.term == e1.payload.term)
+(e0.payload.log == e1.payload.log) ∧ (e0.payload.term < e1.payload.term)
+(e0.payload.log == e1.payload.log) ∧ (e0.payload.term > e1.payload.term)
+(e0.payload.log == e1.payload.log) ∧ (e0.payload.commitIndex < e1.payload.commitIndex)
+(e0.payload.log == e1.payload.log) ∧ (e0.payload.commitIndex > e1.payload.commitIndex)
+(e0.payload.term == e1.payload.term) ∧ (e0.payload.commitIndex < e1.payload.commitIndex)
+(e0.payload.term == e1.payload.term) ∧ (e0.payload.commitIndex > e1.payload.commitIndex)
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.term == e1.payload.term)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.log == e1.payload.log)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.log == e1.payload.log)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.term == e1.payload.term)
+(size(e0.payload.log) < size(e1.payload.log)) ∧ (e0.payload.log == e1.payload.log)
+(size(e0.payload.log) < size(e1.payload.log)) ∧ (e0.payload.term == e1.payload.term)
+(size(e0.payload.log) > size(e1.payload.log)) ∧ (e0.payload.term == e1.payload.term)
+(size(e0.payload.log) > size(e1.payload.log)) ∧ (e0.payload.log == e1.payload.log)
+(e0.payload.log == e1.payload.log) ∧ (e0.payload.term < e1.payload.term)
+(e0.payload.log == e1.payload.log) ∧ (e0.payload.term > e1.payload.term)
+(e0.payload.log == e1.payload.log) ∧ (e0.payload.commitIndex < e1.payload.commitIndex)
+(e0.payload.log == e1.payload.log) ∧ (e0.payload.commitIndex > e1.payload.commitIndex)
+(e0.payload.term == e1.payload.term) ∧ (e0.payload.commitIndex < e1.payload.commitIndex)
+(e0.payload.term == e1.payload.term) ∧ (e0.payload.commitIndex > e1.payload.commitIndex)
+EOT

@@ -1,0 +1,10 @@
+∀e0:eCommitTrans ::  ∃e1:ePrepareFailure :: 
+numParticipants != size(e1.payload.transId)-1
+numParticipants != size(indexof(e1))-1
+_num_e_exists_ % numParticipants == 0
+_num_e_exists_ >= numParticipants
+e1.payload.transId > numParticipants
+indexof(e0) != indexof(e1)[numParticipants-1]
+e0.payload != e1.payload.transId[numParticipants-1]
+indexof(e1) > numParticipants
+

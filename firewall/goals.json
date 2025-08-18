@@ -1,0 +1,9 @@
+[
+    {
+        "events": ["e0:Sent", "e1:SendFromInternal"],
+        "config_event": null,
+        "guards": ["e0.payload.toInternal"],
+        "filters": ["(indexof(e0) > indexof(e1))", "(e0.payload.src == e1.payload.dst)"],
+        "exists": 1
+    }
+]

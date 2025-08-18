@@ -1,0 +1,5 @@
+∀e0: eOwns ::  
+e0.payload.key >= 0
+e0.payload.value >= 0
+indexof(e0) >= 2
+

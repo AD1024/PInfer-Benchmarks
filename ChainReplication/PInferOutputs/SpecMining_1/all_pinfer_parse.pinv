@@ -1,0 +1,1699 @@
+0 0
+EOT
+
+
+e1.payload.sequence_id >= 0 ∧ indexof(e0) != indexof(e1) ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+4 0
+EOT
+(indexof(e0) < indexof(e1))
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(e0.payload.sequence_id > e1.payload.sequence_id)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 1 ∧ e0.payload.v >= 0
+(e0.payload.v == e1.payload.v)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(e0.payload.sequence_id < e1.payload.sequence_id)
+
+e1.payload.sequence_id >= 1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(e0.payload.k == e1.payload.k)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(e0.payload.sequence_id == e1.payload.sequence_id)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1))
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+77 0
+EOT
+(indexof(e0) < indexof(e1))
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(e0.payload.sequence_id < e1.payload.sequence_id)
+
+indexof(e0) != indexof(e1) ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(e0.payload.v == e1.payload.v)
+
+e1.payload.sequence_id >= 0 ∧ indexof(e0) != indexof(e1) ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.sequence_id >= 0
+(e0.payload.sequence_id > e1.payload.sequence_id)
+
+indexof(e0) != indexof(e1) ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(e0.payload.sequence_id == e1.payload.sequence_id)
+
+indexof(e0) != indexof(e1) ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1))
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(e0.payload.k == e1.payload.k)
+
+e1.payload.sequence_id >= 0 ∧ indexof(e0) != indexof(e1) ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+21 0
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.sequence_id < e1.payload.sequence_id)
+
+e1.payload.sequence_id >= 1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.v == e1.payload.v)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.k == e1.payload.k)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.sequence_id < e1.payload.sequence_id)
+
+e1.payload.sequence_id >= 1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0 ∧ e0.payload.sequence_id ∈ { 0, 1 }
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.sequence_id == e1.payload.sequence_id)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.sequence_id > e1.payload.sequence_id)
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id ∈ { 1, 2, 3 } ∧ e1.payload.sequence_id ∈ { 0, 1 } ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.v == e1.payload.v)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.k == e1.payload.k)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.sequence_id == e1.payload.sequence_id)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.sequence_id > e1.payload.sequence_id)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 1 ∧ e0.payload.v >= 0
+(e0.payload.k == e1.payload.k) ∧ (e0.payload.sequence_id == e1.payload.sequence_id)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(e0.payload.k == e1.payload.k) ∧ (e0.payload.v == e1.payload.v)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(e0.payload.k == e1.payload.k) ∧ (e0.payload.sequence_id < e1.payload.sequence_id)
+
+e1.payload.sequence_id >= 1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(e0.payload.k == e1.payload.k) ∧ (e0.payload.sequence_id > e1.payload.sequence_id)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 1 ∧ e0.payload.v >= 0
+(e0.payload.v == e1.payload.v) ∧ (e0.payload.sequence_id < e1.payload.sequence_id)
+
+e1.payload.sequence_id >= 1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(e0.payload.v == e1.payload.v) ∧ (e0.payload.sequence_id == e1.payload.sequence_id)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(e0.payload.v == e1.payload.v) ∧ (e0.payload.sequence_id > e1.payload.sequence_id)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 1 ∧ e0.payload.v >= 0
+187 0
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.v == e1.payload.v)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.sequence_id >= 0
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.sequence_id > e1.payload.sequence_id)
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k != e1.payload.k ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(e0.payload.v == e1.payload.v) ∧ (e0.payload.sequence_id > e1.payload.sequence_id)
+
+indexof(e0) != indexof(e1) ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 }
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.sequence_id < e1.payload.sequence_id)
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k != e1.payload.k ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.sequence_id == e1.payload.sequence_id)
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.k == e1.payload.k)
+
+e1.payload.sequence_id >= 0 ∧ e0.payload.sequence_id <= e1.payload.sequence_id ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.sequence_id > e1.payload.sequence_id)
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(e0.payload.v == e1.payload.v) ∧ (e0.payload.sequence_id < e1.payload.sequence_id)
+
+indexof(e0) != indexof(e1) ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 }
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.sequence_id < e1.payload.sequence_id)
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.v == e1.payload.v)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.sequence_id >= 0
+(e0.payload.k == e1.payload.k) ∧ (e0.payload.v == e1.payload.v)
+
+e1.payload.sequence_id >= 0 ∧ indexof(e0) != indexof(e1) ∧ e0.payload.sequence_id >= 0
+(e0.payload.k == e1.payload.k) ∧ (e0.payload.sequence_id > e1.payload.sequence_id)
+
+indexof(e0) > indexof(e1) ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(e0.payload.k == e1.payload.k) ∧ (e0.payload.sequence_id == e1.payload.sequence_id)
+
+indexof(e0) != indexof(e1) ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.sequence_id == e1.payload.sequence_id)
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.k == e1.payload.k)
+
+e1.payload.sequence_id >= 0 ∧ e0.payload.sequence_id >= e1.payload.sequence_id ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(e0.payload.v == e1.payload.v) ∧ (e0.payload.sequence_id == e1.payload.sequence_id)
+
+indexof(e0) != indexof(e1) ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 }
+(e0.payload.k == e1.payload.k) ∧ (e0.payload.sequence_id < e1.payload.sequence_id)
+
+e1.payload.v >= 0 ∧ indexof(e0) < indexof(e1) ∧ e0.payload.v >= 0
+34 0
+EOT
+0 0
+EOT
+
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.sequence_id <= size(e1.payload.sequence_id)-1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ _num_e_exists_ >= 1 ∧ e0.payload.sequence_id <= size(e1.payload.sequence_id)-1 ∧ e0.payload.sequence_id == e1.payload.sequence_id ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.k == e1.payload.k ∧ e0.payload.v >= 0 ∧ e0.payload.v == e1.payload.v ∧ e0.payload.sequence_id >= e1.payload.sequence_id[e0.payload.sequence_id] ∧ size(e1.payload.sequence_id)-1 >= e1.payload.sequence_id[e0.payload.sequence_id]
+4 0
+EOT
+
+(indexof(e0) > indexof(e1))
+e1.payload.sequence_id >= 0 ∧ _num_e_exists_ >= 1 ∧ e1.payload.sequence_id <= size(e1.payload.sequence_id)-1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0 ∧ indexof(e1) >= size(indexof(e1))-1
+
+(e0.payload.v == e1.payload.v)
+e1.payload.sequence_id >= 0 ∧ _num_e_exists_ >= 1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v are equal ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0 ∧ indexof(e1) >= size(indexof(e1))-1
+
+(e0.payload.k == e1.payload.k)
+e1.payload.sequence_id >= 0 ∧ _num_e_exists_ >= 1 ∧ e1.payload.sequence_id <= size(e1.payload.sequence_id)-1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.k are equal ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+
+(e0.payload.sequence_id == e1.payload.sequence_id)
+e1.payload.sequence_id >= 0 ∧ e1.payload.sequence_id are equal ∧ _num_e_exists_ >= 1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+77 3
+EOT
+
+(e0.payload.v == e1.payload.v)
+e1.payload.sequence_id >= 0 ∧ _num_e_exists_ >= 1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.sequence_id == e1.payload.sequence_id ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.k == e1.payload.k ∧ indexof(e1) >= size(indexof(e1))-1
+
+(e0.payload.k == e1.payload.k)
+e1.payload.sequence_id >= 0 ∧ e0.payload.sequence_id == e1.payload.sequence_id[e0.payload.sequence_id] ∧ _num_e_exists_ >= 1 ∧ e1.payload.sequence_id <= size(e1.payload.sequence_id)-1 ∧ e0.payload.sequence_id <= size(e1.payload.sequence_id)-1 ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0 ∧ e0.payload.v == e1.payload.v
+
+(e0.payload.sequence_id == e1.payload.sequence_id)
+_num_e_exists_ >= 1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.k == e1.payload.k ∧ e0.payload.v >= 0 ∧ e0.payload.v == e1.payload.v
+
+(indexof(e0) > indexof(e1))
+e1.payload.sequence_id >= 0 ∧ e1.payload.sequence_id <= size(e1.payload.sequence_id)-1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ _num_e_exists_ >= 1 ∧ e0.payload.sequence_id <= size(e1.payload.sequence_id)-1 ∧ e0.payload.sequence_id == e1.payload.sequence_id ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.k == e1.payload.k ∧ e0.payload.v >= 0 ∧ e0.payload.v == e1.payload.v ∧ e0.payload.sequence_id >= e1.payload.sequence_id[e0.payload.sequence_id] ∧ size(e1.payload.sequence_id)-1 >= e1.payload.sequence_id[e0.payload.sequence_id]
+21 3
+EOT
+
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.sequence_id == e1.payload.sequence_id)
+e1.payload.sequence_id >= 0 ∧ _num_e_exists_ ∈ { 1, 2, 3 } ∧ e1.payload.sequence_id are equal ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.k == e1.payload.k)
+e1.payload.sequence_id >= 0 ∧ _num_e_exists_ >= 1 ∧ e1.payload.sequence_id <= size(e1.payload.sequence_id)-1 ∧ _num_e_exists_ - e0.payload.sequence_id - 1 == 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.k are equal ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0 ∧ indexof(e1) >= size(indexof(e1))-1
+
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.v == e1.payload.v)
+e1.payload.sequence_id >= 0 ∧ _num_e_exists_ >= 1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v are equal ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+
+(e0.payload.k == e1.payload.k) ∧ (e0.payload.sequence_id == e1.payload.sequence_id)
+e1.payload.sequence_id >= 0 ∧ e1.payload.sequence_id are equal ∧ _num_e_exists_ >= 1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.k are equal ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+
+(e0.payload.k == e1.payload.k) ∧ (e0.payload.v == e1.payload.v)
+e1.payload.sequence_id >= 0 ∧ _num_e_exists_ >= 1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.k are equal ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v are equal ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0 ∧ indexof(e1) >= size(indexof(e1))-1
+
+(e0.payload.v == e1.payload.v) ∧ (e0.payload.sequence_id == e1.payload.sequence_id)
+e1.payload.sequence_id >= 0 ∧ e1.payload.sequence_id are equal ∧ _num_e_exists_ >= 1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v are equal ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+187 11
+EOT
+
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.k == e1.payload.k)
+e1.payload.sequence_id <= e0.payload.sequence_id ∧ e1.payload.sequence_id >= 0 ∧ e0.payload.sequence_id == e1.payload.sequence_id[e0.payload.sequence_id] ∧ _num_e_exists_ >= 1 ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id == size(e1.payload.sequence_id)-1
+
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.sequence_id == e1.payload.sequence_id)
+_num_e_exists_ ∈ { 1, 2, 3 } ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.k == e1.payload.k ∧ e0.payload.v >= 0 ∧ e0.payload.v == e1.payload.v
+
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.v == e1.payload.v)
+e1.payload.sequence_id >= 0 ∧ _num_e_exists_ >= 1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.sequence_id == e1.payload.sequence_id ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.k == e1.payload.k
+
+(e0.payload.v == e1.payload.v) ∧ (e0.payload.sequence_id == e1.payload.sequence_id)
+_num_e_exists_ >= 1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k == e1.payload.k
+
+(e0.payload.k == e1.payload.k) ∧ (e0.payload.v == e1.payload.v)
+e1.payload.sequence_id >= 0 ∧ _num_e_exists_ >= 1 ∧ e0.payload.sequence_id == e1.payload.sequence_id ∧ e0.payload.sequence_id >= 0 ∧ indexof(e1) >= size(indexof(e1))-1
+
+(e0.payload.k == e1.payload.k) ∧ (e0.payload.sequence_id == e1.payload.sequence_id)
+_num_e_exists_ >= 1 ∧ e1.payload.v >= 0
+34 11
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+(e0.payload.position <= e1.payload.position)
+
+indexof(e1) >= 1 ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch >= 0 ∧ e1.payload.sent >= 1 ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ prefixOf(e0.payload, e1.payload) ∈ { 0, 1 } ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1
+17 0
+EOT
+(e0.payload.position <= e1.payload.position)
+
+indexof(e1) >= 1 ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch >= 0 ∧ e1.payload.sent >= 1 ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1
+14 0
+EOT
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.log) < size(e1.payload.log))
+
+size(e0.payload.sent) >= 0 ∧ e0.payload.epoch >= 0 ∧ e1.payload.epoch >= 1 ∧ size(e1.payload.sent) >= 0 ∧ prefixOf(e0.payload, e1.payload) == 0 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ size(e1.payload.log) >= 1
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.log) < size(e1.payload.sent))
+
+size(e0.payload.sent) >= 0 ∧ e0.payload.epoch >= 0 ∧ e1.payload.epoch >= 1 ∧ size(e1.payload.sent) >= 1 ∧ prefixOf(e0.payload, e1.payload) == 0 ∧ e1.payload.position ∈ { 1, 2 } ∧ size(e0.payload.log) >= 0 ∧ size(e1.payload.log) >= 1 ∧ e0.payload.position ∈ { 1, 2 }
+(e0.payload.position <= e1.payload.position) ∧ (indexof(e0) > indexof(e1))
+
+size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch >= 0 ∧ e1.payload.sent >= 1 ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ prefixOf(e0.payload, e1.payload) ∈ { 0, 1 } ∧ e0.payload.position ∈ { 1, 2, 3 }
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.sent) < size(e1.payload.sent))
+
+size(e0.payload.sent) >= 0 ∧ e0.payload.epoch >= 0 ∧ e1.payload.epoch >= 1 ∧ size(e1.payload.sent) >= 1 ∧ prefixOf(e0.payload, e1.payload) == 0 ∧ e1.payload.position ∈ { 1, 2 } ∧ size(e0.payload.log) >= 0 ∧ size(e1.payload.log) >= 1 ∧ e0.payload.position ∈ { 1, 2 }
+(e0.payload.position <= e1.payload.position) ∧ (indexof(e0) < indexof(e1))
+
+size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch >= 0 ∧ e1.payload.sent >= 1 ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ prefixOf(e0.payload, e1.payload) ∈ { 0, 1 } ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.sent) < size(e1.payload.log))
+
+size(e0.payload.sent) >= 0 ∧ e0.payload.epoch >= 0 ∧ e1.payload.epoch >= 1 ∧ e1.payload.log >= 1 ∧ size(e1.payload.sent) >= 0 ∧ prefixOf(e0.payload, e1.payload) ∈ { 0, 1 } ∧ e0.payload.log >= 1 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ size(e1.payload.log) >= 1
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.log) > size(e1.payload.log))
+
+e0.payload.epoch >= 1 ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ prefixOf(e0.payload, e1.payload) == 1 ∧ e1.payload.epoch >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 1
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.sent) > size(e1.payload.log))
+
+size(e0.payload.sent) >= 1 ∧ e0.payload.epoch >= 1 ∧ size(e1.payload.log) >= 0 ∧ prefixOf(e0.payload, e1.payload) == 1 ∧ e1.payload.epoch >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 1 ∧ e0.payload.position ∈ { 1, 2 }
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.sent) > size(e1.payload.sent))
+
+size(e0.payload.sent) >= 1 ∧ e0.payload.epoch >= 1 ∧ size(e1.payload.log) >= 0 ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ size(e1.payload.sent) >= 0 ∧ prefixOf(e0.payload, e1.payload) ∈ { 0, 1 } ∧ e0.payload.log >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 1 ∧ e0.payload.position ∈ { 1, 2 } ∧ e0.payload.sent >= 1
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.log) > size(e1.payload.sent))
+
+e0.payload.epoch >= 1 ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ size(e1.payload.sent) >= 0 ∧ prefixOf(e0.payload, e1.payload) ∈ { 0, 1 } ∧ e0.payload.log >= 1 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 1 ∧ e0.payload.sent >= 1
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.log) == size(e1.payload.sent))
+
+indexof(e1) >= 1 ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch >= 0 ∧ e1.payload.sent >= 1 ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ prefixOf(e0.payload, e1.payload) == 0 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.log) == size(e1.payload.log))
+
+indexof(e1) >= 1 ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch >= 0 ∧ e1.payload.sent >= 1 ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ prefixOf(e0.payload, e1.payload) == 0 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.sent) == size(e1.payload.log))
+
+indexof(e1) >= 1 ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch >= 0 ∧ e1.payload.sent >= 1 ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ prefixOf(e0.payload, e1.payload) ∈ { 0, 1 } ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1
+(e0.payload.position <= e1.payload.position) ∧ (e0.payload.log == e1.payload.log)
+
+indexof(e1) >= 1 ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch >= 0 ∧ e1.payload.sent >= 1 ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ prefixOf(e0.payload, e1.payload) == 0 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.sent) == size(e1.payload.sent))
+
+indexof(e1) >= 1 ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch >= 0 ∧ e1.payload.sent >= 1 ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ prefixOf(e0.payload, e1.payload) ∈ { 0, 1 } ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1
+(e0.payload.position <= e1.payload.position) ∧ (e0.payload.sent == e1.payload.sent)
+
+indexof(e1) >= 1 ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch >= 0 ∧ e1.payload.sent >= 1 ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ prefixOf(e0.payload, e1.payload) == 0 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1
+(e0.payload.position <= e1.payload.position) ∧ (prefixOf(e0.payload, e1.payload) == No)
+
+e0.payload.epoch >= 1 ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ e1.payload.epoch >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 1
+(e0.payload.position <= e1.payload.position) ∧ (e0.payload.epoch < e1.payload.epoch)
+
+size(e0.payload.sent) >= 0 ∧ e0.payload.epoch >= 0 ∧ e1.payload.epoch >= 1 ∧ size(e1.payload.sent) >= 0 ∧ prefixOf(e0.payload, e1.payload) == 0 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ size(e1.payload.log) >= 1
+(e0.payload.position <= e1.payload.position) ∧ (e0.payload.epoch > e1.payload.epoch)
+
+e0.payload.epoch >= 1 ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ prefixOf(e0.payload, e1.payload) == 1 ∧ e1.payload.epoch >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 1
+(e0.payload.position <= e1.payload.position) ∧ (prefixOf(e0.payload, e1.payload) == Yes)
+
+indexof(e1) >= 1 ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch >= 0 ∧ e1.payload.sent >= 1 ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1
+(e0.payload.position <= e1.payload.position) ∧ (e0.payload.epoch == e1.payload.epoch)
+
+indexof(e1) >= 1 ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch >= 0 ∧ e1.payload.sent >= 1 ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ prefixOf(e0.payload, e1.payload) == 0 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1
+(e0.payload.position <= e1.payload.position) ∧ (e0.payload.position == e1.payload.position)
+
+indexof(e1) >= 1 ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch >= 0 ∧ e1.payload.sent >= 1 ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ prefixOf(e0.payload, e1.payload) ∈ { 0, 1 } ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1
+(e0.payload.position <= e1.payload.position) ∧ (e0.payload.position < e1.payload.position)
+
+size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e1.payload.position ∈ { 2, 3 } ∧ e0.payload.log >= 1 ∧ size(e0.payload.log) >= 0 ∧ e0.payload.position ∈ { 1, 2 } ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch >= 0 ∧ e1.payload.sent >= 1 ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ prefixOf(e0.payload, e1.payload) ∈ { 0, 1 } ∧ indexof(e0) >= 1
+491 0
+EOT
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.log) < size(e1.payload.sent))
+
+size(e0.payload.sent) >= 0 ∧ e0.payload.epoch < e1.payload.epoch ∧ size(e1.payload.sent) >= 1 ∧ size(e0.payload.log) <= size(e1.payload.log)-1 ∧ e0.payload.sent < e1.payload.sent (lexically) ∧ e0.payload.sent <= e1.payload.log (lexically) ∧ e0.payload.log < e1.payload.sent (lexically) ∧ e1.payload.position ∈ { 1, 2 } ∧ indexof(e0) < indexof(e1) ∧ size(e1.payload.log) >= 1 ∧ e0.payload.log <= e1.payload.sent (lexically) ∧ size(e0.payload.log) <= size(e1.payload.sent)-1 ∧ size(e0.payload.log) < size(e1.payload.log) ∧ size(e0.payload.sent) <= size(e1.payload.sent)-1 ∧ e0.payload.log <= e1.payload.log (lexically) ∧ e0.payload.sent <= e1.payload.sent (lexically) ∧ size(e0.payload.sent) < size(e1.payload.log) ∧ size(e0.payload.sent) <= size(e1.payload.log)-1 ∧ e0.payload.sent < e1.payload.log (lexically) ∧ size(e0.payload.log) >= 0 ∧ size(e0.payload.sent) < size(e1.payload.sent) ∧ e0.payload.position ∈ { 1, 2 } ∧ e0.payload.epoch >= 0 ∧ e1.payload.epoch >= 1 ∧ e0.payload.log < e1.payload.log (lexically)
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.sent) < size(e1.payload.sent))
+
+size(e0.payload.sent) >= 0 ∧ e0.payload.epoch < e1.payload.epoch ∧ size(e1.payload.sent) >= 1 ∧ size(e0.payload.log) <= size(e1.payload.log)-1 ∧ e0.payload.sent < e1.payload.sent (lexically) ∧ size(e0.payload.log) < size(e1.payload.sent) ∧ e0.payload.sent <= e1.payload.log (lexically) ∧ e0.payload.log < e1.payload.sent (lexically) ∧ e1.payload.position ∈ { 1, 2 } ∧ indexof(e0) < indexof(e1) ∧ size(e1.payload.log) >= 1 ∧ e0.payload.log <= e1.payload.sent (lexically) ∧ size(e0.payload.log) <= size(e1.payload.sent)-1 ∧ size(e0.payload.log) < size(e1.payload.log) ∧ size(e0.payload.sent) <= size(e1.payload.sent)-1 ∧ e0.payload.log <= e1.payload.log (lexically) ∧ e0.payload.sent <= e1.payload.sent (lexically) ∧ size(e0.payload.sent) < size(e1.payload.log) ∧ size(e0.payload.sent) <= size(e1.payload.log)-1 ∧ e0.payload.sent < e1.payload.log (lexically) ∧ size(e0.payload.log) >= 0 ∧ e0.payload.position ∈ { 1, 2 } ∧ e0.payload.epoch >= 0 ∧ e1.payload.epoch >= 1 ∧ e0.payload.log < e1.payload.log (lexically)
+(e0.payload.position <= e1.payload.position) ∧ (indexof(e0) < indexof(e1))
+
+size(e0.payload.sent) >= 0 ∧ e0.payload.epoch >= 0 ∧ size(e1.payload.log) >= 0 ∧ e1.payload.sent >= 1 ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.log) < size(e1.payload.log))
+
+size(e0.payload.sent) >= 0 ∧ e0.payload.epoch < e1.payload.epoch ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log <= e1.payload.log (lexically) ∧ size(e0.payload.log) <= size(e1.payload.log)-1 ∧ size(e0.payload.sent) < size(e1.payload.log) ∧ size(e0.payload.sent) <= size(e1.payload.log)-1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ e0.payload.sent < e1.payload.log (lexically) ∧ size(e0.payload.log) >= 0 ∧ e0.payload.epoch >= 0 ∧ e0.payload.sent <= e1.payload.log (lexically) ∧ e1.payload.epoch >= 1 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1 ∧ e0.payload.log < e1.payload.log (lexically) ∧ indexof(e0) < indexof(e1) ∧ size(e1.payload.log) >= 1
+(e0.payload.position <= e1.payload.position) ∧ (indexof(e0) > indexof(e1))
+
+e0.payload.log >= e1.payload.log (lexically) ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ size(e0.payload.log) >= size(e1.payload.sent) ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e0.payload.epoch >= e1.payload.epoch ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= size(e1.payload.log) ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1 ∧ size(e0.payload.log)-1 >= size(e1.payload.sent)-1 ∧ e0.payload.epoch >= 0 ∧ e1.payload.sent >= 1 ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ size(e0.payload.log)-1 >= size(e1.payload.log)-1 ∧ e0.payload.log >= e1.payload.sent (lexically) ∧ size(e0.payload.sent)-1 >= size(e1.payload.sent)-1 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ e0.payload.sent >= e1.payload.sent (lexically) ∧ size(e0.payload.sent) >= size(e1.payload.sent)
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.sent) < size(e1.payload.log))
+
+size(e0.payload.sent) >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ size(e0.payload.sent) <= size(e1.payload.log)-1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ e0.payload.sent < e1.payload.log (lexically) ∧ size(e0.payload.log) >= 0 ∧ e0.payload.epoch >= 0 ∧ e0.payload.sent <= e1.payload.log (lexically) ∧ e1.payload.epoch >= 1 ∧ e1.payload.log >= 1 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1 ∧ size(e1.payload.log) >= 1
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.log) > size(e1.payload.log))
+
+e0.payload.log >= e1.payload.log (lexically) ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ indexof(e0) != indexof(e1) ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.epoch > e1.payload.epoch ∧ size(e0.payload.log)-1 >= size(e1.payload.sent) ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log)-1 >= size(e1.payload.log) ∧ size(e0.payload.log) >= 1 ∧ e0.payload.epoch >= 1 ∧ size(e0.payload.log) > size(e1.payload.sent) ∧ e1.payload.epoch >= 0 ∧ e0.payload.log > e1.payload.sent (lexically) ∧ e0.payload.log > e1.payload.log (lexically) ∧ e0.payload.log >= e1.payload.sent (lexically) ∧ size(e0.payload.sent)-1 >= size(e1.payload.sent)-1 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ e0.payload.sent >= e1.payload.sent (lexically) ∧ size(e0.payload.sent) >= size(e1.payload.sent)
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.sent) > size(e1.payload.log))
+
+size(e0.payload.sent) >= 1 ∧ e0.payload.log >= e1.payload.log (lexically) ∧ size(e1.payload.log) >= 0 ∧ size(e0.payload.sent) > size(e1.payload.sent) ∧ size(e1.payload.sent) >= 0 ∧ size(e0.payload.log)-1 >= size(e1.payload.sent) ∧ size(e0.payload.sent)-1 >= size(e1.payload.log) ∧ e0.payload.sent > e1.payload.log (lexically) ∧ size(e0.payload.sent)-1 >= size(e1.payload.sent) ∧ e0.payload.log > e1.payload.log (lexically) ∧ indexof(e0) != indexof(e1) ∧ e0.payload.epoch > e1.payload.epoch ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log)-1 >= size(e1.payload.log) ∧ e0.payload.sent > e1.payload.sent (lexically) ∧ size(e0.payload.log) >= 1 ∧ e0.payload.position ∈ { 1, 2 } ∧ size(e0.payload.log) > size(e1.payload.log) ∧ e0.payload.epoch >= 1 ∧ e0.payload.sent >= e1.payload.log (lexically) ∧ size(e0.payload.log) > size(e1.payload.sent) ∧ e1.payload.epoch >= 0 ∧ e0.payload.log > e1.payload.sent (lexically) ∧ e0.payload.log >= e1.payload.sent (lexically) ∧ e0.payload.sent >= e1.payload.sent (lexically)
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.sent) == size(e1.payload.log))
+
+indexof(e1) >= 1 ∧ e0.payload.log >= e1.payload.log (lexically) ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ size(e0.payload.log) >= size(e1.payload.sent) ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e0.payload.epoch >= e1.payload.epoch ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= size(e1.payload.log) ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1 ∧ size(e0.payload.log)-1 >= size(e1.payload.sent)-1 ∧ e0.payload.epoch >= 0 ∧ e1.payload.sent >= 1 ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ size(e0.payload.log)-1 >= size(e1.payload.log)-1 ∧ e0.payload.log >= e1.payload.sent (lexically) ∧ size(e0.payload.sent)-1 >= size(e1.payload.sent)-1 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1 ∧ e0.payload.sent >= e1.payload.sent (lexically) ∧ size(e0.payload.sent) >= size(e1.payload.sent)
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.log) == size(e1.payload.sent))
+
+indexof(e1) >= 1 ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ size(e1.payload.sent) >= 0 ∧ size(e0.payload.log) <= size(e1.payload.log) ∧ e0.payload.log >= 1 ∧ e0.payload.log <= e1.payload.log (lexically) ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch >= 0 ∧ size(e0.payload.sent)-1 <= size(e1.payload.log)-1 ∧ e0.payload.sent <= e1.payload.log (lexically) ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ size(e0.payload.sent) <= size(e1.payload.log) ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log)-1 <= size(e1.payload.log)-1 ∧ indexof(e0) >= 1 ∧ e0.payload.epoch <= e1.payload.epoch ∧ size(e0.payload.sent) == size(e1.payload.sent)
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.sent) > size(e1.payload.sent))
+
+size(e0.payload.sent) >= 1 ∧ size(e1.payload.log) >= 0 ∧ indexof(e0) != indexof(e1) ∧ size(e1.payload.sent) >= 0 ∧ size(e0.payload.log)-1 >= size(e1.payload.sent) ∧ e0.payload.log >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ e0.payload.sent > e1.payload.sent (lexically) ∧ size(e0.payload.log) >= 1 ∧ e0.payload.position ∈ { 1, 2 } ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch >= 1 ∧ size(e0.payload.sent)-1 >= size(e1.payload.sent) ∧ size(e0.payload.log) > size(e1.payload.sent) ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ e0.payload.log > e1.payload.sent (lexically) ∧ e0.payload.log >= e1.payload.sent (lexically) ∧ e0.payload.sent >= e1.payload.sent (lexically)
+(e0.payload.position <= e1.payload.position) ∧ (e0.payload.log == e1.payload.log)
+
+size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ size(e0.payload.log) >= size(e1.payload.sent) ∧ indexof(e0) == indexof(e1) ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch == e1.payload.epoch ∧ size(e0.payload.log)-1 >= size(e1.payload.sent)-1 ∧ e0.payload.epoch >= 0 ∧ size(e0.payload.sent)-1 <= size(e1.payload.log)-1 ∧ e1.payload.sent >= 1 ∧ e0.payload.sent <= e1.payload.log (lexically) ∧ e1.payload.log >= 1 ∧ e0.payload.log >= e1.payload.sent (lexically) ∧ size(e0.payload.sent) <= size(e1.payload.log) ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) == size(e1.payload.log) ∧ indexof(e0) >= 1 ∧ size(e0.payload.sent) == size(e1.payload.sent)
+(e0.payload.position <= e1.payload.position) ∧ (e0.payload.sent == e1.payload.sent)
+
+size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ size(e0.payload.log) >= size(e1.payload.sent) ∧ indexof(e0) == indexof(e1) ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch == e1.payload.epoch ∧ size(e0.payload.log)-1 >= size(e1.payload.sent)-1 ∧ e0.payload.epoch >= 0 ∧ size(e0.payload.sent)-1 <= size(e1.payload.log)-1 ∧ e1.payload.sent >= 1 ∧ e0.payload.sent <= e1.payload.log (lexically) ∧ e1.payload.log >= 1 ∧ e0.payload.log >= e1.payload.sent (lexically) ∧ size(e0.payload.sent) <= size(e1.payload.log) ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) == size(e1.payload.log) ∧ indexof(e0) >= 1 ∧ size(e0.payload.sent) == size(e1.payload.sent)
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.log) == size(e1.payload.log))
+
+indexof(e1) >= 1 ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ size(e0.payload.log) >= size(e1.payload.sent) ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch == e1.payload.epoch ∧ size(e0.payload.log)-1 >= size(e1.payload.sent)-1 ∧ e0.payload.epoch >= 0 ∧ size(e0.payload.sent)-1 <= size(e1.payload.log)-1 ∧ e1.payload.sent >= 1 ∧ e0.payload.sent <= e1.payload.log (lexically) ∧ e1.payload.log >= 1 ∧ e0.payload.log >= e1.payload.sent (lexically) ∧ size(e0.payload.sent) <= size(e1.payload.log) ∧ size(e0.payload.sent)-1 >= size(e1.payload.sent)-1 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1 ∧ e0.payload.sent >= e1.payload.sent (lexically) ∧ size(e0.payload.sent) >= size(e1.payload.sent)
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.log) > size(e1.payload.sent))
+
+size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ size(e1.payload.sent) >= 0 ∧ size(e0.payload.log)-1 >= size(e1.payload.sent) ∧ e0.payload.log >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 1 ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch >= 1 ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ e0.payload.log > e1.payload.sent (lexically) ∧ e0.payload.log >= e1.payload.sent (lexically) ∧ size(e0.payload.sent)-1 >= size(e1.payload.sent)-1 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ e0.payload.sent >= e1.payload.sent (lexically) ∧ size(e0.payload.sent) >= size(e1.payload.sent)
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.sent) == size(e1.payload.sent))
+
+indexof(e1) >= 1 ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ size(e0.payload.log) >= size(e1.payload.sent) ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1 ∧ size(e0.payload.log)-1 >= size(e1.payload.sent)-1 ∧ e0.payload.epoch >= 0 ∧ size(e0.payload.sent)-1 <= size(e1.payload.log)-1 ∧ e1.payload.sent >= 1 ∧ e0.payload.sent <= e1.payload.log (lexically) ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ e0.payload.log >= e1.payload.sent (lexically) ∧ size(e0.payload.sent) <= size(e1.payload.log) ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1
+(e0.payload.position <= e1.payload.position) ∧ (prefixOf(e0.payload, e1.payload) == No)
+
+e0.payload.log >= e1.payload.log (lexically) ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ indexof(e0) != indexof(e1) ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.epoch > e1.payload.epoch ∧ size(e0.payload.log)-1 >= size(e1.payload.sent) ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log)-1 >= size(e1.payload.log) ∧ size(e0.payload.log) >= 1 ∧ size(e0.payload.log) > size(e1.payload.log) ∧ e0.payload.epoch >= 1 ∧ size(e0.payload.log) > size(e1.payload.sent) ∧ e1.payload.epoch >= 0 ∧ e0.payload.log > e1.payload.sent (lexically) ∧ e0.payload.log > e1.payload.log (lexically) ∧ e0.payload.log >= e1.payload.sent (lexically) ∧ size(e0.payload.sent)-1 >= size(e1.payload.sent)-1 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ e0.payload.sent >= e1.payload.sent (lexically) ∧ size(e0.payload.sent) >= size(e1.payload.sent)
+(e0.payload.position <= e1.payload.position) ∧ (e0.payload.epoch > e1.payload.epoch)
+
+e0.payload.log >= e1.payload.log (lexically) ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ indexof(e0) != indexof(e1) ∧ size(e1.payload.sent) >= 0 ∧ size(e0.payload.log)-1 >= size(e1.payload.sent) ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log)-1 >= size(e1.payload.log) ∧ size(e0.payload.log) >= 1 ∧ size(e0.payload.log) > size(e1.payload.log) ∧ size(e0.payload.log) > size(e1.payload.sent) ∧ e0.payload.log > e1.payload.sent (lexically) ∧ e0.payload.log > e1.payload.log (lexically) ∧ e0.payload.log >= e1.payload.sent (lexically) ∧ size(e0.payload.sent)-1 >= size(e1.payload.sent)-1 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ e0.payload.sent >= e1.payload.sent (lexically) ∧ size(e0.payload.sent) >= size(e1.payload.sent)
+(e0.payload.position <= e1.payload.position) ∧ (e0.payload.epoch < e1.payload.epoch)
+
+size(e0.payload.log) < size(e1.payload.log) ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log <= e1.payload.log (lexically) ∧ size(e0.payload.log) <= size(e1.payload.log)-1 ∧ size(e0.payload.sent) < size(e1.payload.log) ∧ size(e0.payload.sent) <= size(e1.payload.log)-1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ e0.payload.sent < e1.payload.log (lexically) ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent <= e1.payload.log (lexically) ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1 ∧ e0.payload.log < e1.payload.log (lexically) ∧ indexof(e0) < indexof(e1) ∧ size(e1.payload.log) >= 1
+(e0.payload.position <= e1.payload.position) ∧ (e0.payload.position == e1.payload.position)
+
+indexof(e1) >= 1 ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch >= 0 ∧ e1.payload.sent >= 1 ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1
+(e0.payload.position <= e1.payload.position) ∧ (e0.payload.position < e1.payload.position)
+
+size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ indexof(e0) != indexof(e1) ∧ size(e1.payload.sent) >= 0 ∧ e1.payload.position ∈ { 2, 3 } ∧ e0.payload.log >= 1 ∧ size(e0.payload.log) >= 0 ∧ e0.payload.position ∈ { 1, 2 } ∧ size(e1.payload.sent) % e0.payload.position == 0 ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch >= 0 ∧ e1.payload.sent >= 1 ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ indexof(e0) >= 1
+(e0.payload.position <= e1.payload.position) ∧ (prefixOf(e0.payload, e1.payload) == Yes)
+
+indexof(e1) >= 1 ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ size(e1.payload.sent) >= 0 ∧ size(e0.payload.log) <= size(e1.payload.log) ∧ e0.payload.log >= 1 ∧ e0.payload.log <= e1.payload.log (lexically) ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch >= 0 ∧ size(e0.payload.sent)-1 <= size(e1.payload.log)-1 ∧ e1.payload.sent >= 1 ∧ e0.payload.sent <= e1.payload.log (lexically) ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ size(e0.payload.sent) <= size(e1.payload.log) ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log)-1 <= size(e1.payload.log)-1 ∧ indexof(e0) >= 1 ∧ e0.payload.epoch <= e1.payload.epoch
+(e0.payload.position <= e1.payload.position) ∧ (e0.payload.epoch == e1.payload.epoch)
+
+indexof(e1) >= 1 ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ size(e0.payload.log) >= size(e1.payload.sent) ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1 ∧ size(e0.payload.log)-1 >= size(e1.payload.sent)-1 ∧ size(e0.payload.sent)-1 <= size(e1.payload.log)-1 ∧ e1.payload.sent >= 1 ∧ e0.payload.sent <= e1.payload.log (lexically) ∧ e1.payload.log >= 1 ∧ e0.payload.log >= e1.payload.sent (lexically) ∧ size(e0.payload.sent) <= size(e1.payload.log) ∧ size(e0.payload.sent)-1 >= size(e1.payload.sent)-1 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) == size(e1.payload.log) ∧ indexof(e0) >= 1 ∧ e0.payload.sent >= e1.payload.sent (lexically) ∧ size(e0.payload.sent) >= size(e1.payload.sent)
+381 0
+EOT
+(e0.payload.position <= e1.payload.position)
+
+indexof(e1) >= 1 ∧ size(e0.payload.sent) >= 0 ∧ UnionEq(e0.payload, e1.payload) ∈ { 0, 1 } ∧ size(e1.payload.log) >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch >= 0 ∧ e1.payload.sent >= 1 ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1
+17 0
+EOT
+(e0.payload.position <= e1.payload.position)
+
+indexof(e1) >= 1 ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch >= 0 ∧ e1.payload.sent >= 1 ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1
+14 0
+EOT
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.sent) < size(e1.payload.sent))
+
+size(e0.payload.sent) >= 0 ∧ e0.payload.epoch >= 0 ∧ UnionEq(e0.payload, e1.payload) == 0 ∧ e1.payload.epoch >= 1 ∧ size(e1.payload.sent) >= 1 ∧ e1.payload.position ∈ { 1, 2 } ∧ size(e0.payload.log) >= 0 ∧ size(e1.payload.log) >= 1 ∧ e0.payload.position ∈ { 1, 2 }
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.log) < size(e1.payload.sent))
+
+size(e0.payload.sent) >= 0 ∧ e0.payload.epoch >= 0 ∧ UnionEq(e0.payload, e1.payload) == 0 ∧ e1.payload.epoch >= 1 ∧ size(e1.payload.sent) >= 1 ∧ e1.payload.position ∈ { 1, 2 } ∧ size(e0.payload.log) >= 0 ∧ size(e1.payload.log) >= 1 ∧ e0.payload.position ∈ { 1, 2 }
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.log) < size(e1.payload.log))
+
+size(e0.payload.sent) >= 0 ∧ e0.payload.epoch >= 0 ∧ UnionEq(e0.payload, e1.payload) == 0 ∧ e1.payload.epoch >= 1 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ size(e1.payload.log) >= 1
+(e0.payload.position <= e1.payload.position) ∧ (indexof(e0) > indexof(e1))
+
+size(e0.payload.sent) >= 0 ∧ UnionEq(e0.payload, e1.payload) ∈ { 0, 1 } ∧ size(e1.payload.log) >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch >= 0 ∧ e1.payload.sent >= 1 ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ e0.payload.position ∈ { 1, 2, 3 }
+(e0.payload.position <= e1.payload.position) ∧ (indexof(e0) < indexof(e1))
+
+size(e0.payload.sent) >= 0 ∧ UnionEq(e0.payload, e1.payload) ∈ { 0, 1 } ∧ size(e1.payload.log) >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch >= 0 ∧ e1.payload.sent >= 1 ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.sent) < size(e1.payload.log))
+
+size(e0.payload.sent) >= 0 ∧ UnionEq(e0.payload, e1.payload) ∈ { 0, 1 } ∧ e0.payload.epoch >= 0 ∧ e1.payload.epoch >= 1 ∧ e1.payload.log >= 1 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ size(e1.payload.log) >= 1
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.log) > size(e1.payload.log))
+
+e0.payload.epoch >= 1 ∧ size(e0.payload.sent) >= 0 ∧ UnionEq(e0.payload, e1.payload) ∈ { 0, 1 } ∧ size(e1.payload.log) >= 0 ∧ e1.payload.epoch >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 1
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.sent) > size(e1.payload.log))
+
+size(e0.payload.sent) >= 1 ∧ e0.payload.epoch >= 1 ∧ UnionEq(e0.payload, e1.payload) ∈ { 0, 1 } ∧ size(e1.payload.log) >= 0 ∧ e1.payload.epoch >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 1 ∧ e0.payload.position ∈ { 1, 2 }
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.log) > size(e1.payload.sent))
+
+e0.payload.epoch >= 1 ∧ size(e0.payload.sent) >= 0 ∧ UnionEq(e0.payload, e1.payload) ∈ { 0, 1 } ∧ size(e1.payload.log) >= 0 ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 1 ∧ e0.payload.sent >= 1
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.sent) > size(e1.payload.sent))
+
+size(e0.payload.sent) >= 1 ∧ e0.payload.epoch >= 1 ∧ UnionEq(e0.payload, e1.payload) ∈ { 0, 1 } ∧ size(e1.payload.log) >= 0 ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 1 ∧ e0.payload.position ∈ { 1, 2 } ∧ e0.payload.sent >= 1
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.log) == size(e1.payload.sent))
+
+indexof(e1) >= 1 ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch >= 0 ∧ UnionEq(e0.payload, e1.payload) == 0 ∧ e1.payload.sent >= 1 ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1
+(e0.payload.position <= e1.payload.position) ∧ (e0.payload.log == e1.payload.log)
+
+indexof(e1) >= 1 ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch >= 0 ∧ UnionEq(e0.payload, e1.payload) == 0 ∧ e1.payload.sent >= 1 ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.log) == size(e1.payload.log))
+
+indexof(e1) >= 1 ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch >= 0 ∧ UnionEq(e0.payload, e1.payload) == 0 ∧ e1.payload.sent >= 1 ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.sent) == size(e1.payload.sent))
+
+indexof(e1) >= 1 ∧ size(e0.payload.sent) >= 0 ∧ UnionEq(e0.payload, e1.payload) ∈ { 0, 1 } ∧ size(e1.payload.log) >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch >= 0 ∧ e1.payload.sent >= 1 ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.sent) == size(e1.payload.log))
+
+indexof(e1) >= 1 ∧ size(e0.payload.sent) >= 0 ∧ UnionEq(e0.payload, e1.payload) ∈ { 0, 1 } ∧ size(e1.payload.log) >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch >= 0 ∧ e1.payload.sent >= 1 ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1
+(e0.payload.position <= e1.payload.position) ∧ (e0.payload.sent == e1.payload.sent)
+
+indexof(e1) >= 1 ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch >= 0 ∧ UnionEq(e0.payload, e1.payload) == 0 ∧ e1.payload.sent >= 1 ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1
+(e0.payload.position <= e1.payload.position) ∧ (e0.payload.epoch < e1.payload.epoch)
+
+size(e0.payload.sent) >= 0 ∧ e0.payload.epoch >= 0 ∧ UnionEq(e0.payload, e1.payload) == 0 ∧ e1.payload.epoch >= 1 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ size(e1.payload.log) >= 1
+(e0.payload.position <= e1.payload.position) ∧ (UnionEq(e0.payload, e1.payload) == No)
+
+e0.payload.epoch >= 1 ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ e1.payload.epoch >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 1
+(e0.payload.position <= e1.payload.position) ∧ (e0.payload.epoch > e1.payload.epoch)
+
+e0.payload.epoch >= 1 ∧ size(e0.payload.sent) >= 0 ∧ UnionEq(e0.payload, e1.payload) ∈ { 0, 1 } ∧ size(e1.payload.log) >= 0 ∧ e1.payload.epoch >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 1
+(e0.payload.position <= e1.payload.position) ∧ (e0.payload.epoch == e1.payload.epoch)
+
+indexof(e1) >= 1 ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch >= 0 ∧ UnionEq(e0.payload, e1.payload) == 0 ∧ e1.payload.sent >= 1 ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1
+(e0.payload.position <= e1.payload.position) ∧ (UnionEq(e0.payload, e1.payload) == Yes)
+
+indexof(e1) >= 1 ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch >= 0 ∧ e1.payload.sent >= 1 ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1
+(e0.payload.position <= e1.payload.position) ∧ (e0.payload.position == e1.payload.position)
+
+indexof(e1) >= 1 ∧ size(e0.payload.sent) >= 0 ∧ UnionEq(e0.payload, e1.payload) ∈ { 0, 1 } ∧ size(e1.payload.log) >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch >= 0 ∧ e1.payload.sent >= 1 ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1
+(e0.payload.position <= e1.payload.position) ∧ (e0.payload.position < e1.payload.position)
+
+size(e0.payload.sent) >= 0 ∧ UnionEq(e0.payload, e1.payload) ∈ { 0, 1 } ∧ size(e1.payload.log) >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e1.payload.position ∈ { 2, 3 } ∧ e0.payload.log >= 1 ∧ size(e0.payload.log) >= 0 ∧ e0.payload.position ∈ { 1, 2 } ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch >= 0 ∧ e1.payload.sent >= 1 ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ indexof(e0) >= 1
+491 0
+EOT
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.log) < size(e1.payload.sent))
+
+size(e0.payload.sent) >= 0 ∧ e0.payload.epoch < e1.payload.epoch ∧ size(e1.payload.sent) >= 1 ∧ size(e0.payload.log) <= size(e1.payload.log)-1 ∧ e0.payload.sent < e1.payload.sent (lexically) ∧ e0.payload.sent <= e1.payload.log (lexically) ∧ e0.payload.log < e1.payload.sent (lexically) ∧ e1.payload.position ∈ { 1, 2 } ∧ indexof(e0) < indexof(e1) ∧ size(e1.payload.log) >= 1 ∧ e0.payload.log <= e1.payload.sent (lexically) ∧ size(e0.payload.log) <= size(e1.payload.sent)-1 ∧ size(e0.payload.log) < size(e1.payload.log) ∧ size(e0.payload.sent) <= size(e1.payload.sent)-1 ∧ e0.payload.log <= e1.payload.log (lexically) ∧ e0.payload.sent <= e1.payload.sent (lexically) ∧ size(e0.payload.sent) < size(e1.payload.log) ∧ size(e0.payload.sent) <= size(e1.payload.log)-1 ∧ e0.payload.sent < e1.payload.log (lexically) ∧ size(e0.payload.log) >= 0 ∧ size(e0.payload.sent) < size(e1.payload.sent) ∧ e0.payload.position ∈ { 1, 2 } ∧ e0.payload.epoch >= 0 ∧ e1.payload.epoch >= 1 ∧ e0.payload.log < e1.payload.log (lexically)
+(e0.payload.position <= e1.payload.position) ∧ (indexof(e0) < indexof(e1))
+
+size(e0.payload.sent) >= 0 ∧ e0.payload.epoch >= 0 ∧ size(e1.payload.log) >= 0 ∧ e1.payload.sent >= 1 ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.log) < size(e1.payload.log))
+
+size(e0.payload.sent) >= 0 ∧ e0.payload.epoch < e1.payload.epoch ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log <= e1.payload.log (lexically) ∧ size(e0.payload.log) <= size(e1.payload.log)-1 ∧ size(e0.payload.sent) < size(e1.payload.log) ∧ size(e0.payload.sent) <= size(e1.payload.log)-1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ e0.payload.sent < e1.payload.log (lexically) ∧ size(e0.payload.log) >= 0 ∧ e0.payload.epoch >= 0 ∧ e0.payload.sent <= e1.payload.log (lexically) ∧ e1.payload.epoch >= 1 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1 ∧ e0.payload.log < e1.payload.log (lexically) ∧ indexof(e0) < indexof(e1) ∧ size(e1.payload.log) >= 1
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.sent) < size(e1.payload.sent))
+
+size(e0.payload.sent) >= 0 ∧ e0.payload.epoch < e1.payload.epoch ∧ size(e1.payload.sent) >= 1 ∧ size(e0.payload.log) <= size(e1.payload.log)-1 ∧ e0.payload.sent < e1.payload.sent (lexically) ∧ size(e0.payload.log) < size(e1.payload.sent) ∧ e0.payload.sent <= e1.payload.log (lexically) ∧ e0.payload.log < e1.payload.sent (lexically) ∧ e1.payload.position ∈ { 1, 2 } ∧ indexof(e0) < indexof(e1) ∧ size(e1.payload.log) >= 1 ∧ e0.payload.log <= e1.payload.sent (lexically) ∧ size(e0.payload.log) <= size(e1.payload.sent)-1 ∧ size(e0.payload.log) < size(e1.payload.log) ∧ size(e0.payload.sent) <= size(e1.payload.sent)-1 ∧ e0.payload.log <= e1.payload.log (lexically) ∧ e0.payload.sent <= e1.payload.sent (lexically) ∧ size(e0.payload.sent) < size(e1.payload.log) ∧ size(e0.payload.sent) <= size(e1.payload.log)-1 ∧ e0.payload.sent < e1.payload.log (lexically) ∧ size(e0.payload.log) >= 0 ∧ e0.payload.position ∈ { 1, 2 } ∧ e0.payload.epoch >= 0 ∧ e1.payload.epoch >= 1 ∧ e0.payload.log < e1.payload.log (lexically)
+(e0.payload.position <= e1.payload.position) ∧ (indexof(e0) > indexof(e1))
+
+e0.payload.log >= e1.payload.log (lexically) ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ size(e0.payload.log) >= size(e1.payload.sent) ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e0.payload.epoch >= e1.payload.epoch ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= size(e1.payload.log) ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1 ∧ size(e0.payload.log)-1 >= size(e1.payload.sent)-1 ∧ e0.payload.epoch >= 0 ∧ e1.payload.sent >= 1 ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ size(e0.payload.log)-1 >= size(e1.payload.log)-1 ∧ e0.payload.log >= e1.payload.sent (lexically) ∧ size(e0.payload.sent)-1 >= size(e1.payload.sent)-1 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ e0.payload.sent >= e1.payload.sent (lexically) ∧ size(e0.payload.sent) >= size(e1.payload.sent)
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.log) > size(e1.payload.log))
+
+e0.payload.log >= e1.payload.log (lexically) ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ indexof(e0) != indexof(e1) ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.epoch > e1.payload.epoch ∧ size(e0.payload.log)-1 >= size(e1.payload.sent) ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log)-1 >= size(e1.payload.log) ∧ size(e0.payload.log) >= 1 ∧ e0.payload.epoch >= 1 ∧ size(e0.payload.log) > size(e1.payload.sent) ∧ e1.payload.epoch >= 0 ∧ e0.payload.log > e1.payload.sent (lexically) ∧ e0.payload.log > e1.payload.log (lexically) ∧ e0.payload.log >= e1.payload.sent (lexically) ∧ size(e0.payload.sent)-1 >= size(e1.payload.sent)-1 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ e0.payload.sent >= e1.payload.sent (lexically) ∧ size(e0.payload.sent) >= size(e1.payload.sent)
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.sent) > size(e1.payload.log))
+
+size(e0.payload.sent) >= 1 ∧ e0.payload.log >= e1.payload.log (lexically) ∧ size(e1.payload.log) >= 0 ∧ size(e0.payload.sent) > size(e1.payload.sent) ∧ size(e1.payload.sent) >= 0 ∧ size(e0.payload.log)-1 >= size(e1.payload.sent) ∧ size(e0.payload.sent)-1 >= size(e1.payload.log) ∧ e0.payload.sent > e1.payload.log (lexically) ∧ size(e0.payload.sent)-1 >= size(e1.payload.sent) ∧ e0.payload.log > e1.payload.log (lexically) ∧ indexof(e0) != indexof(e1) ∧ e0.payload.epoch > e1.payload.epoch ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log)-1 >= size(e1.payload.log) ∧ e0.payload.sent > e1.payload.sent (lexically) ∧ size(e0.payload.log) >= 1 ∧ e0.payload.position ∈ { 1, 2 } ∧ size(e0.payload.log) > size(e1.payload.log) ∧ e0.payload.epoch >= 1 ∧ e0.payload.sent >= e1.payload.log (lexically) ∧ size(e0.payload.log) > size(e1.payload.sent) ∧ e1.payload.epoch >= 0 ∧ e0.payload.log > e1.payload.sent (lexically) ∧ e0.payload.log >= e1.payload.sent (lexically) ∧ e0.payload.sent >= e1.payload.sent (lexically)
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.sent) < size(e1.payload.log))
+
+size(e0.payload.sent) >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ size(e0.payload.sent) <= size(e1.payload.log)-1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ e0.payload.sent < e1.payload.log (lexically) ∧ size(e0.payload.log) >= 0 ∧ e0.payload.epoch >= 0 ∧ e0.payload.sent <= e1.payload.log (lexically) ∧ e1.payload.epoch >= 1 ∧ e1.payload.log >= 1 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1 ∧ size(e1.payload.log) >= 1
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.log) > size(e1.payload.sent))
+
+size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ size(e1.payload.sent) >= 0 ∧ size(e0.payload.log)-1 >= size(e1.payload.sent) ∧ e0.payload.log >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 1 ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch >= 1 ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ e0.payload.log > e1.payload.sent (lexically) ∧ e0.payload.log >= e1.payload.sent (lexically) ∧ size(e0.payload.sent)-1 >= size(e1.payload.sent)-1 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ e0.payload.sent >= e1.payload.sent (lexically) ∧ size(e0.payload.sent) >= size(e1.payload.sent)
+(e0.payload.position <= e1.payload.position) ∧ (e0.payload.log == e1.payload.log)
+
+size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ size(e0.payload.log) >= size(e1.payload.sent) ∧ indexof(e0) == indexof(e1) ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch == e1.payload.epoch ∧ size(e0.payload.log)-1 >= size(e1.payload.sent)-1 ∧ e0.payload.epoch >= 0 ∧ size(e0.payload.sent)-1 <= size(e1.payload.log)-1 ∧ e1.payload.sent >= 1 ∧ e0.payload.sent <= e1.payload.log (lexically) ∧ e1.payload.log >= 1 ∧ e0.payload.log >= e1.payload.sent (lexically) ∧ size(e0.payload.sent) <= size(e1.payload.log) ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) == size(e1.payload.log) ∧ indexof(e0) >= 1 ∧ size(e0.payload.sent) == size(e1.payload.sent)
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.sent) > size(e1.payload.sent))
+
+size(e0.payload.sent) >= 1 ∧ size(e1.payload.log) >= 0 ∧ indexof(e0) != indexof(e1) ∧ size(e1.payload.sent) >= 0 ∧ size(e0.payload.log)-1 >= size(e1.payload.sent) ∧ e0.payload.log >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ e0.payload.sent > e1.payload.sent (lexically) ∧ size(e0.payload.log) >= 1 ∧ e0.payload.position ∈ { 1, 2 } ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch >= 1 ∧ size(e0.payload.sent)-1 >= size(e1.payload.sent) ∧ size(e0.payload.log) > size(e1.payload.sent) ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ e0.payload.log > e1.payload.sent (lexically) ∧ e0.payload.log >= e1.payload.sent (lexically) ∧ e0.payload.sent >= e1.payload.sent (lexically)
+(e0.payload.position <= e1.payload.position) ∧ (e0.payload.sent == e1.payload.sent)
+
+size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ size(e0.payload.log) >= size(e1.payload.sent) ∧ indexof(e0) == indexof(e1) ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch == e1.payload.epoch ∧ size(e0.payload.log)-1 >= size(e1.payload.sent)-1 ∧ e0.payload.epoch >= 0 ∧ size(e0.payload.sent)-1 <= size(e1.payload.log)-1 ∧ e1.payload.sent >= 1 ∧ e0.payload.sent <= e1.payload.log (lexically) ∧ e1.payload.log >= 1 ∧ e0.payload.log >= e1.payload.sent (lexically) ∧ size(e0.payload.sent) <= size(e1.payload.log) ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) == size(e1.payload.log) ∧ indexof(e0) >= 1 ∧ size(e0.payload.sent) == size(e1.payload.sent)
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.log) == size(e1.payload.sent))
+
+indexof(e1) >= 1 ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ size(e1.payload.sent) >= 0 ∧ size(e0.payload.log) <= size(e1.payload.log) ∧ e0.payload.log >= 1 ∧ e0.payload.log <= e1.payload.log (lexically) ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch >= 0 ∧ size(e0.payload.sent)-1 <= size(e1.payload.log)-1 ∧ e0.payload.sent <= e1.payload.log (lexically) ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ size(e0.payload.sent) <= size(e1.payload.log) ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log)-1 <= size(e1.payload.log)-1 ∧ indexof(e0) >= 1 ∧ e0.payload.epoch <= e1.payload.epoch ∧ size(e0.payload.sent) == size(e1.payload.sent)
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.sent) == size(e1.payload.log))
+
+indexof(e1) >= 1 ∧ e0.payload.log >= e1.payload.log (lexically) ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ size(e0.payload.log) >= size(e1.payload.sent) ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e0.payload.epoch >= e1.payload.epoch ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= size(e1.payload.log) ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1 ∧ size(e0.payload.log)-1 >= size(e1.payload.sent)-1 ∧ e0.payload.epoch >= 0 ∧ e1.payload.sent >= 1 ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ size(e0.payload.log)-1 >= size(e1.payload.log)-1 ∧ e0.payload.log >= e1.payload.sent (lexically) ∧ size(e0.payload.sent)-1 >= size(e1.payload.sent)-1 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1 ∧ e0.payload.sent >= e1.payload.sent (lexically) ∧ size(e0.payload.sent) >= size(e1.payload.sent)
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.sent) == size(e1.payload.sent))
+
+indexof(e1) >= 1 ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ size(e0.payload.log) >= size(e1.payload.sent) ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1 ∧ size(e0.payload.log)-1 >= size(e1.payload.sent)-1 ∧ e0.payload.epoch >= 0 ∧ size(e0.payload.sent)-1 <= size(e1.payload.log)-1 ∧ e1.payload.sent >= 1 ∧ e0.payload.sent <= e1.payload.log (lexically) ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ e0.payload.log >= e1.payload.sent (lexically) ∧ size(e0.payload.sent) <= size(e1.payload.log) ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1
+(e0.payload.position <= e1.payload.position) ∧ (size(e0.payload.log) == size(e1.payload.log))
+
+indexof(e1) >= 1 ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ size(e0.payload.log) >= size(e1.payload.sent) ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch == e1.payload.epoch ∧ size(e0.payload.log)-1 >= size(e1.payload.sent)-1 ∧ e0.payload.epoch >= 0 ∧ size(e0.payload.sent)-1 <= size(e1.payload.log)-1 ∧ e1.payload.sent >= 1 ∧ e0.payload.sent <= e1.payload.log (lexically) ∧ e1.payload.log >= 1 ∧ e0.payload.log >= e1.payload.sent (lexically) ∧ size(e0.payload.sent) <= size(e1.payload.log) ∧ size(e0.payload.sent)-1 >= size(e1.payload.sent)-1 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1 ∧ e0.payload.sent >= e1.payload.sent (lexically) ∧ size(e0.payload.sent) >= size(e1.payload.sent)
+(e0.payload.position <= e1.payload.position) ∧ (UnionEq(e0.payload, e1.payload) == No)
+
+e0.payload.log >= e1.payload.log (lexically) ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ indexof(e0) != indexof(e1) ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.epoch > e1.payload.epoch ∧ size(e0.payload.log)-1 >= size(e1.payload.sent) ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log)-1 >= size(e1.payload.log) ∧ size(e0.payload.log) >= 1 ∧ size(e0.payload.log) > size(e1.payload.log) ∧ e0.payload.epoch >= 1 ∧ size(e0.payload.log) > size(e1.payload.sent) ∧ e1.payload.epoch >= 0 ∧ e0.payload.log > e1.payload.sent (lexically) ∧ e0.payload.log > e1.payload.log (lexically) ∧ e0.payload.log >= e1.payload.sent (lexically) ∧ size(e0.payload.sent)-1 >= size(e1.payload.sent)-1 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ e0.payload.sent >= e1.payload.sent (lexically) ∧ size(e0.payload.sent) >= size(e1.payload.sent)
+(e0.payload.position <= e1.payload.position) ∧ (e0.payload.epoch < e1.payload.epoch)
+
+size(e0.payload.log) < size(e1.payload.log) ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log <= e1.payload.log (lexically) ∧ size(e0.payload.log) <= size(e1.payload.log)-1 ∧ size(e0.payload.sent) < size(e1.payload.log) ∧ size(e0.payload.sent) <= size(e1.payload.log)-1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ e0.payload.sent < e1.payload.log (lexically) ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent <= e1.payload.log (lexically) ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1 ∧ e0.payload.log < e1.payload.log (lexically) ∧ indexof(e0) < indexof(e1) ∧ size(e1.payload.log) >= 1
+(e0.payload.position <= e1.payload.position) ∧ (e0.payload.epoch > e1.payload.epoch)
+
+e0.payload.log >= e1.payload.log (lexically) ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ indexof(e0) != indexof(e1) ∧ size(e1.payload.sent) >= 0 ∧ size(e0.payload.log)-1 >= size(e1.payload.sent) ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log)-1 >= size(e1.payload.log) ∧ size(e0.payload.log) >= 1 ∧ size(e0.payload.log) > size(e1.payload.log) ∧ size(e0.payload.log) > size(e1.payload.sent) ∧ e0.payload.log > e1.payload.sent (lexically) ∧ e0.payload.log > e1.payload.log (lexically) ∧ e0.payload.log >= e1.payload.sent (lexically) ∧ size(e0.payload.sent)-1 >= size(e1.payload.sent)-1 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ e0.payload.sent >= e1.payload.sent (lexically) ∧ size(e0.payload.sent) >= size(e1.payload.sent)
+(e0.payload.position <= e1.payload.position) ∧ (UnionEq(e0.payload, e1.payload) == Yes)
+
+indexof(e1) >= 1 ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ size(e0.payload.log)-1 <= size(e1.payload.log) ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch >= 0 ∧ e1.payload.sent >= 1 ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ size(e0.payload.sent)-1 <= size(e1.payload.log) ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1
+(e0.payload.position <= e1.payload.position) ∧ (e0.payload.epoch == e1.payload.epoch)
+
+indexof(e1) >= 1 ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ size(e0.payload.log) >= size(e1.payload.sent) ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1 ∧ size(e0.payload.log)-1 >= size(e1.payload.sent)-1 ∧ size(e0.payload.sent)-1 <= size(e1.payload.log)-1 ∧ e1.payload.sent >= 1 ∧ e0.payload.sent <= e1.payload.log (lexically) ∧ e1.payload.log >= 1 ∧ e0.payload.log >= e1.payload.sent (lexically) ∧ size(e0.payload.sent) <= size(e1.payload.log) ∧ size(e0.payload.sent)-1 >= size(e1.payload.sent)-1 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) == size(e1.payload.log) ∧ indexof(e0) >= 1 ∧ e0.payload.sent >= e1.payload.sent (lexically) ∧ size(e0.payload.sent) >= size(e1.payload.sent)
+(e0.payload.position <= e1.payload.position) ∧ (e0.payload.position == e1.payload.position)
+
+indexof(e1) >= 1 ∧ size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ size(e1.payload.sent) >= 0 ∧ e0.payload.log >= 1 ∧ e1.payload.position ∈ { 1, 2, 3 } ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch >= 0 ∧ e1.payload.sent >= 1 ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1
+(e0.payload.position <= e1.payload.position) ∧ (e0.payload.position < e1.payload.position)
+
+size(e0.payload.sent) >= 0 ∧ size(e1.payload.log) >= 0 ∧ indexof(e0) != indexof(e1) ∧ size(e1.payload.sent) >= 0 ∧ e1.payload.position ∈ { 2, 3 } ∧ e0.payload.log >= 1 ∧ size(e0.payload.log) >= 0 ∧ e0.payload.position ∈ { 1, 2 } ∧ size(e1.payload.sent) % e0.payload.position == 0 ∧ e0.payload.sent >= 1 ∧ e0.payload.epoch >= 0 ∧ e1.payload.sent >= 1 ∧ e1.payload.log >= 1 ∧ e1.payload.epoch >= 0 ∧ indexof(e0) >= 1
+381 0
+EOT
+
+
+e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+6 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+e1.payload.id >= 1 ∧ indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+5 0
+EOT
+(e0.payload.id == e1.payload.id)
+
+e1.payload.id >= 1 ∧ indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+(e0.payload.v == e1.payload.v)
+
+e1.payload.id >= 1 ∧ indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+(e0.payload.source == e1.payload.source)
+
+e1.payload.id >= 1 ∧ indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) < indexof(e1))
+
+indexof(e1) >= 1 ∧ e1.payload.id >= 1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1))
+
+e1.payload.id >= 1 ∧ indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 1 ∧ e0.payload.v >= 0
+(e0.payload.k == e1.payload.k)
+
+e1.payload.id >= 1 ∧ indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+72 0
+EOT
+(e0.payload.id == e1.payload.id)
+
+indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+(e0.payload.source == e1.payload.source)
+
+e1.payload.id >= 1 ∧ indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+(e0.payload.v == e1.payload.v)
+
+e1.payload.id >= 1 ∧ indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ indexof(e0) >= 0
+(indexof(e0) < indexof(e1))
+
+e1.payload.id >= 1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1))
+
+e1.payload.id >= 1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(e0.payload.k == e1.payload.k)
+
+e1.payload.id >= 1 ∧ indexof(e1) >= 0 ∧ e0.payload.id >= 1 ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+24 0
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.id == e1.payload.id)
+
+indexof(e1) >= 1 ∧ e1.payload.id >= 1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.id == e1.payload.id)
+
+e1.payload.id >= 1 ∧ indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 1 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.v == e1.payload.v)
+
+e1.payload.id >= 1 ∧ indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 1 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.source == e1.payload.source)
+
+e1.payload.id >= 1 ∧ indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 1 ∧ e0.payload.v >= 0
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.v == e1.payload.v)
+
+indexof(e1) >= 1 ∧ e1.payload.id >= 1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+(e0.payload.source == e1.payload.source) ∧ (e0.payload.id == e1.payload.id)
+
+e1.payload.id >= 1 ∧ indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.source == e1.payload.source)
+
+indexof(e1) >= 1 ∧ e1.payload.id >= 1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+(e0.payload.source == e1.payload.source) ∧ (e0.payload.v == e1.payload.v)
+
+e1.payload.id >= 1 ∧ indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.k == e1.payload.k)
+
+e1.payload.id >= 1 ∧ indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 1 ∧ e0.payload.v >= 0
+(e0.payload.id == e1.payload.id) ∧ (e0.payload.k == e1.payload.k)
+
+e1.payload.id >= 1 ∧ indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+(e0.payload.id == e1.payload.id) ∧ (e0.payload.v == e1.payload.v)
+
+e1.payload.id >= 1 ∧ indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.k == e1.payload.k)
+
+indexof(e1) >= 1 ∧ e1.payload.id >= 1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+(e0.payload.k == e1.payload.k) ∧ (e0.payload.v == e1.payload.v)
+
+e1.payload.id >= 1 ∧ indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+(e0.payload.source == e1.payload.source) ∧ (e0.payload.k == e1.payload.k)
+
+e1.payload.id >= 1 ∧ indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+168 0
+EOT
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.id == e1.payload.id)
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.id == e1.payload.id)
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.source == e1.payload.source)
+
+e1.payload.id >= 1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.v == e1.payload.v)
+
+e1.payload.id >= 1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 }
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.source == e1.payload.source)
+
+e1.payload.id >= 1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(e0.payload.source == e1.payload.source) ∧ (e0.payload.id == e1.payload.id)
+
+indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.v == e1.payload.v)
+
+e1.payload.id >= 1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 }
+(e0.payload.source == e1.payload.source) ∧ (e0.payload.v == e1.payload.v)
+
+e1.payload.id >= 1 ∧ indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ indexof(e0) >= 0
+(e0.payload.id == e1.payload.id) ∧ (e0.payload.k == e1.payload.k)
+
+indexof(e1) >= 0 ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+(e0.payload.id == e1.payload.id) ∧ (e0.payload.v == e1.payload.v)
+
+indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ indexof(e0) >= 0
+(e0.payload.source == e1.payload.source) ∧ (e0.payload.k == e1.payload.k)
+
+e1.payload.id >= 1 ∧ indexof(e1) >= 0 ∧ e0.payload.id >= 1 ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+(e0.payload.k == e1.payload.k) ∧ (e0.payload.v == e1.payload.v)
+
+e1.payload.id >= 1 ∧ indexof(e1) >= 0 ∧ e0.payload.id >= 1 ∧ indexof(e0) >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.k == e1.payload.k)
+
+e1.payload.id >= 1 ∧ e0.payload.id >= 1 ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.k == e1.payload.k)
+
+e1.payload.id >= 1 ∧ e0.payload.id >= 1 ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+42 0
+EOT
+
+
+e0.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+5 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+indexof(e1) >= 0 ∧ indexof(e0) != indexof(e1) ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+3 0
+EOT
+(indexof(e0) < indexof(e1))
+
+e1.payload.id >= 1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(e0.payload.v == e1.payload.v)
+
+e1.payload.id >= 1 ∧ indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1))
+
+e1.payload.id >= 1 ∧ indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(e0.payload.k == e1.payload.k)
+
+e1.payload.id >= 1 ∧ indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+44 0
+EOT
+(e0.payload.v == e1.payload.v)
+
+indexof(e1) >= 0 ∧ indexof(e0) != indexof(e1) ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 }
+(indexof(e0) < indexof(e1))
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1))
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(e0.payload.k == e1.payload.k)
+
+indexof(e1) >= 0 ∧ indexof(e0) != indexof(e1) ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+8 0
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.v == e1.payload.v)
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.k == e1.payload.k)
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.v == e1.payload.v)
+
+e1.payload.id >= 1 ∧ indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(e0.payload.k == e1.payload.k) ∧ (e0.payload.v == e1.payload.v)
+
+e1.payload.id >= 1 ∧ indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.k == e1.payload.k)
+
+e1.payload.id >= 1 ∧ indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+55 0
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.v == e1.payload.v)
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 }
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.k == e1.payload.k)
+
+e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.v == e1.payload.v)
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 }
+(e0.payload.k == e1.payload.k) ∧ (e0.payload.v == e1.payload.v)
+
+indexof(e1) >= 0 ∧ indexof(e0) != indexof(e1)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.k == e1.payload.k)
+
+e1.payload.v >= 0 ∧ e0.payload.v >= 0
+5 0
+EOT
+0 0
+EOT
+
+
+indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ _num_e_exists_ >= 2 ∧ e0.payload.k == e1.payload.k ∧ e0.payload.v >= 0 ∧ e0.payload.v == e1.payload.v
+3 0
+EOT
+
+(indexof(e0) > indexof(e1))
+e1.payload.id >= 1 ∧ indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ _num_e_exists_ >= 2 ∧ e0.payload.v >= 0
+
+(e0.payload.v == e1.payload.v)
+e1.payload.id >= 1 ∧ indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v are equal ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ _num_e_exists_ >= 2 ∧ e0.payload.v >= 0
+
+(e0.payload.k == e1.payload.k)
+e1.payload.id >= 1 ∧ indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.k are equal ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ _num_e_exists_ >= 2 ∧ e0.payload.v >= 0
+44 1
+EOT
+
+(indexof(e0) > indexof(e1))
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ _num_e_exists_ >= 2 ∧ e0.payload.k == e1.payload.k ∧ e0.payload.v >= 0 ∧ e0.payload.v == e1.payload.v
+
+(e0.payload.v == e1.payload.v)
+indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ _num_e_exists_ >= 2 ∧ e0.payload.k == e1.payload.k
+
+(e0.payload.k == e1.payload.k)
+indexof(e1) >= 0 ∧ e1.payload.v >= 0 ∧ _num_e_exists_ >= 2 ∧ e0.payload.v >= 0 ∧ e0.payload.v == e1.payload.v
+8 1
+EOT
+
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.v == e1.payload.v)
+e1.payload.id >= 1 ∧ indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v are equal ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ _num_e_exists_ >= 2 ∧ e0.payload.v >= 0
+
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.k == e1.payload.k)
+e1.payload.id >= 1 ∧ indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.k are equal ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ _num_e_exists_ >= 2 ∧ e0.payload.v >= 0
+
+(e0.payload.k == e1.payload.k) ∧ (e0.payload.v == e1.payload.v)
+e1.payload.id >= 1 ∧ indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.k are equal ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v are equal ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ _num_e_exists_ >= 2 ∧ e0.payload.v >= 0
+55 2
+EOT
+
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.k == e1.payload.k)
+e1.payload.v >= 0 ∧ _num_e_exists_ >= 2 ∧ e0.payload.v >= 0 ∧ e0.payload.v == e1.payload.v
+
+(e0.payload.k == e1.payload.k) ∧ (e0.payload.v == e1.payload.v)
+indexof(e1) >= 0 ∧ _num_e_exists_ >= 2
+
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.v == e1.payload.v)
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ _num_e_exists_ >= 2 ∧ e0.payload.k == e1.payload.k
+5 2
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+4 0
+EOT
+(indexof(e0) > indexof(e1))
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) < indexof(e1))
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(e0.payload.sequence_id < e1.payload.sequence_id)
+
+e1.payload.sequence_id >= 1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(e0.payload.sequence_id > e1.payload.sequence_id)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 1 ∧ e0.payload.v >= 0
+(e0.payload.v == e1.payload.v)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(e0.payload.k == e1.payload.k)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(e0.payload.sequence_id == e1.payload.sequence_id)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+70 0
+EOT
+(indexof(e0) < indexof(e1))
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(e0.payload.sequence_id > e1.payload.sequence_id)
+
+indexof(e0) != indexof(e1) ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(e0.payload.sequence_id < e1.payload.sequence_id)
+
+indexof(e0) != indexof(e1) ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1))
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(e0.payload.v == e1.payload.v)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.sequence_id >= 0
+(e0.payload.sequence_id == e1.payload.sequence_id)
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(e0.payload.k == e1.payload.k)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+21 0
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.sequence_id == e1.payload.sequence_id)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.sequence_id < e1.payload.sequence_id)
+
+e1.payload.sequence_id >= 1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0 ∧ e0.payload.sequence_id ∈ { 0, 1, 2 }
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.v == e1.payload.v)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.v == e1.payload.v)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.sequence_id > e1.payload.sequence_id)
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 1 ∧ e1.payload.sequence_id ∈ { 0, 1, 2 } ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.k == e1.payload.k)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.k == e1.payload.k)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.sequence_id < e1.payload.sequence_id)
+
+e1.payload.sequence_id >= 1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.sequence_id == e1.payload.sequence_id)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.sequence_id > e1.payload.sequence_id)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 1 ∧ e0.payload.v >= 0
+(e0.payload.k == e1.payload.k) ∧ (e0.payload.v == e1.payload.v)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(e0.payload.k == e1.payload.k) ∧ (e0.payload.sequence_id == e1.payload.sequence_id)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(e0.payload.k == e1.payload.k) ∧ (e0.payload.sequence_id > e1.payload.sequence_id)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 1 ∧ e0.payload.v >= 0
+(e0.payload.v == e1.payload.v) ∧ (e0.payload.sequence_id < e1.payload.sequence_id)
+
+e1.payload.sequence_id >= 1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(e0.payload.v == e1.payload.v) ∧ (e0.payload.sequence_id > e1.payload.sequence_id)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 1 ∧ e0.payload.v >= 0
+(e0.payload.k == e1.payload.k) ∧ (e0.payload.sequence_id < e1.payload.sequence_id)
+
+e1.payload.sequence_id >= 1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(e0.payload.v == e1.payload.v) ∧ (e0.payload.sequence_id == e1.payload.sequence_id)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+170 0
+EOT
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.sequence_id < e1.payload.sequence_id)
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k != e1.payload.k ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.sequence_id > e1.payload.sequence_id)
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k != e1.payload.k ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.sequence_id == e1.payload.sequence_id)
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.v == e1.payload.v)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.sequence_id >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.v == e1.payload.v)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.sequence_id >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.sequence_id == e1.payload.sequence_id)
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.k == e1.payload.k)
+
+e1.payload.sequence_id >= 0 ∧ e0.payload.sequence_id <= e1.payload.sequence_id ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.sequence_id < e1.payload.sequence_id)
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(e0.payload.v == e1.payload.v) ∧ (e0.payload.sequence_id < e1.payload.sequence_id)
+
+indexof(e0) != indexof(e1) ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 }
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.sequence_id > e1.payload.sequence_id)
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(e0.payload.v == e1.payload.v) ∧ (e0.payload.sequence_id > e1.payload.sequence_id)
+
+indexof(e0) != indexof(e1) ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 }
+(e0.payload.k == e1.payload.k) ∧ (e0.payload.sequence_id > e1.payload.sequence_id)
+
+indexof(e0) > indexof(e1) ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(e0.payload.k == e1.payload.k) ∧ (e0.payload.sequence_id < e1.payload.sequence_id)
+
+e1.payload.v >= 0 ∧ indexof(e0) < indexof(e1) ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.k == e1.payload.k)
+
+e1.payload.sequence_id >= 0 ∧ e0.payload.sequence_id >= e1.payload.sequence_id ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(e0.payload.v == e1.payload.v) ∧ (e0.payload.sequence_id == e1.payload.sequence_id)
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 }
+(e0.payload.k == e1.payload.k) ∧ (e0.payload.v == e1.payload.v)
+
+e1.payload.sequence_id >= 0 ∧ e0.payload.sequence_id >= 0
+(e0.payload.k == e1.payload.k) ∧ (e0.payload.sequence_id == e1.payload.sequence_id)
+
+e1.payload.v >= 0 ∧ e0.payload.v >= 0
+34 0
+EOT
+0 0
+EOT
+
+
+indexof(e0) != indexof(e1) ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+3 0
+EOT
+(e0.payload.v == e1.payload.v)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1))
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) < indexof(e1))
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+(e0.payload.k == e1.payload.k)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+44 0
+EOT
+(indexof(e0) > indexof(e1))
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(e0.payload.v == e1.payload.v)
+
+indexof(e0) != indexof(e1) ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ indexof(e0) >= 0
+(indexof(e0) < indexof(e1))
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(e0.payload.k == e1.payload.k)
+
+indexof(e0) != indexof(e1) ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+8 0
+EOT
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.v == e1.payload.v)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.k == e1.payload.k)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.v == e1.payload.v)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+(e0.payload.k == e1.payload.k) ∧ (e0.payload.v == e1.payload.v)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.k == e1.payload.k)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+55 0
+EOT
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.v == e1.payload.v)
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 }
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.k == e1.payload.k)
+
+e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.v == e1.payload.v)
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 }
+(e0.payload.k == e1.payload.k) ∧ (e0.payload.v == e1.payload.v)
+
+indexof(e0) != indexof(e1) ∧ indexof(e0) >= 0
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.k == e1.payload.k)
+
+e1.payload.v >= 0 ∧ e0.payload.v >= 0
+5 0
+EOT
+0 0
+EOT
+
+
+_num_e_exists_ >= 1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+3 0
+EOT
+44 4
+EOT
+8 4
+EOT
+55 5
+EOT
+5 5
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+e0.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+6 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+5 0
+EOT
+(indexof(e0) < indexof(e1))
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(e0.payload.sequence_id < e1.payload.sequence_id)
+
+e1.payload.sequence_id >= 1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1))
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(e0.payload.target == e1.payload.target)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(e0.payload.sequence_id > e1.payload.sequence_id)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 1 ∧ e0.payload.v >= 0
+(e0.payload.sequence_id == e1.payload.sequence_id)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(e0.payload.k == e1.payload.k)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(e0.payload.v == e1.payload.v)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+96 0
+EOT
+(e0.payload.sequence_id < e1.payload.sequence_id)
+
+indexof(e0) != indexof(e1) ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(e0.payload.sequence_id > e1.payload.sequence_id)
+
+indexof(e0) != indexof(e1) ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) < indexof(e1))
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1))
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(e0.payload.target == e1.payload.target)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(e0.payload.v == e1.payload.v)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.sequence_id >= 0
+(e0.payload.sequence_id == e1.payload.sequence_id)
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(e0.payload.k == e1.payload.k)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+32 0
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.target == e1.payload.target)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.k == e1.payload.k)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.k == e1.payload.k)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.v == e1.payload.v)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.sequence_id > e1.payload.sequence_id)
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id ∈ { 1, 2, 3 } ∧ e1.payload.sequence_id ∈ { 0, 1 } ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.target == e1.payload.target)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.sequence_id == e1.payload.sequence_id)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.sequence_id < e1.payload.sequence_id)
+
+e1.payload.sequence_id >= 1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.v == e1.payload.v)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.sequence_id < e1.payload.sequence_id)
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.sequence_id ∈ { 1, 2, 3 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0 ∧ e0.payload.sequence_id ∈ { 0, 1 }
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.sequence_id == e1.payload.sequence_id)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.sequence_id > e1.payload.sequence_id)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 1 ∧ e0.payload.v >= 0
+(e0.payload.target == e1.payload.target) ∧ (e0.payload.sequence_id < e1.payload.sequence_id)
+
+e1.payload.sequence_id >= 1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(e0.payload.target == e1.payload.target) ∧ (e0.payload.sequence_id == e1.payload.sequence_id)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(e0.payload.target == e1.payload.target) ∧ (e0.payload.sequence_id > e1.payload.sequence_id)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 1 ∧ e0.payload.v >= 0
+(e0.payload.target == e1.payload.target) ∧ (e0.payload.k == e1.payload.k)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(e0.payload.target == e1.payload.target) ∧ (e0.payload.v == e1.payload.v)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(e0.payload.k == e1.payload.k) ∧ (e0.payload.sequence_id < e1.payload.sequence_id)
+
+e1.payload.sequence_id >= 1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(e0.payload.k == e1.payload.k) ∧ (e0.payload.sequence_id > e1.payload.sequence_id)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 1 ∧ e0.payload.v >= 0
+(e0.payload.k == e1.payload.k) ∧ (e0.payload.v == e1.payload.v)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(e0.payload.v == e1.payload.v) ∧ (e0.payload.sequence_id < e1.payload.sequence_id)
+
+e1.payload.sequence_id >= 1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(e0.payload.k == e1.payload.k) ∧ (e0.payload.sequence_id == e1.payload.sequence_id)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(e0.payload.v == e1.payload.v) ∧ (e0.payload.sequence_id > e1.payload.sequence_id)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 1 ∧ e0.payload.v >= 0
+(e0.payload.v == e1.payload.v) ∧ (e0.payload.sequence_id == e1.payload.sequence_id)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+288 0
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.sequence_id > e1.payload.sequence_id)
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k != e1.payload.k ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.sequence_id < e1.payload.sequence_id)
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k != e1.payload.k ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.sequence_id < e1.payload.sequence_id)
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(e0.payload.v == e1.payload.v) ∧ (e0.payload.sequence_id > e1.payload.sequence_id)
+
+indexof(e0) != indexof(e1) ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 }
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.sequence_id == e1.payload.sequence_id)
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.sequence_id > e1.payload.sequence_id)
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(e0.payload.target == e1.payload.target) ∧ (e0.payload.sequence_id > e1.payload.sequence_id)
+
+indexof(e0) != indexof(e1) ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.v == e1.payload.v)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.sequence_id >= 0
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.k == e1.payload.k)
+
+e1.payload.sequence_id >= 0 ∧ e0.payload.sequence_id <= e1.payload.sequence_id ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.target == e1.payload.target)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.k == e1.payload.k)
+
+e1.payload.sequence_id >= 0 ∧ e0.payload.sequence_id >= e1.payload.sequence_id ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.target == e1.payload.target)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.sequence_id == e1.payload.sequence_id)
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(e0.payload.target == e1.payload.target) ∧ (e0.payload.sequence_id < e1.payload.sequence_id)
+
+indexof(e0) != indexof(e1) ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(e0.payload.k == e1.payload.k) ∧ (e0.payload.sequence_id < e1.payload.sequence_id)
+
+e1.payload.v >= 0 ∧ indexof(e0) < indexof(e1) ∧ e0.payload.v >= 0
+(e0.payload.v == e1.payload.v) ∧ (e0.payload.sequence_id < e1.payload.sequence_id)
+
+indexof(e0) != indexof(e1) ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 }
+(e0.payload.k == e1.payload.k) ∧ (e0.payload.sequence_id > e1.payload.sequence_id)
+
+indexof(e0) > indexof(e1) ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(e0.payload.target == e1.payload.target) ∧ (e0.payload.v == e1.payload.v)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.sequence_id >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.v == e1.payload.v)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.sequence_id >= 0
+(e0.payload.target == e1.payload.target) ∧ (e0.payload.sequence_id == e1.payload.sequence_id)
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(e0.payload.target == e1.payload.target) ∧ (e0.payload.k == e1.payload.k)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.v >= 0 ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(e0.payload.k == e1.payload.k) ∧ (e0.payload.sequence_id == e1.payload.sequence_id)
+
+e0.payload.v >= 0 ∧ e0.payload.v == e1.payload.v
+(e0.payload.k == e1.payload.k) ∧ (e0.payload.v == e1.payload.v)
+
+e1.payload.sequence_id >= 0 ∧ e0.payload.sequence_id >= 0
+(e0.payload.v == e1.payload.v) ∧ (e0.payload.sequence_id == e1.payload.sequence_id)
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 }
+72 0
+EOT
+
+
+e0.payload.k ∈ { 0, 1, 2 } ∧ indexof(e0) >= 0
+3 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ indexof(e0) >= 0
+2 0
+EOT
+(indexof(e0) > indexof(e1))
+
+indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ indexof(e0) >= 1
+(indexof(e0) < indexof(e1))
+
+indexof(e1) >= 1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ indexof(e0) >= 0
+(e0.payload.k == e1.payload.k)
+
+indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ indexof(e0) >= 0
+18 0
+EOT
+(indexof(e0) < indexof(e1))
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 }
+(indexof(e0) > indexof(e1))
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 }
+(e0.payload.k == e1.payload.k)
+
+indexof(e1) >= 0 ∧ indexof(e0) >= 0
+3 0
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.k == e1.payload.k)
+
+indexof(e1) >= 1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ indexof(e0) >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.k == e1.payload.k)
+
+indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ indexof(e0) >= 1
+12 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+indexof(e1) >= 0 ∧ indexof(e0) != indexof(e1) ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 }
+2 0
+EOT
+(indexof(e0) < indexof(e1))
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(e0.payload.k == e1.payload.k)
+
+indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1))
+
+indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+27 0
+EOT
+(indexof(e0) < indexof(e1))
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k != e1.payload.k
+(e0.payload.k == e1.payload.k)
+
+indexof(e0) > indexof(e1) ∧ indexof(e1) >= 0
+(indexof(e0) > indexof(e1))
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 }
+3 0
+EOT
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.k == e1.payload.k)
+
+indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.sequence_id >= 0 ∧ e0.payload.v >= 0
+18 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+indexof(e0) >= size(indexof(e1))-1 ∧ _num_e_exists_ >= 1 ∧ indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 }
+2 0
+EOT
+27 3
+EOT
+3 3
+EOT
+18 2
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+e0.payload.epoch >= 0 ∧ e0.payload.log >= 1 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1 ∧ e0.payload.sent >= 1
+6 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+indexof(e0) != indexof(e1) ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+4 0
+EOT
+(indexof(e0) > indexof(e1))
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(e0.payload.source == e1.payload.target)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+(e0.payload.v == e1.payload.v)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) < indexof(e1))
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+(e0.payload.k == e1.payload.k)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+60 0
+EOT
+(e0.payload.source == e1.payload.target)
+
+indexof(e0) != indexof(e1) ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1))
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(e0.payload.v == e1.payload.v)
+
+indexof(e0) != indexof(e1) ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ indexof(e0) >= 0
+(indexof(e0) < indexof(e1))
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(e0.payload.k == e1.payload.k)
+
+indexof(e0) != indexof(e1) ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+15 0
+EOT
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.source == e1.payload.target)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.source == e1.payload.target)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.v == e1.payload.v)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.v == e1.payload.v)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+(e0.payload.source == e1.payload.target) ∧ (e0.payload.v == e1.payload.v)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.k == e1.payload.k)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(e0.payload.source == e1.payload.target) ∧ (e0.payload.k == e1.payload.k)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.k == e1.payload.k)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+(e0.payload.k == e1.payload.k) ∧ (e0.payload.v == e1.payload.v)
+
+e1.payload.sequence_id >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+108 0
+EOT
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.v == e1.payload.v)
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 }
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.source == e1.payload.target)
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(e0.payload.source == e1.payload.target) ∧ (e0.payload.v == e1.payload.v)
+
+indexof(e0) != indexof(e1) ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ indexof(e0) >= 0
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.source == e1.payload.target)
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(e0.payload.source == e1.payload.target) ∧ (e0.payload.k == e1.payload.k)
+
+indexof(e0) != indexof(e1) ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.k == e1.payload.k)
+
+e1.payload.v >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.v == e1.payload.v)
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 }
+(e0.payload.k == e1.payload.k) ∧ (e0.payload.v == e1.payload.v)
+
+indexof(e0) != indexof(e1) ∧ indexof(e0) >= 0
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.k == e1.payload.k)
+
+e1.payload.v >= 0 ∧ e0.payload.v >= 0
+18 0
+EOT
+0 0
+EOT
+
+
+_num_e_exists_ >= 1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ e1.payload.v >= 0 ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+4 0
+EOT
+60 5
+EOT
+15 5
+EOT
+108 9
+EOT
+18 9
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+indexof(e1) >= 0 ∧ indexof(e0) != indexof(e1) ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ indexof(e0) >= 0
+2 0
+EOT
+(indexof(e0) < indexof(e1))
+
+indexof(e1) >= 1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+(e0.payload.k == e1.payload.k)
+
+indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1))
+
+indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ indexof(e0) >= 1 ∧ e0.payload.v >= 0
+27 0
+EOT
+(indexof(e0) < indexof(e1))
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 }
+(e0.payload.k == e1.payload.k)
+
+indexof(e1) >= 0 ∧ indexof(e0) != indexof(e1) ∧ indexof(e0) >= 0
+(indexof(e0) > indexof(e1))
+
+e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 }
+3 0
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.k == e1.payload.k)
+
+indexof(e1) >= 1 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.source ∈ { "Client(7)", "Client(8)", "Client(9)" } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ indexof(e0) >= 0 ∧ e0.payload.v >= 0
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.k == e1.payload.k)
+
+indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.id >= 1 ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ indexof(e0) >= 1 ∧ e0.payload.v >= 0
+18 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+_num_e_exists_ >= 1 ∧ indexof(e1) >= 0 ∧ e1.payload.k ∈ { 0, 1, 2 } ∧ e0.payload.k ∈ { 0, 1, 2 } ∧ indexof(e0) >= 0
+2 0
+EOT
+27 3
+EOT
+3 3
+EOT
+18 2
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+size(e0.payload.sent) >= 0 ∧ e0.payload.epoch >= 0 ∧ e0.payload.log >= 1 ∧ e0.payload.position ∈ { 1, 2, 3 } ∧ indexof(e0) >= 1 ∧ size(e0.payload.log) >= 0 ∧ e0.payload.sent >= 1
+8 0
+EOT
+0 0
+EOT
+0 0
+EOT

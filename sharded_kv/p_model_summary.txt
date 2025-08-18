@@ -1,0 +1,75 @@
+# P Model Analysis Summary
+
+## 1. Events Definition
+
+| Event | Payload Type | Description |
+|-------|--------------|-------------|
+| `eTransfer` | `tTransfer: (src: Node, key: KeyT, value: ValueT, dst: Node)` | Transfers a key-value pair from source to destination node |
+| `eReshard` | `tReshard: (key: KeyT, value: ValueT, dst: Node)` | Initiates resharding of a key-value pair to destination node |
+| `eReport` | None | Triggers a node to report all its current key-value ownerships |
+| `eOwns` | `(node: Node, key: KeyT, value: ValueT)` | Announces ownership of a key-value pair by a node |
+
+## 2. Event Flows
+
+The system follows these primary event flow patterns:
+
+1. **Resharding Flow**: `eReshard` → `eTransfer` → `eOwns`
+   - A reshard request triggers a transfer from source to destination
+   - Transfer completion results in ownership announcement
+
+2. **Direct Transfer Flow**: `eTransfer` → `eOwns`
+   - Direct key-value transfer between nodes
+   - Followed by ownership announcement
+
+3. **Reporting Flow**: `eReport` → `eOwns` (multiple)
+   - Report request triggers announcements of all owned key-value pairs
+
+## 3. System Roles
+
+### Node Machine
+- **Role**: Distributed key-value store participant
+- **Responsibilities**:
+  - Maintains local key-value storage (`kv` map)
+  - Handles resharding requests by transferring data to other nodes
+  - Receives transferred key-value pairs from other nodes
+  - Validates transfer destinations and prevents duplicate keys
+  - Reports current ownerships on demand
+  - Announces ownership changes via `eOwns` events
+
+### Safety Specification Monitor
+- **Role**: System invariant enforcer
+- **Responsibilities**:
+  - Tracks ownership mapping of keys to nodes
+  - Ensures single ownership invariant (each key owned by exactly one node)
+  - Detects ownership conflicts and assertion violations
+
+## 4. Protocol Workflow
+
+### High-Level Protocol
+The system implements a **distributed sharded key-value store** with the following workflow:
+
+1. **Initialization**: Each node starts with an initial key-value store mapping
+
+2. **Resharding Operation**:
+   - Node receives `eReshard` request for a specific key
+   - If key exists locally, node sends `eTransfer` to destination
+   - Source node removes key from local storage
+   - Destination validates and accepts the transfer
+   - Destination announces new ownership via `eOwns`
+
+3. **Transfer Validation**:
+   - Destination node checks it's the intended recipient
+   - Ensures no duplicate keys exist before accepting
+   - Updates local storage and announces ownership
+
+4. **Ownership Tracking**:
+   - All ownership changes are globally announced via `eOwns`
+   - Safety monitor enforces single-ownership invariant
+   - System maintains consistent ownership mapping
+
+### Key Safety Properties
+- **Single Ownership**: Each key is owned by exactly one node at any time
+- **Transfer Atomicity**: Key transfers are atomic (removed from source before added to destination)
+- **Consistency**: Global ownership view remains consistent across all operations
+
+This protocol enables dynamic resharding of data across nodes while maintaining consistency and preventing data duplication or loss.

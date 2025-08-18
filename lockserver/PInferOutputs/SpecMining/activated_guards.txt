@@ -1,0 +1,30 @@
+
+(e0.payload.epoch == e1.payload.epoch) ∧ e0.payload.holdsLock
+(indexof(e0) > indexof(e1)) ∧ !(e0.payload.holdsLock)
+e0.payload.holdsLock
+(e0.payload.node == e1.payload.node)
+(indexof(e0) < indexof(e1)) ∧ !(e1.payload.holdsLock)
+(indexof(e0) > indexof(e1)) ∧ !(e1.payload.holdsLock)
+!(e0.payload.holdsLock)
+(indexof(e0) < indexof(e1)) ∧ !(e0.payload.holdsLock)
+(indexof(e0) > indexof(e1)) ∧ e0.payload.holdsLock
+!(e1.payload.holdsLock)
+(indexof(e0) < indexof(e1))
+(indexof(e0) > indexof(e1))
+e1.payload.holdsLock ∧ !(e0.payload.holdsLock)
+(e0.payload.node == e1.payload.node) ∧ (e0.payload.epoch == e1.payload.epoch)
+!(e0.payload.holdsLock) ∧ !(e1.payload.holdsLock)
+(indexof(e0) > indexof(e1)) ∧ e1.payload.holdsLock
+(indexof(e0) < indexof(e1)) ∧ e0.payload.holdsLock
+e1.payload.holdsLock
+(e0.payload.epoch == e1.payload.epoch)
+(e0.payload.epoch == e1.payload.epoch) ∧ !(e0.payload.holdsLock)
+(e0.payload.epoch == e1.payload.epoch) ∧ !(e1.payload.holdsLock)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.epoch == e1.payload.epoch)
+(e0.payload.epoch == e1.payload.epoch) ∧ e1.payload.holdsLock
+e0.payload.holdsLock ∧ !(e1.payload.holdsLock)
+(indexof(e0) < indexof(e1)) ∧ e1.payload.holdsLock
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.epoch == e1.payload.epoch)
+e0.payload.holdsLock ∧ e1.payload.holdsLock
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.node == e1.payload.node)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.node == e1.payload.node)

@@ -1,0 +1,78 @@
+# P Model Analysis: Clock Synchronization System
+
+## 1. Events Definition
+
+| Event | Payload Type | Description |
+|-------|-------------|-------------|
+| `eGlobalQuery` | `tGlobalQuery` | Request from LocalClock to GlobalClock for current time |
+| `eLocalQuery` | None | Request from Client to LocalClock for time information |
+| `eGlobalResponse` | `tGlobalResponse` | Response from GlobalClock with true time |
+| `eLocalResponse` | `tLocalResponse` | Response from LocalClock to Client with time bounds |
+
+**Payload Types:**
+- `tGlobalQuery`: `(localClock: LocalClock)`
+- `tGlobalResponse`: `(target: LocalClock, trueTime: tGlobalTime)`
+- `tLocalResponse`: `(target: Client, trueTime: tGlobalTime, earliest: tLocalTime, latest: tLocalTime)`
+
+## 2. Event Flows
+
+The system follows a hierarchical query-response pattern:
+
+```
+Client → LocalClock → GlobalClock
+       ←             ←
+```
+
+**Flow Sequence:**
+1. Client sends `eLocalQuery` to LocalClock
+2. LocalClock sends `eGlobalQuery` to GlobalClock
+3. GlobalClock responds with `eGlobalResponse` containing true time
+4. LocalClock processes response and sends `eLocalResponse` to Client with time bounds
+
+## 3. System Roles
+
+### **GlobalClock**
+- **Role**: Authoritative time source
+- **Responsibilities**: 
+  - Maintains global time counter
+  - Responds to time queries with current time
+  - Simulates time advancement (non-deterministic increments)
+
+### **LocalClock** 
+- **Role**: Time synchronization intermediary
+- **Responsibilities**:
+  - Maintains local time bounds (early/late estimates)
+  - Queries global clock on behalf of clients
+  - Calculates uncertainty bounds for time responses
+  - Manages maximum uncertainty threshold (5 time units)
+
+### **Client**
+- **Role**: Time service consumer
+- **Responsibilities**:
+  - Initiates time queries to local clock
+  - Validates received time bounds (earliest ≤ latest)
+  - Makes multiple requests based on configuration
+
+## 4. Protocol Workflow
+
+### **High-Level Protocol:**
+This implements a **distributed clock synchronization protocol** similar to NTP (Network Time Protocol) concepts:
+
+1. **Initialization**: System components are set up with references to each other
+2. **Time Query Cycle**: 
+   - Client requests time information
+   - LocalClock queries authoritative GlobalClock
+   - Uncertainty bounds are calculated and propagated back
+3. **Uncertainty Management**: LocalClock maintains bounds on time estimates to handle synchronization uncertainty
+4. **Correctness Monitoring**: Specification ensures monotonicity and consistency of time bounds
+
+### **Key Protocol Properties:**
+- **Monotonicity**: Time bounds should be non-decreasing for same client
+- **Consistency**: Time intervals should not overlap incorrectly across different true times
+- **Uncertainty Bounds**: Local clocks provide earliest/latest estimates rather than exact time
+
+### **System Invariants (from Correctness spec):**
+1. **Monotonic Bounds**: For responses to same client, if true time increases, earliest bound should not decrease
+2. **Non-overlapping Intervals**: Time intervals should maintain proper ordering relationships
+
+This represents a simplified model of distributed time synchronization where local clocks provide bounded time estimates to handle network delays and clock drift uncertainties.

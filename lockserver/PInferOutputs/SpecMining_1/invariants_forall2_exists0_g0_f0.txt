@@ -1,0 +1,4 @@
+∀e0: eUnlock ∀e1: eUnlock ::  
+e0.payload.epoch ∈ { 0, 1, 2 }
+e1.payload.epoch ∈ { 0, 1, 2 }
+

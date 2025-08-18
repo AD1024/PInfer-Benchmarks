@@ -1,0 +1,14 @@
+∀e0:eLearn ::  ∃e1:eAcceptRsp :: (indexof(e0) > indexof(e1))
+_num_e_exists_ >= 1
+e1.payload.accepted > quorum
+_num_e_exists_ >= quorum
+e0.payload.ballot ∈ { 201, 202, 203 }
+e0.payload.ballot == e1.payload.accepted
+e1.payload.accepted ∈ { 201, 202, 203 }
+
+∀e0:eLearn ::  ∃e1:eAcceptRsp :: (e0.payload.ballot == e1.payload.accepted)
+indexof(e0) > indexof(e1)[quorum-1]
+_num_e_exists_ >= 1
+_num_e_exists_ >= quorum
+indexof(e1) > quorum
+

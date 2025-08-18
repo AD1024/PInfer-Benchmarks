@@ -1,0 +1,6 @@
+∀e0: eBecomeLeader ::  
+e0.payload.term >= 1
+indexof(e0) >= 1
+size(e0.payload.log) >= 0
+e0.payload.commitIndex >= -1
+

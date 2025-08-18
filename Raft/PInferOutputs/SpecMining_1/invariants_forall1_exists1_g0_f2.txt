@@ -1,0 +1,17 @@
+∀e0:eBecomeLeader ::  ∃e1:eRequestVoteReply :: (indexof(e0) > indexof(e1)) ∧ (e0.payload.term == e1.payload.term)
+_num_e_exists_ >= 1
+
+∀e0:eBecomeLeader ::  ∃e1:eRequestVoteReply :: e1.payload.voteGranted ∧ (e0.payload.term == e1.payload.term)
+indexof(e1) >= 1
+quorumSize >= size(indexof(e1))-1
+indexof(e0) >= size(indexof(e1))-1
+_num_e_exists_ >= 1
+indexof(e0) >= 2
+quorumSize >= size(e1.payload.sender)-1
+
+∀e0:eBecomeLeader ::  ∃e1:eRequestVoteReply :: (indexof(e0) > indexof(e1)) ∧ e1.payload.voteGranted
+e0.payload.term == e1.payload.term
+e1.payload.term >= 1
+_num_e_exists_ >= 1
+e0.payload.term >= 1
+

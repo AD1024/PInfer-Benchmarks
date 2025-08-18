@@ -1,0 +1,21 @@
+∀e0:eDecided ::  ∃e1:eP2B :: (indexof(e0) > indexof(e1)) ∧ (e0.payload.value == e1.payload.value)
+_num_e_exists_ >= quorum
+e1.payload.round >= 0
+e0.payload.round >= e1.payload.round[quorum-1]
+_num_e_exists_ >= 2
+e0.payload.round == e1.payload.round
+e0.payload.round >= 0
+
+∀e0:eDecided ::  ∃e1:eP2B :: (indexof(e0) > indexof(e1)) ∧ (e0.payload.round == e1.payload.round)
+e1.payload.value are equal
+_num_e_exists_ >= quorum
+e0.payload.value == e1.payload.value[quorum-1]
+e1.payload.value >= 0
+e1.payload.value == e0.payload.value
+_num_e_exists_ >= 2
+
+∀e0:eDecided ::  ∃e1:eP2B :: (e0.payload.value == e1.payload.value) ∧ (e0.payload.round == e1.payload.round)
+indexof(e0) > indexof(e1)[quorum-1]
+_num_e_exists_ >= quorum
+indexof(e1) > quorum
+

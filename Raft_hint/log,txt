@@ -1,0 +1,27 @@
+.. Searching for a P project file *.pproj locally in the current folder
+.. Found P project file: /local/home/mikedh/benchmarks/Raft_hint/Raft.pproj
+----------------------------------------
+==== Loading project file: /local/home/mikedh/benchmarks/Raft_hint/Raft.pproj
+....... includes p file: /local/home/mikedh/benchmarks/Raft_hint/PSrc/Client.p
+....... includes p file: /local/home/mikedh/benchmarks/Raft_hint/PSrc/Timer.p
+....... includes p file: /local/home/mikedh/benchmarks/Raft_hint/PSrc/Application.p
+....... includes p file: /local/home/mikedh/benchmarks/Raft_hint/PSrc/Utils.p
+....... includes p file: /local/home/mikedh/benchmarks/Raft_hint/PSrc/View.p
+....... includes p file: /local/home/mikedh/benchmarks/Raft_hint/PSrc/RaftModules.p
+....... includes p file: /local/home/mikedh/benchmarks/Raft_hint/PSrc/Server.p
+....... includes p file: /local/home/mikedh/benchmarks/Raft_hint/PSpec/SafetyStateMachine.p
+....... includes p file: /local/home/mikedh/benchmarks/Raft_hint/PSpec/LivenessClientsDone.p
+....... includes p file: /local/home/mikedh/benchmarks/Raft_hint/PSpec/SafetyOneLeader.p
+....... includes p file: /local/home/mikedh/benchmarks/Raft_hint/PSpec/SafetySynchronization.p
+....... includes p file: /local/home/mikedh/benchmarks/Raft_hint/PSpec/SafetyLeaderCompleteness.p
+....... includes p file: /local/home/mikedh/benchmarks/Raft_hint/PSpec/LivenessProgress.p
+....... includes p file: /local/home/mikedh/benchmarks/Raft_hint/PSpec/SafetyLogMatching.p
+....... includes p file: /local/home/mikedh/benchmarks/Raft_hint/PTst/Testscript.p
+....... includes p file: /local/home/mikedh/benchmarks/Raft_hint/PTst/Hints.p
+....... includes p file: /local/home/mikedh/benchmarks/Raft_hint/PTst/RaftTests.p
+----------------------------------------
+Parsing ...
+Type checking ...
+PInfer - Auto Exploration
+[TraceIndex]: Cannot find `metadata.json` under `/home/mikedh/workplace/src/PInfer/traces/Raft_hint/10000`
+~~ [PTool]: Thanks for using P! ~~

@@ -1,0 +1,9 @@
+∀e0: eNotifyLog ::  
+size(e0.payload.sent) >= 0
+e0.payload.epoch >= 0
+e0.payload.log >= 1
+e0.payload.position ∈ { 1, 2, 3 }
+indexof(e0) >= 1
+size(e0.payload.log) >= 0
+e0.payload.sent >= 1
+

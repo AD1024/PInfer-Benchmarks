@@ -1,0 +1,12 @@
+∀e0:eHoldsLock ::  ∃e1:eGrant :: 
+indexof(e1) >= 2
+_num_e_exists_ ∈ { 1, 2, 3 }
+e0.payload.epoch == e1.payload.epoch[e0.payload.epoch]
+e0.payload.epoch ∈ { 0, 1, 2 }
+e1.payload.epoch ∈ { 0, 1, 2 }
+e0.payload.epoch <= size(e1.payload.epoch)-1
+e1.payload.epoch <= size(e1.payload.epoch)-1
+e1.payload.epoch ∈ { [0], [0, 1], [0, 1, 2] }
+e0.payload.node == e1.payload.node
+indexof(e1) >= size(indexof(e1))-1
+

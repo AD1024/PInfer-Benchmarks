@@ -1,0 +1,77 @@
+# P Model Analysis Summary
+
+## 1. Events Definition
+
+### Core Protocol Events
+- **eWriteRequest**: `tKVMsg` - Write request with source, key, value, and request ID
+- **eWriteResponse**: `(k: tKey, v: tValue, sequence_id: tSequencer)` - Write operation response
+- **eReadRequest**: `tKVMsg` - Read request for key-value lookup
+- **eReadSuccess**: `(target: machine, k: tKey, v: tValue, sequence_id: tSequencer)` - Successful read response
+- **eReadFail**: `(k: tKey)` - Failed read response
+
+### Chain Management Events
+- **eNotifyNewHeadTail**: `(master: Master, h: Replicate, t: Replicate)` - Master notifies clients of new chain head/tail
+- **eNotifyChainShape**: `(master: Master, replicates: seq[Replicate], position: tPos)` - Master notifies replicas of chain configuration
+- **eNotifyReplicateCrash**: `(replicate: Replicate, position: tPos)` - Crash notification to master
+- **eAck**: `machine` - Acknowledgment messages
+
+### Failure and Recovery Events
+- **eShutDown**: `Replicate` - Failure injector shuts down a replica
+- **eNotifyRecoverReq/Resp**: Recovery coordination events
+- **eLogReq/Resp**: `(source: Replicate, log: seq[tKVMsg])` - Log synchronization events
+
+### Monitoring Events
+- **eReportLog**: `(epoch: tEpoch)` - Log reporting for monitoring
+- **eNotifyLog**: `(epoch: tEpoch, position: tPos, log: seq[tRid], sent: seq[tRid])` - Log state notification
+
+## 2. Event Flows
+
+### Normal Operation Flow
+1. **Write Operations**: Client → Head Replica → ... → Tail Replica → Client (response)
+2. **Read Operations**: Client → Tail Replica → Client (response)
+3. **Chain Updates**: Master → All Replicas (chain shape notifications)
+
+### Failure Handling Flow
+1. **Failure Detection**: FailureInjector → Replica (eShutDown)
+2. **Crash Notification**: Replica → Master (eNotifyReplicateCrash)
+3. **Recovery Coordination**: Master ↔ Replicas (log synchronization, chain reconfiguration)
+4. **Client Notification**: Master → Clients (new head/tail information)
+
+## 3. System Roles
+
+### **Master**
+- **Responsibilities**: Chain membership management, failure detection, recovery coordination
+- **Key Operations**: Monitors replica health, reconfigures chain after failures, notifies clients of topology changes
+
+### **Replicate**
+- **Responsibilities**: Key-value storage, request processing, log maintenance
+- **Key Operations**: Processes read/write requests, maintains local state, forwards writes in chain order
+
+### **Client** (Referenced but not implemented)
+- **Responsibilities**: Issues read/write requests, maintains view of current head/tail
+
+### **FailureInjector**
+- **Responsibilities**: Simulates node failures for testing
+- **Key Operations**: Randomly selects and shuts down replica nodes
+
+### **Timer**
+- **Responsibilities**: Provides timing services for timeout-based operations
+
+## 4. Protocol Workflow
+
+### **Chain Replication Protocol**
+1. **Initialization**: Master creates chain of replicas, notifies all participants of initial configuration
+2. **Write Processing**: Requests flow through chain from head to tail, with tail sending response
+3. **Read Processing**: Reads handled exclusively by tail replica for strong consistency
+4. **Failure Handling**: 
+   - Master detects failures and reconfigures chain
+   - Log synchronization ensures consistency during recovery
+   - Clients updated with new head/tail information
+5. **Recovery**: Failed nodes can be recovered with log replay and chain reintegration
+
+### **Consistency Model**
+- **Strong Consistency**: Achieved through chain ordering and tail-only reads
+- **Fault Tolerance**: System continues operating with replica failures, maintains consistency through log synchronization
+- **Ordering Guarantees**: Write operations maintain sequential ordering through chain propagation
+
+The system implements a classic chain replication protocol with master-coordinated failure handling, ensuring strong consistency while providing fault tolerance through replica management and log-based recovery mechanisms.

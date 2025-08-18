@@ -1,0 +1,7 @@
+∀e0: eDecide ∀e1: eWon :: (e0.payload.node == e1.payload.node) -> 
+indexof(e0) - indexof(e1) - 1 == 0
+
+∀e0: eDecide ∀e1: eWon :: (indexof(e0) > indexof(e1)) -> 
+e0.payload.node ∈ { "Node(3)", "Node(4)", "Node(5)" }
+e0.payload.node == e1.payload.node
+

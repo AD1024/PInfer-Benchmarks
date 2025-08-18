@@ -1,0 +1,825 @@
+e0:eDecided e1:eP2A
+ePaxosConfig
+0
+0
+True
+e0:eDecided e1:eP2A
+ePaxosConfig
+0
+0
+True
+e0:eDecided e1:eP2A
+ePaxosConfig
+0
+0
+True
+e0:eDecided e1:eP2A
+ePaxosConfig
+0
+0
+True
+e0:eDecided e1:eP2A
+ePaxosConfig
+0
+0
+True
+e0:eDecided e1:eP2A
+ePaxosConfig
+0
+0
+True
+e0:eDecided e1:eP2A
+ePaxosConfig
+1
+0
+True
+e0:eDecided e1:eP2A
+ePaxosConfig
+1
+0
+True
+e0:eDecided e1:eP2A
+ePaxosConfig
+1
+0
+True
+e0:eDecided e1:eP2A
+ePaxosConfig
+1
+0
+True
+e0:eDecided e1:eP2A
+ePaxosConfig
+1
+0
+True
+e0:eDecided e1:eP2A
+ePaxosConfig
+1
+0
+True
+e0:eDecided e1:eP2A
+ePaxosConfig
+1
+0
+True
+e0:eDecided e1:eP2A
+ePaxosConfig
+1
+0
+True
+e0:eDecided e1:eP2A
+ePaxosConfig
+1
+0
+True
+e0:eDecided e1:eP2A
+ePaxosConfig
+1
+0
+True
+e0:eDecided e1:eP2A
+ePaxosConfig
+1
+0
+True
+e0:eDecided e1:eP2A
+ePaxosConfig
+1
+0
+True
+e0:eDecided e1:eP2A
+ePaxosConfig
+1
+0
+True
+e0:eDecided e1:eP2A
+ePaxosConfig
+1
+0
+True
+e0:eDecided e1:eP2A
+ePaxosConfig
+1
+0
+True
+e0:eDecided e1:eP2A
+ePaxosConfig
+1
+0
+True
+e0:eDecided e1:eP2A
+ePaxosConfig
+1
+0
+True
+e0:eDecided e1:eP2A
+ePaxosConfig
+1
+0
+True
+e0:eP1A
+ePaxosConfig
+0
+0
+False
+e0:eP1A
+ePaxosConfig
+0
+0
+False
+e0:eP1A
+ePaxosConfig
+0
+0
+False
+e0:eP1B
+ePaxosConfig
+0
+0
+False
+e0:eP1B
+ePaxosConfig
+0
+0
+False
+e0:eP1B
+ePaxosConfig
+0
+0
+False
+e0:eP1B e1:eP1A
+ePaxosConfig
+0
+0
+False
+e0:eP1B e1:eP1A
+ePaxosConfig
+0
+0
+False
+e0:eP1B e1:eP1A
+ePaxosConfig
+0
+0
+False
+e0:eP1B e1:eP1A
+ePaxosConfig
+0
+0
+False
+e0:eP1B e1:eP1A
+ePaxosConfig
+0
+0
+False
+e0:eP1B e1:eP1A
+ePaxosConfig
+0
+0
+False
+e0:eP1B e1:eP1A
+ePaxosConfig
+1
+0
+False
+e0:eP1B e1:eP1A
+ePaxosConfig
+1
+0
+False
+e0:eP1B e1:eP1A
+ePaxosConfig
+1
+0
+False
+e0:eP1B e1:eP1A
+ePaxosConfig
+1
+0
+False
+e0:eP1B e1:eP1A
+ePaxosConfig
+1
+0
+False
+e0:eP1B e1:eP1A
+ePaxosConfig
+1
+0
+False
+e0:eP1B e1:eP1A
+ePaxosConfig
+1
+0
+False
+e0:eP1B e1:eP1A
+ePaxosConfig
+1
+0
+False
+e0:eP1B e1:eP1A
+ePaxosConfig
+1
+0
+False
+e0:eP1B e1:eP1A
+ePaxosConfig
+1
+0
+False
+e0:eP1B e1:eP1A
+ePaxosConfig
+1
+0
+False
+e0:eP1B e1:eP1A
+ePaxosConfig
+1
+0
+False
+e0:eP1B e1:eP1A
+ePaxosConfig
+1
+0
+False
+e0:eP1B e1:eP1A
+ePaxosConfig
+1
+0
+False
+e0:eP1B e1:eP1A
+ePaxosConfig
+1
+0
+False
+e0:eP1B e1:eP1A
+ePaxosConfig
+1
+0
+False
+e0:eP1B e1:eP1A
+ePaxosConfig
+1
+0
+False
+e0:eP1B e1:eP1A
+ePaxosConfig
+1
+0
+False
+e0:eP1B e1:eP1B
+ePaxosConfig
+0
+0
+False
+e0:eP1B e1:eP1B
+ePaxosConfig
+0
+0
+False
+e0:eP1B e1:eP1B
+ePaxosConfig
+0
+0
+False
+e0:eP1B e1:eP1B
+ePaxosConfig
+0
+0
+False
+e0:eP1B e1:eP1B
+ePaxosConfig
+0
+0
+False
+e0:eP1B e1:eP1B
+ePaxosConfig
+0
+0
+False
+e0:eP2A
+ePaxosConfig
+0
+0
+False
+e0:eP2A
+ePaxosConfig
+0
+0
+False
+e0:eP2A
+ePaxosConfig
+0
+0
+False
+e0:eP2B
+ePaxosConfig
+0
+0
+False
+e0:eP2B
+ePaxosConfig
+0
+0
+False
+e0:eP2B
+ePaxosConfig
+0
+0
+False
+e0:eP2B e1:eP2A
+ePaxosConfig
+0
+0
+False
+e0:eP2B e1:eP2A
+ePaxosConfig
+0
+0
+False
+e0:eP2B e1:eP2A
+ePaxosConfig
+0
+0
+False
+e0:eP2B e1:eP2A
+ePaxosConfig
+0
+0
+False
+e0:eP2B e1:eP2A
+ePaxosConfig
+0
+0
+False
+e0:eP2B e1:eP2A
+ePaxosConfig
+0
+0
+False
+e0:eP2B e1:eP2A
+ePaxosConfig
+1
+0
+False
+e0:eP2B e1:eP2A
+ePaxosConfig
+1
+0
+False
+e0:eP2B e1:eP2A
+ePaxosConfig
+1
+0
+False
+e0:eP2B e1:eP2A
+ePaxosConfig
+1
+0
+False
+e0:eP2B e1:eP2A
+ePaxosConfig
+1
+0
+False
+e0:eP2B e1:eP2A
+ePaxosConfig
+1
+0
+False
+e0:eP2B e1:eP2A
+ePaxosConfig
+1
+0
+False
+e0:eP2B e1:eP2A
+ePaxosConfig
+1
+0
+False
+e0:eP2B e1:eP2A
+ePaxosConfig
+1
+0
+False
+e0:eP2B e1:eP2A
+ePaxosConfig
+1
+0
+False
+e0:eP2B e1:eP2A
+ePaxosConfig
+1
+0
+False
+e0:eP2B e1:eP2A
+ePaxosConfig
+1
+0
+False
+e0:eP2B e1:eP2A
+ePaxosConfig
+1
+0
+False
+e0:eP2B e1:eP2A
+ePaxosConfig
+1
+0
+False
+e0:eP2B e1:eP2A
+ePaxosConfig
+1
+0
+False
+e0:eP2B e1:eP2A
+ePaxosConfig
+1
+0
+False
+e0:eP2B e1:eP2A
+ePaxosConfig
+1
+0
+False
+e0:eP2B e1:eP2A
+ePaxosConfig
+1
+0
+False
+e0:eP2B e1:eP2B
+ePaxosConfig
+0
+0
+False
+e0:eP2B e1:eP2B
+ePaxosConfig
+0
+0
+False
+e0:eP2B e1:eP2B
+ePaxosConfig
+0
+0
+False
+e0:eP2B e1:eP2B
+ePaxosConfig
+0
+0
+False
+e0:eP2B e1:eP2B
+ePaxosConfig
+0
+0
+False
+e0:eP2B e1:eP2B
+ePaxosConfig
+0
+0
+False
+e0:eDecided
+ePaxosConfig
+0
+0
+False
+e0:eDecided
+ePaxosConfig
+0
+0
+False
+e0:eDecided
+ePaxosConfig
+0
+0
+False
+e0:eP1A e1:eP1A
+ePaxosConfig
+0
+0
+False
+e0:eP1A e1:eP1A
+ePaxosConfig
+0
+0
+False
+e0:eP1A e1:eP1A
+ePaxosConfig
+0
+0
+False
+e0:eP1A e1:eP1A
+ePaxosConfig
+0
+0
+False
+e0:eP1A e1:eP1A
+ePaxosConfig
+0
+0
+False
+e0:eP1A e1:eP1A
+ePaxosConfig
+0
+0
+False
+e0:eP2A e1:eP1B
+ePaxosConfig
+0
+0
+False
+e0:eP2A e1:eP1B
+ePaxosConfig
+0
+0
+False
+e0:eP2A e1:eP1B
+ePaxosConfig
+0
+0
+False
+e0:eP2A e1:eP1B
+ePaxosConfig
+0
+0
+False
+e0:eP2A e1:eP1B
+ePaxosConfig
+0
+0
+False
+e0:eP2A e1:eP1B
+ePaxosConfig
+0
+0
+False
+e0:eP2A e1:eP1B
+ePaxosConfig
+1
+0
+False
+e0:eP2A e1:eP1B
+ePaxosConfig
+1
+0
+False
+e0:eP2A e1:eP1B
+ePaxosConfig
+1
+0
+False
+e0:eP2A e1:eP1B
+ePaxosConfig
+1
+0
+False
+e0:eP2A e1:eP1B
+ePaxosConfig
+1
+0
+False
+e0:eP2A e1:eP1B
+ePaxosConfig
+1
+0
+False
+e0:eP2A e1:eP1B
+ePaxosConfig
+1
+0
+False
+e0:eP2A e1:eP1B
+ePaxosConfig
+1
+0
+False
+e0:eP2A e1:eP1B
+ePaxosConfig
+1
+0
+False
+e0:eP2A e1:eP1B
+ePaxosConfig
+1
+0
+False
+e0:eP2A e1:eP1B
+ePaxosConfig
+1
+0
+False
+e0:eP2A e1:eP1B
+ePaxosConfig
+1
+0
+False
+e0:eP2A e1:eP1B
+ePaxosConfig
+1
+0
+False
+e0:eP2A e1:eP1B
+ePaxosConfig
+1
+0
+False
+e0:eP2A e1:eP1B
+ePaxosConfig
+1
+0
+False
+e0:eP2A e1:eP1B
+ePaxosConfig
+1
+0
+False
+e0:eP2A e1:eP1B
+ePaxosConfig
+1
+0
+False
+e0:eP2A e1:eP1B
+ePaxosConfig
+1
+0
+False
+e0:eP2A e1:eP2A
+ePaxosConfig
+0
+0
+False
+e0:eP2A e1:eP2A
+ePaxosConfig
+0
+0
+False
+e0:eP2A e1:eP2A
+ePaxosConfig
+0
+0
+False
+e0:eP2A e1:eP2A
+ePaxosConfig
+0
+0
+False
+e0:eP2A e1:eP2A
+ePaxosConfig
+0
+0
+False
+e0:eP2A e1:eP2A
+ePaxosConfig
+0
+0
+False
+e0:eDecided e1:eP2B
+ePaxosConfig
+0
+0
+False
+e0:eDecided e1:eP2B
+ePaxosConfig
+0
+0
+False
+e0:eDecided e1:eP2B
+ePaxosConfig
+0
+0
+False
+e0:eDecided e1:eP2B
+ePaxosConfig
+0
+0
+False
+e0:eDecided e1:eP2B
+ePaxosConfig
+0
+0
+False
+e0:eDecided e1:eP2B
+ePaxosConfig
+0
+0
+False
+e0:eDecided e1:eP2B
+ePaxosConfig
+1
+0
+False
+e0:eDecided e1:eP2B
+ePaxosConfig
+1
+0
+False
+e0:eDecided e1:eP2B
+ePaxosConfig
+1
+0
+False
+e0:eDecided e1:eP2B
+ePaxosConfig
+1
+0
+False
+e0:eDecided e1:eP2B
+ePaxosConfig
+1
+0
+False
+e0:eDecided e1:eP2B
+ePaxosConfig
+1
+0
+False
+e0:eDecided e1:eP2B
+ePaxosConfig
+1
+0
+False
+e0:eDecided e1:eP2B
+ePaxosConfig
+1
+0
+False
+e0:eDecided e1:eP2B
+ePaxosConfig
+1
+0
+False
+e0:eDecided e1:eP2B
+ePaxosConfig
+1
+0
+False
+e0:eDecided e1:eP2B
+ePaxosConfig
+1
+0
+False
+e0:eDecided e1:eP2B
+ePaxosConfig
+1
+0
+False
+e0:eDecided e1:eP2B
+ePaxosConfig
+1
+0
+False
+e0:eDecided e1:eP2B
+ePaxosConfig
+1
+0
+False
+e0:eDecided e1:eP2B
+ePaxosConfig
+1
+0
+False
+e0:eDecided e1:eP2B
+ePaxosConfig
+1
+0
+False
+e0:eDecided e1:eP2B
+ePaxosConfig
+1
+0
+False
+e0:eDecided e1:eP2B
+ePaxosConfig
+1
+0
+False
+e0:eDecided e1:eDecided
+ePaxosConfig
+0
+0
+False
+e0:eDecided e1:eDecided
+ePaxosConfig
+0
+0
+False
+e0:eDecided e1:eDecided
+ePaxosConfig
+0
+0
+False
+e0:eDecided e1:eDecided
+ePaxosConfig
+0
+0
+False
+e0:eDecided e1:eDecided
+ePaxosConfig
+0
+0
+False
+e0:eDecided e1:eDecided
+ePaxosConfig
+0
+0
+False

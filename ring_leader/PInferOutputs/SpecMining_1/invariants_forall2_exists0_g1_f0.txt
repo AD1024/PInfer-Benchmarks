@@ -1,0 +1,10 @@
+∀e0: eBecomeLeader ∀e1: eBecomeLeader :: (indexof(e0) < indexof(e1)) -> 
+e0.payload.ballot == e1.payload.ballot
+
+∀e0: eBecomeLeader ∀e1: eBecomeLeader :: (indexof(e0) > indexof(e1)) -> 
+e0.payload.ballot == e1.payload.ballot
+
+∀e0: eBecomeLeader ∀e1: eBecomeLeader :: (e0.payload.ballot == e1.payload.ballot) -> 
+indexof(e1) >= 1
+indexof(e0) >= 1
+

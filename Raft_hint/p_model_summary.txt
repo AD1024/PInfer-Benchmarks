@@ -1,0 +1,99 @@
+# P Model Analysis: Raft Consensus Protocol
+
+## 1. Events Definition
+
+### Client Events
+- **eClientPutRequest**: `tClientPutRequest` - Client requests to store key-value pair
+- **eClientGetRequest**: `tClientGetRequest` - Client requests to retrieve value by key
+- **eClientWaitingResponse**: `(client: Client, transId: int)` - Monitoring event for pending requests
+- **eClientGotResponse**: `(client: Client, transId: int)` - Monitoring event for received responses
+- **eClientFinishedMonitor**: `Client` - Monitor notification of client completion
+- **eClientFinished**: `Client` - View service notification of client completion
+
+### Server-to-Server Events (Raft Protocol)
+- **eRequestVote**: `tRequestVote` - Candidate requests votes during election
+- **eRequestVoteReply**: `tRequestVoteReply` - Vote response from servers
+- **eAppendEntries**: `tAppendEntries` - Leader heartbeat and log replication
+- **eAppendEntriesReply**: `tAppendEntriesReply` - Response to leader's append entries
+
+### Server Response Events
+- **eRaftPutResponse**: `tRaftPutResponse` - Response to client PUT request
+- **eRaftGetResponse**: `tRaftGetResponse` - Response to client GET request
+
+### Control Events
+- **eElectionTimeout**: Timer event triggering leader election
+- **eHeartbeatTimeout**: Timer event for periodic heartbeats
+- **eReset**: Server crash/restart event
+- **eShutdown**: System shutdown event
+
+### Monitoring Events
+- **eNotifyLog**: `(timestamp: tTS, server: Server, log: seq[tServerLog])` - Log state notification
+- **eViewChangedLeader/Follower/Candidate**: Role change notifications
+
+## 2. Event Flows
+
+### Client Request Flow
+1. Client sends `eClientPutRequest`/`eClientGetRequest` to servers
+2. Non-leader servers forward requests to leader
+3. Leader processes request and sends `eRaftPutResponse`/`eRaftGetResponse`
+4. Client receives response and moves to next request
+
+### Raft Election Flow
+1. `eElectionTimeout` triggers candidate to start election
+2. Candidate broadcasts `eRequestVote` to all servers
+3. Servers respond with `eRequestVoteReply`
+4. Candidate becomes leader if majority votes received
+
+### Log Replication Flow
+1. Leader receives client request and appends to local log
+2. Leader broadcasts `eAppendEntries` with new entries
+3. Followers respond with `eAppendEntriesReply`
+4. Leader commits entries when majority confirms
+5. Leader sends response to client
+
+## 3. System Roles
+
+### Client
+- **Responsibilities**: Send requests to cluster, retry on timeout, track transaction IDs
+- **Behavior**: Sequential request processing, automatic retry mechanism
+
+### Server (Raft Node)
+- **Roles**: Follower, Candidate, Leader
+- **Responsibilities**: 
+  - Participate in leader election
+  - Replicate logs across cluster
+  - Process client requests (leader only)
+  - Maintain consistency through consensus
+
+### View Service
+- **Responsibilities**: 
+  - Monitor cluster state and node roles
+  - Inject failures for testing (timeouts, crashes)
+  - Coordinate system shutdown
+  - Track log states for debugging
+
+### Timer
+- **Responsibilities**: Generate non-deterministic timeout events for elections and heartbeats
+
+## 4. Protocol Workflow
+
+### Normal Operation
+1. **Initialization**: Servers start as followers, view service creates clients
+2. **Leader Election**: First election timeout triggers candidate election
+3. **Request Processing**: Clients send requests to any server, forwarded to leader
+4. **Log Replication**: Leader replicates client commands to followers
+5. **Commitment**: Leader commits entries when majority acknowledges
+6. **Response**: Leader responds to clients after successful commitment
+
+### Failure Scenarios
+1. **Leader Failure**: Followers timeout, new election initiated
+2. **Network Partitions**: Simulated through selective timeout injection
+3. **Server Crashes**: View service can reset servers to simulate crashes
+4. **Message Delays**: Non-deterministic timer behavior
+
+### System Properties
+- **Safety**: Log matching (via logMatching) property ensures consistency across servers
+- **Liveness**: Leader completeness ensures committed entries persist
+- **Fault Tolerance**: Majority-based consensus handles minority failures
+
+The system implements the full Raft consensus algorithm with client interaction, failure injection, and monitoring capabilities for distributed systems testing and verification.

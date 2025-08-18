@@ -1,0 +1,1 @@
+∀e0: eHasLock ∀e1: eHasLock :: (e0.payload.epoch == e1.payload.epoch) -> (indexof(e0) == indexof(e1)) ∧ (e0.payload.round == e1.payload.round) ∧ (e0.payload.node == e1.payload.node)

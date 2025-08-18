@@ -1,0 +1,4 @@
+∀e0: eDecided ::  
+e0.payload.value >= 0
+e0.payload.round >= 0
+

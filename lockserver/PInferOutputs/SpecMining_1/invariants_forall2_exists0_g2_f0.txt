@@ -1,0 +1,3 @@
+∀e0: eUnlock ∀e1: eUnlock :: (e0.payload.node == e1.payload.node) ∧ (e0.payload.epoch == e1.payload.epoch) -> 
+indexof(e0) == indexof(e1)
+

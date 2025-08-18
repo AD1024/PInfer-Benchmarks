@@ -1,0 +1,90 @@
+EOT
+EOT
+EOT
+EOT
+(e0.payload.ballot < e1.payload.ballot) ∧ (e0.payload.ballot == e0.payload.nxt)
+(e0.payload.ballot < e1.payload.nxt) ∧ (e0.payload.ballot == e0.payload.nxt)
+(e0.payload.nxt < e1.payload.ballot) ∧ (e0.payload.ballot == e0.payload.nxt)
+(e0.payload.nxt < e1.payload.nxt) ∧ (e0.payload.ballot == e0.payload.nxt)
+(e0.payload.ballot > e1.payload.ballot) ∧ (e1.payload.ballot == e1.payload.nxt)
+(e0.payload.ballot > e1.payload.nxt) ∧ (e1.payload.ballot == e1.payload.nxt)
+(e0.payload.nxt > e1.payload.ballot) ∧ (e1.payload.ballot == e1.payload.nxt)
+(e0.payload.nxt > e1.payload.nxt) ∧ (e1.payload.ballot == e1.payload.nxt)
+EOT
+(e0.payload.ballot < e1.payload.ballot) ∧ (e0.payload.ballot == e0.payload.nxt)
+(e0.payload.ballot < e1.payload.nxt) ∧ (e0.payload.ballot == e0.payload.nxt)
+(e0.payload.nxt < e1.payload.ballot) ∧ (e0.payload.ballot == e0.payload.nxt)
+(e0.payload.nxt < e1.payload.nxt) ∧ (e0.payload.ballot == e0.payload.nxt)
+(e0.payload.ballot > e1.payload.ballot) ∧ (e1.payload.ballot == e1.payload.nxt)
+(e0.payload.nxt > e1.payload.nxt) ∧ (e1.payload.ballot == e1.payload.nxt)
+(e0.payload.ballot > e1.payload.nxt) ∧ (e1.payload.ballot == e1.payload.nxt)
+(e0.payload.nxt > e1.payload.ballot) ∧ (e1.payload.ballot == e1.payload.nxt)
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+(e0.payload.ballot < e1.payload.ballot)
+(e0.payload.ballot < e1.payload.nxt)
+EOT
+(e0.payload.ballot < e1.payload.nxt)
+(e0.payload.ballot < e1.payload.ballot)
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.ballot < e1.payload.ballot)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.ballot < e1.payload.nxt)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.ballot > e1.payload.ballot)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.ballot < e1.payload.nxt)
+(e0.payload.ballot == e1.payload.ballot) ∧ (e0.payload.ballot < e1.payload.nxt)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.ballot < e1.payload.ballot)
+(e0.payload.ballot == e1.payload.nxt) ∧ (e0.payload.ballot < e1.payload.ballot)
+(e0.payload.ballot < e1.payload.ballot) ∧ (e0.payload.ballot < e1.payload.nxt)
+(e0.payload.ballot < e1.payload.ballot) ∧ (e0.payload.ballot > e1.payload.nxt)
+(e0.payload.ballot < e1.payload.nxt) ∧ (e0.payload.ballot > e1.payload.ballot)
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.ballot < e1.payload.nxt)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.ballot < e1.payload.ballot)
+(e0.payload.ballot < e1.payload.ballot) ∧ (e0.payload.ballot < e1.payload.nxt)
+(e0.payload.ballot < e1.payload.nxt) ∧ (e0.payload.ballot > e1.payload.ballot)
+(e0.payload.ballot == e1.payload.ballot) ∧ (e0.payload.ballot < e1.payload.nxt)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.ballot < e1.payload.ballot)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.ballot < e1.payload.nxt)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.ballot > e1.payload.ballot)
+(e0.payload.ballot == e1.payload.nxt) ∧ (e0.payload.ballot < e1.payload.ballot)
+(e0.payload.ballot < e1.payload.ballot) ∧ (e0.payload.ballot > e1.payload.nxt)
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+(e0.payload.ballot < e1.payload.ballot)
+(e0.payload.ballot > e1.payload.ballot)
+EOT
+(e0.payload.ballot > e1.payload.ballot)
+(e0.payload.ballot < e1.payload.ballot)
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.ballot < e1.payload.ballot)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.ballot > e1.payload.ballot)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.ballot < e1.payload.ballot)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.ballot > e1.payload.ballot)
+EOT
+EOT

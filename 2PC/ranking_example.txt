@@ -1,0 +1,143 @@
+# Ranking Specifications Learned by PInfer: A Guide for LLM Agents
+
+## Overview
+This document provides guidance for ranking specifications learned by PInfer based on their importance and validity. The ranking process uses two key metrics:
+
+1. **Correctness Confidence (0 to 1)**: Measures the likelihood that a specification is actually correct
+2. **Criticalness Confidence (0 to 1)**: Quantifies how essential the specification is to the protocol's correctness
+
+## Ranking Process
+
+### Step 1: Assess Correctness Confidence
+
+#### Identifying False Specifications (Low Confidence: 0.0 - 0.4)
+Specifications can be false due to under-approximation from finite trace analysis. Assign low confidence to specifications that:
+
+- Assert universal existence without proper conditions
+- Contradict the protocol's fundamental behavior
+- Make impossible claims about event relationships
+
+**Examples of False Specifications:**
+```
+∀e0: ePrepareReq :: ∃e1: ePrepareFailure :: (_num_e_exists_ >= numParticipants)
+# False: Not all prepare requests result in failures
+
+∀e0: eWriteTransTimeout :: ∃e1: eCommitTrans :: (_num_e_exists_ >= numParticipants)
+# False: Weak guard that lead to relating irrelavant events
+
+∀e0: eWriteTransSuccess :: ∃e1: eAbortTrans :: (_num_e_exists_ >= numParticipants)
+# False: Weak guard that lead to relating irrelavant events
+```
+
+#### Identifying True Specifications (High Confidence: 0.7 - 1.0)
+Assign high confidence to specifications that:
+
+- Correctly capture protocol invariants
+- Include proper conditions and constraints
+- Align with the protocol's design principles
+
+**Example of True Specification:**
+```
+∀e0: eWriteTransSuccess :: ∃e1: ePrepareSuccess :: 
+    (e0.payload.transId == e1.payload.transId) ∧ 
+    (_num_e_exists_ == numParticipants) ∧ 
+    (indexof(e0) > indexof(e1))
+# True: Captures that successful writes require all participants to prepare successfully
+```
+
+### Step 2: Filter by Correctness Threshold
+- **Discard** all specifications with correctness confidence < 0.5
+- **Retain** specifications with correctness confidence ≥ 0.5 for criticalness assessment
+
+### Step 3: Assess Criticalness Confidence
+
+#### Low Criticalness (0.0 - 0.4): Trivial Specifications
+Assign low criticalness to specifications that:
+
+- State obvious temporal relationships without payload constraints
+- Can be trivially derived from the protocol structure
+- Don't contribute to key correctness properties
+
+**Example of Trivial Specification:**
+```
+∀e0: ePrepareSuccess :: ∃e1: ePrepareReq :: (indexof(e0) > indexof(e1))
+# Trivial: Obviously, success must follow request
+```
+
+#### Medium Criticalness (0.4 - 0.7): Useful but Non-Essential
+Specifications that provide some value but aren't central to correctness:
+
+- Capture important relationships but miss key constraints
+- Provide partial correctness guarantees
+- Support but don't define core protocol properties
+
+#### High Criticalness (0.7 - 1.0): Essential Specifications
+Assign high criticalness to specifications that:
+
+- Directly ensure correctness properties (atomicity, consistency, isolation, durability)
+- Capture complex relationships between events and payloads
+- Prevent protocol violations
+- Define core protocol invariants
+
+**Examples of Critical Specifications:**
+```
+∀e0: eAbortTrans ∀e1: eCommitTrans :: (e0.payload != e1.payload)
+# Critical: Ensures mutual exclusion between commit and abort
+
+∀e0: eWriteTransSuccess :: ∃e1: ePrepareSuccess :: 
+    (e0.payload.transId == e1.payload.transId) ∧ 
+    (_num_e_exists_ == numParticipants) ∧ 
+    (indexof(e0) > indexof(e1))
+# Critical: Ensures atomicity - all participants must prepare before commit
+```
+
+## Ranking Algorithm
+
+1. **Initial Filtering**
+   - For each specification, assign correctness confidence
+   - Remove all specifications with correctness confidence < 0.5
+
+2. **Criticalness Assessment**
+   - For remaining specifications, assign criticalness confidence
+   - Consider:
+     - Contribution to safety properties
+     - Contribution to liveness properties
+     - Complexity and completeness of constraints
+     - Uniqueness of the invariant captured
+
+3. **Final Ranking**
+   - Sort specifications by: correctness_confidence × criticalness_confidence
+   - Present specifications ranked at top as the most important
+
+## Key Correctness Properties to Consider
+
+When assessing criticalness, prioritize specifications that ensure:
+
+1. **Atomicity**: All-or-nothing transaction execution
+2. **Consistency**: Protocol state remains valid
+3. **Isolation**: Concurrent transactions don't interfere
+4. **Durability**: Committed decisions persist
+5. **Agreement**: All participants reach consensus
+6. **Validity**: Only valid decisions are made
+7. **Termination**: Protocol eventually completes
+
+## Output Format
+
+For each ranked specification, provide in the following format:
+```
+Rank: [number]
+Specification: [formal specification]
+Correctness Confidence: [0.0-1.0]
+Criticalness Confidence: [0.0-1.0]
+```
+
+## Example Analysis
+
+Given a set of specifications, an LLM agent should:
+
+1. Analyze each specification's validity against protocol semantics
+2. Assess its contribution to correctness properties
+3. Assign confidence scores based on the guidelines above
+4. Rank and present the most important specifications
+
+This structured approach ensures consistent and meaningful ranking of PInfer-learned specifications.

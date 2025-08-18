@@ -1,0 +1,2268 @@
+2 1
+EOT
+0 0
+EOT
+0 0
+EOT
+2 1
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+indexof(e0) >= 1
+2 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+indexof(e0) >= 2
+4 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+indexof(e1) >= 1 ∧ indexof(e0) != indexof(e1) ∧ indexof(e0) >= 2
+1 0
+EOT
+(indexof(e0) < indexof(e1))
+
+indexof(e0) >= 2
+(indexof(e0) > indexof(e1))
+
+indexof(e1) >= 1 ∧ indexof(e0) >= 2
+12 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+indexof(e1) >= 1 ∧ _num_e_exists_ % numParticipants == 0 ∧ indexof(e1)[numParticipants] > indexof(e1)[numParticipants-1] ∧ size(indexof(e1))-1 > indexof(e1)[numParticipants] ∧ indexof(e0) != indexof(e1)[numParticipants] ∧ indexof(e0) != indexof(e1)[numParticipants-1] ∧ numParticipants < size(indexof(e1))-1 ∧ indexof(e0) >= 2 ∧ size(indexof(e1))-1 > indexof(e1)[numParticipants-1]
+1 0
+EOT
+
+(indexof(e0) > indexof(e1))
+indexof(e1) >= 1 ∧ _num_e_exists_ >= 1 ∧ indexof(e0) >= 2
+12 1
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+indexof(e1) >= 2 ∧ indexof(e0) >= 2
+3 0
+EOT
+(e0.payload.transId == e1.payload.transId)
+
+indexof(e1) >= 2 ∧ indexof(e0) >= 2
+(e0.payload.participant == e1.payload.participant)
+
+indexof(e1) >= 2 ∧ indexof(e0) >= 2
+(e0.payload.transId > e1.payload.transId)
+
+indexof(e1) >= 2 ∧ indexof(e0) >= 2
+(e0.payload.transId < e1.payload.transId)
+
+indexof(e1) >= 2 ∧ indexof(e0) >= 2
+(indexof(e0) < indexof(e1))
+
+indexof(e0) >= 2
+(indexof(e0) > indexof(e1))
+
+indexof(e1) >= 2
+48 0
+EOT
+(e0.payload.transId == e1.payload.transId)
+
+indexof(e1) >= 2 ∧ indexof(e0) >= 2
+(e0.payload.participant == e1.payload.participant)
+
+indexof(e1) >= 2 ∧ indexof(e0) >= 2
+(e0.payload.transId < e1.payload.transId)
+
+indexof(e1) >= 2 ∧ indexof(e0) != indexof(e1) ∧ indexof(e0) >= 2
+(e0.payload.transId > e1.payload.transId)
+
+indexof(e1) >= 2 ∧ indexof(e0) != indexof(e1) ∧ indexof(e0) >= 2
+12 2
+EOT
+(e0.payload.participant == e1.payload.participant) ∧ (e0.payload.transId == e1.payload.transId)
+
+indexof(e1) >= 2 ∧ indexof(e0) >= 2
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.transId == e1.payload.transId)
+
+indexof(e0) >= 2
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.transId == e1.payload.transId)
+
+indexof(e1) >= 2
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.participant == e1.payload.participant)
+
+indexof(e0) >= 2
+(e0.payload.participant == e1.payload.participant) ∧ (e0.payload.transId < e1.payload.transId)
+
+indexof(e1) >= 2 ∧ indexof(e0) >= 2
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.participant == e1.payload.participant)
+
+indexof(e1) >= 2
+(e0.payload.participant == e1.payload.participant) ∧ (e0.payload.transId > e1.payload.transId)
+
+indexof(e1) >= 2 ∧ indexof(e0) >= 2
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.transId < e1.payload.transId)
+
+indexof(e0) >= 2
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.transId > e1.payload.transId)
+
+indexof(e1) >= 2
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.transId > e1.payload.transId)
+
+indexof(e0) >= 2
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.transId < e1.payload.transId)
+
+indexof(e1) >= 2
+88 0
+EOT
+(e0.payload.participant == e1.payload.participant) ∧ (e0.payload.transId == e1.payload.transId)
+
+indexof(e0) == indexof(e1) ∧ indexof(e0) >= 2
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.transId == e1.payload.transId)
+
+e0.payload.participant != e1.payload.participant
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.transId == e1.payload.transId)
+
+e0.payload.participant != e1.payload.participant
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.participant == e1.payload.participant)
+
+e0.payload.transId != e1.payload.transId
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.participant == e1.payload.participant)
+
+e0.payload.transId != e1.payload.transId
+(e0.payload.participant == e1.payload.participant) ∧ (e0.payload.transId > e1.payload.transId)
+
+indexof(e1) >= 2 ∧ indexof(e0) != indexof(e1) ∧ indexof(e0) >= 2
+(e0.payload.participant == e1.payload.participant) ∧ (e0.payload.transId < e1.payload.transId)
+
+indexof(e1) >= 2 ∧ indexof(e0) != indexof(e1) ∧ indexof(e0) >= 2
+11 4
+EOT
+4 1
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+indexof(e1) >= 1 ∧ indexof(e0) != indexof(e1)
+1 0
+EOT
+(indexof(e0) > indexof(e1))
+
+indexof(e1) >= 1
+12 1
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+indexof(e1) >= 1 ∧ _num_e_exists_ % numParticipants == 0 ∧ indexof(e0) > indexof(e1)[numParticipants-1] ∧ indexof(e1)[numParticipants] > indexof(e1)[numParticipants-1] ∧ size(indexof(e1))-1 > indexof(e1)[numParticipants] ∧ numParticipants < size(indexof(e1))-1 ∧ size(indexof(e1))-1 > indexof(e1)[numParticipants-1] ∧ indexof(e0) > indexof(e1)[numParticipants]
+1 0
+EOT
+
+(indexof(e0) > indexof(e1))
+indexof(e1) >= 1 ∧ _num_e_exists_ > numParticipants ∧ indexof(e1)[numParticipants] > indexof(e1)[numParticipants-1] ∧ numParticipants <= size(indexof(e1))-1
+12 1
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+3 1
+EOT
+48 6
+EOT
+(e0.payload.transId < e1.payload.transId)
+
+indexof(e0) != indexof(e1)
+(e0.payload.transId > e1.payload.transId)
+
+indexof(e0) != indexof(e1)
+12 4
+EOT
+88 11
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.participant == e1.payload.participant)
+
+e0.payload.transId != e1.payload.transId
+(e0.payload.participant == e1.payload.participant) ∧ (e0.payload.transId > e1.payload.transId)
+
+indexof(e0) != indexof(e1)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.participant == e1.payload.participant)
+
+e0.payload.transId != e1.payload.transId
+(e0.payload.participant == e1.payload.participant) ∧ (e0.payload.transId < e1.payload.transId)
+
+indexof(e0) != indexof(e1)
+(e0.payload.participant == e1.payload.participant) ∧ (e0.payload.transId == e1.payload.transId)
+
+indexof(e0) == indexof(e1)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.transId == e1.payload.transId)
+
+e0.payload.participant != e1.payload.participant
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.transId == e1.payload.transId)
+
+e0.payload.participant != e1.payload.participant
+11 4
+EOT
+0 0
+EOT
+
+
+indexof(e0) != indexof(e1) ∧ e0.payload.transId != e1.payload.transId ∧ indexof(e0) >= 2
+3 0
+EOT
+(e0.payload.participant == e1.payload.participant)
+
+indexof(e0) >= 2
+(e0.payload.transId < e1.payload.transId)
+
+indexof(e0) >= 2
+(indexof(e0) < indexof(e1))
+
+indexof(e0) >= 2
+(e0.payload.transId > e1.payload.transId)
+
+indexof(e0) >= 2
+48 1
+EOT
+(e0.payload.participant == e1.payload.participant)
+
+indexof(e0) != indexof(e1) ∧ e0.payload.transId != e1.payload.transId ∧ indexof(e0) >= 2
+(e0.payload.transId < e1.payload.transId)
+
+indexof(e0) != indexof(e1) ∧ indexof(e0) >= 2
+(indexof(e0) > indexof(e1))
+
+e0.payload.transId != e1.payload.transId
+(indexof(e0) < indexof(e1))
+
+e0.payload.transId != e1.payload.transId
+(e0.payload.transId > e1.payload.transId)
+
+indexof(e0) != indexof(e1) ∧ indexof(e0) >= 2
+12 0
+EOT
+(e0.payload.participant == e1.payload.participant) ∧ (e0.payload.transId < e1.payload.transId)
+
+indexof(e0) >= 2
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.transId < e1.payload.transId)
+
+indexof(e0) >= 2
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.participant == e1.payload.participant)
+
+indexof(e0) >= 2
+(e0.payload.participant == e1.payload.participant) ∧ (e0.payload.transId > e1.payload.transId)
+
+indexof(e0) >= 2
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.transId > e1.payload.transId)
+
+indexof(e0) >= 2
+88 3
+EOT
+(e0.payload.participant == e1.payload.participant) ∧ (e0.payload.transId < e1.payload.transId)
+
+indexof(e0) != indexof(e1) ∧ indexof(e0) >= 2
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.participant == e1.payload.participant)
+
+e0.payload.transId != e1.payload.transId
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.participant == e1.payload.participant)
+
+e0.payload.transId != e1.payload.transId
+(e0.payload.participant == e1.payload.participant) ∧ (e0.payload.transId > e1.payload.transId)
+
+indexof(e0) != indexof(e1) ∧ indexof(e0) >= 2
+11 4
+EOT
+0 0
+EOT
+
+
+numParticipants != size(e1.payload.transId)-1 ∧ numParticipants != size(indexof(e1))-1 ∧ _num_e_exists_ % numParticipants == 0 ∧ _num_e_exists_ >= numParticipants ∧ numParticipants != size(e1.payload.participant)-1 ∧ e1.payload.transId > numParticipants ∧ indexof(e0) != indexof(e1)[numParticipants-1] ∧ e0.payload.transId != e1.payload.transId[numParticipants-1] ∧ indexof(e0) >= 2 ∧ indexof(e1) > numParticipants ∧ e0.payload.participant == e1.payload.participant
+3 0
+EOT
+
+(e0.payload.participant == e1.payload.participant)
+_num_e_exists_ >= 1 ∧ e1.payload.transId > numParticipants ∧ indexof(e0) >= 2 ∧ indexof(e1) > numParticipants
+48 5
+EOT
+
+(e0.payload.participant == e1.payload.participant)
+_num_e_exists_ >= 1 ∧ e1.payload.transId > numParticipants ∧ indexof(e0) >= 2 ∧ indexof(e1) > numParticipants
+12 5
+EOT
+88 11
+EOT
+11 11
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+3 1
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+2 1
+EOT
+30 5
+EOT
+(e0.payload.transId == e1.payload.transId)
+
+indexof(e0) == indexof(e1)
+(indexof(e0) < indexof(e1))
+
+e0.payload.transId != e1.payload.transId
+(e0.payload.transId > e1.payload.transId)
+
+indexof(e0) != indexof(e1)
+(indexof(e0) > indexof(e1))
+
+e0.payload.transId != e1.payload.transId
+(e0.payload.transId < e1.payload.transId)
+
+indexof(e0) != indexof(e1)
+5 0
+EOT
+36 4
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+indexof(e1) >= 1 ∧ indexof(e0) >= 1
+1 0
+EOT
+(indexof(e0) < indexof(e1))
+
+indexof(e1) >= 2 ∧ indexof(e0) >= 1
+(indexof(e0) > indexof(e1))
+
+indexof(e1) >= 1 ∧ indexof(e0) >= 2
+8 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+indexof(e1) >= 1 ∧ indexof(e0) != indexof(e1)
+1 0
+EOT
+(indexof(e0) > indexof(e1))
+
+indexof(e1) >= 1
+10 1
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+indexof(e1) >= 1 ∧ _num_e_exists_ % numParticipants == 0 ∧ indexof(e0) != size(indexof(e1))-1 ∧ indexof(e0) > indexof(e1)[numParticipants-1] ∧ indexof(e1)[numParticipants] > indexof(e1)[numParticipants-1] ∧ size(indexof(e1))-1 > indexof(e1)[numParticipants] ∧ indexof(e0) != indexof(e1)[numParticipants] ∧ numParticipants < size(indexof(e1))-1 ∧ size(indexof(e1))-1 > indexof(e1)[numParticipants-1]
+1 0
+EOT
+
+(indexof(e0) > indexof(e1))
+indexof(e1) >= 1 ∧ numParticipants != size(indexof(e1))-1 ∧ _num_e_exists_ % numParticipants == 0 ∧ _num_e_exists_ >= numParticipants
+10 1
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+indexof(e1) >= 2 ∧ indexof(e0) != indexof(e1)
+2 0
+EOT
+(e0.payload.transId == e1.payload.transId)
+
+indexof(e1) >= 2
+(e0.payload.transId > e1.payload.transId)
+
+indexof(e1) >= 2
+(e0.payload.transId < e1.payload.transId)
+
+indexof(e1) >= 2
+(indexof(e0) > indexof(e1))
+
+indexof(e1) >= 2
+35 1
+EOT
+(e0.payload.transId == e1.payload.transId)
+
+indexof(e1) >= 2 ∧ indexof(e0) != indexof(e1)
+(e0.payload.transId > e1.payload.transId)
+
+indexof(e1) >= 2 ∧ indexof(e0) != indexof(e1)
+(e0.payload.transId < e1.payload.transId)
+
+indexof(e1) >= 2 ∧ indexof(e0) != indexof(e1)
+5 2
+EOT
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.transId == e1.payload.transId)
+
+indexof(e1) >= 2
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.transId > e1.payload.transId)
+
+indexof(e1) >= 2
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.transId < e1.payload.transId)
+
+indexof(e1) >= 2
+42 3
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+_num_e_exists_ % numParticipants == 0 ∧ numParticipants < size(e1.payload.transId)-1 ∧ indexof(e1) >= 2 ∧ indexof(e1)[numParticipants] > indexof(e1)[numParticipants-1] ∧ e1.payload.transId > numParticipants ∧ indexof(e0) != indexof(e1)[numParticipants] ∧ indexof(e0) != indexof(e1)[numParticipants-1] ∧ numParticipants < size(indexof(e1))-1 ∧ size(indexof(e1))-1 != indexof(e1)[numParticipants-1]
+2 0
+EOT
+35 5
+EOT
+5 5
+EOT
+42 6
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+indexof(e1) >= 2 ∧ indexof(e0) != indexof(e1) ∧ indexof(e0) >= 1
+1 0
+EOT
+(indexof(e0) > indexof(e1))
+
+indexof(e1) >= 2
+(indexof(e0) < indexof(e1))
+
+indexof(e1) >= 2 ∧ indexof(e0) >= 1
+12 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+numParticipants != size(indexof(e1))-1 ∧ indexof(e1) >= 2 ∧ _num_e_exists_ % numParticipants == 0 ∧ _num_e_exists_ >= numParticipants ∧ indexof(e0) != indexof(e1)[numParticipants-1] ∧ indexof(e0) >= 1 ∧ size(indexof(e1))-1 != indexof(e1)[numParticipants-1]
+1 0
+EOT
+12 2
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+indexof(e0) != indexof(e1)
+2 0
+EOT
+35 5
+EOT
+(e0.payload.transId == e1.payload.transId)
+
+indexof(e0) != indexof(e1)
+(e0.payload.transId < e1.payload.transId)
+
+indexof(e0) != indexof(e1)
+(e0.payload.transId > e1.payload.transId)
+
+indexof(e0) != indexof(e1)
+5 2
+EOT
+42 6
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+numParticipants != size(e1.payload.transId)-1 ∧ numParticipants != size(indexof(e1))-1 ∧ _num_e_exists_ % numParticipants == 0 ∧ indexof(e0) != size(indexof(e1))-1 ∧ _num_e_exists_ >= numParticipants ∧ e1.payload.transId > numParticipants ∧ indexof(e0) != indexof(e1)[numParticipants-1] ∧ indexof(e1) > numParticipants
+2 0
+EOT
+35 5
+EOT
+5 5
+EOT
+42 6
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+indexof(e0) != indexof(e1) ∧ indexof(e0) >= 1
+1 0
+EOT
+(indexof(e0) < indexof(e1))
+
+indexof(e0) >= 1
+12 1
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+numParticipants != size(indexof(e1))-1 ∧ _num_e_exists_ % numParticipants == 0 ∧ _num_e_exists_ >= numParticipants ∧ indexof(e0) != indexof(e1)[numParticipants-1] ∧ indexof(e0) >= 1 ∧ indexof(e1) > numParticipants
+1 0
+EOT
+12 2
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+3 1
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+indexof(e1) >= 2 ∧ indexof(e0) != indexof(e1)
+2 0
+EOT
+(e0.payload.transId == e1.payload.transId)
+
+indexof(e1) >= 2
+(e0.payload.transId > e1.payload.transId)
+
+indexof(e1) >= 2
+(e0.payload.transId < e1.payload.transId)
+
+indexof(e1) >= 2
+(indexof(e0) > indexof(e1))
+
+indexof(e1) >= 2
+35 1
+EOT
+(e0.payload.transId == e1.payload.transId)
+
+indexof(e0) > indexof(e1) ∧ indexof(e1) >= 2
+(e0.payload.transId > e1.payload.transId)
+
+indexof(e1) >= 2 ∧ indexof(e0) != indexof(e1)
+(e0.payload.transId < e1.payload.transId)
+
+indexof(e1) >= 2 ∧ indexof(e0) != indexof(e1)
+(indexof(e0) < indexof(e1))
+
+e0.payload.transId != e1.payload.transId
+5 1
+EOT
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.transId == e1.payload.transId)
+
+indexof(e1) >= 2
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.transId > e1.payload.transId)
+
+indexof(e1) >= 2
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.transId < e1.payload.transId)
+
+indexof(e1) >= 2
+42 2
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+numParticipants != size(e1.payload.transId)-1 ∧ numParticipants != size(indexof(e1))-1 ∧ _num_e_exists_ % numParticipants == 0 ∧ indexof(e1) >= 2 ∧ indexof(e0) > indexof(e1)[numParticipants-1] ∧ _num_e_exists_ >= numParticipants ∧ e1.payload.transId > numParticipants ∧ e0.payload.transId == e1.payload.transId ∧ size(indexof(e1))-1 != indexof(e1)[numParticipants-1]
+2 0
+EOT
+
+(e0.payload.transId == e1.payload.transId)
+_num_e_exists_ ∈ { 3, 4, 5 } ∧ indexof(e1) >= 2 ∧ _num_e_exists_ == numParticipants ∧ e1.payload.transId are equal
+
+(indexof(e0) > indexof(e1))
+numParticipants != size(e1.payload.transId)-1 ∧ numParticipants != size(indexof(e1))-1 ∧ _num_e_exists_ % numParticipants == 0 ∧ indexof(e1) >= 2 ∧ _num_e_exists_ >= numParticipants ∧ numParticipants != size(e1.payload.participant)-1 ∧ e1.payload.transId > numParticipants
+35 3
+EOT
+
+(e0.payload.transId == e1.payload.transId)
+_num_e_exists_ - indexof(e0) + indexof(e1)[_num_e_exists_-1] + 1 == 0 ∧ _num_e_exists_ ∈ { 3, 4, 5 } ∧ indexof(e1) >= 2 ∧ _num_e_exists_ == numParticipants ∧ indexof(e1) < indexof(e0)
+
+(indexof(e0) > indexof(e1))
+numParticipants != size(e1.payload.transId)-1 ∧ _num_e_exists_ % numParticipants == 0 ∧ _num_e_exists_ >= numParticipants ∧ e1.payload.transId > numParticipants
+5 3
+EOT
+
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.transId == e1.payload.transId)
+_num_e_exists_ ∈ { 3, 4, 5 } ∧ indexof(e1) >= 2 ∧ _num_e_exists_ == numParticipants ∧ e1.payload.transId are equal
+42 5
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+2 1
+EOT
+30 5
+EOT
+(e0.payload.transId == e1.payload.transId)
+
+indexof(e0) == indexof(e1)
+(indexof(e0) > indexof(e1))
+
+e0.payload.transId != e1.payload.transId
+(e0.payload.transId < e1.payload.transId)
+
+indexof(e0) != indexof(e1)
+(indexof(e0) < indexof(e1))
+
+e0.payload.transId != e1.payload.transId
+(e0.payload.transId > e1.payload.transId)
+
+indexof(e0) != indexof(e1)
+5 0
+EOT
+36 4
+EOT
+0 0
+EOT
+3 1
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+indexof(e1) >= 2 ∧ indexof(e0) != indexof(e1) ∧ e0.payload.transId != e1.payload.transId
+2 0
+EOT
+(e0.payload.transId > e1.payload.transId)
+
+indexof(e1) >= 2
+(indexof(e0) > indexof(e1))
+
+indexof(e1) >= 2
+(e0.payload.transId < e1.payload.transId)
+
+indexof(e1) >= 2
+35 1
+EOT
+(indexof(e0) < indexof(e1))
+
+e0.payload.transId != e1.payload.transId
+(e0.payload.transId > e1.payload.transId)
+
+indexof(e1) >= 2 ∧ indexof(e0) != indexof(e1)
+(indexof(e0) > indexof(e1))
+
+e0.payload.transId != e1.payload.transId
+(e0.payload.transId < e1.payload.transId)
+
+indexof(e1) >= 2 ∧ indexof(e0) != indexof(e1)
+5 0
+EOT
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.transId > e1.payload.transId)
+
+indexof(e1) >= 2
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.transId < e1.payload.transId)
+
+indexof(e1) >= 2
+42 2
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+numParticipants != size(e1.payload.transId)-1 ∧ numParticipants != size(indexof(e1))-1 ∧ _num_e_exists_ % numParticipants == 0 ∧ indexof(e1) >= 2 ∧ indexof(e0) > indexof(e1)[numParticipants-1] ∧ _num_e_exists_ >= numParticipants ∧ e1.payload.transId > numParticipants ∧ e0.payload.transId != e1.payload.transId[numParticipants-1] ∧ size(indexof(e1))-1 != indexof(e1)[numParticipants-1]
+2 0
+EOT
+
+(indexof(e0) > indexof(e1))
+numParticipants != size(e1.payload.transId)-1 ∧ numParticipants != size(indexof(e1))-1 ∧ _num_e_exists_ % numParticipants == 0 ∧ indexof(e1) >= 2 ∧ _num_e_exists_ >= numParticipants ∧ numParticipants != size(e1.payload.participant)-1 ∧ e1.payload.transId > numParticipants
+
+(e0.payload.transId < e1.payload.transId)
+numParticipants != size(e1.payload.transId)-1 ∧ numParticipants != size(indexof(e1))-1 ∧ _num_e_exists_ % numParticipants == 0 ∧ indexof(e1) >= 2 ∧ _num_e_exists_ >= numParticipants ∧ numParticipants != size(e1.payload.participant)-1 ∧ e1.payload.transId > numParticipants
+35 3
+EOT
+
+(indexof(e0) > indexof(e1))
+numParticipants != size(e1.payload.transId)-1 ∧ _num_e_exists_ % numParticipants == 0 ∧ _num_e_exists_ >= numParticipants ∧ e1.payload.transId > numParticipants ∧ e0.payload.transId != e1.payload.transId[numParticipants-1]
+
+(e0.payload.transId < e1.payload.transId)
+numParticipants != size(indexof(e1))-1 ∧ indexof(e1) >= 2 ∧ _num_e_exists_ % numParticipants == 0 ∧ indexof(e0) != size(indexof(e1))-1 ∧ indexof(e0) > indexof(e1)[numParticipants-1] ∧ _num_e_exists_ >= numParticipants
+5 3
+EOT
+
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.transId < e1.payload.transId)
+numParticipants != size(e1.payload.transId)-1 ∧ numParticipants != size(indexof(e1))-1 ∧ _num_e_exists_ % numParticipants == 0 ∧ indexof(e1) >= 2 ∧ _num_e_exists_ >= numParticipants ∧ numParticipants != size(e1.payload.participant)-1 ∧ e1.payload.transId > numParticipants
+42 5
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+2 1
+EOT
+30 5
+EOT
+(indexof(e0) < indexof(e1))
+
+e0.payload.transId != e1.payload.transId
+(indexof(e0) > indexof(e1))
+
+e0.payload.transId != e1.payload.transId
+(e0.payload.transId < e1.payload.transId)
+
+indexof(e0) != indexof(e1)
+(e0.payload.transId > e1.payload.transId)
+
+indexof(e0) != indexof(e1)
+(e0.payload.transId == e1.payload.transId)
+
+indexof(e0) == indexof(e1)
+5 0
+EOT
+36 4
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+indexof(e1) >= 2 ∧ indexof(e0) != indexof(e1)
+2 0
+EOT
+(e0.payload == e1.payload.transId)
+
+indexof(e1) >= 2
+(e0.payload > e1.payload.transId)
+
+indexof(e1) >= 2
+(e0.payload < e1.payload.transId)
+
+indexof(e1) >= 2
+(indexof(e0) > indexof(e1))
+
+indexof(e1) >= 2
+30 1
+EOT
+(e0.payload == e1.payload.transId)
+
+indexof(e1) >= 2 ∧ indexof(e0) != indexof(e1)
+(e0.payload > e1.payload.transId)
+
+indexof(e1) >= 2 ∧ indexof(e0) != indexof(e1)
+(e0.payload < e1.payload.transId)
+
+indexof(e1) >= 2 ∧ indexof(e0) != indexof(e1)
+5 2
+EOT
+(indexof(e0) > indexof(e1)) ∧ (e0.payload == e1.payload.transId)
+
+indexof(e1) >= 2
+(indexof(e0) > indexof(e1)) ∧ (e0.payload > e1.payload.transId)
+
+indexof(e1) >= 2
+(indexof(e0) > indexof(e1)) ∧ (e0.payload < e1.payload.transId)
+
+indexof(e1) >= 2
+36 3
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+numParticipants != size(e1.payload.transId)-1 ∧ numParticipants != size(indexof(e1))-1 ∧ _num_e_exists_ % numParticipants == 0 ∧ indexof(e1) >= 2 ∧ _num_e_exists_ >= numParticipants ∧ e1.payload.transId > numParticipants ∧ indexof(e0) != indexof(e1)[numParticipants-1] ∧ size(indexof(e1))-1 != indexof(e1)[numParticipants-1]
+2 0
+EOT
+30 5
+EOT
+5 5
+EOT
+36 6
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+2 1
+EOT
+20 5
+EOT
+(e0.payload < e1.payload)
+
+indexof(e0) != indexof(e1)
+(e0.payload > e1.payload)
+
+indexof(e0) != indexof(e1)
+5 3
+EOT
+24 6
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+indexof(e1) >= 2 ∧ indexof(e0) != indexof(e1)
+2 0
+EOT
+(e0.payload == e1.payload.transId)
+
+indexof(e1) >= 2
+(e0.payload > e1.payload.transId)
+
+indexof(e1) >= 2
+(e0.payload < e1.payload.transId)
+
+indexof(e1) >= 2
+(indexof(e0) > indexof(e1))
+
+indexof(e1) >= 2
+30 1
+EOT
+(e0.payload == e1.payload.transId)
+
+indexof(e0) > indexof(e1) ∧ indexof(e1) >= 2
+(e0.payload > e1.payload.transId)
+
+indexof(e1) >= 2 ∧ indexof(e0) != indexof(e1)
+(e0.payload < e1.payload.transId)
+
+indexof(e1) >= 2 ∧ indexof(e0) != indexof(e1)
+(indexof(e0) < indexof(e1))
+
+e0.payload != e1.payload.transId
+5 1
+EOT
+(indexof(e0) > indexof(e1)) ∧ (e0.payload == e1.payload.transId)
+
+indexof(e1) >= 2
+(indexof(e0) > indexof(e1)) ∧ (e0.payload > e1.payload.transId)
+
+indexof(e1) >= 2
+(indexof(e0) > indexof(e1)) ∧ (e0.payload < e1.payload.transId)
+
+indexof(e1) >= 2
+36 2
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+numParticipants != size(e1.payload.transId)-1 ∧ numParticipants != size(indexof(e1))-1 ∧ _num_e_exists_ % numParticipants == 0 ∧ indexof(e1) >= 2 ∧ indexof(e0) > indexof(e1)[numParticipants-1] ∧ e0.payload == e1.payload.transId ∧ _num_e_exists_ >= numParticipants ∧ e1.payload.transId > numParticipants ∧ size(indexof(e1))-1 != indexof(e1)[numParticipants-1]
+2 0
+EOT
+
+(e0.payload == e1.payload.transId)
+_num_e_exists_ ∈ { 3, 4, 5 } ∧ indexof(e1) >= 2 ∧ _num_e_exists_ == numParticipants ∧ e1.payload.transId are equal
+
+(indexof(e0) > indexof(e1))
+numParticipants != size(e1.payload.transId)-1 ∧ numParticipants != size(indexof(e1))-1 ∧ _num_e_exists_ % numParticipants == 0 ∧ indexof(e1) >= 2 ∧ _num_e_exists_ >= numParticipants ∧ numParticipants != size(e1.payload.participant)-1 ∧ e1.payload.transId > numParticipants
+30 3
+EOT
+
+(e0.payload == e1.payload.transId)
+_num_e_exists_ ∈ { 3, 4, 5 } ∧ indexof(e1) >= 2 ∧ _num_e_exists_ == numParticipants ∧ indexof(e1) < indexof(e0)
+
+(indexof(e0) > indexof(e1))
+numParticipants != size(e1.payload.transId)-1 ∧ _num_e_exists_ % numParticipants == 0 ∧ _num_e_exists_ >= numParticipants ∧ e1.payload.transId > numParticipants
+5 3
+EOT
+
+(indexof(e0) > indexof(e1)) ∧ (e0.payload == e1.payload.transId)
+_num_e_exists_ ∈ { 3, 4, 5 } ∧ indexof(e1) >= 2 ∧ _num_e_exists_ == numParticipants ∧ e1.payload.transId are equal
+36 5
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+2 1
+EOT
+20 5
+EOT
+(e0.payload < e1.payload)
+
+indexof(e0) != indexof(e1)
+(e0.payload > e1.payload)
+
+indexof(e0) != indexof(e1)
+5 3
+EOT
+24 6
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+indexof(e0) != indexof(e1) ∧ e0.payload.transId != e1.payload.transId
+2 0
+EOT
+30 4
+EOT
+(indexof(e0) > indexof(e1))
+
+e0.payload.transId != e1.payload.transId
+(e0.payload.transId < e1.payload.transId)
+
+indexof(e0) != indexof(e1)
+(indexof(e0) < indexof(e1))
+
+e0.payload.transId != e1.payload.transId
+(e0.payload.transId > e1.payload.transId)
+
+indexof(e0) != indexof(e1)
+5 0
+EOT
+36 4
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+_num_e_exists_ >= 1 ∧ e1.payload.transId > numParticipants ∧ indexof(e1) > numParticipants
+2 0
+EOT
+30 5
+EOT
+5 5
+EOT
+36 6
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+indexof(e0) != indexof(e1) ∧ e0.payload.transId != e1.payload.transId
+2 0
+EOT
+30 4
+EOT
+(indexof(e0) > indexof(e1))
+
+e0.payload.transId != e1.payload.transId
+(e0.payload.transId < e1.payload.transId)
+
+indexof(e0) != indexof(e1)
+(e0.payload.transId > e1.payload.transId)
+
+indexof(e0) != indexof(e1)
+(indexof(e0) < indexof(e1))
+
+e0.payload.transId != e1.payload.transId
+5 0
+EOT
+36 4
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+_num_e_exists_ >= 1 ∧ e1.payload.transId > numParticipants ∧ indexof(e1) > numParticipants
+2 0
+EOT
+30 5
+EOT
+5 5
+EOT
+36 6
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+indexof(e0) != indexof(e1) ∧ e0.payload.transId != e1.payload
+2 0
+EOT
+25 4
+EOT
+(indexof(e0) > indexof(e1))
+
+e0.payload.transId != e1.payload
+(e0.payload.transId < e1.payload)
+
+indexof(e0) != indexof(e1)
+(e0.payload.transId > e1.payload)
+
+indexof(e0) != indexof(e1)
+(indexof(e0) < indexof(e1))
+
+e0.payload.transId != e1.payload
+5 0
+EOT
+30 4
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+e0.payload.transId != e1.payload[numParticipants-1] ∧ numParticipants != size(indexof(e1))-1 ∧ _num_e_exists_ % numParticipants == 0 ∧ _num_e_exists_ >= numParticipants ∧ e1.payload > numParticipants ∧ numParticipants != size(e1.payload)-1 ∧ indexof(e0) != indexof(e1)[numParticipants-1] ∧ indexof(e1) > numParticipants
+2 0
+EOT
+25 5
+EOT
+5 5
+EOT
+30 6
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+indexof(e0) != indexof(e1)
+2 0
+EOT
+25 5
+EOT
+(e0.payload.transId == e1.payload)
+
+indexof(e0) > indexof(e1)
+(e0.payload.transId < e1.payload)
+
+indexof(e0) != indexof(e1)
+(indexof(e0) < indexof(e1))
+
+e0.payload.transId != e1.payload
+(e0.payload.transId > e1.payload)
+
+indexof(e0) != indexof(e1)
+5 1
+EOT
+30 5
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+numParticipants != size(indexof(e1))-1 ∧ _num_e_exists_ % numParticipants == 0 ∧ indexof(e0) > indexof(e1)[numParticipants-1] ∧ _num_e_exists_ >= numParticipants ∧ e0.payload.transId == e1.payload ∧ e1.payload > numParticipants ∧ numParticipants != size(e1.payload)-1 ∧ indexof(e1) > numParticipants ∧ size(indexof(e1))-1 != indexof(e1)[numParticipants-1]
+2 0
+EOT
+
+(e0.payload.transId == e1.payload)
+_num_e_exists_ ∈ { 3, 4, 5 } ∧ e1.payload are equal ∧ _num_e_exists_ == numParticipants
+
+(indexof(e0) > indexof(e1))
+numParticipants != size(indexof(e1))-1 ∧ _num_e_exists_ % numParticipants == 0 ∧ _num_e_exists_ >= numParticipants ∧ e1.payload > numParticipants ∧ numParticipants != size(e1.payload)-1 ∧ indexof(e1) > numParticipants ∧ size(indexof(e1))-1 != indexof(e1)[numParticipants-1]
+25 3
+EOT
+
+(e0.payload.transId == e1.payload)
+_num_e_exists_ ∈ { 3, 4, 5 } ∧ _num_e_exists_ == numParticipants ∧ indexof(e1) < indexof(e0)
+
+(indexof(e0) > indexof(e1))
+_num_e_exists_ % numParticipants == 0 ∧ _num_e_exists_ >= numParticipants ∧ e1.payload > numParticipants ∧ numParticipants != size(e1.payload)-1
+5 3
+EOT
+
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.transId == e1.payload)
+_num_e_exists_ ∈ { 3, 4, 5 } ∧ e1.payload are equal ∧ _num_e_exists_ == numParticipants
+30 5
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+indexof(e0) != indexof(e1) ∧ e0.payload.transId != e1.payload.transId
+2 0
+EOT
+30 4
+EOT
+(e0.payload.transId > e1.payload.transId)
+
+indexof(e0) != indexof(e1)
+(indexof(e0) < indexof(e1))
+
+e0.payload.transId != e1.payload.transId
+(e0.payload.transId < e1.payload.transId)
+
+indexof(e0) != indexof(e1)
+(indexof(e0) > indexof(e1))
+
+e0.payload.transId != e1.payload.transId
+5 0
+EOT
+36 4
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+_num_e_exists_ >= 1 ∧ e1.payload.transId > numParticipants ∧ indexof(e1) > numParticipants
+2 0
+EOT
+30 5
+EOT
+5 5
+EOT
+36 6
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+indexof(e0) != indexof(e1)
+2 0
+EOT
+25 5
+EOT
+(e0.payload.transId == e1.payload)
+
+indexof(e0) > indexof(e1)
+(e0.payload.transId > e1.payload)
+
+indexof(e0) != indexof(e1)
+(indexof(e0) < indexof(e1))
+
+e0.payload.transId != e1.payload
+(e0.payload.transId < e1.payload)
+
+indexof(e0) != indexof(e1)
+5 1
+EOT
+30 5
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+numParticipants != size(indexof(e1))-1 ∧ _num_e_exists_ % numParticipants == 0 ∧ indexof(e0) > indexof(e1)[numParticipants-1] ∧ _num_e_exists_ >= numParticipants ∧ e0.payload.transId == e1.payload ∧ e1.payload > numParticipants ∧ numParticipants != size(e1.payload)-1 ∧ indexof(e1) > numParticipants
+2 0
+EOT
+
+(e0.payload.transId == e1.payload)
+_num_e_exists_ ∈ { 3, 4, 5 } ∧ e1.payload are equal ∧ _num_e_exists_ == numParticipants
+
+(indexof(e0) > indexof(e1))
+numParticipants != size(indexof(e1))-1 ∧ _num_e_exists_ % numParticipants == 0 ∧ _num_e_exists_ >= numParticipants ∧ e1.payload > numParticipants ∧ numParticipants != size(e1.payload)-1 ∧ indexof(e1) > numParticipants
+25 3
+EOT
+
+(e0.payload.transId == e1.payload)
+_num_e_exists_ ∈ { 3, 4, 5 } ∧ _num_e_exists_ == numParticipants ∧ indexof(e1) < indexof(e0)
+
+(indexof(e0) > indexof(e1))
+_num_e_exists_ % numParticipants == 0 ∧ _num_e_exists_ >= numParticipants ∧ e1.payload > numParticipants ∧ numParticipants != size(e1.payload)-1
+5 3
+EOT
+
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.transId == e1.payload)
+_num_e_exists_ ∈ { 3, 4, 5 } ∧ e1.payload are equal ∧ _num_e_exists_ == numParticipants
+30 5
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+indexof(e0) != indexof(e1) ∧ e0.payload.transId != e1.payload
+2 0
+EOT
+25 4
+EOT
+(e0.payload.transId > e1.payload)
+
+indexof(e0) != indexof(e1)
+(indexof(e0) < indexof(e1))
+
+e0.payload.transId != e1.payload
+(indexof(e0) > indexof(e1))
+
+e0.payload.transId != e1.payload
+(e0.payload.transId < e1.payload)
+
+indexof(e0) != indexof(e1)
+5 0
+EOT
+30 4
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+e0.payload.transId != e1.payload[numParticipants-1] ∧ numParticipants != size(indexof(e1))-1 ∧ _num_e_exists_ % numParticipants == 0 ∧ indexof(e0) > indexof(e1)[numParticipants-1] ∧ _num_e_exists_ >= numParticipants ∧ e1.payload > numParticipants ∧ numParticipants != size(e1.payload)-1 ∧ indexof(e1) > numParticipants ∧ size(indexof(e1))-1 != indexof(e1)[numParticipants-1]
+2 0
+EOT
+
+(indexof(e0) > indexof(e1))
+numParticipants != size(indexof(e1))-1 ∧ _num_e_exists_ % numParticipants == 0 ∧ _num_e_exists_ >= numParticipants ∧ e1.payload > numParticipants ∧ numParticipants != size(e1.payload)-1 ∧ indexof(e1) > numParticipants ∧ size(indexof(e1))-1 != indexof(e1)[numParticipants-1]
+
+(e0.payload.transId < e1.payload)
+numParticipants != size(indexof(e1))-1 ∧ _num_e_exists_ % numParticipants == 0 ∧ _num_e_exists_ >= numParticipants ∧ e1.payload > numParticipants ∧ numParticipants != size(e1.payload)-1 ∧ indexof(e1) > numParticipants ∧ size(indexof(e1))-1 != indexof(e1)[numParticipants-1]
+25 3
+EOT
+
+(indexof(e0) > indexof(e1))
+e0.payload.transId != e1.payload[numParticipants-1] ∧ _num_e_exists_ % numParticipants == 0 ∧ _num_e_exists_ >= numParticipants ∧ e1.payload > numParticipants ∧ numParticipants != size(e1.payload)-1
+
+(e0.payload.transId < e1.payload)
+numParticipants != size(indexof(e1))-1 ∧ _num_e_exists_ % numParticipants == 0 ∧ indexof(e0) > indexof(e1)[numParticipants-1] ∧ _num_e_exists_ >= numParticipants ∧ indexof(e1) > numParticipants ∧ size(indexof(e1))-1 != indexof(e1)[numParticipants-1]
+5 3
+EOT
+
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.transId < e1.payload)
+numParticipants != size(indexof(e1))-1 ∧ _num_e_exists_ % numParticipants == 0 ∧ _num_e_exists_ >= numParticipants ∧ e1.payload > numParticipants ∧ numParticipants != size(e1.payload)-1 ∧ indexof(e1) > numParticipants ∧ size(indexof(e1))-1 != indexof(e1)[numParticipants-1]
+30 5
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+indexof(e0) != indexof(e1)
+2 0
+EOT
+25 5
+EOT
+(e0.payload.transId == e1.payload)
+
+indexof(e0) > indexof(e1)
+(e0.payload.transId < e1.payload)
+
+indexof(e0) != indexof(e1)
+(indexof(e0) < indexof(e1))
+
+e0.payload.transId != e1.payload
+(e0.payload.transId > e1.payload)
+
+indexof(e0) != indexof(e1)
+5 1
+EOT
+30 5
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+numParticipants != size(indexof(e1))-1 ∧ _num_e_exists_ % numParticipants == 0 ∧ indexof(e0) > indexof(e1)[numParticipants-1] ∧ _num_e_exists_ >= numParticipants ∧ e0.payload.transId == e1.payload ∧ e1.payload > numParticipants ∧ numParticipants != size(e1.payload)-1 ∧ indexof(e1) > numParticipants
+2 0
+EOT
+
+(e0.payload.transId == e1.payload)
+_num_e_exists_ ∈ { 3, 4, 5 } ∧ e1.payload are equal ∧ _num_e_exists_ == numParticipants
+
+(indexof(e0) > indexof(e1))
+numParticipants != size(indexof(e1))-1 ∧ _num_e_exists_ % numParticipants == 0 ∧ _num_e_exists_ >= numParticipants ∧ e1.payload > numParticipants ∧ numParticipants != size(e1.payload)-1 ∧ indexof(e1) > numParticipants
+25 3
+EOT
+
+(e0.payload.transId == e1.payload)
+_num_e_exists_ ∈ { 3, 4, 5 } ∧ _num_e_exists_ == numParticipants ∧ indexof(e1) < indexof(e0)
+
+(indexof(e0) > indexof(e1))
+_num_e_exists_ % numParticipants == 0 ∧ _num_e_exists_ >= numParticipants ∧ e1.payload > numParticipants ∧ numParticipants != size(e1.payload)-1
+5 3
+EOT
+
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.transId == e1.payload)
+_num_e_exists_ ∈ { 3, 4, 5 } ∧ e1.payload are equal ∧ _num_e_exists_ == numParticipants
+30 5
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+indexof(e0) != indexof(e1) ∧ e0.payload.transId != e1.payload
+2 0
+EOT
+25 4
+EOT
+(indexof(e0) < indexof(e1))
+
+e0.payload.transId != e1.payload
+(e0.payload.transId > e1.payload)
+
+indexof(e0) != indexof(e1)
+(e0.payload.transId < e1.payload)
+
+indexof(e0) != indexof(e1)
+(indexof(e0) > indexof(e1))
+
+e0.payload.transId != e1.payload
+5 0
+EOT
+30 4
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+e0.payload.transId != e1.payload[numParticipants-1] ∧ numParticipants != size(indexof(e1))-1 ∧ _num_e_exists_ % numParticipants == 0 ∧ _num_e_exists_ >= numParticipants ∧ e1.payload > numParticipants ∧ numParticipants != size(e1.payload)-1 ∧ indexof(e0) != indexof(e1)[numParticipants-1] ∧ indexof(e1) > numParticipants ∧ size(indexof(e1))-1 != indexof(e1)[numParticipants-1]
+2 0
+EOT
+25 5
+EOT
+5 5
+EOT
+30 6
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+indexof(e0) != indexof(e1) ∧ e0.payload != e1.payload
+2 0
+EOT
+20 4
+EOT
+(indexof(e0) < indexof(e1))
+
+e0.payload != e1.payload
+(e0.payload > e1.payload)
+
+indexof(e0) != indexof(e1)
+(e0.payload < e1.payload)
+
+indexof(e0) != indexof(e1)
+(indexof(e0) > indexof(e1))
+
+e0.payload != e1.payload
+5 0
+EOT
+24 4
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+numParticipants != size(indexof(e1))-1 ∧ _num_e_exists_ % numParticipants == 0 ∧ e0.payload != e1.payload[numParticipants-1] ∧ _num_e_exists_ >= numParticipants ∧ e1.payload > numParticipants ∧ numParticipants != size(e1.payload)-1 ∧ indexof(e0) != indexof(e1)[numParticipants-1] ∧ indexof(e1) > numParticipants ∧ size(indexof(e1))-1 != indexof(e1)[numParticipants-1]
+2 0
+EOT
+20 5
+EOT
+5 5
+EOT
+24 6
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+indexof(e0) != indexof(e1) ∧ e0.payload.transId != e1.payload.transId
+2 0
+EOT
+35 4
+EOT
+(indexof(e0) > indexof(e1))
+
+e0.payload.transId != e1.payload.transId
+(e0.payload.transId < e1.payload.transId)
+
+indexof(e0) != indexof(e1)
+(indexof(e0) < indexof(e1))
+
+e0.payload.transId != e1.payload.transId
+(e0.payload.transId > e1.payload.transId)
+
+indexof(e0) != indexof(e1)
+5 0
+EOT
+42 4
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+numParticipants != size(e1.payload.transId)-1 ∧ numParticipants != size(indexof(e1))-1 ∧ _num_e_exists_ % numParticipants == 0 ∧ indexof(e0) != size(indexof(e1))-1 ∧ _num_e_exists_ >= numParticipants ∧ e1.payload.transId > numParticipants ∧ indexof(e0) != indexof(e1)[numParticipants-1] ∧ e0.payload.transId != e1.payload.transId[numParticipants-1] ∧ indexof(e1) > numParticipants
+2 0
+EOT
+35 5
+EOT
+5 5
+EOT
+42 6
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+indexof(e0) != indexof(e1)
+2 0
+EOT
+35 5
+EOT
+(e0.payload.transId < e1.payload.transId)
+
+indexof(e0) != indexof(e1)
+(e0.payload.transId > e1.payload.transId)
+
+indexof(e0) != indexof(e1)
+(e0.payload.transId == e1.payload.transId)
+
+indexof(e0) != indexof(e1)
+5 2
+EOT
+42 6
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+numParticipants != size(e1.payload.transId)-1 ∧ numParticipants != size(indexof(e1))-1 ∧ _num_e_exists_ % numParticipants == 0 ∧ _num_e_exists_ >= numParticipants ∧ e1.payload.transId > numParticipants ∧ indexof(e0) != indexof(e1)[numParticipants-1] ∧ e0.payload.transId == e1.payload.transId ∧ indexof(e1) > numParticipants
+2 0
+EOT
+
+(e0.payload.transId == e1.payload.transId)
+_num_e_exists_ ∈ { 3, 4, 5 } ∧ _num_e_exists_ == numParticipants ∧ e1.payload.transId are equal
+
+(indexof(e0) > indexof(e1))
+e1.payload.transId > numParticipants ∧ indexof(e1) > numParticipants
+35 3
+EOT
+
+(indexof(e0) > indexof(e1))
+e1.payload.transId > numParticipants
+
+(e0.payload.transId == e1.payload.transId)
+_num_e_exists_ ∈ { 3, 4, 5 } ∧ _num_e_exists_ == numParticipants
+5 3
+EOT
+
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.transId == e1.payload.transId)
+e1.payload.transId > numParticipants ∧ _num_e_exists_ <= numParticipants ∧ indexof(e1) > numParticipants ∧ e1.payload.transId are equal
+42 5
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+indexof(e0) != indexof(e1)
+2 0
+EOT
+30 5
+EOT
+(e0.payload == e1.payload.transId)
+
+indexof(e0) != indexof(e1)
+(e0.payload < e1.payload.transId)
+
+indexof(e0) != indexof(e1)
+(e0.payload > e1.payload.transId)
+
+indexof(e0) != indexof(e1)
+5 2
+EOT
+36 6
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+numParticipants != size(e1.payload.transId)-1 ∧ numParticipants != size(indexof(e1))-1 ∧ _num_e_exists_ % numParticipants == 0 ∧ _num_e_exists_ >= numParticipants ∧ e1.payload.transId > numParticipants ∧ indexof(e0) != indexof(e1)[numParticipants-1] ∧ indexof(e1) > numParticipants
+2 0
+EOT
+30 5
+EOT
+5 5
+EOT
+36 6
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+indexof(e0) != indexof(e1) ∧ e0.payload != e1.payload.transId
+2 0
+EOT
+30 4
+EOT
+(indexof(e0) > indexof(e1))
+
+e0.payload != e1.payload.transId
+(e0.payload < e1.payload.transId)
+
+indexof(e0) != indexof(e1)
+(indexof(e0) < indexof(e1))
+
+e0.payload != e1.payload.transId
+(e0.payload > e1.payload.transId)
+
+indexof(e0) != indexof(e1)
+5 0
+EOT
+36 4
+EOT
+0 0
+EOT
+0 0
+EOT
+
+
+numParticipants != size(e1.payload.transId)-1 ∧ numParticipants != size(indexof(e1))-1 ∧ _num_e_exists_ % numParticipants == 0 ∧ _num_e_exists_ >= numParticipants ∧ e1.payload.transId > numParticipants ∧ indexof(e0) != indexof(e1)[numParticipants-1] ∧ e0.payload != e1.payload.transId[numParticipants-1] ∧ indexof(e1) > numParticipants
+2 0
+EOT
+30 5
+EOT
+5 5
+EOT
+36 6
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT
+0 0
+EOT

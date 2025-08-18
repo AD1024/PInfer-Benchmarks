@@ -1,0 +1,219 @@
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+(e0.payload.position <= e1.payload.position) ∧ (e0.payload.log == e1.payload.sent)
+(e0.payload.position <= e1.payload.position) ∧ (e0.payload.sent == e1.payload.log)
+(e0.payload.position <= e1.payload.position) ∧ (e0.payload.position == size(e1.payload.log))
+(e0.payload.position <= e1.payload.position) ∧ (e0.payload.position == size(e1.payload.sent))
+(e0.payload.position <= e1.payload.position) ∧ (e1.payload.position == size(e0.payload.log))
+(e0.payload.position <= e1.payload.position) ∧ (e1.payload.position == size(e0.payload.sent))
+EOT
+(e0.payload.position <= e1.payload.position) ∧ (e0.payload.log == e1.payload.sent)
+(e0.payload.position <= e1.payload.position) ∧ (e0.payload.sent == e1.payload.log)
+(e0.payload.position <= e1.payload.position) ∧ (e0.payload.position == size(e1.payload.sent))
+(e0.payload.position <= e1.payload.position) ∧ (e0.payload.position == size(e1.payload.log))
+(e0.payload.position <= e1.payload.position) ∧ (e1.payload.position == size(e0.payload.log))
+(e0.payload.position <= e1.payload.position) ∧ (e1.payload.position == size(e0.payload.sent))
+EOT
+EOT
+EOT
+(e0.payload.position <= e1.payload.position) ∧ (e0.payload.log == e1.payload.sent)
+(e0.payload.position <= e1.payload.position) ∧ (e0.payload.sent == e1.payload.log)
+(e0.payload.position <= e1.payload.position) ∧ (e0.payload.position == size(e1.payload.log))
+(e0.payload.position <= e1.payload.position) ∧ (e0.payload.position == size(e1.payload.sent))
+(e0.payload.position <= e1.payload.position) ∧ (e1.payload.position == size(e0.payload.log))
+(e0.payload.position <= e1.payload.position) ∧ (e1.payload.position == size(e0.payload.sent))
+EOT
+(e0.payload.position <= e1.payload.position) ∧ (e0.payload.log == e1.payload.sent)
+(e0.payload.position <= e1.payload.position) ∧ (e0.payload.sent == e1.payload.log)
+(e0.payload.position <= e1.payload.position) ∧ (e0.payload.position == size(e1.payload.log))
+(e0.payload.position <= e1.payload.position) ∧ (e0.payload.position == size(e1.payload.sent))
+(e0.payload.position <= e1.payload.position) ∧ (e1.payload.position == size(e0.payload.log))
+(e0.payload.position <= e1.payload.position) ∧ (e1.payload.position == size(e0.payload.sent))
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.k == e1.payload.k)
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT

@@ -1,0 +1,70 @@
+# P Model Analysis Summary
+
+## 1. Events Definition
+
+### Core Protocol Events
+- **eConfig**: `tConfig(quorum: int)` - Configuration event to set quorum size
+- **eStart**: `tStart(requestVoteFrom: machine)` - Initiates vote request to a specific node
+- **eRequest**: `tRequest(candidate: machine)` - Vote request from a candidate node
+- **eVote**: `tVote(voter: machine, votedFor: machine)` - Actual vote cast by a voter
+- **eDecide**: `tDecide(node: machine, value: tValue)` - Decision announcement with chosen value
+
+### Ghost Events (for specification/monitoring)
+- **eWon**: `tWon(node: machine)` - Indicates a node has won the election
+- **eStateVoted**: `tStateVoted(voter: machine, votedFor: machine)` - Tracks voting state changes
+
+## 2. Event Flows
+
+### Typical Voting Protocol Flow
+1. **Configuration Phase**: `eConfig` → Node receives quorum configuration
+2. **Vote Request Phase**: `eStart` → `eRequest` (candidate requests votes from other nodes)
+3. **Voting Phase**: `eRequest` → `eVote` + `eStateVoted` (voters respond with votes)
+4. **Decision Phase**: `eVote` → `eDecide` + `eWon` (when quorum reached)
+
+### Key Interaction Patterns
+- **Request-Response**: Candidates send `eRequest`, voters respond with `eVote`
+- **Broadcast Announcements**: `eStateVoted`, `eDecide`, and `eWon` are announced globally
+- **State Transitions**: Nodes transition from `Voting` to `Won` state after winning
+
+## 3. System Roles
+
+### Node Machine
+- **Primary Role**: Dual role as both candidate and voter in the consensus protocol
+- **Key Responsibilities**:
+  - Generate random values for consensus
+  - Request votes from other nodes when started
+  - Cast votes for requesting candidates (once per node)
+  - Collect votes and declare victory when quorum is reached
+  - Announce decisions with chosen values
+
+### Safety Monitor
+- **Primary Role**: System-wide safety verification
+- **Key Responsibilities**:
+  - Monitor all decision events (`eDecide`)
+  - Ensure consensus safety: all decisions must agree on the same value
+  - Maintain global decision state
+
+## 4. Protocol Workflow
+
+### High-Level Consensus Protocol
+This implements a **distributed consensus/voting protocol** similar to leader election algorithms:
+
+1. **Initialization**: Each node generates a random value and waits for configuration
+2. **Election Trigger**: External trigger (`eStart`) initiates vote requests
+3. **Vote Collection**: 
+   - Candidates request votes from specific nodes
+   - Each voter can vote for at most one candidate (ensured by `voted` flag)
+   - Votes are collected until quorum is reached
+4. **Decision Making**: 
+   - First node to reach quorum threshold wins
+   - Winner announces decision with their chosen value
+   - Winner transitions to terminal `Won` state
+5. **Safety Guarantee**: The safety monitor ensures all decisions agree on the same value
+
+### Key Protocol Properties
+- **Single Vote Constraint**: Each node votes at most once
+- **Quorum-Based Decision**: Decisions require a minimum number of votes
+- **Value Consensus**: All decisions must agree on the same value
+- **Termination**: Winning nodes enter a terminal state and ignore further events
+
+This appears to be modeling a consensus protocol where nodes compete to get their value chosen, with safety properties ensuring agreement on a single value across all decisions.

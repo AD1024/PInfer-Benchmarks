@@ -1,0 +1,153 @@
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.trueTime > e1.payload.trueTime)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.trueTime == e1.payload.trueTime)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.trueTime < e1.payload.trueTime)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.trueTime == e1.payload.trueTime)
+EOT
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.trueTime == e1.payload.trueTime)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.trueTime > e1.payload.trueTime)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.trueTime == e1.payload.trueTime)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.trueTime < e1.payload.trueTime)
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+(e0.payload.target == e1.payload.target)
+EOT
+(e0.payload.target == e1.payload.target)
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.trueTime == e1.payload.trueTime)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.target == e1.payload.target)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.target == e1.payload.target)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.trueTime > e1.payload.trueTime)
+(e0.payload.target == e1.payload.target) ∧ (e0.payload.trueTime == e1.payload.trueTime)
+(e0.payload.target == e1.payload.target) ∧ (e0.payload.trueTime > e1.payload.trueTime)
+(e0.payload.target == e1.payload.target) ∧ (e0.payload.trueTime < e1.payload.trueTime)
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.trueTime == e1.payload.trueTime)
+(e0.payload.target == e1.payload.target) ∧ (e0.payload.trueTime > e1.payload.trueTime)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.target == e1.payload.target)
+(e0.payload.target == e1.payload.target) ∧ (e0.payload.trueTime < e1.payload.trueTime)
+(e0.payload.target == e1.payload.target) ∧ (e0.payload.trueTime == e1.payload.trueTime)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.trueTime > e1.payload.trueTime)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.target == e1.payload.target)
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.trueTime == e1.payload.trueTime)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.trueTime == e1.payload.trueTime)
+(e0.payload.trueTime == e1.payload.trueTime) ∧ (e0.payload.earliest < e1.payload.earliest)
+(e0.payload.trueTime == e1.payload.trueTime) ∧ (e0.payload.latest < e1.payload.earliest)
+(e0.payload.trueTime == e1.payload.trueTime) ∧ (e0.payload.latest < e1.payload.latest)
+(e0.payload.trueTime == e1.payload.trueTime) ∧ (e0.payload.earliest > e1.payload.earliest)
+(e0.payload.trueTime == e1.payload.trueTime) ∧ (e0.payload.earliest > e1.payload.latest)
+(e0.payload.trueTime == e1.payload.trueTime) ∧ (e0.payload.latest > e1.payload.latest)
+(e0.payload.trueTime < e1.payload.trueTime) ∧ (e0.payload.earliest == e1.payload.latest)
+(e0.payload.trueTime < e1.payload.trueTime) ∧ (e0.payload.earliest > e1.payload.latest)
+(e0.payload.trueTime > e1.payload.trueTime) ∧ (e0.payload.latest == e1.payload.earliest)
+(e0.payload.trueTime > e1.payload.trueTime) ∧ (e0.payload.latest < e1.payload.earliest)
+(e0.payload.earliest == e1.payload.earliest) ∧ (e0.payload.latest < e1.payload.earliest)
+(e0.payload.earliest == e1.payload.earliest) ∧ (e0.payload.earliest > e1.payload.latest)
+(e0.payload.earliest == e1.payload.latest) ∧ (e0.payload.earliest < e1.payload.earliest)
+(e0.payload.earliest == e1.payload.latest) ∧ (e0.payload.latest < e1.payload.earliest)
+(e0.payload.earliest == e1.payload.latest) ∧ (e0.payload.latest < e1.payload.latest)
+(e0.payload.latest == e1.payload.earliest) ∧ (e0.payload.earliest > e1.payload.earliest)
+(e0.payload.latest == e1.payload.earliest) ∧ (e0.payload.earliest > e1.payload.latest)
+(e0.payload.latest == e1.payload.earliest) ∧ (e0.payload.latest > e1.payload.latest)
+(e0.payload.latest == e1.payload.latest) ∧ (e0.payload.latest < e1.payload.earliest)
+(e0.payload.latest == e1.payload.latest) ∧ (e0.payload.earliest > e1.payload.latest)
+(e0.payload.earliest < e1.payload.earliest) ∧ (e0.payload.earliest > e1.payload.latest)
+(e0.payload.latest < e1.payload.earliest) ∧ (e0.payload.earliest > e1.payload.earliest)
+(e0.payload.latest < e1.payload.earliest) ∧ (e0.payload.earliest > e1.payload.latest)
+(e0.payload.latest < e1.payload.earliest) ∧ (e0.payload.latest > e1.payload.latest)
+(e0.payload.latest < e1.payload.latest) ∧ (e0.payload.earliest > e1.payload.latest)
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.trueTime == e1.payload.trueTime)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.trueTime == e1.payload.trueTime)
+(e0.payload.trueTime == e1.payload.trueTime) ∧ (e0.payload.earliest < e1.payload.earliest)
+(e0.payload.trueTime == e1.payload.trueTime) ∧ (e0.payload.earliest > e1.payload.latest)
+(e0.payload.trueTime == e1.payload.trueTime) ∧ (e0.payload.latest < e1.payload.earliest)
+(e0.payload.trueTime == e1.payload.trueTime) ∧ (e0.payload.latest < e1.payload.latest)
+(e0.payload.trueTime == e1.payload.trueTime) ∧ (e0.payload.earliest > e1.payload.earliest)
+(e0.payload.trueTime < e1.payload.trueTime) ∧ (e0.payload.earliest == e1.payload.latest)
+(e0.payload.trueTime == e1.payload.trueTime) ∧ (e0.payload.latest > e1.payload.latest)
+(e0.payload.trueTime < e1.payload.trueTime) ∧ (e0.payload.earliest > e1.payload.latest)
+(e0.payload.trueTime > e1.payload.trueTime) ∧ (e0.payload.latest == e1.payload.earliest)
+(e0.payload.trueTime > e1.payload.trueTime) ∧ (e0.payload.latest < e1.payload.earliest)
+(e0.payload.earliest == e1.payload.earliest) ∧ (e0.payload.latest < e1.payload.earliest)
+(e0.payload.earliest == e1.payload.earliest) ∧ (e0.payload.earliest > e1.payload.latest)
+(e0.payload.earliest == e1.payload.latest) ∧ (e0.payload.earliest < e1.payload.earliest)
+(e0.payload.earliest == e1.payload.latest) ∧ (e0.payload.latest < e1.payload.earliest)
+(e0.payload.earliest == e1.payload.latest) ∧ (e0.payload.latest < e1.payload.latest)
+(e0.payload.latest == e1.payload.earliest) ∧ (e0.payload.earliest > e1.payload.earliest)
+(e0.payload.latest == e1.payload.earliest) ∧ (e0.payload.earliest > e1.payload.latest)
+(e0.payload.latest == e1.payload.earliest) ∧ (e0.payload.latest > e1.payload.latest)
+(e0.payload.latest == e1.payload.latest) ∧ (e0.payload.latest < e1.payload.earliest)
+(e0.payload.latest == e1.payload.latest) ∧ (e0.payload.earliest > e1.payload.latest)
+(e0.payload.earliest < e1.payload.earliest) ∧ (e0.payload.earliest > e1.payload.latest)
+(e0.payload.latest < e1.payload.earliest) ∧ (e0.payload.earliest > e1.payload.latest)
+(e0.payload.latest < e1.payload.earliest) ∧ (e0.payload.earliest > e1.payload.earliest)
+(e0.payload.latest < e1.payload.earliest) ∧ (e0.payload.latest > e1.payload.latest)
+(e0.payload.latest < e1.payload.latest) ∧ (e0.payload.earliest > e1.payload.latest)
+EOT

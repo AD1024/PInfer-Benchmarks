@@ -1,0 +1,9 @@
+∀e0:eDecide ::  ∃e1:eWon :: 
+e1.payload.node ∈ { "Node(3)", "Node(4)", "Node(5)" }
+_num_e_exists_ <= quorum
+e0.payload.node ∈ { "Node(3)", "Node(4)", "Node(5)" }
+_num_e_exists_ == 1
+indexof(e1) > quorum
+e0.payload.node == e1.payload.node
+indexof(e1) < indexof(e0)
+

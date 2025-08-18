@@ -1,0 +1,270 @@
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+(e0.payload.node == e1.payload.node) ∧ (e0.payload.epoch < e1.payload.epoch)
+(e0.payload.node == e1.payload.node) ∧ (e0.payload.epoch > e1.payload.epoch)
+EOT
+(e0.payload.node == e1.payload.node) ∧ (e0.payload.epoch > e1.payload.epoch)
+(e0.payload.node == e1.payload.node) ∧ (e0.payload.epoch < e1.payload.epoch)
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.round == e1.payload.round)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.epoch > e1.payload.epoch)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.node == e1.payload.node)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.epoch == e1.payload.epoch)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.node == e1.payload.node)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.epoch == e1.payload.epoch)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.epoch < e1.payload.epoch)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.round == e1.payload.round)
+(e0.payload.node == e1.payload.node) ∧ (e0.payload.epoch > e1.payload.epoch)
+(e0.payload.node == e1.payload.node) ∧ (e0.payload.epoch < e1.payload.epoch)
+(e0.payload.round == e1.payload.round) ∧ (e0.payload.epoch < e1.payload.epoch)
+(e0.payload.round == e1.payload.round) ∧ (e0.payload.epoch > e1.payload.epoch)
+EOT
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.epoch < e1.payload.epoch)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.round == e1.payload.round)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.epoch == e1.payload.epoch)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.epoch > e1.payload.epoch)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.epoch == e1.payload.epoch)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.node == e1.payload.node)
+(e0.payload.node == e1.payload.node) ∧ (e0.payload.epoch > e1.payload.epoch)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.node == e1.payload.node)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.round == e1.payload.round)
+(e0.payload.node == e1.payload.node) ∧ (e0.payload.epoch < e1.payload.epoch)
+(e0.payload.round == e1.payload.round) ∧ (e0.payload.epoch < e1.payload.epoch)
+(e0.payload.round == e1.payload.round) ∧ (e0.payload.epoch > e1.payload.epoch)
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.round == e1.payload.round)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.node == e1.payload.node)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.epoch == e1.payload.epoch)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.epoch > e1.payload.epoch)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.epoch < e1.payload.epoch)
+(e0.payload.node == e1.payload.node) ∧ (e0.payload.epoch < e1.payload.epoch)
+(e0.payload.node == e1.payload.node) ∧ (e0.payload.epoch > e1.payload.epoch)
+(e0.payload.round == e1.payload.round) ∧ (e0.payload.epoch < e1.payload.epoch)
+(e0.payload.round == e1.payload.round) ∧ (e0.payload.epoch > e1.payload.epoch)
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.epoch == e1.payload.epoch)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.round == e1.payload.round)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.epoch > e1.payload.epoch)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.node == e1.payload.node)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.epoch < e1.payload.epoch)
+(e0.payload.round == e1.payload.round) ∧ (e0.payload.epoch < e1.payload.epoch)
+(e0.payload.node == e1.payload.node) ∧ (e0.payload.epoch < e1.payload.epoch)
+(e0.payload.node == e1.payload.node) ∧ (e0.payload.epoch > e1.payload.epoch)
+(e0.payload.round == e1.payload.round) ∧ (e0.payload.epoch > e1.payload.epoch)
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.epoch == e1.payload.epoch)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.node == e1.payload.node)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.node == e1.payload.node)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.round == e1.payload.round)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.round == e1.payload.round)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.epoch > e1.payload.epoch)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.epoch < e1.payload.epoch)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.epoch == e1.payload.epoch)
+(e0.payload.node == e1.payload.node) ∧ (e0.payload.epoch < e1.payload.epoch)
+(e0.payload.node == e1.payload.node) ∧ (e0.payload.epoch > e1.payload.epoch)
+(e0.payload.round == e1.payload.round) ∧ (e0.payload.epoch > e1.payload.epoch)
+(e0.payload.round == e1.payload.round) ∧ (e0.payload.epoch < e1.payload.epoch)
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.node == e1.payload.node)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.epoch > e1.payload.epoch)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.node == e1.payload.node)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.epoch < e1.payload.epoch)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.round == e1.payload.round)
+(e0.payload.node == e1.payload.node) ∧ (e0.payload.epoch > e1.payload.epoch)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.round == e1.payload.round)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.epoch == e1.payload.epoch)
+(e0.payload.node == e1.payload.node) ∧ (e0.payload.epoch < e1.payload.epoch)
+(e0.payload.round == e1.payload.round) ∧ (e0.payload.epoch < e1.payload.epoch)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.epoch == e1.payload.epoch)
+(e0.payload.round == e1.payload.round) ∧ (e0.payload.epoch > e1.payload.epoch)
+EOT
+EOT
+EOT
+EOT
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.round == e1.payload.round)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.epoch > e1.payload.epoch)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.epoch == e1.payload.epoch)
+(e0.payload.node == e1.payload.node) ∧ (e0.payload.epoch > e1.payload.epoch)
+(e0.payload.round == e1.payload.round) ∧ (e0.payload.epoch > e1.payload.epoch)
+EOT
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.round == e1.payload.round)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.epoch == e1.payload.epoch)
+(indexof(e0) < indexof(e1)) ∧ (e0.payload.epoch > e1.payload.epoch)
+(e0.payload.node == e1.payload.node) ∧ (e0.payload.epoch > e1.payload.epoch)
+(e0.payload.round == e1.payload.round) ∧ (e0.payload.epoch > e1.payload.epoch)
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.round == e1.payload.round)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.epoch == e1.payload.epoch)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.epoch < e1.payload.epoch)
+(e0.payload.node == e1.payload.node) ∧ (e0.payload.epoch < e1.payload.epoch)
+(e0.payload.round == e1.payload.round) ∧ (e0.payload.epoch < e1.payload.epoch)
+EOT
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.round == e1.payload.round)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.epoch < e1.payload.epoch)
+(e0.payload.round == e1.payload.round) ∧ (e0.payload.epoch < e1.payload.epoch)
+(e0.payload.node == e1.payload.node) ∧ (e0.payload.epoch < e1.payload.epoch)
+(indexof(e0) > indexof(e1)) ∧ (e0.payload.epoch == e1.payload.epoch)
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT
+EOT

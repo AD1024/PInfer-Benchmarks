@@ -1,0 +1,51 @@
+## P Model Analysis Summary
+
+### 1. Events Definition
+
+| Event | Payload Type | Description |
+|-------|--------------|-------------|
+| `SendFromInternal` | `(src: machine, dst: machine)` | Request from internal server to send to external destination |
+| `SendToInternal` | `(src: machine, dst: machine)` | Request from external server to send to internal destination |
+| `Allowed` | `(node: machine)` | Notification that a node has been granted permission |
+| `Sent` | `(src: machine, dst: machine, toInternal: bool)` | Confirmation that a message was sent with direction flag |
+| `Internal` | `(nodes: set[machine])` | Information about internal nodes shared with external servers |
+
+### 2. Event Flows
+
+**Outbound Flow (Internal → External):**
+1. `InternalServer` sends `SendFromInternal` to `Firewall`
+2. `Firewall` announces `Allowed` for destination
+3. `Firewall` announces `Sent` with `toInternal=false`
+
+**Inbound Flow (External → Internal):**
+1. `ExternalServer` sends `SendToInternal` to `Firewall`
+2. `Firewall` checks if source is in allowed set
+3. If allowed, `Firewall` announces `Sent` with `toInternal=true`
+
+### 3. System Roles
+
+| Component | Responsibility |
+|-----------|----------------|
+| **Firewall** | Central security gateway that maintains an allowed set, processes send requests, and enforces access control |
+| **InternalServer** | Represents internal network nodes that initiate outbound communications |
+| **ExternalServer** | Represents external network nodes that attempt inbound communications |
+| **Safety Monitor** | Specification monitor that ensures security invariants are maintained |
+
+### 4. Protocol Workflow
+
+**High-Level Security Protocol:**
+
+1. **Permission Granting Phase:**
+   - When internal servers want to communicate externally, they send requests to the firewall
+   - Firewall automatically grants permission to external destinations and adds them to allowed set
+
+2. **Access Control Phase:**
+   - External servers attempting inbound communication must have prior permission
+   - Firewall only allows communication from previously permitted external nodes
+
+3. **Monitoring Phase:**
+   - Safety monitor tracks all `Sent` events and `Allowed` permissions
+   - Enforces invariant: inbound communications (`toInternal=true`) must come from allowed sources
+
+**Key Security Property:**
+The system implements a "permission-based firewall" where external nodes can only send to internal nodes if they were previously granted permission through an outbound communication initiated by internal servers. This creates a controlled bidirectional communication channel based on internal initiative.

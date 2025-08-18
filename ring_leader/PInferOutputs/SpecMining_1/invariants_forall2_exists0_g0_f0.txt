@@ -1,0 +1,5 @@
+∀e0: eBecomeLeader ∀e1: eBecomeLeader ::  
+indexof(e1) >= 1
+indexof(e0) >= 1
+e0.payload.ballot == e1.payload.ballot
+
