@@ -5,7 +5,7 @@ num_traces = [
 ]
 
 # public benchmarks
-benchmarks = ['ring_leader', 'consensus', '2PC', 'sharded_kv', 'firewall', 'paxos_hint', 'distributed_lock', 'Raft_hint', 
+benchmarks = ['ring_leader', 'consensus', '2PC', 'sharded_kv', 'firewall', 'paxos_hint', 'distributed_lock', 'Raft', 'Raft_hint', 
               'vertical_paxos', 'ChainReplication', 'lockserver', 'ClockBound']
 
 # benchmarks = ['ring_leader', 'consensus', '2PC', 'sharded_kv', 'firewall', 'paxos_hint', 'distributed_lock', 'Raft_hint', 
