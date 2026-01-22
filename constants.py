@@ -1,14 +1,15 @@
 import os
 
 num_traces = [
-    10, 100, 500, 1000, 2000, 4000, 8000, 10000 #, 20000, 30000, 40000, 50000
+    10000 #, 20000, 30000, 40000, 50000
 ]
 
-# benchmarks = ['ring_leader', 'consensus', '2PC', 'sharded_kv', 'firewall', 'paxos', 'paxos_hint', 'distributed_lock', 'Raft', 
-#               'vertical_paxos', 'ChainReplication', 'lockserver', 'ClockBound']
-
+# public benchmarks
 benchmarks = ['ring_leader', 'consensus', '2PC', 'sharded_kv', 'firewall', 'paxos_hint', 'distributed_lock', 'Raft_hint', 
-              'vertical_paxos', 'ChainReplication', 'lockserver', 'ClockBound', 'JournalLeaderElection', 'Kermit2PC']
+              'vertical_paxos', 'ChainReplication', 'lockserver', 'ClockBound']
+
+# benchmarks = ['ring_leader', 'consensus', '2PC', 'sharded_kv', 'firewall', 'paxos_hint', 'distributed_lock', 'Raft_hint', 
+#               'vertical_paxos', 'ChainReplication', 'lockserver', 'ClockBound', 'JournalLeaderElection', 'Kermit2PC']
 
 config_events = {
     'paxos': 'ePaxosConfig',
