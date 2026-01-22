@@ -20,4 +20,4 @@ format:
 
 .PHONY: deps
 deps:
-	opam install ppx_let yojson core
+	opam install ppx_let yojson core -y
