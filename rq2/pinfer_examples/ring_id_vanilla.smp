@@ -1,0 +1,72 @@
+(* smpc ring_id.smp | z3 -in *)
+(* Compare to https://github.com/wilcoxjay/mypyvy/blob/pldi20-artifact/examples/fol/ring_id.pyv *)
+
+event eNominate := {id: node}
+
+data node
+
+function le(x: node, y: node): Bool
+assume(forall (x: node) le(x, x))
+assume(forall (x: node, y: node, z: node) 
+    (le(x, y) and le(y, z)) ==> le(x, z))
+assume(forall (x: node, y: node) 
+    (le(x, y) and le(y, x)) ==> x = y)
+assume(forall (x: node, y: node) le(x, y) or le(y, x))
+
+function btw(w: node, x: node, y: node): Bool
+assume(forall (w: node, x: node, y: node, z: node) 
+    (btw(w, x, y) and btw(w, y, z)) ==> btw(w, x, z))
+assume(forall (w: node, x: node, y: node)
+    btw(w, x, y) ==> not btw(w, y, x))
+assume(forall (w: node, x: node, y: node)
+    btw(w, x, y) or btw(w, y, x) or w = x or w = y or x = y)
+assume(forall (x: node, y: node, z: node)
+    btw(x, y, z) ==> btw(y, z, x))
+
+function right(n: node): node
+assume(forall (n: node, z: node) 
+    n != right(n) and ((z != n and z != right(n)) 
+        ==> btw(n, right(n), z)))
+
+function leader(s: system[node], l: node) : Bool := 
+    ((s.machines)[l]).Node_state is Won
+
+function pending(s: system[node], e: event_list[node]) : Bool := 
+    (e is send and (s.events)[e])
+
+machine Node {
+    state Search {
+        on entry do {
+            send right(this), eNominate(this)
+        }
+
+        on eNominate e do {
+            let curr := (e.payload).id in
+            if curr = this then
+                goto Won
+            else if le(this, curr) then 
+                send right(this), eNominate(curr)
+            else 
+                send right(this), eNominate(this)
+        }
+    }
+
+    state Won {}
+}
+
+induction (s : system[node])
+    invariant unique_leader: forall (l: node, n: node)
+        (leader(s, l) and leader(s, n)) ==> l = n
+
+    invariant leader_max: forall (l: node, n: node)
+        leader(s, l) ==> le(n, l)
+
+    invariant no_bypass: forall (e: event_list[node], n: node)
+        let q := (e.payload).id in
+        let d := e.target in
+        (pending(s, e) and btw(q, n, d)) ==> le(n, q)
+
+    invariant self_pending_max: forall (e: event_list[node], n: node)
+        let q := (e.payload).id in
+        let l := e.target in
+        (pending(s, e) and q = l) ==> le(n, l)

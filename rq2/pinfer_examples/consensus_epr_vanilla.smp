@@ -1,0 +1,96 @@
+(* smpc consensus_epr.smp | z3 -in *)
+(* Compare to https://github.com/wilcoxjay/mypyvy/blob/pldi20-artifact/examples/fol/consensus_epr.pyv *)
+
+data value
+data node
+
+data node_pair := node_pair {src: node, dst: node}
+
+function is_quroum (q: set[node]) : Bool
+assume(forall (q1: set[node], q2: set[node]) (is_quroum(q1) and is_quroum(q2)) ==> (exists (n: node) q1[n] and q2[n]))
+
+event eStart   := {to: node}
+event eRequest := {}
+event eVote    := {}
+event eLead    := {}
+
+system ghost vote_request_msg: Array[node_pair, Bool]
+system ghost vote_msg: Array[node_pair, Bool]
+
+data [R] option := 
+    | some {get: R} 
+    | none
+
+machine Node {
+    var votes  : set[node]
+    var decided: option[value]
+    var voted  : Bool
+
+    state Voting {
+        on eStart t do {
+            let dst := (t.payload).to in
+            (s.vote_request_msg)[node_pair(this, dst)] := true;
+            send dst, eRequest()
+        }
+
+        on eRequest q do {
+            if not voted then
+                (s.vote_msg)[node_pair(this, q.source)] := true;
+                (s.vote_request_msg)[node_pair(q.source, this)] := false;
+                voted := true;
+                send q.source, eVote()
+        }
+
+        on eVote v do {
+            votes[v.source] := true
+        }
+
+        on eLead l do {
+            if (is_quroum(votes)) then
+                goto Won
+        }
+    }
+
+    state Won {
+        on entry with (v: value) do {
+            if decided is none then
+                decided := some(v)
+        }
+    }
+}
+
+induction (s: system[node])
+    invariant safety_51: forall (r1: node, v1: value, r2: node, v2: value)
+        let n1 := (s.machines)[r1] in
+        let n2 := (s.machines)[r2] in
+        (n1.decided = some(v1) and n2.decided = some(v2)) ==> v1 = v2
+
+    invariant unique_leader_53: forall (r1: node, r2: node)
+        let n1 := (s.machines)[r1] in
+        let n2 := (s.machines)[r2] in
+        (n1.Node_state is Won and n2.Node_state is Won) ==> r1 = r2
+
+    invariant votes_means_vote_msg_54: forall (r: node, r1: node)
+        let n := (s.machines)[r] in
+        let n1 := (s.machines)[r1] in
+        (n.votes)[r1] ==> (s.vote_msg)[node_pair(r1, r)]
+
+    invariant unique_vote_msg_55: forall (n: node, n1: node, n2: node)
+        ((s.vote_msg)[node_pair(n, n1)] and (s.vote_msg)[node_pair(n, n2)]) ==> n1 = n2
+
+    invariant vote_msg_means_voted_56: forall (r: node, r1: node)
+        let n := (s.machines)[r] in
+        (s.vote_msg)[node_pair(r, r1)] ==> n.voted 
+
+    invariant consistent_quorum_57: forall (r: node)
+        let n := (s.machines)[r] in
+        (n.Node_state is Won) ==> (is_quroum(n.votes))
+
+    invariant decided_means_leader_58: forall (r: node)
+        let n := (s.machines)[r] in
+        n.decided is some ==> n.Node_state is Won
+
+    (* Aux invariants to match abstraction variables to actual message passing *)
+
+    invariant vote_msg_buffer: forall (e: event_list[node]) 
+        ((s.events)[e] and e is send and e.payload is eVote) ==> (s.vote_msg)[node_pair(e.source, e.target)]

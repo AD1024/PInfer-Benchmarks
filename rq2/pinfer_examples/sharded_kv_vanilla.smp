@@ -1,0 +1,79 @@
+(* smpc sharded_kv.smp | z3 -in *)
+(* Compare to https://github.com/wilcoxjay/mypyvy/blob/pldi20-artifact/examples/fol/sharded_kv.pyv *)
+
+data key
+data value
+data node
+
+data kv := kv {k: key, v: value}
+
+event eTransfer := {transfer_key: key, transfer_value: value}
+event eReshard  := {reshard_key : key, reshard_value : value, reshard_to: node}
+event ePut      := {put_key     : key, put_value     : value}
+
+machine Node {
+    var table: set[kv]
+    var owns : set[key]
+
+    state only {
+        on eReshard e do {
+            let k := (e.payload).reshard_key   in
+            let v := (e.payload).reshard_value in
+            let t := (e.payload).reshard_to    in
+
+            if table[kv(k, v)] then
+                table[kv(k, v)] := false;
+                owns[k] := false;
+                send t, eTransfer(k, v)
+        }
+
+        on eTransfer e do {
+            let k := (e.payload).transfer_key   in
+            let v := (e.payload).transfer_value in
+            table[kv(k, v)] := true;
+            owns[k] := true
+        }
+
+        on ePut e do {
+            let k := (e.payload).put_key   in
+            let v := (e.payload).put_value in
+
+            if owns[k] then
+                table := update_table(table, k, v)
+        }
+    }
+}
+
+function update_table(table: set[kv], k: key, v: value) : set[kv]
+assume(forall (old_table: set[kv], k: key, v: value, K: key, V: value) 
+    let new_table := update_table(old_table, k, v) in
+    ((K != k) ==> (new_table[kv(K, V)] = old_table[kv(K, V)])) and
+    (new_table[kv(k, V)] = (V = v)))
+
+function transfer_msg(s : system[node], e: event_list[node]) : Bool :=
+    (s.events)[e] and e is send and e.payload is eTransfer
+
+induction (s : system[node]) 
+    invariant safety_38: forall (r1: node, r2: node, k: key, v1: value, v2: value)
+        let n1 := (s.machines)[r1] in
+        let n2 := (s.machines)[r2] in
+        ((n1.table)[kv(k, v1)] and (n2.table)[kv(k, v2)]) ==> (r1 = r2 and v1 = v2)
+
+    invariant owner_40: forall (r1: node, r2: node, k: key)
+        let n1 := (s.machines)[r1] in
+        let n2 := (s.machines)[r2] in
+        ((n1.owns)[k] and (n2.owns)[k]) ==> (r1 = r2)
+
+    invariant table_41: forall (r: node, k: key, v: value)
+        let n := (s.machines)[r] in
+        ((n.table)[kv(k, v)]) ==> (n.owns)[k]
+
+    invariant one_of_transfer_msg_or_owner_43: forall (e: event_list[node], r2: node) 
+        let n2 := (s.machines)[r2] in
+        let k := (e.payload).transfer_key in
+        not (transfer_msg(s, e) and (n2.owns)[k])
+
+    invariant unique_transfer_44: forall (e1: event_list[node], e2: event_list[node])
+        let k1 := (e1.payload).transfer_key   in
+        let k2 := (e2.payload).transfer_key   in
+        (transfer_msg(s, e1) and transfer_msg(s, e2) and k1 = k2) ==> (e1 = e2)

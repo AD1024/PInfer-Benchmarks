@@ -1,0 +1,283 @@
+(* smpc lockserv.smp | z3 -in *)
+(* Compare to https://github.com/wilcoxjay/mypyvy/blob/pldi20-artifact/examples/fol/lockserv.pyv *)
+
+data node
+
+event eLock   := {}
+event eGrant  := {}
+event eUnlock := {}
+
+event eSendLock   := {}
+event eSendUnlock := {}
+
+system var server_holds_lock : Bool
+
+machine Node {
+    var holds_lock : Bool
+
+    state Only {
+
+        on eSendLock l with (n: node) do {
+            send n, eLock
+        }
+
+        on eLock l do {
+            if (s.server_holds_lock) then
+                (s.server_holds_lock) := false;
+                send this, eGrant
+        }
+
+        on eGrant g do {
+            if (s.server_holds_lock) then
+                holds_lock := true
+        }
+
+        on eSendUnlock l do {
+            if holds_lock then
+                holds_lock := false;
+                send this, eUnlock
+        }
+
+        on eUnlock u do {
+            (s.server_holds_lock) := true
+        }
+    }
+}
+
+function alive(s: system[node], e: event_list[node]) : Bool := 
+    (s.events)[e] and e is send
+
+induction (s: system[node])
+    invariant mutex_47: forall (r1: node, r2: node)
+        let n1 := (s.machines)[r1] in
+        let n2 := (s.machines)[r2] in
+        (n1.holds_lock and n2.holds_lock) ==> r1 = r2
+
+    invariant unique_grant_49: forall (e1: event_list[node], e2: event_list[node])
+        (alive(s, e1) and alive(s, e2) and e1.payload is eGrant and e2.payload is eGrant) ==> e1 = e2
+
+    invariant unique_unlock_50: forall (e1: event_list[node], e2: event_list[node])
+        (alive(s, e1) and alive(s, e2) and e1.payload is eUnlock and e2.payload is eUnlock) ==> e1 = e2
+
+    invariant not_hold_and_grant_52: forall (r: node, e: event_list[node])
+        let n := (s.machines)[r] in
+        not (n.holds_lock and alive(s, e) and e.payload is eGrant)
+
+    invariant not_hold_and_unlock_53: forall (r: node, e: event_list[node])
+        let n := (s.machines)[r] in
+        not (n.holds_lock and alive(s, e) and e.payload is eUnlock)
+
+    invariant not_grant_and_unlock_54: forall (e1: event_list[node], e2: event_list[node])
+        not (alive(s, e1) and alive(s, e2) and e1.payload is eGrant and e2.payload is eUnlock)
+
+    invariant not_grant_and_server_56: forall (e: event_list[node])
+        not (s.server_holds_lock and alive(s, e) and e.payload is eGrant)
+
+    invariant not_hold_and_server_57: forall (r: node)
+        let n := (s.machines)[r] in
+        not (n.holds_lock and s.server_holds_lock)
+
+    invariant not_unlock_and_server_56: forall (e: event_list[node])
+        not (s.server_holds_lock and alive(s, e) and e.payload is eUnlock)
+
+    (* Translations from lockserv.invs *)
+    (* Semantic mapping: *)
+    (* - eServerState represents server state snapshots (server_holds_lock) *)
+    (* - eHoldsLock represents when a node holds the lock *)
+    (* - eGrant represents grant events *)
+    (* - eUnlock represents unlock events *)
+    (* - eLock represents lock request events *)
+    (* - epoch: state synchronization (groups events in same lock session/round) *)
+    (* - indexof: causal ordering (e0 < e1 means e0 happens before e1, preventing simultaneity) *)
+    (* - Same epoch + indexof ordering = events in same session but temporally ordered *)
+
+    (* Original: ∀e0: eServerState ∀e1: eHoldsLock :: (e0.payload.epoch == e1.payload.epoch) ∧ e0.payload.holdsLock -> (indexof(e0) < indexof(e1)) *)
+    (* Translation: Server cannot hold lock when any node holds lock (dropping epoch/indexof) *)
+    invariant inv_1: forall (r: node)
+        let n := (s.machines)[r] in
+        not (s.server_holds_lock and n.holds_lock)
+
+    (* Original: ∀e0: eServerState :: ∃e1: eHoldsLock :: (e0.payload.epoch == e1.payload.epoch) *)
+    (* Translation: There exists a node that holds or will hold the lock (dropping epoch) *)
+    (* This would require either server or some node to hold lock, which is too weak *)
+    (* Skipping - cannot meaningfully translate without epoch *)
+
+    (* Original: ∀e0: eServerState :: e0.payload.holdsLock -> ∃e1: eHoldsLock :: (indexof(e0) < indexof(e1)) ∧ (e0.payload.epoch == e1.payload.epoch) *)
+    (* Translation: Server holding lock prevents any node from holding (dropping indexof/epoch) *)
+    invariant inv_3: forall (r: node)
+        let n := (s.machines)[r] in
+        s.server_holds_lock ==> not n.holds_lock
+
+    (* Original: ∀e0: eHoldsLock ∀e1: eUnlock :: (e0.payload.node == e1.payload.node) -> (e0.payload.epoch == e1.payload.epoch) ∧ (indexof(e0) < indexof(e1)) *)
+    (* Translation: Node cannot hold lock when unlock event is pending (dropping node matching, epoch, indexof) *)
+    invariant inv_4: forall (r: node, e: event_list[node])
+        let n := (s.machines)[r] in
+        not (n.holds_lock and alive(s, e) and e.payload is eUnlock)
+
+    (* Original: ∀e0: eHoldsLock ∀e1: eUnlock :: (e0.payload.epoch == e1.payload.epoch) -> (indexof(e0) < indexof(e1)) ∧ (e0.payload.node == e1.payload.node) *)
+    (* Translation: Same as inv_4 (dropping epoch/indexof) *)
+    (* Covered by inv_4 *)
+
+    (* Original: ∀e0: eHoldsLock :: ∃e1: eUnlock :: (e0.payload.node == e1.payload.node) ∧ (e0.payload.epoch == e1.payload.epoch) ∧ (indexof(e0) < indexof(e1)) *)
+    (* Translation: Every node holding lock eventually unlocks in the same session *)
+    (* Interpretation: Lock acquisition implies eventual unlock *)
+    (* Cannot express without epoch tracking - would need liveness property *)
+
+    (* Original: ∀e0: eGrant ∀e1: eUnlock :: (e0.payload.node == e1.payload.node) -> (e0.payload.epoch == e1.payload.epoch) ∧ (indexof(e0) < indexof(e1)) *)
+    (* Translation: Grant and unlock events cannot coexist (dropping node matching, epoch, indexof) *)
+    invariant inv_7: forall (e1: event_list[node], e2: event_list[node])
+        not (alive(s, e1) and alive(s, e2) and e1.payload is eGrant and e2.payload is eUnlock)
+
+    (* Original: ∀e0: eGrant ∀e1: eUnlock :: (e0.payload.epoch == e1.payload.epoch) -> (indexof(e0) < indexof(e1)) ∧ (e0.payload.node == e1.payload.node) *)
+    (* Translation: Same as inv_7 (dropping epoch/indexof) *)
+    (* Covered by inv_7 *)
+
+    (* Original: ∀e0: eGrant :: ∃e1: eUnlock :: (e0.payload.node == e1.payload.node) ∧ (e0.payload.epoch == e1.payload.epoch) ∧ (indexof(e0) < indexof(e1)) *)
+    (* Translation: Every grant eventually leads to unlock from same node in same session *)
+    (* Interpretation: Grant implies eventual unlock (liveness) *)
+    (* Cannot express without epoch tracking - would need liveness property *)
+
+    (* Original: ∀e0: eServerState :: ∃e1: eLock :: (indexof(e0) > indexof(e1)) *)
+    (* Translation: Every server state follows some lock request *)
+    (* Interpretation: Server states are triggered by lock requests *)
+    (* Cannot express without tracking causal history *)
+
+    (* Original: ∀e0: eGrant ∀e1: eLock :: (e0.payload.node == e1.payload.node) -> (indexof(e0) > indexof(e1)) *)
+    (* Translation: Grant to a node happens after that node's lock request *)
+    (* Interpretation: Request causally precedes grant *)
+    (* Cannot express without node info in events and indexof *)
+
+    (* Original: ∀e0: eGrant :: ∃e1: eLock :: (e0.payload.node == e1.payload.node) ∧ (indexof(e0) > indexof(e1)) *)
+    (* Translation: Every grant is preceded by a lock request from same node *)
+    (* Interpretation: Grants only issued in response to requests *)
+    (* Cannot express without node info in events and indexof *)
+
+    (* Original: ∀e0: eGrant ∀e1: eGrant :: (e0.payload.node == e1.payload.node) -> (e0.payload.epoch == e1.payload.epoch) ∧ (indexof(e0) == indexof(e1)) *)
+    (* Translation: At most one grant event (dropping node, epoch, indexof) *)
+    invariant inv_13: forall (e1: event_list[node], e2: event_list[node])
+        (alive(s, e1) and alive(s, e2) and e1.payload is eGrant and e2.payload is eGrant) ==> e1 = e2
+
+    (* Original: ∀e0: eGrant ∀e1: eGrant :: (e0.payload.epoch == e1.payload.epoch) -> (indexof(e0) == indexof(e1)) ∧ (e0.payload.node == e1.payload.node) *)
+    (* Translation: Same as inv_13 (dropping epoch/indexof) *)
+    (* Covered by inv_13 *)
+
+    (* Original: ∀e0: eServerState ∀e1: eGrant :: (e0.payload.epoch == e1.payload.epoch) ∧ e0.payload.holdsLock -> (indexof(e0) < indexof(e1)) *)
+    (* Translation: Server cannot hold lock when grant is pending (dropping epoch/indexof) *)
+    invariant inv_15: forall (e: event_list[node])
+        not (s.server_holds_lock and alive(s, e) and e.payload is eGrant)
+
+    (* Original: ∀e0: eServerState ∀e1: eGrant :: (e0.payload.epoch == e1.payload.epoch) ∧ !(e0.payload.holdsLock) -> (indexof(e0) > indexof(e1)) *)
+    (* Translation: Same as inv_15 (server doesn't hold implies no grant pending) *)
+    (* This is the contrapositive - if grant pending, server doesn't hold *)
+    (* Covered by inv_15 *)
+
+    (* Original: ∀e0: eServerState :: ∃e1: eGrant :: (e0.payload.epoch == e1.payload.epoch) *)
+    (* Translation: Every server state snapshot is in a session with a grant *)
+    (* Interpretation: Lock sessions always involve grants *)
+    (* Cannot express without epoch tracking *)
+
+    (* Original: ∀e0: eServerState :: e0.payload.holdsLock -> ∃e1: eGrant :: (indexof(e0) < indexof(e1)) ∧ (e0.payload.epoch == e1.payload.epoch) *)
+    (* Translation: Server holding lock implies future grant in same session *)
+    (* Interpretation: Server will eventually grant the lock *)
+    (* Cannot express without epoch tracking and liveness *)
+
+    (* Original: ∀e0: eServerState :: !(e0.payload.holdsLock) -> ∃e1: eGrant :: (e0.payload.epoch == e1.payload.epoch) ∧ (indexof(e0) > indexof(e1)) *)
+    (* Translation: Server not holding lock means grant already happened in session *)
+    (* Interpretation: Server doesn't hold means it was already granted *)
+    (* Cannot express without epoch tracking *)
+
+    (* Original: ∀e0: eServerState ∀e1: eUnlock :: (e0.payload.epoch == e1.payload.epoch) ∧ e0.payload.holdsLock -> (indexof(e0) < indexof(e1)) *)
+    (* Translation: Server cannot hold lock when unlock is pending (dropping epoch/indexof) *)
+    invariant inv_20: forall (e: event_list[node])
+        not (s.server_holds_lock and alive(s, e) and e.payload is eUnlock)
+
+    (* Original: ∀e0: eServerState :: ∃e1: eUnlock :: (e0.payload.epoch == e1.payload.epoch) *)
+    (* Translation: Every server state is in a session with an unlock *)
+    (* Interpretation: All sessions involve unlock *)
+    (* Cannot express without epoch tracking *)
+
+    (* Original: ∀e0: eServerState :: e0.payload.holdsLock -> ∃e1: eUnlock :: (indexof(e0) < indexof(e1)) ∧ (e0.payload.epoch == e1.payload.epoch) *)
+    (* Translation: Server holding lock implies future unlock in session *)
+    (* Interpretation: Lock will be returned via unlock *)
+    (* Cannot express without epoch tracking and liveness *)
+
+    (* Original: ∀e0: eLock ∀e1: eLock :: (e0.payload.node == e1.payload.node) -> (indexof(e0) == indexof(e1)) *)
+    (* Translation: Lock requests from same node are simultaneous (same event) *)
+    (* Interpretation: Each node makes at most one lock request *)
+    (* Cannot express without node info in eLock events *)
+
+    (* Original: ∀e0: eHoldsLock ∀e1: eGrant :: (e0.payload.node == e1.payload.node) -> (indexof(e0) > indexof(e1)) ∧ (e0.payload.epoch == e1.payload.epoch) *)
+    (* Translation: Node cannot hold lock when grant is pending (dropping node matching, epoch, indexof) *)
+    invariant inv_24: forall (r: node, e: event_list[node])
+        let n := (s.machines)[r] in
+        not (n.holds_lock and alive(s, e) and e.payload is eGrant)
+
+    (* Original: ∀e0: eHoldsLock ∀e1: eGrant :: (e0.payload.epoch == e1.payload.epoch) -> (indexof(e0) > indexof(e1)) ∧ (e0.payload.node == e1.payload.node) *)
+    (* Translation: Same as inv_24 (dropping epoch/indexof) *)
+    (* Covered by inv_24 *)
+
+    (* Original: ∀e0: eHoldsLock :: ∃e1: eGrant :: (e0.payload.node == e1.payload.node) ∧ (e0.payload.epoch == e1.payload.epoch) ∧ (indexof(e0) > indexof(e1)) *)
+    (* Translation: Every node holding lock was previously granted it in same session *)
+    (* Interpretation: Lock acquisition requires prior grant *)
+    (* Cannot express without epoch tracking *)
+
+    (* Original: ∀e0: eHoldsLock ∀e1: eHoldsLock :: (e0.payload.node == e1.payload.node) -> (e0.payload.epoch == e1.payload.epoch) ∧ (indexof(e0) == indexof(e1)) *)
+    (* Translation: At most one node holds lock (dropping node, epoch, indexof) *)
+    invariant inv_27: forall (r1: node, r2: node)
+        let n1 := (s.machines)[r1] in
+        let n2 := (s.machines)[r2] in
+        (n1.holds_lock and n2.holds_lock) ==> r1 = r2
+
+    (* Original: ∀e0: eHoldsLock ∀e1: eHoldsLock :: (e0.payload.epoch == e1.payload.epoch) -> (indexof(e0) == indexof(e1)) ∧ (e0.payload.node == e1.payload.node) *)
+    (* Translation: Same as inv_27 (dropping epoch/indexof) *)
+    (* Covered by inv_27 *)
+
+    (* Original: ∀e0: eUnlock ∀e1: eUnlock :: (e0.payload.node == e1.payload.node) -> (e0.payload.epoch == e1.payload.epoch) ∧ (indexof(e0) == indexof(e1)) *)
+    (* Translation: At most one unlock event (dropping node, epoch, indexof) *)
+    invariant inv_29: forall (e1: event_list[node], e2: event_list[node])
+        (alive(s, e1) and alive(s, e2) and e1.payload is eUnlock and e2.payload is eUnlock) ==> e1 = e2
+
+    (* Original: ∀e0: eUnlock ∀e1: eUnlock :: (e0.payload.epoch == e1.payload.epoch) -> (indexof(e0) == indexof(e1)) ∧ (e0.payload.node == e1.payload.node) *)
+    (* Translation: Same as inv_29 (dropping epoch/indexof) *)
+    (* Covered by inv_29 *)
+
+    (* Original: ∀e0: eServerState ∀e1: eHoldsLock :: (indexof(e0) > indexof(e1)) ∧ (e0.payload.epoch == e1.payload.epoch) -> (e0.payload.holdsLock == False) *)
+    (* Translation: Server and node cannot both hold lock (dropping epoch/indexof) *)
+    invariant inv_31: forall (r: node)
+        let n := (s.machines)[r] in
+        not (s.server_holds_lock and n.holds_lock)
+
+    (* Original: ∀e0: eServerState ∀e1: eServerState :: (indexof(e0) < indexof(e1)) ∧ (e0.payload.epoch == e1.payload.epoch) -> (e1.payload.holdsLock == False) *)
+    (* Translation: Later server state in same epoch doesn't hold lock *)
+    (* Interpretation: Server gives up lock within session *)
+    (* Cannot express state evolution within epochs *)
+
+    (* Original: ∀e0: eServerState ∀e1: eGrant :: (indexof(e0) < indexof(e1)) ∧ (e0.payload.epoch == e1.payload.epoch) -> (e0.payload.holdsLock == True) *)
+    (* Translation: Server state before grant in same session holds lock *)
+    (* Interpretation: Server must hold before granting *)
+    (* Cannot express temporal ordering of states and events *)
+
+    (* Original: ∀e0: eServerState ∀e1: eGrant :: (indexof(e0) > indexof(e1)) ∧ (e0.payload.epoch == e1.payload.epoch) -> (e0.payload.holdsLock == False) *)
+    (* Translation: Server state after grant in same session doesn't hold *)
+    (* Interpretation: Grant transfers lock away from server *)
+    (* Already covered by not_grant_and_server_56 *)
+
+    (* Original: ∀e0: eServerState ∀e1: eUnlock :: (indexof(e0) > indexof(e1)) ∧ (e0.payload.epoch == e1.payload.epoch) -> (e0.payload.holdsLock == False) *)
+    (* Translation: Server state after unlock in same session doesn't hold *)
+    (* Interpretation: Server doesn't re-acquire immediately after unlock *)
+    (* Already covered by not_unlock_and_server_56 *)
+
+(* Summary: The invariants in lockserv.invs use epoch for state synchronization (grouping events *)
+(* in lock sessions) and indexof for causal ordering (preventing simultaneous states). *)
+(* Translated invariants by dropping epoch and indexof constraints: *)
+(* - inv_1, inv_3, inv_31: Server and node mutual exclusion (various formulations) *)
+(* - inv_4: Node can't hold lock with pending unlock *)
+(* - inv_7: Grant and unlock can't coexist *)
+(* - inv_13: At most one grant event *)
+(* - inv_15, inv_20: Server exclusion with grant/unlock events *)
+(* - inv_24: Node can't hold lock with pending grant *)
+(* - inv_27: At most one node holds lock *)
+(* - inv_29: At most one unlock event *)
+(* Many invariants from .invs rely on epoch/indexof for temporal ordering and cannot be *)
+(* meaningfully translated without those concepts (marked as "Cannot express"). *)
+(* Translation result: 11 invariants translated (by dropping epoch/indexof constraints) *)

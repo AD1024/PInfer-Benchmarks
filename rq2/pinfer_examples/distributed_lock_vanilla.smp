@@ -1,0 +1,101 @@
+(* smpc distributed_lock.smp | z3 -in *)
+(* Compare to https://github.com/secure-foundations/SWISS/blob/master/benchmarks/distributed_lock.pyv *)
+
+data node
+data epoch
+
+data pair := pair {fst: epoch, snd: node}
+
+function le(x: epoch, y: epoch): Bool
+assume(forall (x: epoch) le(x, x))
+assume(forall (x: epoch, y: epoch, z: epoch) 
+    (le(x, y) and le(y, z)) ==> le(x, z))
+assume(forall (x: epoch, y: epoch) 
+    (le(x, y) and le(y, x)) ==> x = y)
+assume(forall (x: epoch, y: epoch) le(x, y) or le(y, x))
+
+function zero : epoch
+assume(forall (x: epoch) le(zero, x))
+
+event eGrant  := {g_epoch: epoch, to: node}
+event eAccept := {a_epoch: epoch}
+
+system ghost transfer: Array[pair, Bool]
+system ghost locked  : Array[pair, Bool]
+
+machine Node {
+    var ep: epoch
+    var held: Bool
+
+    state Act {
+        (* Release the clock and send a transfer message *)
+        on eGrant r do {
+            let n := (r.payload).to in
+            let e := (r.payload).g_epoch in
+            if held and not le(e, ep) then
+                held := false;
+                (s.transfer)[pair(e, n)] := true; 
+                send n, eAccept(e)
+        }
+
+        (* Receive a transfer message and take the lock *)
+        on eAccept a do {
+            let e := (a.payload).a_epoch in
+            if not le(e, ep) then
+                held := true;
+                ep := e;
+                (s.locked)[pair(ep, this)] := true
+        }
+    }
+}   
+
+induction (s: system[node])
+    invariant safety_86: forall (e: epoch, n1: node, n2: node)
+        ((s.locked)[pair(e, n1)] and (s.locked)[pair(e, n2)]) ==> n1 = n2
+
+    invariant unique_owner_63: forall (r1: node, r2: node)
+        let n1 := (s.machines)[r1] in
+        let n2 := (s.machines)[r2] in
+        (n1.held and n2.held) ==> r1 = r2
+
+    invariant test_65: forall (e1: epoch, e2: epoch, r1: node, r2: node)
+        let n1 := (s.machines)[r1] in
+        let n2 := (s.machines)[r2] in
+        ((s.transfer)[pair(e1, r1)] and (not le(e1, n1.ep)) and
+         (s.transfer)[pair(e2, r2)] and (not le(e2, n2.ep))) 
+            ==> (e1 = e2 and r1 = r2)
+
+    invariant test_70: forall (e1: epoch, r1: node, r2: node)
+        let n1 := (s.machines)[r1] in
+        let n2 := (s.machines)[r2] in
+        ((s.transfer)[pair(e1, r1)] and (not le(e1, n1.ep))) 
+            ==> (not (n2.held))
+
+    invariant test_74: forall (e: epoch, n: node)
+        (s.locked)[pair(e, n)] ==> (s.transfer)[pair(e, n)]
+
+    invariant owner_ge_rest_76: forall (r: node, r1: node)
+        let n := (s.machines)[r] in
+        let n1 := (s.machines)[r1] in
+        (n.held) ==> le(n1.ep, n.ep)
+
+    invariant test_77: forall (r: node, r1: node, e1: epoch)
+        let n := (s.machines)[r] in
+        let n1 := (s.machines)[r1] in
+        (n.held and ((s.transfer)[pair(e1, r1)])) ==> le(e1, n.ep)
+
+    invariant test_78: forall (r: node, r1: node, e: epoch)
+        let n := (s.machines)[r] in
+        let n1 := (s.machines)[r1] in
+        ((s.transfer)[pair(e, r)] and not le(e, n.ep)) ==> not le(e, n1.ep)
+    
+    invariant test_81: forall (e: epoch, e1: epoch, r: node, r1: node)
+        let n := (s.machines)[r] in
+        (((s.transfer)[pair(e, r)] and not le(e, n.ep)) and 
+        ((s.transfer)[pair(e1, r1)]) and 
+        (r != r1 or e != e1))
+            ==> not le(e, e1)
+
+    invariant transfer_correspondance: forall (el: event_list[node])
+        ((s.events)[el] and el is send and el.payload is eAccept) 
+            ==> (s.transfer)[pair((el.payload).a_epoch, el.target)]

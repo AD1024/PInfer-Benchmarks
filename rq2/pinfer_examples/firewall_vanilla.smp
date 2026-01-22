@@ -1,0 +1,34 @@
+(* smpc firewall.smp | z3 -in *)
+(* Compare to https://github.com/wilcoxjay/mypyvy/blob/pldi20-artifact/examples/fol/firewall.pyv *)
+
+data node
+data pair := nn {fst: node, snd: node}
+
+event send_from_internal := {}
+event send_to_internal := {}
+
+function internal(n: node) : Bool
+
+system var sent: set[pair]
+system var allowed_in: set[node]
+
+machine Node {
+    state Only {
+        on send_from_internal with (src: node, dst: node) do {
+            if internal(src) and not internal(dst) then
+                (s.sent)[nn(src, dst)] := true;
+                (s.allowed_in)[dst] := true
+        }
+        on send_to_internal with (src: node, dst: node) do {
+            if (not internal(src)) and internal(dst) and (s.allowed_in)[src] then
+                (s.sent)[nn(src, dst)] := true
+        }
+    }
+}
+
+induction (s: system[node])
+    invariant safety_25: forall (S: node, D: node)
+        ((s.sent)[nn(S, D)] and internal(D)) ==> (exists (I: node) internal(I) and (s.sent)[nn(I, S)])
+
+    invariant helper_27: forall (D: node)
+        (s.allowed_in)[D] ==> (exists (I: node) internal(I) and (s.sent)[nn(I, D)])

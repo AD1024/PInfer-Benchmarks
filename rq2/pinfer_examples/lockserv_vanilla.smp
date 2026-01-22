@@ -1,0 +1,81 @@
+(* smpc lockserv.smp | z3 -in *)
+(* Compare to https://github.com/wilcoxjay/mypyvy/blob/pldi20-artifact/examples/fol/lockserv.pyv *)
+
+data node
+
+event eLock   := {}
+event eGrant  := {}
+event eUnlock := {}
+
+event eSendLock   := {}
+event eSendUnlock := {}
+
+system var server_holds_lock : Bool
+
+machine Node {
+    var holds_lock : Bool
+
+    state Only {
+
+        on eSendLock l with (n: node) do {
+            send n, eLock
+        }
+
+        on eLock l do {
+            if (s.server_holds_lock) then
+                (s.server_holds_lock) := false;
+                send this, eGrant
+        }
+
+        on eGrant g do {
+            if (s.server_holds_lock) then
+                holds_lock := true
+        }
+
+        on eSendUnlock l do {
+            if holds_lock then
+                holds_lock := false;
+                send this, eUnlock
+        }
+
+        on eUnlock u do {
+            (s.server_holds_lock) := true
+        }
+    }
+}
+
+function alive(s: system[node], e: event_list[node]) : Bool := 
+    (s.events)[e] and e is send
+
+induction (s: system[node])
+    invariant mutex_47: forall (r1: node, r2: node)
+        let n1 := (s.machines)[r1] in
+        let n2 := (s.machines)[r2] in
+        (n1.holds_lock and n2.holds_lock) ==> r1 = r2
+
+    invariant unique_grant_49: forall (e1: event_list[node], e2: event_list[node])
+        (alive(s, e1) and alive(s, e2) and e1.payload is eGrant and e2.payload is eGrant) ==> e1 = e2
+
+    invariant unique_unlock_50: forall (e1: event_list[node], e2: event_list[node])
+        (alive(s, e1) and alive(s, e2) and e1.payload is eUnlock and e2.payload is eUnlock) ==> e1 = e2
+
+    invariant not_hold_and_grant_52: forall (r: node, e: event_list[node])
+        let n := (s.machines)[r] in
+        not (n.holds_lock and alive(s, e) and e.payload is eGrant)
+
+    invariant not_hold_and_unlock_53: forall (r: node, e: event_list[node])
+        let n := (s.machines)[r] in
+        not (n.holds_lock and alive(s, e) and e.payload is eUnlock)
+
+    invariant not_grant_and_unlock_54: forall (e1: event_list[node], e2: event_list[node])
+        not (alive(s, e1) and alive(s, e2) and e1.payload is eGrant and e2.payload is eUnlock)
+
+    invariant not_grant_and_server_56: forall (e: event_list[node])
+        not (s.server_holds_lock and alive(s, e) and e.payload is eGrant)
+
+    invariant not_hold_and_server_57: forall (r: node)
+        let n := (s.machines)[r] in
+        not (n.holds_lock and s.server_holds_lock)
+
+    invariant not_unlock_and_server_56: forall (e: event_list[node])
+        not (s.server_holds_lock and alive(s, e) and e.payload is eUnlock)
