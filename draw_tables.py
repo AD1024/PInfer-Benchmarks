@@ -91,7 +91,7 @@ def merge_stats(lhs, rhs):
 
 def load_stats(no_rerun=False, original=False):
     data = {}
-    for benchmark in benchmarks + ['Kermit2PC', 'JournalLeaderElection']:
+    for benchmark in benchmarks:
         if not original:
             stats = get_pruning_stats(benchmark, no_rerun)
         else:
@@ -110,7 +110,7 @@ def load_stats(no_rerun=False, original=False):
         data[benchmark] = stats
     return data
 
-def draw_table_3(no_run=False):
+def draw_table_4(no_run=False):
     data = load_stats(no_run)
     headers = ['Benchmark', 'I_pinfer/I_goals', '#UG', 'Time (s)']
     table = []
@@ -127,7 +127,8 @@ def draw_table_3(no_run=False):
         table.append(entry)
         num_daikon_invocations += stats[NumDaikonInvocations]
         time_mining += stats[TimeMining]
-    with open('table_3.txt', 'w') as f:
+    print(tabulate(table, headers=headers, tablefmt='grid'))
+    with open('table_4.txt', 'w') as f:
         f.write(tabulate(table, headers=headers, tablefmt='grid'))
         f.write(f'Total number of Daikon invocations: {num_daikon_invocations}\n'
                 f'Total time spent on mining: {time_mining}\n'
@@ -199,7 +200,7 @@ def draw_pruning_steps(no_rerun=False):
                 running_ratio *= ((llm_results[benchmark] / num_liklies[benchmark]) * 100)
             else:
                 entry.append('N/A')
-    with open('table_4.txt', 'w') as f:
+    with open('table_5.txt', 'w') as f:
         f.write(tabulate(table, headers=headers, tablefmt='grid') + '\n')
         f.write(f'Average ratio: {ratio / len(benchmarks)}\n')
         f.write(f'Geometric Avg: {r}\n')
@@ -228,7 +229,7 @@ def draw_prune_by_pchecker():
             time = 'TO'
         entry.append(time)
         table.append(entry)
-    with open('table_5.txt', 'w') as f:
+    with open('table_5_falsified.txt', 'w') as f:
         f.write(tabulate(table, headers=headers, tablefmt='grid'))
 
 def draw_table_6(no_rerun=False):
@@ -254,15 +255,15 @@ if __name__ == '__main__':
     parser.add_argument('--no-rerun', action='store_true')
     args = parser.parse_args()
     no_rerun = args.no_rerun
-    if '3' in args.tables:
-        draw_table_3(no_run=args.no_rerun)
+    if '4' in args.tables:
+        draw_table_4(no_run=args.no_rerun)
         if not args.no_rerun:
             no_rerun = True
-    if '4' in args.tables:
+    if '5' in args.tables:
         draw_pruning_steps(no_rerun=no_rerun)
         if not args.no_rerun:
             no_rerun = True    
-    if '5' in args.tables:
+    if '5-1' in args.tables:
         draw_prune_by_pchecker()
-    if '6' in args.tables:
+    if '7' in args.tables:
         draw_table_6(no_rerun=no_rerun)
