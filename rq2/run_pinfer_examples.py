@@ -85,7 +85,11 @@ def main():
     print(f"Average execution time: {total_time/len(smp_files):.2f} ms")
 
     print("\nExecution Times:")
-    print(tabulate.tabulate(table, headers=header, tablefmt="grid"))
+    print()
+    result = tabulate.tabulate(table, headers=header, tablefmt="grid")
+    print(result)
+    with open("pv_times.txt", "w") as f:
+        f.write(result + "\n")
 
 if __name__ == "__main__":
     main()

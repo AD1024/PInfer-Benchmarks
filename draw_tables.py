@@ -127,9 +127,10 @@ def draw_table_4(no_run=False):
         table.append(entry)
         num_daikon_invocations += stats[NumDaikonInvocations]
         time_mining += stats[TimeMining]
-    print(tabulate(table, headers=headers, tablefmt='grid'))
+    drew_table = tabulate(table, headers=headers, tablefmt='grid')
+    print(drew_table)
     with open('table_4.txt', 'w') as f:
-        f.write(tabulate(table, headers=headers, tablefmt='grid'))
+        f.write(drew_table + '\n')
         f.write(f'Total number of Daikon invocations: {num_daikon_invocations}\n'
                 f'Total time spent on mining: {time_mining}\n'
                 f'Average time per invocation: {time_mining / num_daikon_invocations}\n'
@@ -200,8 +201,10 @@ def draw_pruning_steps(no_rerun=False):
                 running_ratio *= ((llm_results[benchmark] / num_liklies[benchmark]) * 100)
             else:
                 entry.append('N/A')
+    drew_table = tabulate(table, headers=headers, tablefmt='grid')
+    print(drew_table)
     with open('table_5.txt', 'w') as f:
-        f.write(tabulate(table, headers=headers, tablefmt='grid') + '\n')
+        f.write(drew_table + '\n')
         f.write(f'Average ratio: {ratio / len(benchmarks)}\n')
         f.write(f'Geometric Avg: {r}\n')
         f.write(f'LLM ranked percentage (Geo-Mean): {running_ratio ** (1 / len(benchmarks))}\n')
@@ -229,8 +232,10 @@ def draw_prune_by_pchecker():
             time = 'TO'
         entry.append(time)
         table.append(entry)
+    drew_table = tabulate(table, headers=headers, tablefmt='grid')
+    print(drew_table)
     with open('table_5_falsified.txt', 'w') as f:
-        f.write(tabulate(table, headers=headers, tablefmt='grid'))
+        f.write(drew_table + '\n')
 
 def draw_table_6(no_rerun=False):
     data = load_stats(no_rerun)
@@ -245,8 +250,10 @@ def draw_table_6(no_rerun=False):
         entry = [benchmark]
         entry.append(f'{stats[NumIndInvsLearned]}/{stats[NumIndInvs]}')
         table.append(entry)
+    drew_table = tabulate(table, headers=headers, tablefmt='grid')
+    print(drew_table)
     with open('table_6.txt', 'w') as f:
-        f.write(tabulate(table, headers=headers, tablefmt='grid'))
+        f.write(drew_table + '\n')
 
 if __name__ == '__main__':
     import argparse
@@ -265,5 +272,5 @@ if __name__ == '__main__':
             no_rerun = True    
     if '5-1' in args.tables:
         draw_prune_by_pchecker()
-    if '7' in args.tables:
+    if '6' in args.tables:
         draw_table_6(no_rerun=no_rerun)
