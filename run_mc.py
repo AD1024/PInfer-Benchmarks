@@ -64,7 +64,7 @@ f'''test {test_name} [main = {test}]:
                 print(f'Failed to retrive bug finding trace: {len(files)} found')
     return set()
 
-def run_mc_for(benchmark):
+def run_mc_for(benchmark, timeout):
     # assumes all test cases are in `PTst`
     os.chdir(benchmark)
     def print_log(msg): print(f'[{benchmark}] {msg}')
@@ -104,6 +104,10 @@ def run_mc_for(benchmark):
             with open(checkpoint, 'w') as f:
                 json.dump({'falsified_monitors': list(falsified_monitors), 'time': end - begin}, f)
         while (prev_set != current_set):
+            now = time.time()
+            if now - start >= timeout:
+                print_log(f'Timeout reached after {now - start} seconds')
+                break
             prev_set = current_set
             print_log(f'Running PChecker on {len(current_set)} monitors ...')
             falsified_this = set(check_monitors(benchmark, current_set, configurations[benchmark], test_interface_names[benchmark], module_names[benchmark]))
@@ -121,7 +125,8 @@ def run_mc_for(benchmark):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--benchmarks', type=str, nargs='+', default=benchmarks)
+    parser.add_argument('--timeout', type=int, default=3600)
 
     args = parser.parse_args()
     pool = multiprocessing.Pool(processes=len(args.benchmarks))
-    pool.map(run_mc_for, args.benchmarks)
+    pool.starmap(run_mc_for, [(b, int(args.timeout)) for b in args.benchmarks])
