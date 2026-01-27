@@ -44,6 +44,8 @@ Next, run `./step_1_draw_tables.sh`. This script will draw the following Tables 
 - Table 5: `table_5.txt`; this shows Table 5 in the paper *without* the last column, will be generated in the next step.
 - Table 6: `table_6.txt` shows the number of inductive invariants learned and `table_6_verifier_time.txt` shows the time on PVerifier using the full set of learned specifications v.s. only necessary ones.
 
+You may view the tables by `cat <table>.txt`.
+
 ### Step 2: Run the PChecker model checker to try falsifying learned specifications
 First, run `./step_2.sh <timeout>`, where `<timeout>` is the time limit for the model checker in seconds. We ran this script with 3600 seconds, which takes about 10 hours in total to finish on all benchmarks. Tuning down may decrease the number of falsified specifications but can finish faster.
 
