@@ -1,7 +1,7 @@
 import os
 import json
 import argparse
-from constants import num_traces, benchmarks, trace_dir
+from constants import benchmarks, trace_dir
 
 def generate_slurm_job(name: str, trace_dirs):
     cmds = '\n'.join([f'p infer -t {trace_dir}' for trace_dir in trace_dirs])
@@ -22,7 +22,10 @@ export PINFER_NUM_CORES=$SLURM_CPUS_PER_TASK
         f.write(job)
 
 
-def run_benchmark(name: str, use_slurm: bool = False):
+def run_benchmark(name: str, num_traces, use_slurm: bool = False):
+    if not os.path.exists(name):
+        print(f'{name} does not exist. Skipping...')
+        return
     os.chdir(name)
     if use_slurm:
         trace_dirs = [os.path.join(trace_dir, name, str(n)) for n in num_traces]
@@ -36,15 +39,19 @@ def run_benchmark(name: str, use_slurm: bool = False):
             print(f'{trace_folder} does not exist. Skipping...')
             continue
         print(f'Running p infer on {trace_folder}')
-        os.system(f'p infer -t {trace_folder}')
+        if os.path.exists('job.slurm'):
+            os.system('chmod +x job.slurm && ./job.slurm')
+        else:
+            os.system(f'p infer -t {trace_folder}')
     os.chdir('..')
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--trace_dir', type=str, default=trace_dir)
     parser.add_argument('--benchmarks', type=str, nargs='+', default=benchmarks)
-    parser.add_argument('--slurm', action='store_true')
+    parser.add_argument('--num_traces', type=int, nargs='+', default=[10000])
+    parser.add_argument('--slurm', action='store_false', help='Use SLURM to run benchmarks')
     args = parser.parse_args()
     for name in args.benchmarks:
         print(f'[Step 2] Running benchmark: {name}')
-        run_benchmark(name, args.slurm)
+        run_benchmark(name, args.num_traces, args.slurm)
