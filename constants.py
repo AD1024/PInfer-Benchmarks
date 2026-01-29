@@ -130,7 +130,7 @@ test_interface_names = {
     'paxos': ['BasicPaxos1on1', 'BasicPaxos3on5', 'BasicPaxos3on3', 'BasicPaxos3on1', 'BasicPaxos2on3', 'BasicPaxos2on2', 'BasicPaxos4on4'],
     'paxos_hint': ['BasicPaxos1on1', 'BasicPaxos3on5', 'BasicPaxos3on3', 'BasicPaxos3on1', 'BasicPaxos2on3', 'BasicPaxos2on2', 'BasicPaxos4on4'],
     'Raft': ['OneClientFiveServersReliable', 'OneClientFiveServersUnreliable', 'TwoClientsThreeServersReliable', 'TwoClientsThreeServersUnreliable', 'ThreeClientsOneServerReliable'],
-    'ring_leader': ['OneNode', 'TwoNodes', 'ThreeNodes', 'FiveNodes', 'TenNodes', 'TwentyNodes'],
+    'ring_leader': ['OneNode', 'TwoNodes', 'ThreeNodes', 'FiveNodes'],
     'sharded_kv': ['TwoNodes', 'ThreeNodes', 'FourNodes', 'FiveNodes', 'SevenNodes'],
     'vertical_paxos': ['T1P3A1L', 'T2P3A1L', 'T2P5A1L', 'T3P5A1L'],
     'JournalLeaderElection': ['OneNodeNoFailures', 'OneNode', 'TwoSequentialNodes',

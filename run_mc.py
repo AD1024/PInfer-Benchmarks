@@ -10,7 +10,7 @@ from constants import configurations, benchmarks, module_names, test_interface_n
 
 PATTERN = re.compile(r'(.*) detected liveness bug in .*\.')
 
-def check_monitors(name, monitors, testcases, interfaces, mod_name):
+def check_monitors(name, monitors, testcases, interfaces, mod_name, timeout):
     # generate test driver
     test_drivers = []
     test_driver_src = []
@@ -32,7 +32,7 @@ f'''test {test_name} [main = {test}]:
             shutil.rmtree('PCheckerOutput')
         print(f'[{name}] Running test case {test}')
         retcode = subprocess.call(args=['p', 'check', '-tc', test, '-s', '10000'],
-                                  stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                                  stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=timeout)
         if retcode != 0:
             files = os.listdir(os.path.join('PCheckerOutput', 'BugFinding'))
             files = list(filter(lambda x: x.endswith('.json'), files))
@@ -110,7 +110,7 @@ def run_mc_for(benchmark, timeout):
                 break
             prev_set = current_set
             print_log(f'Running PChecker on {len(current_set)} monitors ...')
-            falsified_this = set(check_monitors(benchmark, current_set, configurations[benchmark], test_interface_names[benchmark], module_names[benchmark]))
+            falsified_this = set(check_monitors(benchmark, current_set, configurations[benchmark], test_interface_names[benchmark], module_names[benchmark], timeout - (now - start)))
             current_set = current_set - falsified_this
             print_log(f'Falsified {len(falsified_this)} invariants')
             falsified_monitors = falsified_monitors.union(falsified_this)
