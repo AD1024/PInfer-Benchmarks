@@ -1,14 +1,13 @@
 # Specy (a.k.a. PInfer) OOPSLA Artifact
 ## Protocol P models
-This artifact contains 11 open-sourced P models and *1* proprietary P model of an open-sourced clock synchronization protocol called [ClockBound](https://github.com/aws/clock-bound).
+This artifact contains all publicly available P models of open-sourced protocols in our evaluations, 11 in total.
 
 ## File Organization
 
 | Directory | Protocol |
 |-----------|----------|
 | 2PC | Two-Phase Commit |
-| ChainReplication | Chain Replication |
-| ClockBound | ClockBound |
+| ChainReplication | Chain Replication |s
 | consensus | Consensus |
 | distributed_lock | Distributed Lock |
 | firewall | Firewall |
