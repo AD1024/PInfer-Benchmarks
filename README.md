@@ -40,15 +40,19 @@ First, run `./step_1_draw_tables.sh`. We have tested it on a machine with 16 cor
 
 Next, run `./step_1_draw_tables.sh`. This script will draw the following Tables under `tables` directory:
 - Table 4: `table_4.txt`
-- Table 5: `table_5.txt`; this shows Table 5 in the paper *without* the last column, will be generated in the next step.
+- Table 5: `table_5.txt`; this shows Table 5 in the paper *without* the last column, which will be generated in the next step.
 - Table 6: `table_6.txt` shows the number of inductive invariants learned and `table_6_verifier_time.txt` shows the time on PVerifier using the full set of learned specifications v.s. only necessary ones.
 
 You may view the tables by `cat <table>.txt`.
 
 ### Step 2: Run the PChecker model checker to try falsifying learned specifications
-First, run `./step_2.sh <timeout>`, where `<timeout>` is the time limit for the model checker in seconds. We ran this script with 3600 seconds, which takes about 10 hours in total to finish on all benchmarks. Tuning down may decrease the number of falsified specifications but can finish faster.
+First, run `./step_2.sh <timeout>`, where `<timeout>` is the time limit for the model checker in seconds, for example:
 
-Next, run `./step_2_draw_tables.sh`. This will generate `table_5_falsified.txt` under `tables` directory showing the number of falsified specifications for each benchmark and time elapsed. 
+> ./step_2.sh 3600
+
+This command takes about 1-2 hours in total to finish on all benchmarks on a server with 16 cores. Tuning down `<timeout>` may decrease the number of falsified specifications but can finish faster.
+
+Next, run `./step_2_draw_tables.sh`. This will generate `table_5_falsified.txt` under `tables` directory showing the number of falsified specifications for each benchmark (**last column of Table 5**) and time elapsed. 
 
 ### Potential Discrepancies from the paper
 You may find some numbers from `table_5.txt` and `table_5_falsified.txt` different from ones shown in our paper. 
