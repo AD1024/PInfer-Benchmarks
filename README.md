@@ -1,6 +1,8 @@
-# Specy (a.k.a. PInfer) OOPSLA Artifact
+# Specy (a.k.a. PInfer) OOPSLA Artifact Instructions
 ## Protocol P models
 This artifact contains all publicly available P models of open-sourced protocols in our evaluations, 11 in total.
+
+We apologize that proprietary protocols cannot be provided due to confidentiality of the model and traces.
 
 ## File Organization
 
@@ -40,8 +42,18 @@ First, run `./step_1_draw_tables.sh`. We have tested it on a machine with 16 cor
 
 Next, run `./step_1_draw_tables.sh`. This script will draw the following Tables under `tables` directory:
 - Table 4: `table_4.txt`
+    + ` I_pinfer/I_goals`: number of goal specifications in PInfer-learned specifications v.s. total number of goal specifications
+    + `#UG`: number of user guidance UG1 and 2 (not including UG3, which involves code instrumentations).
+    + `Time (s)`: run time of the benchmark
 - Table 5: `table_5.txt`; this shows Table 5 in the paper *without* the last column, which will be generated in the next step.
-- Table 6: `table_6.txt` shows the number of inductive invariants learned and `table_6_verifier_time.txt` shows the time on PVerifier using the full set of learned specifications v.s. only necessary ones.
+    + `I_raw`: corresponds to `S_raw` column in the paper
+    + `I_syn`: corresponds to `S_syn` column in the paper
+    + `I_smt`: corresponds to `S_smt` column in the paper
+    + `I_raw/I_smt`: corresponds to `RR` column in the paper
+    + Geo-average of `RR` is shown at the bottom as `Geometric Avg`.
+- Table 6: columns in Table 6 are drawn in two files:
+    + In `table_6.txt`, `(I_s+I_e)/I_ind` shows the number of inductive invariants learned by PInfer (left) v.s. number of necessary inductive invariants. The number of the left should be equal to `I_s + I_e` in Table 6 of the paper.
+    + In `table_6_verifier_time.txt`, `Time (ms)` shows verifier time on *all* learned specifications (left) v.s. on only necessary inductive invariants (right).
 
 You may view the tables by `cat <table>.txt`.
 
@@ -155,4 +167,4 @@ Available arguments:
 More examples can be found in `<benchmark>/job.slurm`.
 
 ## Notes
-This artifact uses an older version of PInfer. The latest version is available in [P Github Repository](https://github.com/p-org/P/tree/experimental/pinfer). You may try to clone this latest version: it has a lighter-weight dependencies (e.g., all Java runtime are factored out and "inlined" in the codegen for Dynamic Learner Interface). This version has several bug-fixes, but the arguments and interfaces remain the same. 
+This artifact uses an older version of PInfer. The latest version is available in [P Github Repository](https://github.com/p-org/P/tree/experimental/pinfer). You may try to clone this latest version: it has a lighter-weight dependencies (e.g., all Java runtime are factored out and "inlined" in the codegen for Dynamic Learner Interface). This version has several bug-fixes to the generator of Dynamic Learner Interface and the pruning procedures (these may cause different number of learned specifications in the output), but the arguments and interfaces remain the same. 
