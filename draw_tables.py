@@ -4,8 +4,7 @@ import subprocess
 from tabulate import tabulate
 
 benchmarks = ['ring_leader',
-              'consensus', '2PC', 'sharded_kv', 'paxos_hint', 'distributed_lock', 'Raft', 'vertical_paxos', 'ChainReplication', 'firewall', 'lockserver', 'ClockBound']
-# benchmarks = ['paxos_hint']
+              'consensus', '2PC', 'sharded_kv', 'paxos_hint', 'distributed_lock', 'vertical_paxos', 'firewall', 'lockserver', 'ChainReplication', 'Raft']
 # merge with the following
 merge = {'Raft': 'Raft_hint'}
 no_smt = {}
@@ -35,6 +34,7 @@ NumInvsLearnedWithHints = 'NumGoalsLearnedWithHints'
 NumInvsLearnedWithoutHints = 'NumGoalsLearnedWithoutHints'
 NumIndInvsLearned = 'NumIndInvsLearned'
 NumIndInvs = 'NumIndInvs'
+NumOutputInvs = 'NumOutputInvs'
 
 
 def get_pruning_stats(benchmark, no_rerun=False):
@@ -54,6 +54,15 @@ def get_pruning_stats(benchmark, no_rerun=False):
                 if os.path.exists('pruned_stats_10000.json'):
                     stats_10000 = json.load(open('pruned_stats_10000.json', 'r'))
                     stats[TimeElapsed] = stats_10000[TimeElapsed]
+                num_invs_learned = None
+                if os.path.exists('invariants_10000.txt'):
+                    with open('invariants_10000.txt', 'r') as f:
+                        num_invs_learned = len(list(filter(lambda x: len(x.strip()) > 0, f.readlines())))
+                if os.path.exists('pruned_invariants.txt'):
+                    with open('pruned_invariants.txt', 'r') as f:
+                        pruned_invs = len(list(filter(lambda x: len(x.strip()) > 0, f.readlines())))
+                        num_invs_learned = min(num_invs_learned, pruned_invs) if num_invs_learned is not None else pruned_invs
+                stats[NumOutputInvs] = num_invs_learned
                 os.chdir('..')
                 return stats
     os.chdir('..')
@@ -87,6 +96,8 @@ def merge_stats(lhs, rhs):
     lhs[NumAllGuards] += rhs[NumAllGuards]
     lhs[NumInvsPrunedBySubsumptionSem] += rhs[NumInvsPrunedBySubsumptionSem]
     lhs[NumInvsPrunedByTautoSem] += rhs[NumInvsPrunedByTautoSem]
+    if lhs[NumOutputInvs] is not None and rhs[NumOutputInvs] is not None:
+        lhs[NumOutputInvs] += rhs[NumOutputInvs]
     return lhs
 
 def load_stats(no_rerun=False, original=False):
@@ -159,7 +170,7 @@ def draw_llm_ranking():
 def draw_pruning_steps(no_rerun=False):
     data = load_stats(no_rerun)
     # headers = ['Benchmark', 'I_mined', 'R_sa', 'R_gm', 'R_tauto', 'R_sub', 'R_sym', 'I_likely', 't_SMT (ms)']
-    headers = ['Benchmark', 'I_raw', 'I_asm (-R_sa, -R_gm)', 'I_syn (-R_tauto, -R_sub, -R_sym)', 'I_smt (-R_tauto, -R_sub)', 'I_raw/I_smt', 'Time (ms)']
+    headers = ['Benchmark', 'I_raw', 'I_asm', 'I_syn', 'I_smt', 'I_raw/I_smt', 'Time (ms)']
     table = []
 
     ratio = 0
@@ -174,12 +185,12 @@ def draw_pruning_steps(no_rerun=False):
         entry = [benchmark]
         entry.append(stats[NumInvsTotal])
         I_raw = stats[NumInvsTotal] - stats[NumInvsPrunedBySanitizing] - stats[NumInvsPrunedByGrammar]
-        entry.append(f'{stats[NumInvsTotal] - stats[NumInvsPrunedBySanitizing] - stats[NumInvsPrunedByGrammar]} (-{stats[NumInvsPrunedBySanitizing]}, -{stats[NumInvsPrunedByGrammar]})')
+        entry.append(f'{stats[NumInvsTotal] - stats[NumInvsPrunedBySanitizing] - stats[NumInvsPrunedByGrammar]}')
         I_syn = I_raw - stats[NumInvsPrunedByTauto] - stats[NumInvsPrunedBySubsumption] - stats[NumInvsPrunedBySymmetry]
-        entry.append(f'{I_syn} (-{stats[NumInvsPrunedByTauto]}, -{stats[NumInvsPrunedBySubsumption]}, -{stats[NumInvsPrunedBySymmetry]})')
-        I_likely = I_syn - stats[NumInvsPrunedByTautoSem] - stats[NumInvsPrunedBySubsumptionSem]
+        entry.append(f'{I_syn}')
+        I_likely = I_syn - stats[NumInvsPrunedByTautoSem] - stats[NumInvsPrunedBySubsumptionSem] if stats[NumOutputInvs] is None else stats[NumOutputInvs]
         num_liklies[benchmark] = I_likely
-        entry.append(f'{I_likely} (-{stats[NumInvsPrunedByTautoSem]}, -{stats[NumInvsPrunedBySubsumptionSem]})')
+        entry.append(f'{I_likely}')
         entry.append(stats[NumInvsTotal] / I_likely)
         entry.append(stats[TimePruning])
         ratio += stats[NumInvsTotal] / I_likely

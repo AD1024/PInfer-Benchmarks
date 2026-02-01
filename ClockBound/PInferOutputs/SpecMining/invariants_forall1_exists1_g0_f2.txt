@@ -1,3 +1,0 @@
-∀e0:eLocalResponse ::  ∃e1:eGlobalResponse :: (indexof(e0) > indexof(e1)) ∧ (e0.payload.trueTime == e1.payload.trueTime)
-_num_e_exists_ == 1
-

@@ -1,8 +1,0 @@
-∀e0: eLocalResponse ∀e1: eLocalResponse ::  
-e0.payload.latest >= 1
-e0.payload.earliest >= 0
-e1.payload.earliest >= 0
-e1.payload.latest >= 1
-e1.payload.trueTime >= 1
-e0.payload.trueTime >= 1
-

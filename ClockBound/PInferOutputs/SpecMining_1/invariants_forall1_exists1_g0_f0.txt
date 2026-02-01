@@ -1,6 +1,0 @@
-∀e0:eLocalResponse ::  ∃e1:eGlobalResponse :: 
-indexof(e1) >= 2
-e0.payload.trueTime == e1.payload.trueTime
-e1.payload.trueTime >= 1
-e0.payload.trueTime >= 1
-
