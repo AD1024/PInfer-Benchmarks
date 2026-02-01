@@ -37,6 +37,8 @@ We apologize that proprietary protocols cannot be provided due to confidentialit
 | `cleanup.py` | Cleans up generated files and outputs from benchmarks |
 
 ## Run artifact automatically
+These steps aim to be used as a *reproducibility* documentation.
+Please see explanations at the end of this for potential discrepancies in numbers shown in the tables. However, they do not affect the top-level claim of the paper: *all known specifications can be learned by PInfer*.
 ### Step 1: Run PInfer on benchmarks
 First, run `./step_1_draw_tables.sh`. We have tested it on a machine with 16 cores and 256 GB of memory. It takes about 24 hours to finish under this setup.
 
@@ -48,7 +50,7 @@ Next, run `./step_1_draw_tables.sh`. This script will draw the following Tables 
 - Table 5: `table_5.txt`; this shows Table 5 in the paper *without* the last column, which will be generated in the next step.
     + `I_raw`: corresponds to `S_raw` column in the paper
     + `I_syn`: corresponds to `S_syn` column in the paper
-    + `I_smt`: corresponds to `S_smt` column in the paper
+    + `I_smt`: corresponds to `S_sem` column in the paper
     + `I_raw/I_smt`: corresponds to `RR` column in the paper
     + Geo-average of `RR` is shown at the bottom as `Geometric Avg`.
 - Table 6: columns in Table 6 are drawn in two files:
@@ -64,7 +66,7 @@ First, run `./step_2.sh <timeout>`, where `<timeout>` is the time limit for the 
 
 This command takes about 1-2 hours in total to finish on all benchmarks on a server with 16 cores. Tuning down `<timeout>` may decrease the number of falsified specifications but can finish faster.
 
-Next, run `./step_2_draw_tables.sh`. This will generate `table_5_falsified.txt` under `tables` directory showing the number of falsified specifications for each benchmark (**last column of Table 5**) and time elapsed. 
+Next, run `./step_2_draw_tables.sh`. This will generate `table_5_falsified.txt` under `tables` directory showing the number of falsified specifications for each benchmark (**last column, S_false of Table 5**) and time elapsed. 
 
 ### Potential Discrepancies from the paper
 You may find some numbers from `table_5.txt` and `table_5_falsified.txt` different from ones shown in our paper. 
@@ -84,6 +86,7 @@ Here, we provide explanations to these potential discrepancies.
 ---
 
 ## Run PInfer manually from scratch on your own P model
+This section aims to be used as a *reusability* documentation.
 
 First, put your P model under the same directory as this README file.
 Note that you can include a `job.slurm` under your benchmark directory with custom arguments to PInfer (shown at the end of README).
@@ -129,7 +132,7 @@ python draw_tables.py [--tables TABLE ...] [--no-rerun]
 | `--no-rerun` | Skip re-running the pruning step and use cached results |
 
 Note that `5-1` corresponds to the last column of Table 5 in the paper.
-To generate `5-1`, `run_mc.py` needs to be run first.
+To generate `5-1`, `run_mc.py` needs to be run first (described next).
 
 ### Optional step: Falsifying with PChecker
 
