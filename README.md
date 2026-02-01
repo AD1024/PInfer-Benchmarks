@@ -50,6 +50,21 @@ First, run `./step_2.sh <timeout>`, where `<timeout>` is the time limit for the 
 
 Next, run `./step_2_draw_tables.sh`. This will generate `table_5_falsified.txt` under `tables` directory showing the number of falsified specifications for each benchmark and time elapsed. 
 
+### Potential Discrepancies from the paper
+You may find some numbers from `table_5.txt` and `table_5_falsified.txt` different from ones shown in our paper. 
+Here, we provide explanations to these potential discrepancies.
+- Table 4:
+    + Discrepancy in Time: we evaluated PInfer on a large server node with 192 cores. Since PInfer is optimized to leverage the computing resource, more cores lead to faster finish time. As noted earlier, using a node with 16 cores requires about 24 hours to finish all the benchmarks (sequentially).
+- Table 5:
+    + Discrepancy in Raw specifications: a source of non-determinism roots from Daikon: we observed that Daikon may drop certain property if certain behavior of the P model is not triggered sufficiently many times, but sometimes, it may or may not output the property capturing the rarely-triggered behaviors. This can cause PInfer learn fewer/more specifications. However, this does not affect the top-level results (Table 4) of PInfer since the behaviors checked by safety properties are triggered frequently such that Daikon always output the corresponding specifications.
+    + Discrepancy in learned specifications: for efficiency reason, we parallelize learning of the specifications for each event combination. Under different hardware settings, specifications may be generated in different order depending on the core efficiency. This may cause the pruning procedure to output different pruned set (this does not breach soundness, but may leave more redundant specifications in the learned set). For instance, if P, Q, R are learned, where P subsumes Q by semantics and Q subsumes R by symmetry (syntactic checking). If Q is pruned before it sees R, then R cannot be pruned since P may not subsume R by semantics or by symmetry. On the other hand, if PInfer learns Q and R first, it can prune R away. Then Q will be pruned by P via subsumption checking.
+    + Discrepancy in number of falsified specifications: PChecker implements *randomized* state exploration. This can cause the number of falsified specifications to be different in each individual run. 
+
+> Note that we use a fairly large amount of traces, so the numbers should not differ a lot from ones shown in the paper.
+
+- Table 6:
+    + Discrepancy in verifier time: PVerifier generates Z3 queries under the hood. Z3 may behave differently under different hardware setups. Moreover, the heuristic choices made by Z3 can also lead to discrepancy in verification time. But generally, the time to verify the full set of learned specifications should be slower (>= in time) than only the necessary ones. 
+
 ---
 
 ## Run PInfer manually from scratch on your own P model
@@ -85,23 +100,6 @@ python 2_run_pinfer.py [--trace_dir DIR] [--benchmarks NAME ...] [--num_traces N
 | `--slurm` | Enable SLURM cluster mode for parallel execution (default: false) |
 
 > Note: this step prioritize running the `job.slurm` script if exists under the benchmark directory.
-
-### Potential Discrepancies from the paper
-You may find some numbers from `table_5.txt` and `table_5_falsified.txt` different from ones shown in our paper. 
-Here, we provide explanations to these potential discrepancies.
-- Table 4:
-    + Discrepancy in Time: we evaluated PInfer on a large server node with 192 cores. Since PInfer is optimized to leverage the computing resource, more cores lead to faster finish time. As noted earlier, using a node with 16 cores requires about 24 hours to finish all the benchmarks (sequentially).
-- Table 5:
-    + Discrepancy in Raw specifications: a source of non-determinism roots from Daikon: we observed that Daikon may drop certain property if certain behavior of the P model is not triggered sufficiently many times, but sometimes, it may or may not output the property capturing the rarely-triggered behaviors. This can cause PInfer learn fewer/more specifications. However, this does not affect the top-level results (Table 4) of PInfer since the behaviors checked by safety properties are triggered frequently such that Daikon always output the corresponding specifications.
-    + Discrepancy in learned specifications: for efficiency reason, we parallelize learning of the specifications for each event combination. Under different hardware settings, specifications may be generated in different order depending on the core efficiency. This may cause the pruning procedure to output different pruned set (this does not breach soundness, but may leave more redundant specifications in the learned set). For instance, if P, Q, R are learned, where P subsumes Q by semantics and Q subsumes R by symmetry (syntactic checking). If Q is pruned before it sees R, then R cannot be pruned since P may not subsume R by semantics or by symmetry. On the other hand, if PInfer learns Q and R first, it can prune R away. Then Q will be pruned by P via subsumption checking.
-    + Discrepancy in number of falsified specifications: PChecker implements *randomized* state exploration. This can cause the number of falsified specifications to be different in each individual run. 
-
-> Note that we use a fairly large amount of traces, so the numbers should not differ a lot from ones shown in the paper.
-
-- Table 6:
-    + Discrepancy in verifier time: PVerifier generates Z3 queries under the hood. Z3 may behave differently under different hardware setups. Moreover, the heuristic choices made by Z3 can also lead to discrepancy in verification time. But generally, the time to verify the full set of learned specifications should be slower (>= in time) than only the necessary ones. 
-
-
 
 ### Step 3: Generate Result Tables
 
