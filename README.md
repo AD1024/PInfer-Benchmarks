@@ -1,15 +1,15 @@
 # Specy (a.k.a. PInfer) OOPSLA Artifact Instructions
-## Protocol P models
-This artifact contains all publicly available P models of open-sourced protocols in our evaluations, 11 in total.
+## Protocol P Models
+This artifact contains all 11 publicly available P models of open-source protocols used in our evaluation.
 
-We apologize that proprietary protocols cannot be provided due to confidentiality of the model and traces.
+We apologize that data for proprietary protocols cannot be provided due to the confidentiality of the models and traces.
 
 ## File Organization
 
 | Directory | Protocol |
 |-----------|----------|
 | 2PC | Two-Phase Commit |
-| ChainReplication | Chain Replication |s
+| ChainReplication | Chain Replication |
 | consensus | Consensus |
 | distributed_lock | Distributed Lock |
 | firewall | Firewall |
@@ -36,62 +36,58 @@ We apologize that proprietary protocols cannot be provided due to confidentialit
 | `draw_tables.py` | Generates result tables (Tables 4, 5, 6) for the paper from PInfer outputs |
 | `cleanup.py` | Cleans up generated files and outputs from benchmarks |
 
-## Run artifact automatically
-These steps aim to be used as a *reproducibility* documentation.
-Please see explanations at the end of this for potential discrepancies in numbers shown in the tables. However, they do not affect the top-level claim of the paper: *all known specifications can be learned by PInfer*.
-### Step 1: Run PInfer on benchmarks
-First, run `./step_1_draw_tables.sh`. We have tested it on a machine with 16 cores and 256 GB of memory. It takes about 24 hours to finish under this setup.
+## Run Artifact Automatically
+These steps serve as *reproducibility* documentation.
+Please see the explanations at the end of this section for potential discrepancies in the numbers shown in the tables. However, these discrepancies do not affect the top-level claim of the paper: *all known specifications can be learned by PInfer*.
+### Step 1: Run PInfer on Benchmarks
+First, run `./step_1.sh`. We have tested this on a machine with 16 cores and 256 GB of memory. Under this setup, it takes about 24 hours to complete. You may use `control + p + q` to detach from the Docker container and let it run in the background.
 
-Next, run `./step_1_draw_tables.sh`. This script will draw the following Tables under `tables` directory:
-- Table 4: `table_4.txt`
-    + ` I_pinfer/I_goals`: number of goal specifications in PInfer-learned specifications v.s. total number of goal specifications
-    + `#UG`: number of user guidance UG1 and 2 (not including UG3, which involves code instrumentations).
-    + `Time (s)`: run time of the benchmark
-- Table 5: `table_5.txt`; this shows Table 5 in the paper *without* the last column, which will be generated in the next step.
-    + `I_raw`: corresponds to `S_raw` column in the paper
-    + `I_syn`: corresponds to `S_syn` column in the paper
-    + `I_smt`: corresponds to `S_sem` column in the paper
-    + `I_raw/I_smt`: corresponds to `RR` column in the paper
-    + Geo-average of `RR` is shown at the bottom as `Geometric Avg`.
-- Table 6: columns in Table 6 are drawn in two files:
-    + In `table_6.txt`, `(I_s+I_e)/I_ind` shows the number of inductive invariants learned by PInfer (left) v.s. number of necessary inductive invariants. The number of the left should be equal to `I_s + I_e` in Table 6 of the paper.
-    + In `table_6_verifier_time.txt`, `Time (ms)` shows verifier time on *all* learned specifications (left) v.s. on only necessary inductive invariants (right).
+Next, attach back to the container and run `./step_1_draw_tables.sh`. This script will draw the following tables under the `tables` directory (you can view them via `cat tables/<table_n.txt>`).
 
-You may view the tables by `cat <table>.txt`.
+#### How to Read the Tables
 
-### Step 2: Run the PChecker model checker to try falsifying learned specifications
-First, run `./step_2.sh <timeout>`, where `<timeout>` is the time limit for the model checker in seconds, for example:
+| Output File | Paper Table | Column in Output | Paper Column | Description |
+|-------------|-------------|------------------|--------------|-------------|
+| `table_4.txt` | Table 4 | `I_pinfer/I_goals` | `S_goals` | Number of goal specifications in PInfer-learned specifications vs. total number of goal specifications (`S_goals`) |
+| `table_4.txt` | Table 4 | `#UG` | N/A | Number of user guidance UG1 and UG2 (not including UG3, which involves code instrumentation), please see footnotes of Table 4 in the paper |
+| `table_4.txt` | Table 4 | `Time (s)` | Same | Run time of the benchmark |
+| `table_5.txt` | Table 5 | `I_raw` | `S_raw` | Number of raw specifications |
+| `table_5.txt` | Table 5 | `I_syn` | `S_syn` | Number of specifications after syntactic pruning |
+| `table_5.txt` | Table 5 | `I_smt` | `S_sem` | Number of specifications after semantic pruning |
+| `table_5.txt` | Table 5 | `I_raw/I_smt` | `RR` | Reduction ratio (geometric average shown at bottom) |
+| `table_6.txt` | Table 6 | `(I_s+I_e)/I_ind` | sum of `I_s` and `I_e` | Number of inductive invariants (`I_s + I_e`) learned by PInfer (left) vs. number of necessary inductive invariants (right) |
+| `table_6_verifier_time.txt` | Table 6 | `Time (ms)` | Same | Verifier time on all learned specifications (left) vs. on only necessary inductive invariants (right) |
+
+> **Note:** `table_5.txt` shows Table 5 *without* the last column (`S_false`), which will be generated in Step 2.
+
+### Step 2: Run the PChecker Model Checker to Falsify Learned Specifications
+First, run `./step_2.sh <timeout>`, where `<timeout>` is the time limit for the model checker in seconds. For example:
 
 > ./step_2.sh 3600
 
-This command takes about 1-2 hours in total to finish on all benchmarks on a server with 16 cores. Tuning down `<timeout>` may decrease the number of falsified specifications but can finish faster.
+This command takes about 1-2 hours to finish on all benchmarks on a server with 16 cores. Reducing `<timeout>` will finish faster but may decrease the number of falsified specifications.
 
-Next, run `./step_2_draw_tables.sh`. This will generate `table_5_falsified.txt` under `tables` directory showing the number of falsified specifications for each benchmark (**last column, S_false of Table 5**) and time elapsed. 
+Next, run `./step_2_draw_tables.sh`. This will generate `table_5_falsified.txt` in the `tables` directory, showing the number of falsified specifications for each benchmark (**last column, S_false of Table 5**) and time elapsed. 
 
-### Potential Discrepancies from the paper
-You may find some numbers from `table_5.txt` and `table_5_falsified.txt` different from ones shown in our paper. 
-Here, we provide explanations to these potential discrepancies.
-- Table 5:
-    + Discrepancy in Raw specifications: a source of non-determinism roots from Daikon: we observed that Daikon may drop certain property if certain behavior of the P model is not triggered sufficiently many times, but sometimes, it may or may not output the property capturing the rarely-triggered behaviors. This can cause PInfer learn fewer/more specifications. However, this does not affect the top-level results (Table 4) of PInfer since the behaviors checked by safety properties are triggered frequently such that Daikon always output the corresponding specifications.
-    + Discrepancy in learned specifications: for efficiency reason, we parallelize learning of the specifications for each event combination. Under different hardware settings, specifications may be generated in different order depending on the core efficiency. This may cause the pruning procedure to output different pruned set (this does not breach soundness, but may leave more redundant specifications in the learned set). For instance, if P, Q, R are learned, where P subsumes Q by semantics and Q subsumes R by symmetry (syntactic checking). If Q is pruned before it sees R, then R cannot be pruned since P may not subsume R by semantics or by symmetry. On the other hand, if PInfer learns Q and R first, it can prune R away. Then Q will be pruned by P via subsumption checking.
-    + Discrepancy in number of falsified specifications: PChecker implements *randomized* state exploration. This can cause the number of falsified specifications to be different in each individual run. 
+### Potential Discrepancies from the Paper
+You may find some numbers from `table_5.txt` and `table_5_falsified.txt` different from those shown in our paper. The table below explains these potential discrepancies.
 
-> Note that we use a fairly large amount of traces, so the numbers should not differ a lot from ones shown in the paper.
+| Table | Column | Cause | Impact |
+|-------|--------|-------|--------|
+| Table 5 | `S_raw` | Daikon non-determinism: Daikon may drop certain properties if certain behaviors of the P model are not triggered sufficiently many times. It may or may not output properties capturing rarely-triggered behaviors. | May cause PInfer to learn fewer/more specifications. Does not affect top-level results (Table 4) since behaviors checked by safety properties are triggered frequently. |
+| Table 5 | `S_syn`, `S_sem` | Parallel execution order: We parallelize learning for each event combination. Under different hardware settings, specifications may be generated in different orders depending on core efficiency. | May cause the pruning procedure to output different pruned sets. This does not breach soundness but may leave more redundant specifications. For example, if P, Q, R are learned where P subsumes Q semantically and Q subsumes R syntactically: if Q is pruned before seeing R, then R cannot be pruned since P may not subsume R directly. |
+| Table 5 | `S_false` | Randomized state exploration: PChecker implements randomized state exploration. | The number of falsified specifications may differ in each run. |
+| Table 4 | `Time (s)` | Hardware differences: We evaluated PInfer on a server with 192 cores. PInfer is optimized to leverage computing resources—more cores lead to faster execution. | Using a node with 16 cores requires about 24 hours to finish all benchmarks sequentially. |
+| Table 6 | `Time (ms)` | Z3 behavior: PVerifier generates Z3 queries under the hood. Z3 may behave differently under different hardware setups, and its heuristic choices can vary. | Verification time may differ, but generally, verifying the full set of learned specifications should take longer (>=) than verifying only the necessary ones. |
 
-Other minor discrepancies:
-- Table 4:
-    + Discrepancy in Time: we evaluated PInfer on a large server node with 192 cores. Since PInfer is optimized to leverage the computing resource, more cores lead to faster finish time. As noted earlier, using a node with 16 cores requires about 24 hours to finish all the benchmarks (sequentially).
-- Table 6:
-    + Discrepancy in verifier time: PVerifier generates Z3 queries under the hood. Z3 may behave differently under different hardware setups. Moreover, the heuristic choices made by Z3 can also lead to discrepancy in verification time. But generally, the time to verify the full set of learned specifications should be slower (>= in time) than only the necessary ones. 
+> **Note:** We use a fairly large number of traces, so the numbers should not differ significantly from those shown in the paper. 
 
 ---
 
-## Run PInfer manually from scratch on your own P model
-This section aims to be used as a *reusability* documentation.
+## Run PInfer Manually on Your Own P Model
+This section serves as *reusability* documentation.
 
-First, put your P model under the same directory as this README file.
-Note that you can include a `job.slurm` under your benchmark directory with custom arguments to PInfer (shown at the end of README).
-Then follow these steps:
+First, place your P model (with `PSrc` and `PTst` directories, for the model and test cases) in the same directory as this README file. You can optionally include a `job.slurm` file in your benchmark directory with custom arguments to PInfer (see the end of this README for examples). Then follow these steps:
 
 ### Step 1: Generate Traces
 
@@ -119,7 +115,7 @@ python 2_run_pinfer.py [--trace_dir DIR] [--benchmarks NAME ...] [--num_traces N
 | `--num_traces` | Number of traces to use (default: 10000) |
 | `--slurm` | Enable SLURM cluster mode for parallel execution (default: false) |
 
-> Note: this step prioritize running the `job.slurm` script if exists under the benchmark directory.
+> **Note:** This step prioritizes running the `job.slurm` script if it exists in the benchmark directory.
 
 ### Step 3: Generate Result Tables
 
@@ -133,11 +129,11 @@ python draw_tables.py [--tables TABLE ...] [--no-rerun]
 | `--no-rerun` | Skip re-running the pruning step and use cached results |
 
 Note that `5-1` corresponds to the last column of Table 5 in the paper.
-To generate `5-1`, `run_mc.py` needs to be run first (described next).
+To generate `5-1`, you must first run `run_mc.py` (described next).
 
-### Optional step: Falsifying with PChecker
+### Optional Step: Falsifying with PChecker
 
-This step uses the PChecker model checker to attempt to falsify the learned specifications.
+This step uses the PChecker model checker to attempt to falsify learned specifications.
 
 ```bash
 python run_mc.py [--benchmarks NAME ...] [--timeout SECONDS]
@@ -156,19 +152,36 @@ python draw_tables.py --tables 5-1
 
 ## Arguments to PInfer
 
-Top level command: `p infer`
+Top-level command: `p infer`
 
-Available arguments:
-- `--action`: `compile | pruning`; when not specified, PInfer runs `compile` and runs its learning procedure followed by `pruning` automatically.
-    + `compile`: generates predicates, terms and the Dynamic Learner Interface (under `PGenerated/PInfer` directory). This option accepts an optional argument `-td` for maximum tree height of the term AST. By default, this is set to 1 (i.e., allowing function calls but disallowing nested function calls). Example usage:
-    `p infer --action compile -td 2`
-    + `pruning`: runs the pruning procedures only. This action requires the directory containing the learner logs as inputs using argument `-pi`. If PInfer has finished before, then the logs are stored under `PInferOutputs/SpecMining_<n>` where higher `n` means a fresher run. To enable semantic checking, pass `-z3` option at the end. Example usage:
-    `p infer --action pruning -pi PInferOutputs/SpecMining -z3`
-- `--hint-only`: only run PInfer with event combinations specified in user guidance UG1.
-- `-ce`: configuration event; usually these events are announced once at the beginning of the execution, containing the cluster setup (e.g., number of nodes). This is used to learn specifications relating payload with cluster configurations. Example usage: `p infer -t $PINFER_TRACE_DIR/paxos_new/10000 -ce ePaxosConfig`
-- `-z3`: This option can also be passed alone in `p infer` mode, which enables the semantic checking in pruning procedures. Example usage: `p infer -t $PINFER_TRACE_DIR/paxos_new/10000 -ce ePaxosConfig -z3`
+### General Arguments
+
+| Argument | Description | Example |
+|----------|-------------|---------|
+| `-t` | Path to the trace directory for the benchmark (generated in Step 1) | `p infer -t <path/to/traces>` |
+| `--action` | Specifies the action to run: `compile` or `pruning`. When not specified, PInfer runs `compile` followed by learning and `pruning` automatically. | `p infer --action compile <args>` |
+| `--hint-only` | Only run PInfer with event combinations specified in user guidance UG1. | |
+| `-ce <event>` | Configuration event: an event announced once at the beginning of execution containing cluster setup (e.g., number of nodes). Used to learn specifications relating payloads to cluster configurations. | `p infer -t <traces> -ce ePaxosConfig` |
+| `-z3` | Enables semantic checking in pruning procedures. | `p infer -t <traces> -ce ePaxosConfig -z3` |
+
+### `--action compile` Mode
+
+Generates predicates, terms, and the Dynamic Learner Interface (in the `PGenerated/PInfer` directory).
+
+| Argument | Description | Example |
+|----------|-------------|---------|
+| `-td <depth>` | Maximum tree height of the term AST. Default: 1 (allowing function calls but disallowing nested calls). | `p infer --action compile -td 2` |
+
+### `--action pruning` Mode
+
+Runs the pruning procedures only on previously generated learner logs.
+
+| Argument | Description | Example |
+|----------|-------------|---------|
+| `-pi <path>` | Directory containing the learner logs. Logs are stored in `PInferOutputs/SpecMining_<n>` (higher `n` = more recent run). | `p infer --action pruning -pi PInferOutputs/SpecMining` |
+| `-z3` | Enables semantic checking in pruning. | `p infer --action pruning -pi PInferOutputs/SpecMining -z3` |
 
 More examples can be found in `<benchmark>/job.slurm`.
 
 ## Notes
-This artifact uses an older version of PInfer. The latest version is available in [P Github Repository](https://github.com/p-org/P/tree/experimental/pinfer). You may try to clone this latest version: it has a lighter-weight dependencies (e.g., all Java runtime are factored out and "inlined" in the codegen for Dynamic Learner Interface). This version has several bug-fixes to the generator of Dynamic Learner Interface and the pruning procedures (these may cause different number of learned specifications in the output), but the arguments and interfaces remain the same. 
+This artifact uses an older version of PInfer. The latest version is available in the [P GitHub Repository](https://github.com/p-org/P/tree/experimental/pinfer). You may try cloning this latest version, which has lighter-weight dependencies (e.g., all Java runtime components are factored out and inlined in the codegen for Dynamic Learner Interface). This version includes several bug fixes to the Dynamic Learner Interface generator and the pruning procedures (which may result in different numbers of learned specifications in the output), but the arguments and interfaces remain the same. 
